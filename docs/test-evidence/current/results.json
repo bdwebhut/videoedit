@@ -1,0 +1,101 @@
+{
+  "versions": {
+    "wordpress": "7.1.3",
+    "woocommerce": "11.2.1",
+    "php": "8.2.34",
+    "hpos": true,
+    "database": "11.4.13-MariaDB-ubu2404"
+  },
+  "results": [
+    {
+      "suite": "unit",
+      "passed": true,
+      "assertions": 214,
+      "elapsed_seconds": 0.091,
+      "exit_code": 0,
+      "warnings": false
+    },
+    {
+      "suite": "integration",
+      "passed": true,
+      "assertions": 98,
+      "elapsed_seconds": 2.536,
+      "exit_code": 0,
+      "warnings": false
+    },
+    {
+      "suite": "checkout",
+      "passed": true,
+      "assertions": 20,
+      "elapsed_seconds": 1.428,
+      "exit_code": 0,
+      "warnings": false
+    },
+    {
+      "suite": "advanced",
+      "passed": true,
+      "assertions": 22,
+      "elapsed_seconds": 1.669,
+      "exit_code": 0,
+      "warnings": false
+    },
+    {
+      "suite": "referrals",
+      "passed": true,
+      "assertions": 14,
+      "elapsed_seconds": 1.793,
+      "exit_code": 0,
+      "warnings": false
+    },
+    {
+      "suite": "expiry",
+      "passed": true,
+      "assertions": 9,
+      "elapsed_seconds": 0.971,
+      "exit_code": 0,
+      "warnings": false
+    },
+    {
+      "suite": "competition",
+      "passed": true,
+      "assertions": 15,
+      "elapsed_seconds": 2.959,
+      "exit_code": 0,
+      "warnings": false
+    },
+    {
+      "suite": "reconciliation",
+      "passed": true,
+      "assertions": 16,
+      "elapsed_seconds": 1.414,
+      "exit_code": 0,
+      "warnings": false
+    },
+    {
+      "suite": "shortcodes",
+      "passed": true,
+      "assertions": 69,
+      "elapsed_seconds": 0.965,
+      "exit_code": 0,
+      "warnings": false
+    },
+    {
+      "suite": "sms",
+      "passed": true,
+      "assertions": 7,
+      "elapsed_seconds": 0.73,
+      "exit_code": 0,
+      "warnings": false
+    },
+    {
+      "suite": "lifecycle",
+      "passed": true,
+      "assertions": 13,
+      "elapsed_seconds": 1.177,
+      "exit_code": 0,
+      "warnings": false
+    }
+  ],
+  "passed": true,
+  "total_assertions": 497
+}

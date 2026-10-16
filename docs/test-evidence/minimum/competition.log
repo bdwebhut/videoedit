@@ -1,0 +1,16 @@
+PASS Fresh backdated order enters the correct calendar month
+PASS Fresh monthly personal Seeds aggregate
+PASS Monthly qualifying personal purchases aggregated
+PASS Monthly qualifying referral conversions aggregated
+PASS Six available category award slots
+PASS Maximum one monthly award per member
+PASS Consenting winner archive published
+PASS Unchanged correction does not duplicate prizes
+PASS Prior published snapshot remains immutable
+PASS Historical leaderboard uses immutable published ranking
+PASS Prize coupon immutable owner ID
+PASS Prize coupon does not bind to mutable email
+PASS Changed email requires reverification before prize redemption
+PASS Owner coupon remains valid after email change
+PASS Other members cannot use prize coupon
+COMPETITION PASS: 15 assertions

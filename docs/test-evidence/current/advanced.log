@@ -1,0 +1,23 @@
+PASS Phone verified with secure token
+PASS Verification token single use
+PASS Duplicate verified phone denied
+PASS Expired reserved and unreserved credit cannot be spent
+PASS Expiry clears projected balance
+PASS Spent earning reversal records reward debt
+PASS Future earnings offset debt
+PASS Manual referral approval holds commission
+PASS Approved commission posted once
+PASS Suspension retains existing earnings
+PASS Suspension blocks redemption
+PASS Unallocated refund requires review
+PASS Reviewed refund changes personal earning basis
+PASS Notification retries stop at configured limit
+PASS Exactly five provider attempts
+PASS Page setup idempotent
+PASS Migration retains corrected financial ledger
+PASS Corrections create next immutable version
+PASS Original result snapshot retained
+PASS Customer cannot forge administrator adjustment
+PASS Public visitor cannot access financial REST
+PASS Ledger projections remain consistent after expiry, debt and refunds
+ADVANCED PASS: 22 assertions

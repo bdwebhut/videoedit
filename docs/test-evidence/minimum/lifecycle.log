@@ -1,0 +1,14 @@
+PASS Unpaid variable product grants no bonus
+PASS Payment success waits for fulfillment
+PASS Selected variable parent qualifies variation
+PASS Variable-product Seeds round down
+PASS Full native refund reverses introductory grant
+PASS Full native refund reverses Seeds
+PASS Repeated full refund is idempotent
+PASS History credit filter
+PASS History debit filter
+PASS History date range uses site calendar
+PASS History date range excludes older records
+PASS History exposes configured lot expiry
+PASS Suspended membership cannot claim prizes
+LIFECYCLE PASS: 13 assertions

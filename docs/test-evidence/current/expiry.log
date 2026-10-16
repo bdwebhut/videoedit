@@ -1,0 +1,10 @@
+PASS Expired unused source is zero
+PASS Refund of expired award creates no artificial debt
+PASS Expired award reversal is idempotent
+PASS Spent source reversal creates only actual debt
+PASS Cancelled redemption offsets prior reward debt
+PASS Restored lots exclude revoked grant portion
+PASS Later expiry consumes only the real restored value
+PASS Expired restoration clears debt without renewing remaining credits
+PASS Expiry recovery projections match immutable ledger
+EXPIRY PASS: 9 assertions

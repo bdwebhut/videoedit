@@ -1,0 +1,3 @@
+PASS ordinary WordPress uninstall preserves membership and financial records
+PASS ZIP reinstall retains permanent ID sequence and existing page mappings
+PASS separately confirmed removal deletes only plugin tables and retains WordPress users, WooCommerce orders and non-reused ID sequence

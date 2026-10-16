@@ -1,0 +1,2 @@
+6be0a02ba38c0f58e7a079cb8aaa913fd900be37ec95b386f127a3615fd1e133  ghoroa-hat-rewards-1.0.0-rc.1.zip
+2e7b8e56329abfed7799fdee256f2fa63241da3565bf7cc5520349733ec44312  ghoroa-hat-rewards-1.0.0-rc.1-source.zip
