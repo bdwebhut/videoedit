@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.0-rc.2 — 2026-10-16
+
+- Restyled account components to follow the supplied theme reference: white cards, subtle gray borders, compact headings, green icons and actions.
+- Replaced the full green membership card with a compact profile, status badge, public ID and localized dates.
+- Replaced dashboard summary tables with readable balance cards and monthly metrics; grouped referrals, verification, rewards and notifications into responsive panels.
+- Added Bengali table/navigation/preference labels and clearer reward empty states.
+- Scoped component CSS preserves the host theme header, welcome banner, sidebar and WooCommerce layout.
+- Retains existing financial rules, schema, ledger and checkout interfaces. See docs/DESIGN-REFRESH.md for validation and previews.
+
 ## 1.0.0-rc.1 — 2026-10-16
 
 Initial release candidate implementing the approved Ghoroa Hat design:

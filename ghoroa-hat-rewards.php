@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Ghoroa Hat Smart Membership & Rewards
  * Description: Membership, separate reward wallets, referrals and monthly rewards for WooCommerce.
- * Version: 1.0.0-rc.1
+ * Version: 1.0.0-rc.2
  * Requires at least: 6.7
  * Requires PHP: 8.2
  * Requires Plugins: woocommerce
@@ -22,7 +22,7 @@ if ( version_compare( PHP_VERSION, '8.2', '<' ) ) {
 		}
 	);
 	return; }
-define( 'GHR_VERSION', '1.0.0-rc.1' );
+define( 'GHR_VERSION', '1.0.0-rc.2' );
 define( 'GHR_FILE', __FILE__ );
 define( 'GHR_PATH', plugin_dir_path( __FILE__ ) );
 spl_autoload_register(

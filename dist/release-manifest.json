@@ -1,12 +1,12 @@
 {
-  "ghoroa-hat-rewards-1.0.0-rc.1.zip": {
-    "sha256": "6be0a02ba38c0f58e7a079cb8aaa913fd900be37ec95b386f127a3615fd1e133",
-    "bytes": 150898,
-    "files": 48
+  "ghoroa-hat-rewards-1.0.0-rc.2.zip": {
+    "sha256": "17c3c03c182dfce152efea72834df8b6547a1293b9753b5f6484e8962cd75526",
+    "bytes": 156283,
+    "files": 49
   },
-  "ghoroa-hat-rewards-1.0.0-rc.1-source.zip": {
-    "sha256": "2e7b8e56329abfed7799fdee256f2fa63241da3565bf7cc5520349733ec44312",
-    "bytes": 1051731,
-    "files": 107
+  "ghoroa-hat-rewards-1.0.0-rc.2-source.zip": {
+    "sha256": "b35ecad06353a51b2ce1df4694249b1abf7580c4cca2d684b140155ad892964e",
+    "bytes": 1676713,
+    "files": 121
   }
 }

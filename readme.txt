@@ -5,7 +5,7 @@ Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 8.2
 Requires Plugins: woocommerce
-Stable tag: 1.0.0-rc.1
+Stable tag: 1.0.0-rc.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,5 +37,8 @@ Completed by default. Earlier qualifying statuses are configurable, with financi
 A configurable HTTPS JSON gateway and adapter filter are included. You supply a provider and credentials; SMS is disabled until configured.
 
 == Changelog ==
+= 1.0.0-rc.2 =
+Theme-aligned account design refresh with compact white cards, responsive panels and Bengali labels.
+
 = 1.0.0-rc.1 =
 Initial release candidate; see CHANGELOG.md and docs/TEST-RESULTS.md.

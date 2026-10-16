@@ -133,9 +133,28 @@ final class Frontend {
 	public static function table( array $rows ): string {
 		if ( ! $rows ) {
 			return '<p class="ghr-empty">' . esc_html__( 'এখনো কোনো তথ্য নেই।', 'ghoroa-hat-rewards' ) . '</p>'; }
-		$html = '<div class="ghr-table"><table><thead><tr>';
+		$labels = array(
+			'created_at'      => 'তারিখ',
+			'expires_at'      => 'মেয়াদ',
+			'amount'          => 'পরিমাণ',
+			'kind'            => 'ধরন',
+			'status'          => 'অবস্থা',
+			'wallet'          => 'ওয়ালেট',
+			'source_type'     => 'উৎস',
+			'source_ref'      => 'রেফারেন্স',
+			'order_id'        => 'অর্ডার',
+			'order_reference' => 'অর্ডার রেফারেন্স',
+			'member_id'       => 'সদস্য আইডি',
+			'score'           => 'স্কোর',
+			'qualified'       => 'যোগ্যতা',
+			'date'            => 'তারিখ',
+			'type'            => 'ধরন',
+			'eligible'        => 'যোগ্য কেনাকাটা',
+			'commission'      => 'কমিশন',
+		);
+		$html   = '<div class="ghr-table"><table><thead><tr>';
 		foreach ( array_keys( $rows[0] ) as $key ) {
-			$html .= '<th scope="col">' . esc_html( ucwords( str_replace( '_', ' ', $key ) ) ) . '</th>';
+			$html .= '<th scope="col">' . esc_html( $labels[ $key ] ?? ucwords( str_replace( '_', ' ', $key ) ) ) . '</th>';
 		} $html .= '</tr></thead><tbody>';
 		foreach ( $rows as $row ) {
 			$html .= '<tr>';
@@ -168,49 +187,99 @@ final class Frontend {
 				foreach ( $stats['activity'] as &$row ) {
 					$row[ $amount_key ] = self::amount( (int) $row[ $amount_key ], 'referral' );
 				} unset( $row ); }
-			return self::wrap( '<h2>আমার রেফারেল</h2>' . self::link( $m ) . self::table( array( array_merge( $stats['visits'], $stats['summary'] ) ) ) . self::wallet( $user, 'referral', $page ) . '<h3>রেফারেল কার্যক্রম</h3>' . self::table( $stats['activity'] ) ); }
+			return self::wrap( self::heading( 'আমার রেফারেল', 'আপনার আমন্ত্রণ, যোগ্য কেনাকাটা ও কমিশনের সারসংক্ষেপ।' ) . self::link( $m ) . self::table( array( array_merge( $stats['visits'], $stats['summary'] ) ) ) . self::wallet( $user, 'referral', $page ) . '<h3>রেফারেল কার্যক্রম</h3>' . self::table( $stats['activity'] ) ); }
 		if ( 'rewards' === $key ) {
-			return self::wrap( self::rewards( $user, $page ) ); }
+			return self::wrap( self::rewards( $user, $page, true ) ); }
 		if ( 'notifications' === $key ) {
-			return self::wrap( self::notifications( $user, $page ) . self::preferences_form( $user ) ); }
-		$html  = self::member_card( $user, $m );
-		$html .= '<div class="ghr-grid">';
+			return self::wrap( self::notifications( $user, $page, true ) . self::preferences_form( $user ) ); }
+		$html  = self::heading( 'সদস্যপদের সারসংক্ষেপ', 'আপনার সদস্যপদ, অর্জিত সুবিধা ও সাম্প্রতিক কার্যক্রম এক জায়গায়।' ) . self::member_card( $user, $m );
+		$html .= '<div class="ghr-grid ghr-wallet-cards">';
 		foreach ( Wallet::summary( $user ) as $wallet => $a ) {
-			$html .= '<a class="ghr-card" href="' . esc_url( self::url( 'referral' === $wallet ? 'referrals' : $wallet ) ) . '"><span>' . esc_html( $wallet ) . '</span><strong>' . esc_html( self::amount( $a['available'], $wallet ) ) . '</strong></a>';
+			$label = array(
+				'trust'    => 'ট্রাস্ট ওয়ালেট',
+				'referral' => 'রেফারেল ওয়ালেট',
+				'seeds'    => 'বিশ্বাস বীজ',
+			)[ $wallet ];
+			$html .= '<a class="ghr-card ghr-wallet-card" href="' . esc_url( self::url( 'referral' === $wallet ? 'referrals' : $wallet ) ) . '"><span class="ghr-icon-tile">' . self::icon( 'trust' === $wallet ? 'wallet' : $wallet ) . '</span><strong>' . esc_html( self::amount( $a['available'], $wallet ) ) . '</strong><span class="ghr-card-label">' . esc_html( $label ) . '</span><span class="ghr-card-arrow">' . self::icon( 'arrow' ) . '</span></a>';
 		} $html .= '</div>';
 		global $wpdb;
 		$stats                               = $wpdb->get_row( $wpdb->prepare( 'SELECT COUNT(*) successful_orders,COALESCE(SUM(eligible),0) lifetime_eligible_purchase FROM ' . ( $wpdb->prefix . 'ghr_order_effects' ) . " WHERE user_id=%d AND effect_key='personal' AND eligible>0", $user ), ARRAY_A );
 		$stats['lifetime_eligible_purchase'] = self::amount( (int) $stats['lifetime_eligible_purchase'], 'trust' );
-		$html                               .= self::table( array( $stats ) );
+		$html                               .= self::metrics(
+			array(
+				'সফল অর্ডার'         => self::number( (int) $stats['successful_orders'] ),
+				'মোট যোগ্য কেনাকাটা' => $stats['lifetime_eligible_purchase'],
+			)
+		);
 		[ $from, $to ]                       = Leaderboard::bounds( wp_date( 'Y-m' ) );
 		$monthly                             = $wpdb->get_row( $wpdb->prepare( 'SELECT COALESCE(SUM(eligible),0) monthly_purchase,COALESCE(SUM(posted),0) monthly_seeds FROM ' . ( $wpdb->prefix . 'ghr_order_effects' ) . " WHERE user_id=%d AND effect_key='personal' AND created_at>=%s AND created_at<%s", $user, $from, $to ), ARRAY_A );
 		$monthly['monthly_purchase']         = self::amount( (int) $monthly['monthly_purchase'], 'trust' );
 		$monthly['monthly_seeds']            = self::number( (int) $monthly['monthly_seeds'] );
 		$monthly['unopened_magic_boxes']     = self::number( (int) $wpdb->get_var( $wpdb->prepare( 'SELECT COUNT(*) FROM ' . ( $wpdb->prefix . 'ghr_reward_assignments' ) . " WHERE user_id=%d AND state='unopened' AND (expires_at IS NULL OR expires_at>%s)", $user, DB::now() ) ) );
-		$html                               .= self::table( array( $monthly ) );
-		$html                               .= self::link( $m );
+		$html                               .= '<section class="ghr-panel"><h3>এই মাসে আপনার অর্জন</h3>' . self::metrics(
+			array(
+				'যোগ্য কেনাকাটা'       => $monthly['monthly_purchase'],
+				'অর্জিত বিশ্বাস বীজ'   => $monthly['monthly_seeds'],
+				'না খোলা ম্যাজিক বক্স' => $monthly['unopened_magic_boxes'],
+			)
+		) . '</section>';
+		$html                               .= '<div class="ghr-two-column">' . self::link( $m ) . '<section class="ghr-panel ghr-identity-panel"><h3>অ্যাকাউন্ট যাচাই</h3><p class="ghr-muted">সুবিধা ব্যবহার করতে আপনার যোগাযোগের তথ্য যাচাই রাখুন।</p>';
 		if ( ! $m['email_verified_at'] ) {
 			$html .= '<button type="button" data-ghr-action="verification/request" data-purpose="email">ইমেইল যাচাই কোড পাঠান</button><form data-ghr-form="verification/confirm"><input type="hidden" name="purpose" value="email"><label>ইমেইল যাচাই কোড<input name="token" required autocomplete="one-time-code"></label><button>যাচাই করুন</button></form>'; }
 		$html .= '<details><summary>মোবাইল যাচাই</summary><form data-ghr-form="verification/request"><input type="hidden" name="purpose" value="phone"><label>মোবাইল<input name="target" type="tel" required placeholder="01XXXXXXXXX"></label><button>কোড পাঠান</button></form><form data-ghr-form="verification/confirm"><input type="hidden" name="purpose" value="phone"><label>যাচাই কোড<input name="token" required inputmode="numeric" autocomplete="one-time-code"></label><button>যাচাই করুন</button></form></details>';
-		$html .= '<h3>এই মাসের প্রতিযোগিতা</h3>' . self::leaderboard(
+		$html .= '</section></div><section class="ghr-panel">' . self::leaderboard(
 			array(
 				'category' => 'regular',
 				'number'   => 5,
 			)
-		) . self::rewards( $user, 1 ) . self::notifications( $user, 1 );
+		) . '</section><div class="ghr-two-column"><section class="ghr-panel">' . self::rewards( $user, 1 ) . '</section><section class="ghr-panel">' . self::notifications( $user, 1 ) . '</section></div>';
 		return self::wrap( $html );
 	}
+	private static function icon( string $name ): string {
+		$paths = array(
+			'wallet'   => '<path d="M4 6h15a1 1 0 0 1 1 1v12H4a2 2 0 0 1-2-2V6a3 3 0 0 1 3-3h12v3M20 10h-6v5h6M16 12.5h1"/>',
+			'referral' => '<circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m1-17a3 3 0 0 1 0 6m2 5a5 5 0 0 1 3 5"/>',
+			'seeds'    => '<path d="M12 21v-8M12 15C3 15 3 8 3 5c8 0 9 6 9 10Zm0-4c0-6 4-8 9-8 0 7-2 10-9 10"/>',
+			'arrow'    => '<path d="M5 12h14m-5-5 5 5-5 5"/>',
+			'gift'     => '<path d="M3 9h18v4H3zm2 4v8h14v-8M12 9v12"/><path d="M12 9H8a3 3 0 1 1 3-3l1 3Zm0 0h4a3 3 0 1 0-3-3l-1 3Z"/>',
+		);
+		return '<svg class="ghr-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' . ( $paths[ $name ] ?? $paths['wallet'] ) . '</svg>';
+	}
+	private static function heading( string $title, string $description ): string {
+		return '<header class="ghr-page-heading"><h2>' . esc_html( $title ) . '</h2><p>' . esc_html( $description ) . '</p></header>';
+	}
+	private static function metrics( array $values ): string {
+		$html = '<dl class="ghr-metrics">';
+		foreach ( $values as $label => $value ) {
+			$html .= '<div><dt>' . esc_html( $label ) . '</dt><dd>' . esc_html( (string) $value ) . '</dd></div>';
+		}
+		return $html . '</dl>';
+	}
 	private static function member_card( int $user, array $m ): string {
-		return '<article class="ghr-member"><span>ঘরোয়া হাট · GHOROA HAT</span><h2>' . esc_html( get_userdata( $user )->display_name ) . '</h2><strong>' . esc_html( $m['member_id'] ) . '</strong><p>' . esc_html( $m['status'] ) . '</p><p>' . esc_html( get_userdata( $user )->user_email ) . ' · ' . ( $m['email_verified_at'] ? 'যাচাইকৃত' : 'যাচাই হয়নি' ) . '</p><p>' . esc_html( $m['verified_phone'] ? $m['verified_phone'] : $m['phone'] ) . '</p><p>নিবন্ধন: ' . esc_html( $m['registered_at'] ) . ' · সক্রিয়: ' . esc_html( $m['activated_at'] ? $m['activated_at'] : 'অপেক্ষমাণ' ) . '</p></article>'; }
+		$profile = get_userdata( $user );
+		$status  = array(
+			'pending'   => 'অপেক্ষমাণ',
+			'active'    => 'সক্রিয়',
+			'suspended' => 'স্থগিত',
+			'closed'    => 'বন্ধ',
+		);
+		$initial = mb_substr( $profile->display_name, 0, 1, 'UTF-8' );
+		$html    = '<article class="ghr-member"><div class="ghr-member-top"><span class="ghr-avatar" aria-hidden="true">' . esc_html( $initial ) . '</span><div><span class="ghr-eyebrow">ঘরোয়া হাট · সদস্যপদ</span><h3>' . esc_html( $profile->display_name ) . '</h3><span class="ghr-member-id">' . esc_html( $m['member_id'] ) . '</span></div><span class="ghr-badge ghr-badge-' . esc_attr( $m['status'] ) . '">' . esc_html( $status[ $m['status'] ] ?? $m['status'] ) . '</span></div><div class="ghr-member-contact"><span>' . esc_html( $profile->user_email ) . '</span><span class="ghr-verification">' . esc_html( $m['email_verified_at'] ? 'ইমেইল যাচাইকৃত' : 'ইমেইল যাচাই প্রয়োজন' ) . '</span>';
+		if ( $m['verified_phone'] || $m['phone'] ) {
+			$html .= '<span>' . esc_html( $m['verified_phone'] ? $m['verified_phone'] : $m['phone'] ) . '</span>';
+		}
+		$html .= '</div><div class="ghr-member-dates"><span>নিবন্ধন: ' . esc_html( get_date_from_gmt( $m['registered_at'], 'j M Y' ) ) . '</span><span>সক্রিয়: ' . esc_html( $m['activated_at'] ? get_date_from_gmt( $m['activated_at'], 'j M Y' ) : 'যোগ্য কেনাকাটার অপেক্ষায়' ) . '</span></div></article>';
+		return $html;
+	}
 	private static function wallet( int $user, string $wallet, int $page ): string {
 		$a    = Wallet::summary( $user )[ $wallet ];
-		$html = '<h2>' . esc_html(
+		$html = '<header class="ghr-page-heading"><h2>' . esc_html(
 			array(
 				'trust'    => 'ট্রাস্ট ওয়ালেট',
 				'referral' => 'রেফারেল ওয়ালেট',
 				'seeds'    => 'বিশ্বাস বীজ',
 			)[ $wallet ]
-		) . '</h2><div class="ghr-grid">';
+		) . '</h2><p>ব্যালেন্স, অর্জন ও লেনদেনের বিস্তারিত।</p></header><div class="ghr-grid">';
 		foreach ( array(
 			'available' => 'ব্যবহারযোগ্য',
 			'pending'   => 'অপেক্ষমাণ',
@@ -261,12 +330,12 @@ final class Frontend {
 		return '<label>' . esc_html( self::number( $seeds ) . ' / ' . self::number( $min ) ) . '<progress max="' . esc_attr( $min ) . '" value="' . esc_attr( min( $min, $seeds ) ) . '"></progress></label>'; }
 	private static function link( array $m ): string {
 		$url = Referral::url( $m );
-		return '<div class="ghr-card"><label>আপনার রেফারেল লিংক<input readonly value="' . esc_attr( $url ) . '"></label><p>' . esc_html( $m['referral_code'] ) . '</p><button type="button" data-ghr-copy="' . esc_attr( $url ) . '">লিংক কপি করুন</button> <a rel="noopener noreferrer" target="_blank" href="' . esc_url( 'https://wa.me/?text=' . rawurlencode( $url ) ) . '">WhatsApp</a> <a rel="noopener noreferrer" target="_blank" href="' . esc_url( 'https://www.facebook.com/sharer/sharer.php?u=' . rawurlencode( $url ) ) . '">Facebook</a></div>'; }
-	private static function rewards( int $user, int $page ): string {
+		return '<div class="ghr-card ghr-referral-card"><span class="ghr-icon-tile">' . self::icon( 'referral' ) . '</span><h3>বন্ধুকে আমন্ত্রণ জানান</h3><p class="ghr-muted">আপনার লিংক শেয়ার করুন, যোগ্য কেনাকাটায় কমিশন অর্জন করুন।</p><label>আপনার রেফারেল লিংক<input readonly value="' . esc_attr( $url ) . '"></label><p class="ghr-muted">কোড: <code>' . esc_html( $m['referral_code'] ) . '</code></p><div class="ghr-actions"><button type="button" data-ghr-copy="' . esc_attr( $url ) . '">লিংক কপি করুন</button> <a rel="noopener noreferrer" target="_blank" href="' . esc_url( 'https://wa.me/?text=' . rawurlencode( $url ) ) . '">WhatsApp</a> <a rel="noopener noreferrer" target="_blank" href="' . esc_url( 'https://www.facebook.com/sharer/sharer.php?u=' . rawurlencode( $url ) ) . '">Facebook</a></div></div>'; }
+	private static function rewards( int $user, int $page, bool $standalone = false ): string {
 		$rows = Rewards::list( $user, $page );
-		$html = '<h3>আমার পুরস্কার ও ম্যাজিক বক্স</h3><div class="ghr-grid">';
+		$html = ( $standalone ? '<h2>পুরস্কার ও ম্যাজিক বক্স</h2>' : '<h3>পুরস্কার ও ম্যাজিক বক্স</h3>' ) . '<p class="ghr-muted">আপনার অর্জিত পুরস্কার ও দাবি করার অবস্থা।</p><div class="ghr-grid">';
 		foreach ( $rows as $r ) {
-			$html .= '<article class="ghr-card ghr-box"><h4>' . esc_html( $r['reward_name'] ?? '🎁 ম্যাজিক বক্স' ) . '</h4><p>' . esc_html( $r['state'] . ' · ' . $r['delivery_status'] ) . '</p>';
+			$html .= '<article class="ghr-card ghr-box">' . ( $standalone ? '<h3>' : '<h4>' ) . esc_html( $r['reward_name'] ?? '🎁 ম্যাজিক বক্স' ) . ( $standalone ? '</h3>' : '</h4>' ) . '<p>' . esc_html( $r['state'] . ' · ' . $r['delivery_status'] ) . '</p>';
 			if ( $r['expires_at'] ) {
 				$html .= '<p>' . esc_html( $r['expires_at'] ) . '</p>';
 			} if ( ! empty( $r['coupon'] ) ) {
@@ -275,13 +344,13 @@ final class Frontend {
 				$action = 'unopened' === $r['state'] ? 'open' : 'claim';
 				$html  .= '<button type="button" data-ghr-action="rewards/' . esc_attr( $r['id'] . '/' . $action ) . '">' . ( 'open' === $action ? 'বক্স খুলুন' : 'পুরস্কার দাবি করুন' ) . '</button>';
 			} $html .= '</article>'; }
-		return $html . ( $rows ? '' : '<p>এখনো কোনো পুরস্কার নেই। মাসিক নিয়ম অনুযায়ী যোগ্য হোন।</p>' ) . '</div>' . self::pagination( $page, count( $rows ) );
+		return $html . ( $rows ? '' : '<div class="ghr-empty">' . self::icon( 'gift' ) . '<strong>আপনার পুরস্কার এখানে দেখা যাবে</strong><span>যোগ্য কেনাকাটা করুন ও মাসিক প্রতিযোগিতায় অংশ নিন।</span></div>' ) . '</div>' . self::pagination( $page, count( $rows ) );
 	}
-	private static function notifications( int $user, int $page ): string {
+	private static function notifications( int $user, int $page, bool $standalone = false ): string {
 		$rows = Notifications::list( $user, $page );
-		$html = '<h3>বিজ্ঞপ্তি</h3><button type="button" data-ghr-action="notifications/read-all">সব পড়া হয়েছে</button>';
+		$html = ( $standalone ? '<h2>বিজ্ঞপ্তি</h2>' : '<h3>বিজ্ঞপ্তি</h3>' ) . '<button type="button" data-ghr-action="notifications/read-all">সব পড়া হয়েছে</button>';
 		foreach ( $rows as $r ) {
-			$html .= '<article class="ghr-notice' . ( $r['read_at'] ? '' : ' ghr-unread' ) . '"><h4>' . esc_html( $r['title'] ) . '</h4><p>' . esc_html( $r['message'] ) . '</p><time>' . esc_html( wp_date( 'j M Y H:i', strtotime( $r['created_at'] . ' UTC' ) ) ) . '</time> ';
+			$html .= '<article class="ghr-notice' . ( $r['read_at'] ? '' : ' ghr-unread' ) . '">' . ( $standalone ? '<h3>' : '<h4>' ) . esc_html( $r['title'] ) . ( $standalone ? '</h3>' : '</h4>' ) . '<p>' . esc_html( $r['message'] ) . '</p><time>' . esc_html( wp_date( 'j M Y H:i', strtotime( $r['created_at'] . ' UTC' ) ) ) . '</time> ';
 			if ( ! $r['read_at'] ) {
 				$html .= '<button type="button" data-ghr-action="notifications/' . esc_attr( $r['id'] ) . '/read">পড়া হয়েছে</button>';
 			} $html .= '</article>';
@@ -289,16 +358,28 @@ final class Frontend {
 	private static function preferences_form( int $user ): string {
 		$html = '<form data-ghr-form="me/preferences"><h3>গোপনীয়তা ও বিজ্ঞপ্তি পছন্দ</h3>';
 		foreach ( Notifications::preferences( $user ) as $k => $v ) {
-			$html .= '<label><input type="checkbox" name="' . esc_attr( $k ) . '" value="1"' . checked( $v, true, false ) . '> ' . esc_html( $k ) . '</label>';
+			$html .= '<label><input type="checkbox" name="' . esc_attr( $k ) . '" value="1"' . checked( $v, true, false ) . '> ' . esc_html(
+				array(
+					'email'            => 'ইমেইলে বিজ্ঞপ্তি',
+					'sms'              => 'মোবাইলে এসএমএস',
+					'public_consent'   => 'বিজয়ী হিসেবে আমার পরিচয় প্রকাশে সম্মতি',
+					'tracking_consent' => 'রেফারেল ট্র্যাকিংয়ে সম্মতি',
+				)[ $k ] ?? $k
+			) . '</label>';
 		} return $html . '<button>সংরক্ষণ করুন</button></form>'; }
 	private static function leaderboard( array $a ): string {
-		$month    = isset( $a['month'] ) && strlen( (string) $a['month'] ) === 7 ? $a['month'] : ( ! empty( $a['year'] ) ? sprintf( '%04d-%02d', absint( $a['year'] ), absint( $a['month'] ?? wp_date( 'm' ) ) ) : wp_date( 'Y-m' ) );
-		$month    = isset( $_GET['ghr_month'] ) ? Leaderboard::month( sanitize_text_field( wp_unslash( $_GET['ghr_month'] ) ) ) : $month;
-		$category = sanitize_key( $a['category'] ?? 'regular' );
-		$rows     = Leaderboard::live( $month, $category, absint( $a['number'] ?? 20 ) );
-		$html     = '<h2>' . esc_html( $month . ' · ' . $category ) . '</h2><nav>';
+		$month      = isset( $a['month'] ) && strlen( (string) $a['month'] ) === 7 ? $a['month'] : ( ! empty( $a['year'] ) ? sprintf( '%04d-%02d', absint( $a['year'] ), absint( $a['month'] ?? wp_date( 'm' ) ) ) : wp_date( 'Y-m' ) );
+		$month      = isset( $_GET['ghr_month'] ) ? Leaderboard::month( sanitize_text_field( wp_unslash( $_GET['ghr_month'] ) ) ) : $month;
+		$category   = sanitize_key( $a['category'] ?? 'regular' );
+		$rows       = Leaderboard::live( $month, $category, absint( $a['number'] ?? 20 ) );
+		$categories = array(
+			'regular'   => 'নিয়মিত ক্রেতা',
+			'referrals' => 'সফল রেফারার',
+			'seeds'     => 'বিশ্বাস বীজ অর্জনকারী',
+		);
+		$html       = '<h3>মাসিক লিডারবোর্ড</h3><p class="ghr-muted">' . esc_html( $month . ' · ' . ( $categories[ $category ] ?? $category ) ) . '</p><nav aria-label="প্রতিযোগিতার বিভাগ">';
 		foreach ( array( 'regular', 'referrals', 'seeds' ) as $c ) {
-			$html .= '<a href="' . esc_url( add_query_arg( 'ghr_category', $c ) ) . '">' . esc_html( $c ) . '</a> ';
+			$html .= '<a href="' . esc_url( add_query_arg( 'ghr_category', $c ) ) . '"' . ( $c === $category ? ' aria-current="true"' : '' ) . '>' . esc_html( $categories[ $c ] ) . '</a> ';
 		} $rules = Leaderboard::displayed_rules( $month );
 		$ranking = self::table( $rows );
 		if ( 'cards' === ( $a['layout'] ?? 'table' ) ) {

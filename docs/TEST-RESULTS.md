@@ -1,3 +1,7 @@
+# Current release: 1.0.0-rc.2
+
+The account design refresh has separate validation recorded in [DESIGN-REFRESH.md](DESIGN-REFRESH.md). The results below are the full 1.0.0-rc.1 financial and compatibility baseline; financial services and schema are unchanged by rc.2.
+
 # Test results — 1.0.0-rc.1
 
 Executed 2026-10-16 in isolated local Docker test stores. These are observed test results, not production certification.

@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "endpoint": "gh-membership",
+      "axe_violations": 0,
+      "no_overflow_widths": [
+        320,
+        390,
+        768
+      ]
+    },
+    {
+      "endpoint": "gh-trust-wallet",
+      "axe_violations": 0,
+      "no_overflow_widths": [
+        320,
+        390,
+        768
+      ]
+    },
+    {
+      "endpoint": "gh-referrals",
+      "axe_violations": 0,
+      "no_overflow_widths": [
+        320,
+        390,
+        768
+      ]
+    },
+    {
+      "endpoint": "gh-trust-seeds",
+      "axe_violations": 0,
+      "no_overflow_widths": [
+        320,
+        390,
+        768
+      ]
+    },
+    {
+      "endpoint": "gh-rewards",
+      "axe_violations": 0,
+      "no_overflow_widths": [
+        320,
+        390,
+        768
+      ]
+    },
+    {
+      "endpoint": "gh-notifications",
+      "axe_violations": 0,
+      "no_overflow_widths": [
+        320,
+        390,
+        768
+      ]
+    }
+  ],
+  "errors": []
+}
