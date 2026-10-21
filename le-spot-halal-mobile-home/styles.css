@@ -1,0 +1,125 @@
+/* Static mobile-only homepage. Reference: Figma frame 2:1394, 390 × 6167. */
+@font-face{font-family:Parkinsans;src:url('assets/parkinsans.ttf') format('truetype');font-weight:300 900;font-style:normal;font-display:swap}body{margin:0;background:#fcfcfc}.mobile-home{width:100%;max-width:390px;margin:0 auto;font-family:Parkinsans,sans-serif;color:#2f0311}.mobile-home,.mobile-home *{box-sizing:border-box}.mobile-home *{border-width:0;border-style:solid;border-color:currentColor}.mobile-home :where(p,h1,h2,h3){margin:0;font:inherit}.mobile-home img{display:block;vertical-align:middle}.mobile-home [data-name="Action"],.mobile-home [data-name="Search action"],.mobile-home [data-name="Filter option"],.mobile-home [data-name="Tout voir"]{cursor:default}
+.mh1{background-color:#fcfcfc;align-content:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;padding:16px;position:relative;width:100%;height:100%}
+.mh2{background-color:#ffdb53;align-content:stretch;display:flex;flex-direction:column;align-items:flex-start;overflow:clip;padding:16px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mh3{align-content:stretch;display:flex;align-items:center;justify-content:space-between;position:relative;flex-shrink:0;width:100%}
+.mh4{position:relative;flex-shrink:0;width:44px;height:44px}
+.mh5{position:absolute;display:block;inset:0px;max-width:none;width:100%;height:100%}
+.mh6{height:42px;position:relative;flex-shrink:0;width:64px}
+.mh7{align-content:stretch;cursor:default;display:flex;align-items:center;justify-content:center;overflow:clip;position:relative;flex-shrink:0;width:44px;height:44px}
+.mh8{position:relative;flex-shrink:0;width:26px;height:26px}
+.mh9{align-content:stretch;display:flex;flex-direction:column;gap:40px;align-items:flex-start;position:relative;flex-shrink:0;width:100%}
+.mh10{align-content:stretch;display:flex;flex-direction:column;gap:16px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.mh11{background-color:#3117f5;align-content:stretch;display:flex;flex-direction:column;gap:22px;align-items:flex-start;overflow:clip;padding:24px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mh12{position:absolute;height:310px;left:108px;top:15px;width:350px}
+.mh13{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;min-width:100%;position:relative;flex-shrink:0;color:#fcfcfc;font-size:11px;width:min-content}
+.mh14{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.08;min-width:100%;position:relative;flex-shrink:0;color:#fcfcfc;font-size:40px;letter-spacing:-2px;width:min-content}
+.mh15{background-color:#b6ffbd;border-color:#2f0311;border-width:2px;border-style:solid;align-content:stretch;cursor:default;filter:drop-shadow(4px 4px 0px black);display:flex;gap:8px;align-items:center;justify-content:center;min-height:48px;padding-left:16px;padding-right:16px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0;width:100%}
+.mh16{position:relative;flex-shrink:0;width:24px;height:24px}
+.mh17{overflow-wrap:break-word;display:flex;flex:1 0 0;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:800;justify-content:center;line-height:0;min-width:1px;position:relative;color:#2f0311;font-size:15px;text-align:center;letter-spacing:-0.3px}
+.mh18{line-height:22px}
+.mh19{align-content:stretch;display:flex;flex-direction:column;height:236px;align-items:flex-start;overflow:clip;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mh20{position:absolute;inset:0px;max-width:none;object-fit:cover;pointer-events:none;border-radius:10px;width:100%;height:100%}
+.mh21{position:absolute;bottom:12px;align-content:stretch;display:flex;align-items:flex-start;left:12px;overflow:clip}
+.mh22{background-color:#fcfcfc;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;min-height:30px;overflow:clip;padding-left:9px;padding-right:9px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:999px;flex-shrink:0}
+.mh23{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:11px;white-space:nowrap}
+.mh24{align-content:stretch;display:flex;flex-direction:column;gap:20px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.mh25{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.08;position:relative;flex-shrink:0;color:#2f0311;font-size:34px;letter-spacing:-1.7px;width:100%}
+.mh26{background-color:#ff5a1b;align-content:flex-start;display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start;overflow:clip;padding:14px;position:relative;border-radius:24px;flex-shrink:0;width:100%}
+.mh27{background-color:#ff5a1b;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;min-height:44px;overflow:clip;padding-left:12px;padding-right:12px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0}
+.mh28{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;color:#fcfcfc;font-size:13px;white-space:nowrap}
+.mh29{background-color:#ffb5d2;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;min-height:44px;overflow:clip;padding-left:12px;padding-right:12px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0}
+.mh30{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:13px;white-space:nowrap}
+.mh31{background-color:#b6ffbd;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;min-height:44px;overflow:clip;padding-left:12px;padding-right:12px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0}
+.mh32{background-color:#ffdb53;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;min-height:44px;overflow:clip;padding-left:12px;padding-right:12px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0}
+.mh33{background-color:#fcfcfc;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;min-height:44px;overflow:clip;padding-left:12px;padding-right:12px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0}
+.mh34{align-content:stretch;display:flex;flex-direction:column;gap:16px;align-items:flex-start;position:relative;flex-shrink:0;width:100%}
+.mh35{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.08;position:relative;flex-shrink:0;color:#2f0311;font-size:23px;letter-spacing:-1.15px;width:100%}
+.mh36{align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:flex-start;position:relative;flex-shrink:0;width:100%}
+.mh37{background-color:#fcfcfc;border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;gap:12px;height:52px;align-items:center;overflow:clip;padding-left:16px;padding-right:16px;position:relative;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311;flex-shrink:0;width:100%}
+.mh38{position:relative;flex-shrink:0;width:20px;height:20px}
+.mh39{overflow-wrap:break-word;flex:1 0 0;font-family:Parkinsans,sans-serif;font-weight:400;line-height:normal;min-width:1px;position:relative;color:#9d9195;font-size:14px}
+.mh40{background-color:#ff5a1b;border-color:#2f0311;border-width:2px;border-style:solid;align-content:stretch;filter:drop-shadow(4px 4px 0px black);display:flex;gap:8px;align-items:center;justify-content:center;min-height:48px;padding-left:16px;padding-right:16px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0;width:100%}
+.mh41{overflow-wrap:break-word;display:flex;flex:1 0 0;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:800;justify-content:center;line-height:0;min-width:1px;position:relative;color:#fcfcfc;font-size:15px;text-align:center;letter-spacing:-0.3px}
+.mh42{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.5;position:relative;flex-shrink:0;color:#2f0311;font-size:15px;width:100%}
+.mh43{background-color:#fff0f6;align-content:flex-start;display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start;overflow:clip;padding:8px;position:relative;border-radius:24px;flex-shrink:0;width:100%}
+.mh44{background-color:#2f0311;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;min-height:44px;overflow:clip;padding-left:12px;padding-right:12px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0}
+.mh45{align-content:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;position:relative;flex-shrink:0;width:100%}
+.mh46{display:flex;height:66.731px;align-items:center;justify-content:center;position:relative;flex-shrink:0;width:141.272px}
+.mh47{rotate:-5deg;flex:none;transform:translate(0px,0px) rotate(0deg)}
+.mh48{background-color:#ffb5d2;height:55px;overflow:clip;position:relative;border-radius:10px;width:137px}
+.mh49{overflow-wrap:break-word;position:absolute;font-family:Parkinsans,sans-serif;font-weight:800;height:39px;line-height:normal;left:16px;color:#2f0311;font-size:28px;top:8px;letter-spacing:-1.4px;width:105px}
+.mh50{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.08;min-width:100%;position:relative;flex-shrink:0;color:#2f0311;font-size:36px;text-align:center;letter-spacing:-1.8px;width:min-content}
+.mh51{align-content:stretch;display:flex;align-items:flex-start;justify-content:flex-end;position:relative;flex-shrink:0;width:100%}
+.mh52{background-color:#fcfcfc;border-color:#2f0311;border-width:2px;border-style:solid;align-content:stretch;filter:drop-shadow(4px 4px 0px black);display:flex;gap:8px;height:48px;align-items:center;justify-content:center;padding-bottom:10.5px;padding-top:9.5px;padding-left:24px;padding-right:24px;position:relative;border-radius:999px;flex-shrink:0}
+.mh53{overflow-wrap:break-word;display:flex;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:700;justify-content:center;line-height:0;position:relative;flex-shrink:0;color:#2f0311;font-size:14px;text-align:center;letter-spacing:0.8px;white-space:nowrap}
+.mh54{line-height:20px}
+.mh55{display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0;width:20px;height:20px}
+.mh56{align-content:stretch;cursor:default;display:flex;flex-direction:column;gap:20px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.mh57{background-color:#fcfcfc;border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;flex-direction:column;align-items:flex-start;overflow:clip;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mh58{align-content:stretch;display:flex;height:216px;align-items:flex-start;min-height:216px;overflow:clip;padding:10px;position:relative;flex-shrink:0;width:100%}
+.mh59{position:absolute;inset:0px;max-width:none;object-fit:cover;pointer-events:none;width:100%;height:100%}
+.mh60{position:absolute;background-color:#fcfcfc;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;left:10px;overflow:clip;padding-left:8px;padding-right:8px;padding-top:4px;padding-bottom:4px;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311;top:10px}
+.mh61{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:11px;text-align:left;white-space:nowrap}
+.mh62{align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:flex-start;overflow:clip;padding:16px;position:relative;flex-shrink:0;width:100%}
+.mh63{align-content:stretch;display:flex;gap:8px;align-items:flex-start;position:relative;flex-shrink:0;width:100%}
+.mh64{overflow-wrap:break-word;flex:1 0 0;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.2;min-width:1px;position:relative;color:#2f0311;font-size:21px;text-align:left;letter-spacing:-0.63px}
+.mh65{background-color:#fcfcfc;border-color:#2f0311;border-width:1.5px;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;position:relative;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311;flex-shrink:0}
+.mh66{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:12px;text-align:left;white-space:nowrap}
+.mh67{align-content:flex-start;display:flex;flex-wrap:wrap;gap:6px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.mh68{background-color:#ffdb53;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:3px;padding-bottom:3px;position:relative;border-radius:3px;flex-shrink:0}
+.mh69{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:12px;text-align:left;white-space:nowrap}
+.mh70{background-color:#b6ffbd;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;min-height:30px;overflow:clip;padding-left:9px;padding-right:9px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:999px;flex-shrink:0}
+.mh71{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:11px;text-align:left;white-space:nowrap}
+.mh72{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.5;position:relative;flex-shrink:0;color:#2f0311;font-size:13px;text-align:left;width:100%}
+.mh73{align-content:flex-start;display:flex;flex-wrap:wrap;row-gap:6px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.mh74{background-color:#ff5a1b;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:3px;padding-bottom:3px;position:relative;border-radius:3px;flex-shrink:0}
+.mh75{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;color:#fcfcfc;font-size:12px;text-align:left;white-space:nowrap}
+.mh76{background-color:#b6ffbd;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:3px;padding-bottom:3px;position:relative;border-radius:3px;flex-shrink:0}
+.mh77{position:absolute;inset:0px;overflow:hidden;pointer-events:none}
+.mh78{position:absolute;height:100%;left:-15.7%;max-width:none;top:0px;width:131.41%}
+.mh79{background-color:#fcfcfc;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:3px;padding-bottom:3px;position:relative;border-radius:3px;flex-shrink:0}
+.mh80{align-content:stretch;display:flex;flex-direction:column;gap:40px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.mh81{background-color:#2f0311;align-content:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;overflow:clip;padding:24px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mh82{position:relative;flex-shrink:0;width:56px;height:56px}
+.mh83{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.08;min-width:100%;position:relative;flex-shrink:0;color:#fcfcfc;font-size:32px;letter-spacing:-1.6px;width:min-content}
+.mh84{background-color:#2f0311;border-color:#fcfcfc;border-width:2px;border-style:solid;align-content:stretch;filter:drop-shadow(4px 4px 0px black);display:flex;gap:8px;align-items:center;justify-content:center;min-height:48px;padding-left:16px;padding-right:16px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0;width:100%}
+.mh85{align-content:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.mh86{align-content:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.mh87{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:normal;min-width:100%;position:relative;flex-shrink:0;color:#2f0311;font-size:36px;text-align:center;letter-spacing:-1.8px;width:min-content}
+.mh88{height:91px;position:relative;flex-shrink:0;width:138px}
+.mh89{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.5;min-width:100%;position:relative;flex-shrink:0;color:#2f0311;font-size:15px;width:min-content}
+.mh90{background-color:#ff5a1b;align-content:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;overflow:clip;padding:20px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mh91{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:1.12;position:relative;flex-shrink:0;color:#fcfcfc;font-size:27px;letter-spacing:-1.35px;width:100%}
+.mh92{height:188px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mh93{background-color:#2f0311;align-content:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;overflow:clip;padding:20px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mh94{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:1.12;position:relative;flex-shrink:0;color:#ff5a1b;font-size:27px;letter-spacing:-1.35px;width:100%}
+.mh95{background-color:#ffdb53;align-content:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;overflow:clip;padding:20px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mh96{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:1.12;position:relative;flex-shrink:0;color:#2f0311;font-size:27px;letter-spacing:-1.35px;width:100%}
+.mh97{background-color:#3117f5;align-content:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;overflow:clip;padding:24px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mh98{align-content:stretch;display:flex;gap:12px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.mh99{display:flex;height:44.659px;align-items:center;justify-content:center;position:relative;flex-shrink:0;width:42.225px}
+.mh100{rotate:-10deg;flex:none;transform:translate(0px,0px) rotate(0deg)}
+.mh101{height:39px;position:relative;width:36px}
+.mh102{flex:none;rotate:10deg;transform:translate(0px,0px) rotate(0deg)}
+.mh103{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.08;position:relative;flex-shrink:0;color:#fcfcfc;font-size:34px;letter-spacing:-1.7px;width:100%}
+.mh104{background-color:#b6ffbd;border-color:#2f0311;border-width:2px;border-style:solid;align-content:stretch;filter:drop-shadow(4px 4px 0px black);display:flex;gap:8px;align-items:center;justify-content:center;min-height:48px;padding-left:16px;padding-right:16px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0;width:100%}
+.mh105{background-color:#2f0311;align-content:stretch;display:flex;flex-direction:column;gap:28px;align-items:flex-start;overflow:clip;padding:24px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mh106{height:78px;position:relative;flex-shrink:0;width:112px}
+.mh107{overflow-wrap:break-word;align-content:stretch;display:flex;gap:16px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;color:#fcfcfc;width:100%}
+.mh108{align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:10px;align-items:flex-start;min-width:1px;overflow:clip;position:relative}
+.mh109{font-family:Parkinsans,sans-serif;font-weight:400;line-height:normal;opacity:.5;position:relative;flex-shrink:0;font-size:11px;width:100%}
+.mh110{font-family:Parkinsans,sans-serif;font-weight:600;line-height:1.4;position:relative;flex-shrink:0;font-size:13px;width:100%}
+.mh111{overflow-wrap:break-word;align-content:stretch;display:flex;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:400;gap:8px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;color:#fcfcfc;width:100%}
+.mh112{line-height:normal;opacity:.5;position:relative;flex-shrink:0;font-size:11px;white-space:nowrap}
+.mh113{line-height:0;min-width:100%;position:relative;flex-shrink:0;font-size:14px;width:min-content}
+.mh114{line-height:1.5;margin-bottom:0}
+.mh115{line-height:1.5}
+.mh116{overflow-wrap:break-word;align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:flex-start;line-height:normal;overflow:clip;position:relative;flex-shrink:0;color:#fcfcfc;width:100%}
+.mh117{font-family:Parkinsans,sans-serif;font-weight:400;opacity:.5;position:relative;flex-shrink:0;font-size:11px;white-space:nowrap}
+.mh118{font-family:Parkinsans,sans-serif;font-weight:600;min-width:100%;position:relative;flex-shrink:0;font-size:14px;width:min-content}
+.mh119{overflow-wrap:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:0;min-width:100%;opacity:.5;position:relative;flex-shrink:0;color:#fcfcfc;font-size:12px;width:min-content}
+.mh120{line-height:1.6;margin-bottom:0}
+.mh121{line-height:1.6}
+/* Keep Figma's inside strokes from changing the mobile card geometry. */
+.mobile-home [data-name="Restaurant card"]{border-width:0;outline:2px solid #2f0311;outline-offset:-2px;min-height:340px}.mobile-home [data-node-id="2:1456"]{min-height:347px}.mobile-home [data-name="Cuisine"]{border-width:0;outline:1px solid #2f0311;outline-offset:-1px}.mobile-home [data-node-id="2:1556"],.mobile-home [data-node-id="2:1561"],.mobile-home [data-node-id="2:1566"],.mobile-home [data-node-id="2:1569"]{line-height:15px}.mobile-home [data-node-id="2:1557"],.mobile-home [data-node-id="2:1558"],.mobile-home [data-node-id="2:1559"],.mobile-home [data-node-id="2:1562"],.mobile-home [data-node-id="2:1563"],.mobile-home [data-node-id="2:1564"]{line-height:18px}.mobile-home [data-node-id="2:1572"] p{line-height:19px}.mobile-home footer{min-height:559px}
