@@ -1,0 +1,63 @@
+{
+  "reference": {
+    "width": 390,
+    "height": 2949
+  },
+  "sizes": [
+    {
+      "viewport": 320,
+      "pageWidth": 320,
+      "height": 2967,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": 375,
+      "pageWidth": 375,
+      "height": 2949,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": 390,
+      "pageWidth": 390,
+      "height": 2949,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": 430,
+      "pageWidth": 390,
+      "height": 2949,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": 768,
+      "pageWidth": 390,
+      "height": 2949,
+      "horizontalOverflow": false
+    }
+  ],
+  "checks": {
+    "scripts": 0,
+    "interactiveElements": 0,
+    "cards": 5,
+    "fontLoaded": true,
+    "sections": [
+      {
+        "name": "Navigation",
+        "top": 16,
+        "height": 76
+      },
+      {
+        "name": "Nearby restaurants",
+        "top": 124,
+        "height": 2218
+      },
+      {
+        "name": "Footer",
+        "top": 2374.0625,
+        "height": 559
+      }
+    ],
+    "localAssets": true
+  },
+  "errors": []
+}

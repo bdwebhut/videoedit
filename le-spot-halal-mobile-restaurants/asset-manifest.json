@@ -1,0 +1,18 @@
+{
+  "baseUrl": "https://www.figma.com/api/mcp/asset/70ed893a-2225-4014-96a4-e95cb797c962",
+  "assets": {
+    "imgRestaurantPhoto": "0e26d.png",
+    "imgRestaurantPhoto1": "3a4b8.png",
+    "imgRestaurantPhoto2": "35d8f.png",
+    "imgRestaurantPhoto3": "c5c61.png",
+    "imgRestaurantPhoto4": "624d4.png",
+    "imgSearchAction": "7b8b8.svg",
+    "imgLeSpotHalal": "6d906.svg",
+    "imgRecherche": "01fd5.svg",
+    "imgChevronDown": "b202b.svg",
+    "imgLeSpotHalal1": "f615a.svg"
+  },
+  "fileKey": "mMPV21NfSMrHikvRVU0twE",
+  "nodeId": "1:380",
+  "retrievedOn": "2026-10-21"
+}

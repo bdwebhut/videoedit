@@ -1,0 +1,72 @@
+/* Static mobile restaurant listing. Figma frame 1:380, 390 × 2949. */
+@font-face{font-family:Parkinsans;src:url('assets/parkinsans.ttf') format('truetype');font-weight:300 900;font-style:normal;font-display:swap}body{margin:0;background:#fcfcfc}.mobile-restaurants{width:100%;max-width:390px;margin:0 auto;font-family:Parkinsans,sans-serif;color:#2f0311}.mobile-restaurants,.mobile-restaurants *{box-sizing:border-box}.mobile-restaurants *{border-width:0;border-style:solid;border-color:currentColor}.mobile-restaurants :where(p,h1,h2){margin:0;font:inherit}.mobile-restaurants img{display:block;vertical-align:middle}
+.ml1{background-color:#fcfcfc;align-content:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;padding:16px;position:relative;width:100%;height:100%}
+.ml2{background-color:#ffdb53;align-content:stretch;display:flex;flex-direction:column;align-items:flex-start;overflow:clip;padding:16px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.ml3{align-content:stretch;display:flex;align-items:center;justify-content:space-between;position:relative;flex-shrink:0;width:100%}
+.ml4{position:relative;flex-shrink:0;width:44px;height:44px}
+.ml5{position:absolute;display:block;inset:0px;max-width:none;width:100%;height:100%}
+.ml6{height:42px;position:relative;flex-shrink:0;width:64px}
+.ml7{align-content:stretch;display:flex;align-items:center;justify-content:center;overflow:clip;position:relative;flex-shrink:0;width:44px;height:44px}
+.ml8{position:relative;flex-shrink:0;width:26px;height:26px}
+.ml9{align-content:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.ml10{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.08;position:relative;flex-shrink:0;color:#2f0311;font-size:38px;letter-spacing:-1.9px;width:100%;white-space:pre-wrap}
+.ml11{background-color:#2f0311;height:2px;position:relative;flex-shrink:0;width:100%}
+.ml12{align-content:stretch;display:flex;flex-direction:column;gap:20px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.ml13{text-underline-position:from-font;word-break:break-word;text-decoration-thickness:from-font;text-decoration-style:solid;font-family:Parkinsans,sans-serif;font-weight:400;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:13px;text-decoration-line:underline;width:100%}
+.ml14{align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.ml15{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:600;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:14px;white-space:nowrap}
+.ml16{align-content:flex-start;display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.ml17{background-color:#ffdb53;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;min-height:44px;overflow:clip;padding-left:12px;padding-right:12px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0}
+.ml18{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:13px;white-space:nowrap}
+.ml19{background-color:#fcfcfc;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;min-height:44px;overflow:clip;padding-left:12px;padding-right:12px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0}
+.ml20{align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:flex-start;overflow:clip;padding-top:16px;position:relative;flex-shrink:0;width:100%}
+.ml21{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:14px;width:100%}
+.ml22{background-color:#fcfcfc;border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:space-between;min-height:44px;overflow:clip;padding-left:16px;padding-right:16px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0;width:100%}
+.ml23{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:0;position:relative;flex-shrink:0;color:#2f0311;font-size:13px;white-space:nowrap}
+.ml24{line-height:normal}
+.ml25{font-family:Parkinsans,sans-serif;font-weight:800;line-height:normal}
+.ml26{position:relative;flex-shrink:0;width:16px;height:16px}
+.ml27{background-color:#fcfcfc;border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;flex-direction:column;align-items:flex-start;overflow:clip;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.ml28{align-content:stretch;display:flex;height:216px;align-items:flex-start;min-height:216px;overflow:clip;padding:10px;position:relative;flex-shrink:0;width:100%}
+.ml29{position:absolute;inset:0px;max-width:none;object-fit:cover;pointer-events:none;width:100%;height:100%}
+.ml30{position:absolute;background-color:#fcfcfc;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;left:10px;overflow:clip;padding-left:8px;padding-right:8px;padding-top:4px;padding-bottom:4px;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311;top:10px}
+.ml31{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:11px;white-space:nowrap}
+.ml32{align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:flex-start;overflow:clip;padding:16px;position:relative;flex-shrink:0;width:100%}
+.ml33{align-content:stretch;display:flex;gap:8px;align-items:flex-start;position:relative;flex-shrink:0;width:100%}
+.ml34{word-break:break-word;flex:1 0 0;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.2;min-width:1px;position:relative;color:#2f0311;font-size:21px;letter-spacing:-0.63px}
+.ml35{background-color:#fcfcfc;border-color:#2f0311;border-width:1.5px;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;position:relative;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311;flex-shrink:0}
+.ml36{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:12px;white-space:nowrap}
+.ml37{align-content:flex-start;display:flex;flex-wrap:wrap;gap:6px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.ml38{background-color:#b6ffbd;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:3px;padding-bottom:3px;position:relative;border-radius:3px;flex-shrink:0}
+.ml39{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:12px;white-space:nowrap}
+.ml40{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:1.8;position:relative;flex-shrink:0;color:#2f0311;font-size:12px;white-space:nowrap}
+.ml41{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.5;position:relative;flex-shrink:0;color:#2f0311;font-size:13px;width:100%}
+.ml42{background-color:#ff5a1b;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:3px;padding-bottom:3px;position:relative;border-radius:3px;flex-shrink:0}
+.ml43{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;color:#fcfcfc;font-size:12px;white-space:nowrap}
+.ml44{position:absolute;inset:0px;overflow:hidden;pointer-events:none}
+.ml45{position:absolute;height:100%;left:-15.7%;max-width:none;top:0px;width:131.41%}
+.ml46{background-color:#fcfcfc;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:3px;padding-bottom:3px;position:relative;border-radius:3px;flex-shrink:0}
+.ml47{background-color:#ffdb53;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:3px;padding-bottom:3px;position:relative;border-radius:3px;flex-shrink:0}
+.ml48{background-color:#2f0311;align-content:stretch;display:flex;flex-direction:column;gap:28px;align-items:flex-start;overflow:clip;padding:24px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.ml49{height:78px;position:relative;flex-shrink:0;width:112px}
+.ml50{word-break:break-word;align-content:stretch;display:flex;gap:16px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;color:#fcfcfc;width:100%}
+.ml51{align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:10px;align-items:flex-start;min-width:1px;overflow:clip;position:relative}
+.ml52{font-family:Parkinsans,sans-serif;font-weight:400;line-height:normal;opacity:.5;position:relative;flex-shrink:0;font-size:11px;width:100%}
+.ml53{font-family:Parkinsans,sans-serif;font-weight:600;line-height:1.4;position:relative;flex-shrink:0;font-size:13px;width:100%}
+.ml54{word-break:break-word;align-content:stretch;display:flex;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:400;gap:8px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;color:#fcfcfc;width:100%}
+.ml55{line-height:normal;opacity:.5;position:relative;flex-shrink:0;font-size:11px;white-space:nowrap}
+.ml56{line-height:0;min-width:100%;position:relative;flex-shrink:0;font-size:14px;width:min-content}
+.ml57{line-height:1.5;margin-bottom:0}
+.ml58{line-height:1.5}
+.ml59{word-break:break-word;align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:flex-start;line-height:normal;overflow:clip;position:relative;flex-shrink:0;color:#fcfcfc;width:100%}
+.ml60{font-family:Parkinsans,sans-serif;font-weight:400;opacity:.5;position:relative;flex-shrink:0;font-size:11px;white-space:nowrap}
+.ml61{font-family:Parkinsans,sans-serif;font-weight:600;min-width:100%;position:relative;flex-shrink:0;font-size:14px;width:min-content}
+.ml62{background-color:#ff5a1b;border-color:#2f0311;border-width:2px;border-style:solid;align-content:stretch;filter:drop-shadow(4px 4px 0px black);display:flex;gap:8px;align-items:center;justify-content:center;min-height:48px;padding-left:16px;padding-right:16px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0;width:100%}
+.ml63{word-break:break-word;display:flex;flex:1 0 0;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:800;justify-content:center;line-height:0;min-width:1px;position:relative;color:#fcfcfc;font-size:15px;text-align:center;letter-spacing:-0.3px}
+.ml64{line-height:22px}
+.ml65{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:0;min-width:100%;opacity:.5;position:relative;flex-shrink:0;color:#fcfcfc;font-size:12px;width:min-content}
+.ml66{line-height:1.6;margin-bottom:0}
+.ml67{line-height:1.6}
+/* Inside strokes preserve Figma auto-layout geometry. */
+.mobile-restaurants [data-name="Restaurant card"]{border-width:0;outline:2px solid #2f0311;outline-offset:-2px;min-height:340px}.mobile-restaurants [data-name="Cuisine"]{border-width:0;outline:1px solid #2f0311;outline-offset:-1px}.mobile-restaurants [data-node-id="1:489"],.mobile-restaurants [data-node-id="1:494"],.mobile-restaurants [data-node-id="1:499"],.mobile-restaurants [data-node-id="1:502"]{line-height:15px}.mobile-restaurants [data-node-id="1:490"],.mobile-restaurants [data-node-id="1:491"],.mobile-restaurants [data-node-id="1:492"],.mobile-restaurants [data-node-id="1:495"],.mobile-restaurants [data-node-id="1:496"],.mobile-restaurants [data-node-id="1:497"]{line-height:18px}.mobile-restaurants [data-node-id="1:505"] p{line-height:19px}.mobile-restaurants footer{min-height:559px}
+.mobile-restaurants [data-node-id="1:392"]{line-height:18px}
