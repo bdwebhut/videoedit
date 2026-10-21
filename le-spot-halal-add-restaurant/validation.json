@@ -1,0 +1,60 @@
+{
+  "layout": {
+    "width": 1920,
+    "height": 10641,
+    "introHeight": 873,
+    "sections": [
+      {
+        "id": "part-1",
+        "top": 1111.15625,
+        "height": 2159,
+        "overflow": false
+      },
+      {
+        "id": "part-2",
+        "top": 3302.15625,
+        "height": 781,
+        "overflow": false
+      },
+      {
+        "id": "part-3",
+        "top": 4115.15625,
+        "height": 2448,
+        "overflow": false
+      },
+      {
+        "id": "part-4",
+        "top": 6595.15625,
+        "height": 1261,
+        "overflow": false
+      },
+      {
+        "id": "part-5",
+        "top": 7888.15625,
+        "height": 1301,
+        "overflow": false
+      },
+      {
+        "id": "part-6",
+        "top": 9221.15625,
+        "height": 788,
+        "overflow": false
+      }
+    ],
+    "footerTop": 10053.15625,
+    "controls": 98,
+    "font": true
+  },
+  "checks": {
+    "emptyRejected": true,
+    "closedDay": true,
+    "invalidFileRejected": true,
+    "validFileAccepted": true,
+    "draftRestored": true,
+    "fileNotStored": true,
+    "validSubmissionPrepared": true,
+    "noFalseSendingClaim": true,
+    "validForm": true
+  },
+  "errors": []
+}

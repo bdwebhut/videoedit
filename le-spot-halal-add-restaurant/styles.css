@@ -1,0 +1,148 @@
+@font-face{font-family:Parkinsans;src:url('assets/parkinsans.ttf') format('truetype');font-weight:300 900;font-style:normal;font-display:swap}*{box-sizing:border-box}body{margin:0;background:#fcfcfc;color:#2f0311;font-family:Parkinsans,sans-serif;font-size:16px}p,h1,h2{margin:0;font:inherit}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}button,a,input,select,textarea{touch-action:manipulation}img{display:block;vertical-align:middle}form,fieldset{margin:0;padding:0;border:0}button{background:none}input,button,select,textarea{box-sizing:border-box}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #ff5a1b;outline-offset:4px}.desktop-page{width:1920px;margin:0 auto;padding:31px}.navigation-slot{width:1858px;height:119px}.intro-slot{margin-top:44px;width:1858px}.form-stack{display:flex;flex-direction:column;gap:32px;width:1498px;margin:44px auto 0}.form-section{scroll-margin-top:32px}.footer-slot{margin-top:44px;width:1858px;height:557px}.form-status:empty{display:none}.form-status{width:1498px;margin:24px auto 0;border:2px solid #2f0311;border-radius:10px;padding:16px 24px;background:#fff1d4;font-size:20px}
+.f1{background-color:#ffdb53;overflow:clip;position:relative;border-radius:10px;width:100%;height:100%}
+.f2{position:absolute;align-content:stretch;display:flex;gap:28px;align-items:center;left:1367px;top:27px}
+.f3{position:relative;flex-shrink:0;width:41px;height:41px}
+.f4{position:absolute;display:block;inset:0px;max-width:none;width:100%;height:100%}
+.f5{height:39px;position:relative;flex-shrink:0;width:34px}
+.f6{position:relative;flex-shrink:0;width:32px;height:32px}
+.f7{background-color:#ff5a1b;border-color:#2f0311;border-width:2px;border-style:solid;align-content:stretch;filter:drop-shadow(4px 4px 0px #2f0311);display:flex;gap:8px;height:64px;align-items:center;justify-content:center;padding-bottom:12.5px;padding-top:11.5px;padding-left:32px;padding-right:32px;position:relative;border-radius:16777200px;flex-shrink:0}
+.f8{word-break:break-word;display:flex;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:800;justify-content:center;line-height:0;position:relative;flex-shrink:0;color:#fcfcfc;font-size:22px;text-align:center;letter-spacing:0.9px;white-space:nowrap}
+.f9{line-height:32px}
+.f10{position:absolute;display:flex;height:99.82px;align-items:center;justify-content:center;left:861.4px;top:10.59px;width:138.241px}
+.f11{flex:none;--rotation:-6.87deg;transform:translate(0px,0px) rotate(-6.87deg)}
+.f12{height:85px;position:relative;width:129px}
+.f13{position:absolute;align-content:stretch;display:flex;gap:36px;align-items:center;left:61px;overflow:clip;top:36px}
+.f14{align-content:stretch;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:4.5px;padding-top:3.5px;position:relative;flex-shrink:0}
+.f15{word-break:break-word;display:flex;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:800;justify-content:center;line-height:0;position:relative;flex-shrink:0;color:#2f0311;font-size:26.5px;text-align:center;letter-spacing:0.8px;white-space:nowrap}
+.f16{line-height:40px}
+.f17{align-content:stretch;display:flex;flex-direction:column;gap:40px;align-items:flex-start;position:relative;width:100%;height:100%}
+.f18{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:normal;position:relative;flex-shrink:0;color:#79636b;font-size:18px;white-space:pre}
+.f19{background-color:#2f0311;align-content:stretch;display:flex;gap:60px;align-items:flex-start;overflow:clip;padding:60px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.f20{align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:24px;align-items:flex-start;min-width:1px;overflow:clip;position:relative}
+.f21{background-color:#ffdb53;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:18px;padding-right:18px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0}
+.f22{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:18px;white-space:nowrap}
+.f23{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:0;min-width:100%;position:relative;flex-shrink:0;color:#fcfcfc;font-size:96px;letter-spacing:-4.8px;width:min-content}
+.f24{line-height:0.98;margin-bottom:0}
+.f25{line-height:0.98}
+.f26{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.5;position:relative;flex-shrink:0;color:#fcfcfc;font-size:24px;width:1030px}
+.f27{display:flex;height:414.16px;align-items:center;justify-content:center;position:relative;flex-shrink:0;width:483.604px}
+.f28{flex:none;rotate:2deg;transform:translate(0px,0px) rotate(0deg)}
+.f29{background-color:#ffb5d2;border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;overflow:clip;padding:32px;position:relative;border-radius:10px;width:470px}
+.f30{position:relative;flex-shrink:0;width:104px;height:104px}
+.f31{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:0;min-width:100%;position:relative;flex-shrink:0;color:#2f0311;font-size:42px;letter-spacing:-1.68px;width:min-content}
+.f32{line-height:1.1;margin-bottom:0}
+.f33{line-height:1.1}
+.f34{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.5;min-width:100%;position:relative;flex-shrink:0;color:#2f0311;font-size:20px;width:min-content}
+.f35{align-content:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;overflow:clip;padding-left:180px;padding-right:180px;position:relative;flex-shrink:0;width:100%}
+.f36{word-break:break-word;align-content:stretch;display:flex;align-items:center;justify-content:space-between;line-height:normal;overflow:clip;position:relative;flex-shrink:0;width:100%;white-space:nowrap}
+.f37{font-family:Parkinsans,sans-serif;font-weight:800;position:relative;flex-shrink:0;color:#2f0311;font-size:32px}
+.f38{font-family:Parkinsans,sans-serif;font-weight:400;position:relative;flex-shrink:0;color:#79636b;font-size:18px}
+.f39{word-break:break-word;align-content:stretch;display:flex;gap:12px;align-items:flex-start;line-height:normal;overflow:clip;position:relative;flex-shrink:0;color:#2f0311;width:100%;white-space:nowrap}
+.f40{background-color:#ffdb53;border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:10px;align-items:flex-start;min-width:1px;overflow:clip;padding:20px;position:relative;border-radius:10px}
+.f41{font-family:Parkinsans,sans-serif;font-weight:700;position:relative;flex-shrink:0;font-size:17px}
+.f42{font-family:Parkinsans,sans-serif;font-weight:800;position:relative;flex-shrink:0;font-size:21px}
+.f43{background-color:#fcfcfc;border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:10px;align-items:flex-start;min-width:1px;overflow:clip;padding:20px;position:relative;border-radius:10px}
+.f44{align-content:stretch;display:flex;gap:20px;align-items:center;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.f45{background-color:#b6ffbd;align-content:stretch;display:flex;gap:8px;align-items:center;overflow:clip;padding-left:16px;padding-right:16px;padding-top:8px;padding-bottom:8px;position:relative;border-radius:999px;flex-shrink:0}
+.f46{position:relative;flex-shrink:0;width:18px;height:18px}
+.f47{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:16px;white-space:nowrap}
+.f48{background-color:#ffb5d2;align-content:stretch;display:flex;gap:8px;align-items:center;overflow:clip;padding-left:16px;padding-right:16px;padding-top:8px;padding-bottom:8px;position:relative;border-radius:999px;flex-shrink:0}
+.f49{word-break:break-word;flex:1 0 0;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.5;min-width:1px;position:relative;color:#79636b;font-size:17px}
+.f50{background-color:#fcfcfc;border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;flex-direction:column;gap:28px;align-items:flex-start;overflow:clip;padding:40px;position:relative;border-radius:10px;width:100%;height:100%}
+.f51{background-color:#ffdb53;border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;overflow:clip;position:relative;border-radius:999px;flex-shrink:0;width:64px;height:64px}
+.f52{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:26px;white-space:nowrap}
+.f53{word-break:break-word;flex:1 0 0;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.15;min-width:1px;position:relative;color:#2f0311;font-size:44px;letter-spacing:-1.76px}
+.f54{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.5;position:relative;flex-shrink:0;color:#79636b;font-size:20px;width:100%}
+.f55{background-color:#d8c9ce;height:1px;position:relative;flex-shrink:0;width:100%}
+.f56{align-content:stretch;display:flex;gap:24px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.f57{align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:10px;align-items:flex-start;min-width:1px;overflow:clip;position:relative}
+.f58{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:20px;width:100%}
+.f59{background-color:#fcfcfc;border-color:#d8c9ce;border-width:1.5px;border-style:solid;align-content:stretch;display:flex;height:64px;align-items:center;justify-content:space-between;overflow:clip;padding:18px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.f60{word-break:break-word;flex:1 0 0;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.4;min-width:1px;position:relative;color:#79636b;font-size:19px}
+.f61{position:relative;flex-shrink:0;width:22px;height:22px}
+.f62{align-content:stretch;display:flex;flex-direction:column;gap:10px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.f63{background-color:#fcfcfc;border-color:#d8c9ce;border-width:1.5px;border-style:solid;align-content:stretch;display:flex;height:112px;align-items:flex-start;justify-content:space-between;overflow:clip;padding:18px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.f64{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.5;position:relative;flex-shrink:0;color:#79636b;font-size:17px;width:100%}
+.f65{align-content:stretch;display:flex;flex-direction:column;gap:14px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.f66{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:1.5;position:relative;flex-shrink:0;color:#2f0311;font-size:20px;width:100%}
+.f67{word-break:break-word;background-color:#ffdb53;align-content:stretch;display:flex;font-family:Parkinsans,sans-serif;font-weight:700;gap:24px;align-items:flex-start;line-height:normal;overflow:clip;padding-left:18px;padding-right:18px;padding-top:12px;padding-bottom:12px;position:relative;border-radius:10px;flex-shrink:0;color:#2f0311;font-size:18px;width:100%}
+.f68{position:relative;flex-shrink:0;width:170px}
+.f69{flex:1 0 0;min-width:1px;position:relative}
+.f70{position:relative;flex-shrink:0;width:116px}
+.f71{align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.f72{align-content:stretch;display:flex;gap:24px;align-items:center;overflow:clip;padding-left:18px;padding-right:18px;position:relative;flex-shrink:0;width:100%}
+.f73{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:600;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:19px;width:170px}
+.f74{border-color:#d8c9ce;border-width:1.5px;border-style:solid;align-content:stretch;display:flex;flex:1 0 0;height:52px;align-items:center;min-width:1px;overflow:clip;padding-left:16px;padding-right:16px;position:relative;border-radius:10px}
+.f75{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:normal;position:relative;flex-shrink:0;color:#79636b;font-size:18px;white-space:nowrap}
+.f76{align-content:stretch;display:flex;height:52px;align-items:center;overflow:clip;position:relative;flex-shrink:0;width:116px}
+.f77{border-color:#2f0311;border-width:1.5px;border-style:solid;position:relative;border-radius:4px;flex-shrink:0;width:22px;height:22px}
+.f78{align-content:flex-start;display:flex;flex-wrap:wrap;gap:12px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.f79{border-color:#2f0311;border-width:1.5px;border-style:solid;align-content:stretch;display:flex;gap:12px;align-items:center;overflow:clip;padding-left:20px;padding-right:20px;padding-top:14px;padding-bottom:14px;position:relative;border-radius:999px;flex-shrink:0}
+.f80{border-color:#2f0311;border-width:1.5px;border-style:solid;position:relative;border-radius:4px;flex-shrink:0;width:20px;height:20px}
+.f81{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:500;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:19px;white-space:nowrap}
+.f82{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:normal;min-width:100%;position:relative;flex-shrink:0;color:#2f0311;font-size:20px;width:min-content}
+.f83{align-content:stretch;display:flex;gap:84px;align-items:center;position:relative;flex-shrink:0}
+.f84{background-color:#fcfcfc;border-color:#d8c9ce;border-width:1.5px;border-style:solid;align-content:stretch;display:flex;height:64px;align-items:center;justify-content:space-between;overflow:clip;padding:18px;position:relative;border-radius:10px;flex-shrink:0;width:596px}
+.f85{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.5;min-width:100%;position:relative;flex-shrink:0;color:#79636b;font-size:17px;width:min-content}
+.f86{background-color:#ffb5d2;border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;overflow:clip;position:relative;border-radius:999px;flex-shrink:0;width:64px;height:64px}
+.f87{background-color:#faf2f4;align-content:stretch;display:flex;gap:16px;align-items:flex-start;overflow:clip;padding:22px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.f88{position:relative;flex-shrink:0;width:24px;height:24px}
+.f89{word-break:break-word;align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:4px;align-items:flex-start;line-height:1.5;min-width:1px;overflow:clip;position:relative;color:#2f0311;font-size:18px}
+.f90{font-family:Parkinsans,sans-serif;font-weight:700;position:relative;flex-shrink:0;width:100%}
+.f91{font-family:Parkinsans,sans-serif;font-weight:400;position:relative;flex-shrink:0;width:100%}
+.f92{position:relative;flex-shrink:0;width:20px;height:20px}
+.f93{align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.f94{border-color:#d8c9ce;border-bottom-width:1px;border-style:solid;align-content:stretch;display:flex;gap:24px;align-items:center;overflow:clip;padding-top:16px;padding-bottom:16px;position:relative;flex-shrink:0;width:100%}
+.f95{word-break:break-word;flex:1 0 0;font-family:Parkinsans,sans-serif;font-weight:600;line-height:normal;min-width:1px;position:relative;color:#2f0311;font-size:19px}
+.f96{align-content:stretch;display:flex;gap:16px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:530px}
+.f97{align-content:stretch;display:flex;flex:1 0 0;gap:12px;align-items:center;min-width:1px;overflow:clip;position:relative}
+.f98{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:18px;white-space:nowrap}
+.f99{align-content:stretch;display:flex;flex-direction:column;gap:18px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.f100{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.5;min-width:100%;position:relative;flex-shrink:0;color:#79636b;font-size:20px;width:min-content}
+.f101{background-color:#faf2f4;border-width:2px;border-color:#d8c9ce;border-style:dashed;align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:16px;align-items:flex-start;min-width:1px;overflow:clip;padding:24px;position:relative;border-radius:10px}
+.f102{align-content:stretch;display:flex;gap:12px;align-items:center;overflow:clip;position:relative;flex-shrink:0}
+.f103{position:relative;flex-shrink:0;width:26px;height:26px}
+.f104{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:22px;white-space:nowrap}
+.f105{background-color:#fcfcfc;border-color:#2f0311;border-width:2px;border-style:solid;align-content:stretch;filter:drop-shadow(4px 4px 0px black);display:flex;gap:8px;height:48px;align-items:center;justify-content:center;padding-bottom:10.5px;padding-top:9.5px;padding-left:24px;padding-right:24px;position:relative;border-radius:33554400px;flex-shrink:0}
+.f106{word-break:break-word;display:flex;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:400;justify-content:center;line-height:0;position:relative;flex-shrink:0;color:#2f0311;font-size:18px;text-align:center;letter-spacing:0.8px;white-space:nowrap}
+.f107{line-height:24px}
+.f108{display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0;width:20px;height:20px}
+.f109{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.5;min-width:100%;position:relative;flex-shrink:0;color:#79636b;font-size:16px;width:min-content}
+.f110{align-content:stretch;display:flex;gap:16px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.f111{border-width:2px;border-color:#2f0311;border-style:solid;position:relative;border-radius:5px;flex-shrink:0;width:24px;height:24px}
+.f112{word-break:break-word;flex:1 0 0;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.5;min-width:1px;position:relative;color:#2f0311;font-size:19px}
+.f113{word-break:break-word;align-content:stretch;display:flex;gap:24px;align-items:flex-start;line-height:1.5;overflow:clip;position:relative;flex-shrink:0;color:#2f0311;width:100%}
+.f114{background-color:#b6ffbd;align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:8px;align-items:flex-start;min-width:1px;overflow:clip;padding:24px;position:relative;border-radius:10px}
+.f115{font-family:Parkinsans,sans-serif;font-weight:700;position:relative;flex-shrink:0;font-size:20px;width:100%}
+.f116{font-family:Parkinsans,sans-serif;font-weight:400;position:relative;flex-shrink:0;font-size:18px;width:100%}
+.f117{background-color:#ffb5d2;align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:8px;align-items:flex-start;min-width:1px;overflow:clip;padding:24px;position:relative;border-radius:10px}
+.f118{word-break:break-word;flex:1 0 0;font-family:Parkinsans,sans-serif;font-weight:400;line-height:0;min-width:1px;position:relative;color:#2f0311;font-size:19px}
+.f119{line-height:1.5}
+.f120{text-decoration-skip-ink:none;text-underline-position:from-font;text-decoration-thickness:from-font;text-decoration-style:solid;font-family:Parkinsans,sans-serif;font-weight:700;line-height:1.5;color:#ff5a1b;text-decoration-line:underline}
+.f121{align-content:stretch;display:flex;gap:24px;align-items:center;position:relative;flex-shrink:0;width:100%}
+.f122{background-color:#fcfcfc;border-color:#2f0311;border-width:2px;border-style:solid;align-content:stretch;filter:drop-shadow(4px 4px 0px #2f0311);display:flex;gap:8px;height:64px;align-items:center;justify-content:center;padding-bottom:12.5px;padding-top:11.5px;padding-left:32px;padding-right:32px;position:relative;border-radius:16777200px;flex-shrink:0}
+.f123{word-break:break-word;display:flex;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:800;justify-content:center;line-height:0;position:relative;flex-shrink:0;color:#2f0311;font-size:22px;text-align:center;letter-spacing:0.9px;white-space:nowrap}
+.f124{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:0;position:relative;flex-shrink:0;color:#79636b;font-size:18px;width:100%}
+.f125{line-height:normal}
+.f126{text-decoration-skip-ink:none;text-underline-position:from-font;text-decoration-thickness:from-font;text-decoration-style:solid;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;color:#ff5a1b;text-decoration-line:underline}
+.f127{background-color:#2f0311;align-content:stretch;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;overflow:clip;padding:60px;position:relative;border-radius:10px;width:100%;height:100%}
+.f128{align-content:stretch;display:flex;gap:90px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.f129{height:165px;position:relative;flex-shrink:0;width:620px}
+.f130{word-break:break-word;align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:48px;align-items:flex-start;min-width:1px;overflow:clip;position:relative;color:#fcfcfc}
+.f131{font-family:Parkinsans,sans-serif;font-weight:300;line-height:normal;opacity:.5;position:relative;flex-shrink:0;font-size:20px;white-space:nowrap}
+.f132{font-family:Parkinsans,sans-serif;font-weight:600;line-height:1.4;min-width:100%;position:relative;flex-shrink:0;font-size:24px;width:min-content}
+.f133{font-family:Parkinsans,sans-serif;font-weight:600;line-height:0;min-width:100%;position:relative;flex-shrink:0;font-size:24px;width:min-content}
+.f134{line-height:1.4;margin-bottom:0}
+.f135{line-height:1.4}
+.f136{align-content:stretch;display:flex;align-items:center;justify-content:space-between;position:relative;flex-shrink:0;width:100%}
+.f137{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:300;line-height:0;opacity:.5;position:relative;flex-shrink:0;color:#fcfcfc;font-size:20px;white-space:nowrap}
+.f138{line-height:1.6;margin-bottom:0}
+.f139{line-height:1.6}
+/* Native controls keep the original Figma slots and labels. */
+.form-section{padding:38px!important}.input-shell{position:relative}.native-control{position:absolute;inset:0;width:100%;height:100%;border:0;background:transparent;padding:16.5px;outline-offset:-3px;font-family:Parkinsans,sans-serif;font-size:19px;line-height:1.4;min-width:0}.native-control::placeholder{color:#79636b;opacity:1}textarea.native-control{resize:none}select.native-control{appearance:none;padding-right:48px;color:#2f0311}select.native-control:has(option[value=""]:checked){color:#79636b}.input-shell>[data-name=chevron-down]{margin-left:auto;pointer-events:none}.native-choice,.native-checkbox{position:relative;cursor:pointer}.choice-input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer;z-index:2}.native-choice:has(input:checked){background:#ffedb4;border-radius:999px}.native-choice [data-name="Choix vide"],.native-checkbox [data-name="Case vide"]{position:relative}.native-choice:has(input:checked) [data-name="Choix vide"]::after{content:"";position:absolute;inset:5px;background:#2f0311;border-radius:50%;z-index:1}.native-choice:has(input[type=checkbox]:checked) [data-name="Case vide"]::after,.native-checkbox:has(input:checked) [data-name="Case vide"]::after{content:"✓";position:absolute;inset:-3px;display:grid;place-items:center;color:#2f0311;font:700 23px/1 Parkinsans,sans-serif}.native-choice:has(input:focus-visible),.native-checkbox:has(input:focus-visible){outline:3px solid #ff5a1b;outline-offset:3px}.native-control:disabled{opacity:.45;background:#f0ebed}.upload-zone{position:relative}.file-input{position:absolute;width:1px;height:1px;opacity:0;bottom:0;left:24px}.file-button{cursor:pointer}.upload-zone:has(.file-input:focus-visible) .file-button{outline:3px solid #ff5a1b;outline-offset:4px}.upload-status:empty{display:none}.upload-status{position:absolute;right:24px;bottom:6px;max-width:90%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px;color:#2f0311}.upload-zone.drag-active{background:#e7ffea;outline:3px solid #2f0311}.was-validated .input-shell:has(:invalid),.was-validated .upload-zone:has(:invalid){border-color:#bd1640!important}.was-validated .native-choice:has(:invalid){outline:1px solid #bd1640}.native-control:focus{outline:2px solid #ff5a1b;outline-offset:-3px}.was-validated .native-checkbox:has(:invalid){outline:1px solid #bd1640}button{border-style:solid}button[disabled]{opacity:.65;cursor:wait}dialog{max-width:700px;padding:32px;border:3px solid #2f0311;border-radius:12px;color:#2f0311;background:#fcfcfc}dialog::backdrop{background:#2f0311a8}dialog h2{font-size:30px;font-weight:800;margin-bottom:16px}dialog p{font-size:20px;line-height:1.5}dialog button{margin-top:24px;padding:12px 24px;background:#ff5a1b;color:white;border-radius:999px;font-weight:700}[data-name="Partie du formulaire"]:focus-visible{outline-offset:-4px}.form-status{overflow-wrap:anywhere}
+/* Figma strokes are inside auto-layout bounds; compensate CSS border space. */
+.f79.native-choice{padding:12.5px 18.5px}.upload-zone{padding:22px!important}[data-name="Pratique à déclarer"]{padding-top:15.5px!important;padding-bottom:15.5px!important}
+[data-name="Partie du formulaire"]{height:103px;padding:17.5px!important}[data-name="Pratique à déclarer"]{height:59px}[data-node-id="2:1963"]{height:30px}[data-node-id="2:1964"]{height:26px}
+.navigation-slot>.figma-part{height:119px!important}[data-node-id="2:1677"]{line-height:45px}
+.footer-slot>.figma-part{height:557px!important}
+[data-name="Visibilité des données"]{height:38px;padding-top:7.5px!important;padding-bottom:7.5px!important}
