@@ -1,9 +1,0 @@
-{
-    "synthetic_members": 10000,
-    "synthetic_order_effects": 10000,
-    "elapsed_seconds": 0.2473,
-    "php_memory_delta_bytes": 0,
-    "candidate_rows": 100,
-    "score_rows": 10000
-}
-PERFORMANCE PASS: 3 assertions (synthetic aggregates; rolled back)

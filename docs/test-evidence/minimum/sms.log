@@ -1,8 +1,0 @@
-PASS SMS credential encrypted at rest
-PASS Configured gateway endpoint
-PASS Credential supplied only to configured HTTPS request
-PASS Gateway idempotency header
-PASS Configurable JSON gateway payload
-PASS Gateway accepted response
-PASS Unsafe HTTP/private endpoint rejected
-SMS PASS: 7 assertions (HTTP mocked; no real messages sent)

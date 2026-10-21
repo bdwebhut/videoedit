@@ -1,8 +1,0 @@
-PASS native deactivate/reactivate preserves members, ledger entries, page mappings and permanent ID sequence
-Success: Migration complete. 0 actions processed.
-Found 1 scheduled task
-Started processing action 623
-Completed processing action 623 with hook: ghr_score_refresh
-1 batch executed.
-Success: 0 scheduled tasks completed.
-PASS native Action Scheduler CLI executes the queued monthly score job
