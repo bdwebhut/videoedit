@@ -1,0 +1,116 @@
+{
+  "reference": {
+    "width": 390,
+    "height": 3961
+  },
+  "sizes": [
+    {
+      "viewport": 320,
+      "pageWidth": 320,
+      "height": 4268,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": 375,
+      "pageWidth": 375,
+      "height": 4063,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": 390,
+      "pageWidth": 390,
+      "height": 3961,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": 430,
+      "pageWidth": 390,
+      "height": 3961,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": 768,
+      "pageWidth": 390,
+      "height": 3961,
+      "horizontalOverflow": false
+    }
+  ],
+  "checks": {
+    "scripts": 0,
+    "interactiveElements": 0,
+    "cards": 0,
+    "markers": 1,
+    "details": [
+      {
+        "id": "1:91",
+        "height": 45,
+        "top": 124
+      },
+      {
+        "id": "1:92",
+        "height": 738,
+        "top": 193
+      },
+      {
+        "id": "1:112",
+        "height": 371,
+        "top": 955
+      },
+      {
+        "id": "1:149",
+        "height": 260,
+        "top": 1350
+      },
+      {
+        "id": "1:156",
+        "height": 364,
+        "top": 1634
+      },
+      {
+        "id": "1:160",
+        "height": 574,
+        "top": 2022
+      },
+      {
+        "id": "1:187",
+        "height": 255,
+        "top": 2620
+      },
+      {
+        "id": "1:198",
+        "height": 455,
+        "top": 2899
+      }
+    ],
+    "map": {
+      "x": 16,
+      "y": 1350,
+      "width": 358,
+      "height": 260,
+      "top": 1350,
+      "right": 374,
+      "bottom": 1610,
+      "left": 16
+    },
+    "fontLoaded": true,
+    "sections": [
+      {
+        "name": "Navigation",
+        "top": 16,
+        "height": 76
+      },
+      {
+        "name": "Restaurant details",
+        "top": 124,
+        "height": 3230
+      },
+      {
+        "name": "Footer",
+        "top": 3386,
+        "height": 559
+      }
+    ],
+    "localAssets": true
+  },
+  "errors": []
+}

@@ -1,0 +1,105 @@
+/* Static mobile details — Figma 1:82, 390 × 3961. */
+@font-face{font-family:Parkinsans;src:url('assets/parkinsans.ttf') format('truetype');font-weight:300 900;font-display:swap}
+@font-face{font-family:Inter;src:url('assets/inter-latin.ttf') format('truetype');font-weight:100 900;font-display:swap}
+body{margin:0;background:#fcfcfc}.mobile-details{width:100%;max-width:390px;margin:0 auto;font-family:Parkinsans,sans-serif;color:#2f0311}.mobile-details,.mobile-details *{box-sizing:border-box}.mobile-details *{border-width:0;border-style:solid;border-color:currentColor}.mobile-details :where(p,h1,h2,h3){margin:0;font:inherit}.mobile-details img{display:block;vertical-align:middle}
+
+.md1{background-color:#fcfcfc;align-content:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;padding:16px;position:relative;width:100%;height:100%}
+.md2{background-color:#ffdb53;align-content:stretch;display:flex;flex-direction:column;align-items:flex-start;overflow:clip;padding:16px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.md3{align-content:stretch;display:flex;align-items:center;justify-content:space-between;position:relative;flex-shrink:0;width:100%}
+.md4{position:relative;flex-shrink:0;width:44px;height:44px}
+.md5{position:absolute;display:block;inset:0px;max-width:none;width:100%;height:100%}
+.md6{height:42px;position:relative;flex-shrink:0;width:64px}
+.md7{align-content:stretch;cursor:default;display:flex;align-items:center;justify-content:center;overflow:clip;position:relative;flex-shrink:0;width:44px;height:44px}
+.md8{position:relative;flex-shrink:0;width:26px;height:26px}
+.md9{align-content:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.md10{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.08;position:relative;flex-shrink:0;color:#2f0311;font-size:42px;letter-spacing:-2.1px;width:100%}
+.md11{background-color:#3117f5;align-content:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;overflow:clip;padding:16px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.md12{align-content:stretch;display:flex;flex-direction:column;height:246px;align-items:flex-start;overflow:clip;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.md13{position:absolute;inset:0px;max-width:none;object-fit:cover;pointer-events:none;border-radius:10px;width:100%;height:100%}
+.md14{position:absolute;align-content:stretch;display:flex;align-items:flex-start;left:12px;overflow:clip;top:12px}
+.md15{background-color:#fcfcfc;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;min-height:30px;overflow:clip;padding-left:9px;padding-right:9px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:999px;flex-shrink:0}
+.md16{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:11px;white-space:nowrap}
+.md17{align-content:stretch;display:flex;flex-direction:column;gap:16px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.md18{align-content:flex-start;display:flex;flex-wrap:wrap;row-gap:8px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.md19{background-color:#b6ffbd;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;min-height:30px;overflow:clip;padding-left:9px;padding-right:9px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:999px;flex-shrink:0}
+.md20{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.08;position:relative;flex-shrink:0;color:#fcfcfc;font-size:32px;letter-spacing:-1.6px;width:100%}
+.md21{word-break:break-word;font-family:Inter,Arial,sans-serif;font-weight:400;line-height:1.5;font-style:normal;position:relative;flex-shrink:0;color:#fcfcfc;font-size:15px;width:100%}
+.md22{align-content:stretch;display:flex;gap:16px;align-items:center;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.md23{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:normal;position:relative;flex-shrink:0;color:#fcfcfc;font-size:40px;white-space:nowrap}
+.md24{align-content:stretch;display:flex;flex-direction:column;gap:6px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0}
+.md25{word-break:break-word;font-family:Inter,Arial,sans-serif;font-weight:700;line-height:normal;font-style:normal;position:relative;flex-shrink:0;color:#fcfcfc;font-size:12px;white-space:nowrap}
+.md26{position:relative;flex-shrink:0;width:18px;height:18px}
+.md27{align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:flex-start;position:relative;flex-shrink:0;width:100%}
+.md28{background-color:#b6ffbd;border-color:#2f0311;border-width:2px;border-style:solid;align-content:stretch;cursor:default;filter:drop-shadow(4px 4px 0px black);display:flex;gap:8px;align-items:center;justify-content:center;min-height:48px;padding-left:16px;padding-right:16px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0;width:100%}
+.md29{position:relative;flex-shrink:0;width:24px;height:24px}
+.md30{word-break:break-word;display:flex;flex:1 0 0;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:800;justify-content:center;line-height:0;min-width:1px;position:relative;color:#2f0311;font-size:15px;text-align:center;letter-spacing:-0.3px}
+.md31{line-height:22px}
+.md32{background-color:#ff5a1b;border-color:#2f0311;border-width:2px;border-style:solid;align-content:stretch;filter:drop-shadow(4px 4px 0px black);display:flex;gap:8px;align-items:center;justify-content:center;min-height:48px;padding-left:16px;padding-right:16px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0;width:100%}
+.md33{word-break:break-word;display:flex;flex:1 0 0;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:800;justify-content:center;line-height:0;min-width:1px;position:relative;color:#fcfcfc;font-size:15px;text-align:center;letter-spacing:-0.3px}
+.md34{background-color:#fcfcfc;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;flex-direction:column;gap:20px;align-items:flex-start;overflow:clip;padding:20px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.md35{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.08;position:relative;flex-shrink:0;color:#2f0311;font-size:29px;letter-spacing:-1.45px;width:100%}
+.md36{align-content:stretch;display:flex;gap:12px;align-items:center;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.md37{background-color:#ffdb53;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;overflow:clip;position:relative;border-radius:999px;flex-shrink:0;width:40px;height:40px}
+.md38{word-break:break-word;align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:5px;align-items:flex-start;min-width:1px;font-style:normal;overflow:clip;position:relative;color:#2f0311}
+.md39{font-family:Inter,Arial,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;font-size:12px;width:100%}
+.md40{font-family:Inter,Arial,sans-serif;font-weight:400;line-height:1.45;position:relative;flex-shrink:0;font-size:14px;width:100%}
+.md41{background-color:#b6ffbd;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;overflow:clip;position:relative;border-radius:999px;flex-shrink:0;width:40px;height:40px}
+.md42{background-color:#ff5a1b;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;overflow:clip;position:relative;border-radius:999px;flex-shrink:0;width:40px;height:40px}
+.md43{background-color:#ffb5d2;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;overflow:clip;position:relative;border-radius:999px;flex-shrink:0;width:40px;height:40px}
+.md44{background-color:#fcfcfc;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;overflow:clip;position:relative;border-radius:999px;flex-shrink:0;width:40px;height:40px}
+.md45{border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;flex-direction:column;height:260px;align-items:flex-start;overflow:clip;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.md46{position:absolute;inset:0px;overflow:hidden;pointer-events:none;border-radius:10px}
+.md47{position:absolute;height:251.19%;left:-54.19%;max-width:none;top:-63.78%;width:179.21%}
+.md48{position:absolute;align-content:stretch;display:flex;align-items:flex-start;left:14px;overflow:clip;top:14px}
+.md49{--tx:-50%;--ty:-50%;position:absolute;background-color:#ff5a1b;border-width:3px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;left:50%;overflow:clip;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311;width:50px;height:50px;top:50%;transform:translate(-50%,-50%) rotate(0deg)}
+.md50{position:relative;flex-shrink:0;width:20px;height:20px}
+.md51{word-break:break-word;background-color:#fcfcfc;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;flex-direction:column;gap:20px;align-items:flex-start;overflow:clip;padding:20px;position:relative;border-radius:10px;flex-shrink:0;color:#2f0311;width:100%}
+.md52{font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.08;position:relative;flex-shrink:0;font-size:29px;letter-spacing:-1.45px;width:100%}
+.md53{font-family:Inter,Arial,sans-serif;font-weight:400;line-height:1.5;font-style:normal;position:relative;flex-shrink:0;font-size:15px;width:100%}
+.md54{border-color:#2f0311;border-bottom-width:1px;border-style:solid;align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:flex-start;overflow:clip;padding-bottom:16px;position:relative;flex-shrink:0;width:100%}
+.md55{align-content:stretch;display:flex;font-family:Parkinsans,sans-serif;font-weight:800;gap:12px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;font-size:16px;width:100%}
+.md56{flex:1 0 0;line-height:1.3;min-width:1px;position:relative}
+.md57{line-height:normal;position:relative;flex-shrink:0;white-space:nowrap}
+.md58{font-family:Inter,Arial,sans-serif;font-weight:400;line-height:1.5;font-style:normal;position:relative;flex-shrink:0;font-size:14px;width:100%}
+.md59{border-width:0px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.md60{background-color:#2f0311;align-content:stretch;display:flex;flex-direction:column;gap:16px;align-items:flex-start;overflow:clip;padding:24px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.md61{align-content:flex-start;display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.md62{background-color:#fcfcfc;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:flex-start;overflow:clip;padding:16px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.md63{align-content:stretch;display:flex;font-family:Parkinsans,sans-serif;font-weight:800;align-items:center;justify-content:space-between;line-height:normal;overflow:clip;position:relative;flex-shrink:0;width:100%;white-space:nowrap}
+.md64{position:relative;flex-shrink:0;font-size:16px}
+.md65{position:relative;flex-shrink:0;font-size:13px}
+.md66{background-color:#2f0311;align-content:stretch;display:flex;flex-direction:column;gap:28px;align-items:flex-start;overflow:clip;padding:24px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.md67{height:78px;position:relative;flex-shrink:0;width:112px}
+.md68{word-break:break-word;align-content:stretch;display:flex;gap:16px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;color:#fcfcfc;width:100%}
+.md69{align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:10px;align-items:flex-start;min-width:1px;overflow:clip;position:relative}
+.md70{font-family:Parkinsans,sans-serif;font-weight:400;line-height:normal;opacity:.5;position:relative;flex-shrink:0;font-size:11px;width:100%}
+.md71{font-family:Parkinsans,sans-serif;font-weight:600;line-height:1.4;position:relative;flex-shrink:0;font-size:13px;width:100%}
+.md72{word-break:break-word;align-content:stretch;display:flex;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:400;gap:8px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;color:#fcfcfc;width:100%}
+.md73{line-height:normal;opacity:.5;position:relative;flex-shrink:0;font-size:11px;white-space:nowrap}
+.md74{line-height:0;min-width:100%;position:relative;flex-shrink:0;font-size:14px;width:min-content}
+.md75{line-height:1.5;margin-bottom:0}
+.md76{line-height:1.5}
+.md77{word-break:break-word;align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:flex-start;line-height:normal;overflow:clip;position:relative;flex-shrink:0;color:#fcfcfc;width:100%}
+.md78{font-family:Parkinsans,sans-serif;font-weight:400;opacity:.5;position:relative;flex-shrink:0;font-size:11px;white-space:nowrap}
+.md79{font-family:Parkinsans,sans-serif;font-weight:600;min-width:100%;position:relative;flex-shrink:0;font-size:14px;width:min-content}
+.md80{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:0;min-width:100%;opacity:.5;position:relative;flex-shrink:0;color:#fcfcfc;font-size:12px;width:min-content}
+.md81{line-height:1.6;margin-bottom:0}
+.md82{line-height:1.6}
+/* Figma draws strokes inside its auto-layout bounds. */
+.mobile-details [data-name="Restaurant section"]{padding:19px}
+.mobile-details [data-name="Review"]{padding:15px}
+.mobile-details [data-name="Menu item"]{border-bottom-width:0;box-shadow:inset 0 -1px #2f0311}
+.mobile-details [data-node-id="1:182"]{box-shadow:none}
+.mobile-details [data-name="Filter option"]{border-width:0;outline:1px solid #2f0311;outline-offset:-1px}
+.mobile-details [data-node-id="1:219"],.mobile-details [data-node-id="1:224"],.mobile-details [data-node-id="1:229"],.mobile-details [data-node-id="1:232"]{line-height:15px}
+.mobile-details [data-node-id="1:220"],.mobile-details [data-node-id="1:221"],.mobile-details [data-node-id="1:222"],.mobile-details [data-node-id="1:225"],.mobile-details [data-node-id="1:226"],.mobile-details [data-node-id="1:227"]{line-height:18px}
+.mobile-details [data-node-id="1:235"] p{line-height:19px}.mobile-details footer{min-height:559px}
+
+/* Match Figma's rounded text line boxes while allowing additional mobile wrapping. */
+.mobile-details h1{line-height:45px}.mobile-details h2{line-height:31px}
+.mobile-details [data-node-id="1:101"],.mobile-details [data-node-id="1:188"]{line-height:35px}
+.mobile-details [data-node-id="1:102"],.mobile-details [data-node-id="1:158"],.mobile-details [data-node-id="1:159"],.mobile-details [data-node-id="1:189"]{line-height:23px}
+.mobile-details [data-node-id="1:104"]{line-height:56px}
+.mobile-details [data-name="Information"]>p:first-child{line-height:15px}
+.mobile-details [data-name="Information"]>p:last-child{line-height:20px}
+.mobile-details [data-name="Dish and price"]>p:last-child,.mobile-details [data-name="Author and rating"]>p:first-child{line-height:22px}
