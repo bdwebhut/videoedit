@@ -124,6 +124,55 @@ class AssetTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             downloader.asset_path('../../outside.png')
 
+    def test_jpeg_and_webp_are_accepted_under_exported_png_filename(self):
+        path = self.assets / 'photo.png'
+        for data in (b'\xff\xd8\xff\xe0' + b'JPEG payload', b'RIFF' + b'\x00' * 4 + b'WEBP' + b'payload'):
+            path.write_bytes(data)
+            self.assertTrue(downloader.valid(path))
+
+    def test_reuses_matching_asset_from_another_export_folder(self):
+        other = self.repo / 'le-spot-halal-restaurants' / 'assets'
+        other.mkdir(parents=True)
+        (other / 'photo.png').write_bytes(self.png)
+        self.assertEqual(self.run_local(), 0)
+        self.assertEqual((self.assets / 'images/photo.png').read_bytes(), self.png)
+
+    def test_reuses_flat_shared_asset_cache(self):
+        (self.assets / 'photo.png').write_bytes(self.png)
+        self.assertEqual(self.run_local(), 0)
+        self.assertEqual((self.assets / 'images/photo.png').read_bytes(), self.png)
+
+    def test_reads_both_original_manifest_formats_for_matching_files_only(self):
+        for folder, assets in (
+            ('le-spot-halal-restaurants', {'baseUrl': 'https://www.figma.com/api/mcp/asset/new-export', 'assets': {'imgPhoto': 'photo.png', 'imgOther': 'other.png'}}),
+            ('le-spot-halal-add-restaurant', {'assets': [{'file': 'photo.png', 'url': 'https://www.figma.com/api/mcp/asset/new-form/photo.png'}]}),
+        ):
+            directory = self.repo / folder
+            directory.mkdir()
+            (directory / 'asset-manifest.json').write_text(json.dumps(assets))
+        result = downloader.enrich_manifest({'assets': self.entries})
+        self.assertEqual(len(result['assets']), 1)
+        self.assertIn('https://www.figma.com/api/mcp/asset/new-export/photo.png', self.entries[0]['sources'])
+        self.assertIn('https://www.figma.com/api/mcp/asset/new-form/photo.png', self.entries[0]['sources'])
+        self.assertIn('le-spot-halal-restaurants', self.entries[0]['sourceFolders'])
+
+    def test_curl_download_validates_content_without_using_part_extension(self):
+        target = self.assets / 'photo.png'
+        jpeg = b'\xff\xd8\xff\xe0' + b'JPEG payload'
+        def transfer(command, **kwargs):
+            Path(command[command.index('--output') + 1]).write_bytes(jpeg)
+            return __import__('subprocess').CompletedProcess(command, 0, '', '')
+        with patch.object(downloader.shutil, 'which', return_value='/usr/bin/curl'), patch.object(downloader.subprocess, 'run', side_effect=transfer):
+            self.assertTrue(downloader.download(self.entries[0], target))
+        self.assertEqual(target.read_bytes(), jpeg)
+        self.assertFalse(target.with_name('photo.png.part').exists())
+
+    def test_check_mode_neither_imports_nor_downloads(self):
+        (self.source / 'photo.png').write_bytes(self.png)
+        with patch('sys.argv', ['download-assets.py', '--check']), redirect_stdout(io.StringIO()), redirect_stderr(io.StringIO()), patch.object(downloader, 'download', side_effect=AssertionError('Network requested')):
+            self.assertEqual(downloader.main(), 1)
+        self.assertFalse((self.assets / 'images/photo.png').exists())
+
     def test_non_official_download_url_is_rejected(self):
         target = self.assets / 'icon.svg'
         with self.assertRaises(ValueError):

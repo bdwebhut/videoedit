@@ -187,17 +187,30 @@
     "no-JavaScript navigation"
   ],
   "pythonTests": {
-    "passed": 10,
+    "passed": 16,
     "failed": 0
   },
   "assets": {
     "uniqueManifestEntries": 58,
     "runtimePaths": "local shared assets only",
-    "downloadBehavior": "Import existing original files first; download missing official Figma assets only."
+    "downloadBehavior": "Content-based image validation; scan all export caches; read both original manifest formats; curl download with original Figma fallback URLs.",
+    "officialUrlFallbacks": 114
   },
   "errors": [],
   "limitations": [
     "Original assets are not present; loaded-image visual verification is pending.",
     "Figma colors are preserved; existing palette contrast has not been redesigned."
-  ]
+  ],
+  "assetRecoveryRegression": {
+    "crossFolderImport": true,
+    "flatCacheImport": true,
+    "filenameIndependentRasterValidation": [
+      "PNG",
+      "JPEG",
+      "WebP"
+    ],
+    "chromiumDecodedTestFixtures": 3,
+    "readOnlyAudit": true,
+    "note": "Browser rendering verified with isolated test fixtures. The user’s original downloaded assets remain on their local machine."
+  }
 }

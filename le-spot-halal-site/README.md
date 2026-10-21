@@ -16,9 +16,27 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Open http://localhost:8000 and hard-refresh with **Ctrl+Shift+R**. Stop the server with **Ctrl+C**. No system installation, npm, or WordPress setup is required.
 
-The downloader first imports valid original files from `../le-spot-halal-homepage/assets/` and `../le-spot-halal-mobile-home/assets/`. It downloads only missing originals from official Figma URLs. The two manifests are merged into **58 unique assets**, stored once under `assets/images/` and `assets/icons/`. The local Parkinsans font and license are already included under `assets/fonts/`.
+The downloader first imports original files from all `le-spot-halal-*/assets/` folders, including nested caches. It reads every original asset manifest for matching filenames and additional Figma URL fallbacks, supporting both manifest formats used in this repository. It downloads only missing homepage assets, using the same curl transfer method as the original folder scripts (with a standard-library fallback if curl is unavailable). The two manifests are merged into **58 unique assets**, stored once under `assets/images/` and `assets/icons/`. The local Parkinsans font and license are already included under `assets/fonts/`.
 
-Files are validated before use: an HTML error response will not be saved as an image or SVG. Successful existing files are kept. Temporary Figma URLs can expire after seven days; update the shared manifest with fresh Figma MCP URLs if needed. `python3 download-assets.py --local-only` imports existing files without making network requests and reports any missing originals.
+Files are validated by content rather than filename: a JPEG or WebP exported with a `.png` filename is accepted, as it is by the browser. An HTML error response will not be saved as an image or SVG. Successful existing files are kept. Temporary Figma URLs can expire after seven days; refresh the original folder manifests or the shared manifest with Figma MCP URLs if needed; matching originals are read again on every run. `python3 download-assets.py --local-only` imports existing files without making network requests and reports any missing originals.
+
+## Recover or check missing images
+
+After pulling the latest code, run `python3 download-assets.py` again. Existing valid originals stay in place; missing files are imported or downloaded. The terminal shows which files were reused and any transfer failures.
+
+To check the final shared files without changing or downloading anything:
+
+```bash
+python3 download-assets.py --check
+```
+
+If your earlier downloads live in another checkout or directory, point the importer there (it searches subdirectories):
+
+```bash
+python3 download-assets.py --assets-dir /path/to/your/original-downloads
+```
+
+Add `--local-only` to import without network requests. Repeat `--assets-dir` for multiple directories. A successful run ends with `All 58 original assets are ready`; a nonzero exit reports the exact missing paths. After recovery, hard-refresh the preview with **Ctrl+Shift+R**.
 
 ## Where to edit
 

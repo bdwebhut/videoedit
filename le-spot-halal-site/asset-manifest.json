@@ -14,10 +14,12 @@
     {
       "path": "icons/05cb5.svg",
       "sources": [
-        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/05cb5.svg"
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/05cb5.svg",
+        "https://www.figma.com/api/mcp/asset/0ab6bdda-0516-4ca4-8b05-164c8af2580a/05cb5.svg"
       ],
       "sourceFolders": [
-        "le-spot-halal-homepage"
+        "le-spot-halal-homepage",
+        "le-spot-halal-map"
       ]
     },
     {
@@ -77,28 +79,46 @@
     {
       "path": "icons/2c600.svg",
       "sources": [
-        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/2c600.svg"
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/2c600.svg",
+        "https://www.figma.com/api/mcp/asset/2b92f365-330b-4742-8a65-bce7bc4360a7/2c600.svg",
+        "https://www.figma.com/api/mcp/asset/0ab6bdda-0516-4ca4-8b05-164c8af2580a/2c600.svg",
+        "https://www.figma.com/api/mcp/asset/00551170-0218-4c2f-b238-da677171d32b/2c600.svg"
       ],
       "sourceFolders": [
-        "le-spot-halal-homepage"
+        "le-spot-halal-homepage",
+        "le-spot-halal-details",
+        "le-spot-halal-map",
+        "le-spot-halal-restaurants"
       ]
     },
     {
       "path": "icons/2c857.svg",
       "sources": [
-        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/2c857.svg"
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/2c857.svg",
+        "https://www.figma.com/api/mcp/asset/2b92f365-330b-4742-8a65-bce7bc4360a7/2c857.svg",
+        "https://www.figma.com/api/mcp/asset/0ab6bdda-0516-4ca4-8b05-164c8af2580a/2c857.svg",
+        "https://www.figma.com/api/mcp/asset/00551170-0218-4c2f-b238-da677171d32b/2c857.svg"
       ],
       "sourceFolders": [
-        "le-spot-halal-homepage"
+        "le-spot-halal-homepage",
+        "le-spot-halal-details",
+        "le-spot-halal-map",
+        "le-spot-halal-restaurants"
       ]
     },
     {
       "path": "icons/42096.svg",
       "sources": [
-        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/42096.svg"
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/42096.svg",
+        "https://www.figma.com/api/mcp/asset/2b92f365-330b-4742-8a65-bce7bc4360a7/42096.svg",
+        "https://www.figma.com/api/mcp/asset/0ab6bdda-0516-4ca4-8b05-164c8af2580a/42096.svg",
+        "https://www.figma.com/api/mcp/asset/00551170-0218-4c2f-b238-da677171d32b/42096.svg"
       ],
       "sourceFolders": [
-        "le-spot-halal-homepage"
+        "le-spot-halal-homepage",
+        "le-spot-halal-details",
+        "le-spot-halal-map",
+        "le-spot-halal-restaurants"
       ]
     },
     {
@@ -167,10 +187,16 @@
     {
       "path": "icons/67d68.svg",
       "sources": [
-        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/67d68.svg"
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/67d68.svg",
+        "https://www.figma.com/api/mcp/asset/2b92f365-330b-4742-8a65-bce7bc4360a7/67d68.svg",
+        "https://www.figma.com/api/mcp/asset/0ab6bdda-0516-4ca4-8b05-164c8af2580a/67d68.svg",
+        "https://www.figma.com/api/mcp/asset/00551170-0218-4c2f-b238-da677171d32b/67d68.svg"
       ],
       "sourceFolders": [
-        "le-spot-halal-homepage"
+        "le-spot-halal-homepage",
+        "le-spot-halal-details",
+        "le-spot-halal-map",
+        "le-spot-halal-restaurants"
       ]
     },
     {
@@ -203,10 +229,16 @@
     {
       "path": "icons/7b8b8.svg",
       "sources": [
-        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/7b8b8.svg"
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/7b8b8.svg",
+        "https://www.figma.com/api/mcp/asset/d56b612d-d44e-436d-a35c-75fec28e1b7d/7b8b8.svg",
+        "https://www.figma.com/api/mcp/asset/655f18b2-f905-44aa-9aa7-28697c7c3981/7b8b8.svg",
+        "https://www.figma.com/api/mcp/asset/70ed893a-2225-4014-96a4-e95cb797c962/7b8b8.svg"
       ],
       "sourceFolders": [
-        "le-spot-halal-mobile-home"
+        "le-spot-halal-mobile-home",
+        "le-spot-halal-mobile-details",
+        "le-spot-halal-mobile-map",
+        "le-spot-halal-mobile-restaurants"
       ]
     },
     {
@@ -249,11 +281,13 @@
       "path": "icons/8ae19.svg",
       "sources": [
         "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/8ae19.svg",
-        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/8ae19.svg"
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/8ae19.svg",
+        "https://www.figma.com/api/mcp/asset/c2e4d467-53f5-4ab1-86ab-74de54992725/8ae19.svg"
       ],
       "sourceFolders": [
         "le-spot-halal-homepage",
-        "le-spot-halal-mobile-home"
+        "le-spot-halal-mobile-home",
+        "le-spot-halal-add-restaurant"
       ]
     },
     {
@@ -295,10 +329,16 @@
     {
       "path": "icons/959cd.svg",
       "sources": [
-        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/959cd.svg"
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/959cd.svg",
+        "https://www.figma.com/api/mcp/asset/2b92f365-330b-4742-8a65-bce7bc4360a7/959cd.svg",
+        "https://www.figma.com/api/mcp/asset/0ab6bdda-0516-4ca4-8b05-164c8af2580a/959cd.svg",
+        "https://www.figma.com/api/mcp/asset/00551170-0218-4c2f-b238-da677171d32b/959cd.svg"
       ],
       "sourceFolders": [
-        "le-spot-halal-homepage"
+        "le-spot-halal-homepage",
+        "le-spot-halal-details",
+        "le-spot-halal-map",
+        "le-spot-halal-restaurants"
       ]
     },
     {
@@ -377,11 +417,13 @@
       "path": "icons/c33d1.svg",
       "sources": [
         "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/c33d1.svg",
-        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/c33d1.svg"
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/c33d1.svg",
+        "https://www.figma.com/api/mcp/asset/c2e4d467-53f5-4ab1-86ab-74de54992725/c33d1.svg"
       ],
       "sourceFolders": [
         "le-spot-halal-homepage",
-        "le-spot-halal-mobile-home"
+        "le-spot-halal-mobile-home",
+        "le-spot-halal-add-restaurant"
       ]
     },
     {
@@ -397,11 +439,13 @@
       "path": "icons/e852b.svg",
       "sources": [
         "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/e852b.svg",
-        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/e852b.svg"
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/e852b.svg",
+        "https://www.figma.com/api/mcp/asset/2b92f365-330b-4742-8a65-bce7bc4360a7/e852b.svg"
       ],
       "sourceFolders": [
         "le-spot-halal-homepage",
-        "le-spot-halal-mobile-home"
+        "le-spot-halal-mobile-home",
+        "le-spot-halal-details"
       ]
     },
     {
@@ -444,33 +488,61 @@
       "path": "images/0e26d.png",
       "sources": [
         "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/0e26d.png",
-        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/0e26d.png"
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/0e26d.png",
+        "https://www.figma.com/api/mcp/asset/2b92f365-330b-4742-8a65-bce7bc4360a7/0e26d.png",
+        "https://www.figma.com/api/mcp/asset/0ab6bdda-0516-4ca4-8b05-164c8af2580a/0e26d.png",
+        "https://www.figma.com/api/mcp/asset/d56b612d-d44e-436d-a35c-75fec28e1b7d/0e26d.png",
+        "https://www.figma.com/api/mcp/asset/655f18b2-f905-44aa-9aa7-28697c7c3981/0e26d.png",
+        "https://www.figma.com/api/mcp/asset/70ed893a-2225-4014-96a4-e95cb797c962/0e26d.png",
+        "https://www.figma.com/api/mcp/asset/00551170-0218-4c2f-b238-da677171d32b/0e26d.png"
       ],
       "sourceFolders": [
         "le-spot-halal-homepage",
-        "le-spot-halal-mobile-home"
+        "le-spot-halal-mobile-home",
+        "le-spot-halal-details",
+        "le-spot-halal-map",
+        "le-spot-halal-mobile-details",
+        "le-spot-halal-mobile-map",
+        "le-spot-halal-mobile-restaurants",
+        "le-spot-halal-restaurants"
       ]
     },
     {
       "path": "images/35d8f.png",
       "sources": [
         "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/35d8f.png",
-        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/35d8f.png"
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/35d8f.png",
+        "https://www.figma.com/api/mcp/asset/0ab6bdda-0516-4ca4-8b05-164c8af2580a/35d8f.png",
+        "https://www.figma.com/api/mcp/asset/655f18b2-f905-44aa-9aa7-28697c7c3981/35d8f.png",
+        "https://www.figma.com/api/mcp/asset/70ed893a-2225-4014-96a4-e95cb797c962/35d8f.png",
+        "https://www.figma.com/api/mcp/asset/00551170-0218-4c2f-b238-da677171d32b/35d8f.png"
       ],
       "sourceFolders": [
         "le-spot-halal-homepage",
-        "le-spot-halal-mobile-home"
+        "le-spot-halal-mobile-home",
+        "le-spot-halal-map",
+        "le-spot-halal-mobile-map",
+        "le-spot-halal-mobile-restaurants",
+        "le-spot-halal-restaurants"
       ]
     },
     {
       "path": "images/3a4b8.png",
       "sources": [
         "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/3a4b8.png",
-        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/3a4b8.png"
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/3a4b8.png",
+        "https://www.figma.com/api/mcp/asset/0ab6bdda-0516-4ca4-8b05-164c8af2580a/3a4b8.png",
+        "https://www.figma.com/api/mcp/asset/655f18b2-f905-44aa-9aa7-28697c7c3981/3a4b8.png",
+        "https://www.figma.com/api/mcp/asset/70ed893a-2225-4014-96a4-e95cb797c962/3a4b8.png",
+        "https://www.figma.com/api/mcp/asset/00551170-0218-4c2f-b238-da677171d32b/3a4b8.png"
       ],
       "sourceFolders": [
         "le-spot-halal-homepage",
-        "le-spot-halal-mobile-home"
+        "le-spot-halal-mobile-home",
+        "le-spot-halal-map",
+        "le-spot-halal-mobile-map",
+        "le-spot-halal-mobile-restaurants",
+        "le-spot-halal-restaurants"
       ]
     },
     {
@@ -488,11 +560,19 @@
       "path": "images/624d4.png",
       "sources": [
         "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/624d4.png",
-        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/624d4.png"
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/624d4.png",
+        "https://www.figma.com/api/mcp/asset/0ab6bdda-0516-4ca4-8b05-164c8af2580a/624d4.png",
+        "https://www.figma.com/api/mcp/asset/655f18b2-f905-44aa-9aa7-28697c7c3981/624d4.png",
+        "https://www.figma.com/api/mcp/asset/70ed893a-2225-4014-96a4-e95cb797c962/624d4.png",
+        "https://www.figma.com/api/mcp/asset/00551170-0218-4c2f-b238-da677171d32b/624d4.png"
       ],
       "sourceFolders": [
         "le-spot-halal-homepage",
-        "le-spot-halal-mobile-home"
+        "le-spot-halal-mobile-home",
+        "le-spot-halal-map",
+        "le-spot-halal-mobile-map",
+        "le-spot-halal-mobile-restaurants",
+        "le-spot-halal-restaurants"
       ]
     },
     {
@@ -532,11 +612,19 @@
       "path": "images/c5c61.png",
       "sources": [
         "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/c5c61.png",
-        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/c5c61.png"
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/c5c61.png",
+        "https://www.figma.com/api/mcp/asset/0ab6bdda-0516-4ca4-8b05-164c8af2580a/c5c61.png",
+        "https://www.figma.com/api/mcp/asset/655f18b2-f905-44aa-9aa7-28697c7c3981/c5c61.png",
+        "https://www.figma.com/api/mcp/asset/70ed893a-2225-4014-96a4-e95cb797c962/c5c61.png",
+        "https://www.figma.com/api/mcp/asset/00551170-0218-4c2f-b238-da677171d32b/c5c61.png"
       ],
       "sourceFolders": [
         "le-spot-halal-homepage",
-        "le-spot-halal-mobile-home"
+        "le-spot-halal-mobile-home",
+        "le-spot-halal-map",
+        "le-spot-halal-mobile-map",
+        "le-spot-halal-mobile-restaurants",
+        "le-spot-halal-restaurants"
       ]
     },
     {
