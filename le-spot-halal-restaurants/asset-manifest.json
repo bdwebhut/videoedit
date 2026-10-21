@@ -1,0 +1,20 @@
+{
+  "baseUrl": "https://www.figma.com/api/mcp/asset/00551170-0218-4c2f-b238-da677171d32b",
+  "assets": {
+    "imgLeComptoir": "0e26d.png",
+    "imgLeComptoir1": "3a4b8.png",
+    "imgLeComptoir2": "35d8f.png",
+    "imgLeComptoir3": "c5c61.png",
+    "imgLeComptoir4": "624d4.png",
+    "imgVector": "445a5.svg",
+    "imgInstagram": "ad74a.svg",
+    "imgDeliveryScooter": "4ec08.svg",
+    "imgInstagram1": "7b0fa.svg",
+    "imgGroup8": "2233b.svg",
+    "imgVector1": "2c600.svg",
+    "imgVector2": "67d68.svg",
+    "imgComponent1": "2c857.svg",
+    "imgVector3": "959cd.svg",
+    "imgVector4": "42096.svg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "layout": {
+    "width": 1920,
+    "height": 2835,
+    "cards": 5,
+    "fontLoaded": true,
+    "footerTop": 2241.90625,
+    "firstCard": {
+      "x": 625,
+      "y": 501.984375,
+      "width": 939,
+      "height": 311.5,
+      "top": 501.984375,
+      "right": 1564,
+      "bottom": 813.484375,
+      "left": 625
+    },
+    "missingImages": 31
+  },
+  "checks": {
+    "pizza": 1,
+    "reset": 5,
+    "empty": true,
+    "firstCategory": "Burgers",
+    "map": true
+  },
+  "errors": []
+}
