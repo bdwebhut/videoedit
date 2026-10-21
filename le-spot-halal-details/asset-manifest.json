@@ -1,0 +1,24 @@
+{
+  "baseUrl": "https://www.figma.com/api/mcp/asset/2b92f365-330b-4742-8a65-bce7bc4360a7",
+  "assets": {
+    "imgVariant4": "e852b.svg",
+    "imgHeroImage": "0e26d.png",
+    "imgRectangle": "5250a.png",
+    "imgStar": "37d58.svg",
+    "imgArrowRight": "47dae.svg",
+    "imgStar1": "e30d9.svg",
+    "imgMapPin": "06d52.svg",
+    "imgClock": "ea751.svg",
+    "imgPhone": "e00a4.svg",
+    "imgMail": "88ba8.svg",
+    "imgInstagram": "ad88c.svg",
+    "imgFrame": "7a7be.svg",
+    "imgMapPin1": "199b1.svg",
+    "imgGroup8": "c36fe.svg",
+    "imgVector": "2c600.svg",
+    "imgVector1": "67d68.svg",
+    "imgComponent1": "2c857.svg",
+    "imgVector2": "959cd.svg",
+    "imgVector3": "42096.svg"
+  }
+}

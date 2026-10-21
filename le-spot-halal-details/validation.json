@@ -1,0 +1,30 @@
+{
+  "layout": {
+    "width": 1920,
+    "height": 3272,
+    "hero": {
+      "x": 91,
+      "y": 360,
+      "width": 1738,
+      "height": 600,
+      "top": 360,
+      "right": 1829,
+      "bottom": 960,
+      "left": 91
+    },
+    "detailsTop": 1000,
+    "footerTop": 2682,
+    "leftBottom": 2656,
+    "menuItems": 5,
+    "reviews": 3,
+    "fonts": true
+  },
+  "checks": {
+    "gallery": true,
+    "delivery": true,
+    "menuLink": true,
+    "telephone": true,
+    "email": true
+  },
+  "errors": []
+}
