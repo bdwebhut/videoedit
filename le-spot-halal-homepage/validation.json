@@ -3,13 +3,81 @@
     "width": 1920,
     "height": 6031,
     "cards": 5,
+    "elements": 292,
     "fontLoaded": true,
     "missingImages": 57,
     "temporaryRuntimeUrls": 0
   },
-  "search": "1 restaurant trouvé",
-  "visibleCards": 1,
-  "resetCount": 5,
-  "mapDialog": true,
-  "errors": []
+  "geometryChecks": {
+    "tolerancePx": 0.5,
+    "components": [
+      ".site-header",
+      ".hero__copy",
+      ".hero__visual",
+      ".mood__categories",
+      ".search-form",
+      ".city-filter",
+      ".restaurant-card--maison",
+      ".restaurant-card--smash",
+      ".restaurant-card--comptoir",
+      ".restaurant-card--nomad",
+      ".restaurant-card--pizza",
+      ".submit-banner",
+      ".about-card--selection",
+      ".about-card--discovery",
+      ".about-card--information",
+      ".nearby-banner",
+      ".contact",
+      ".site-footer"
+    ]
+  },
+  "checks": [
+    "semantic headings and landmarks",
+    "1920 × 6031 desktop canvas",
+    "search by full name",
+    "accent-insensitive search",
+    "empty results",
+    "category filtering",
+    "reset filters",
+    "keyboard-opened restaurant dialog",
+    "Escape and close button",
+    "map and city dialogs",
+    "section navigation"
+  ],
+  "accessibilityViolations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodes": [
+        [
+          ".site-header__link--active"
+        ],
+        [
+          ".search-form__submit"
+        ],
+        [
+          ".restaurant-tag--orange"
+        ],
+        [
+          ".contact__eyebrow > span"
+        ]
+      ]
+    }
+  ],
+  "errors": [],
+  "assetReferenceCheck": {
+    "preservedImageReferences": 57,
+    "changedAssetPaths": 0
+  },
+  "structure": {
+    "elementsBefore": 474,
+    "elementsAfter": 292,
+    "divsBefore": 301,
+    "divsAfter": 33,
+    "duplicateIds": 0
+  },
+  "visualVerification": {
+    "status": "pending-original-assets",
+    "note": "Original downloaded images are on the user’s local machine and were not yet pushed to GitHub. Desktop geometry was compared against the pre-refactor source; complete image rendering was not verified here."
+  }
 }

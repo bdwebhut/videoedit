@@ -1,26 +1,54 @@
 # Le spot halal — desktop homepage
 
-Plain HTML, CSS, and JavaScript converted from Figma file `vKBLU6mx3eUbyaZgU4FLRZ`, frame `2:122`.
+Static HTML, CSS, and JavaScript for Figma file `vKBLU6mx3eUbyaZgU4FLRZ`, frame `2:122`. The desktop design uses a **1920 × 6031 px** canvas. No mobile layout or build step is included.
 
-## Open
+## Preview
 
-1. Run `python3 download-assets.py` from a network that can access `www.figma.com`.
-2. Open `index.html` in a browser, or run `python3 -m http.server 8000` in this directory and visit `http://localhost:8000`.
+From this directory:
 
-The design is a fixed **1920 × 6031 px desktop canvas**. Browser zoom can be used for inspection on smaller monitors. No mobile styles, breakpoints, frameworks, or build tools are included. The original positioned composition is preserved for this desktop-only handoff, including Figma node IDs for inspection.
+```bash
+python3 -m http.server 8000 --bind 127.0.0.1
+```
 
-Files: `index.html`, `styles.css`, `script.js`, `assets/`, and `asset-manifest.json`.
+Open http://localhost:8000. Use browser zoom to inspect the full desktop canvas on smaller screens.
 
-## Asset status
+The original photographs and SVGs must be present in `assets/`. If needed, run `python3 download-assets.py` on a machine with access to Figma. The temporary URLs in `asset-manifest.json` may need refreshing through Figma MCP after seven days. The font and its license are bundled locally. The user confirmed that the original downloaded assets render correctly in the earlier version; those downloaded files were not yet available in this checkout during the refactor.
 
-Parkinsans variable font is bundled locally. Original Figma photographs and vector icons are referenced locally, but their downloads were blocked by this workspace's network policy. They are not replaced with stock imagery or screenshot exports. The included download script fetches the exact original files with curl. The manifest's temporary download URLs were retrieved on October 21, 2026 and expire after seven days; refresh them through Figma MCP if needed. There are no temporary Figma URLs in the page's runtime sources.
+## Source organization
 
-The page cannot be considered visually verified until those assets are downloaded. Do not ship with missing assets.
+| File | Responsibility |
+| --- | --- |
+| `index.html` | Header, hero, discovery/search, restaurant cards, submission banner, about cards, nearby banner, contact, footer, and dialog. |
+| `styles.css` | Local reset and design tokens followed by component styles in page order. |
+| `script.js` | Search, category filters, section navigation, and restaurant/map dialogs. |
+| `assets/` | Original image, SVG, and font files. Paths are preserved from the initial export. |
+| `asset-manifest.json`, `download-assets.py` | Download tooling; unused by the page at runtime. |
+| `validation.json` | Refactor checks and their limits. |
 
-## Interactions
+Page sections follow reading order. Grid and flex layouts replace the export's page-wide positioning and repeated wrappers. Absolute positioning is limited to local composition details such as hero crops, badges, decorations, and the footer layout. Section spacing and image crops retain the original desktop geometry.
 
-Search and category filters work against the five restaurant cards in the design. Navigation scrolls to homepage sections. Contact and add-restaurant actions use email. Restaurant details open local dialogs with links to Google Maps. City selections outside Genève and map actions open map searches because no restaurant database, map API, or secondary page was supplied. Legal and social destinations have no invented URLs. Replace these with production routes when integrating.
+Reusable components include `.button`, `.restaurant-card`, `.restaurant-tag`, `.service-icon`, `.about-card`, and `.contact-row`. Variant classes handle differences in color or crop. Semantic headings, native links/buttons, a search form, and a native dialog replace scripted button roles. Export-only Figma node IDs and numbered classes have been removed.
+
+## Behavior and integration contracts
+
+CSS is scoped under the `.lsh-homepage` body class, with tokens defined there. Keep that class when moving the markup into a future integration. The font declaration is shared at stylesheet level. No global element reset is applied outside the homepage.
+
+JavaScript is enclosed in a private function. Its hooks are separate from component styling:
+
+- `[data-restaurant-search]`: search form; its input uses `name="q"`.
+- `[data-restaurant]`: each restaurant article, with `data-name` for the full restaurant name.
+- `[data-action="restaurant"]`: the card's native title button. Its hit area covers the card.
+- `[data-filter]`: normalized category search term.
+- `[data-city]`: city name used for the existing city/map interaction.
+- `[data-action="reset"]`, `[data-action="map"]`: reset and map controls.
+- `#results-status` and `#info-dialog`: live search feedback and shared dialog.
+
+Restaurant cards remain ordinary server-readable HTML; JavaScript does not generate the content. To add a card, repeat the article structure with a unique heading ID, matching `aria-labelledby`, its name, and content. Initialize the script after the page markup; it gathers the initial card list once. Filtering preserves grid slots, matching the original desktop behavior.
+
+The five cards are static demonstration content. Other cities and map controls open Google Maps searches. Email actions use `mailto:` links. Social and legal text remains informational until production destinations are supplied. This project contains no WordPress theme files, PHP templates, backend, or invented routes.
 
 ## Validation
 
-Desktop DOM and CSS are checked using Chromium at 1920px; image completeness remains blocked as described above. No mobile behavior was added or checked.
+Chromium checks cover the 1920 × 6031 canvas, original section/card geometry, preserved image references, search by full name and accents, empty results, category/reset actions, keyboard dialog activation, dialog dismissal, map/city dialogs, and navigation. The page has one primary heading and no duplicate IDs. JavaScript syntax and whitespace checks also pass.
+
+The automated accessibility scan reports four color-contrast findings in the existing Figma palette. Colors were preserved for design fidelity. Complete visual comparison with loaded original images remains pending their arrival in this checkout; the current missing-image count is recorded in `validation.json`. No mobile behavior was added or checked.
