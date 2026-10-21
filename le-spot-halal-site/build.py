@@ -217,6 +217,7 @@ def build(page='home'):
         content=content,
         footer=render(read('partials/footer.html'), settings),
         dialog=dialogs,
+        page_extras=read('partials/home-motion-assets.html') if page == 'home' else '',
     ))
     return '\n'.join(line.rstrip() for line in output.splitlines()) + '\n'
 

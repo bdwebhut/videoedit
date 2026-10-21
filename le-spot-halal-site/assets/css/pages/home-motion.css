@@ -1,0 +1,54 @@
+/* Motion is optional. No content is hidden by CSS or dependent on animation. */
+.lsh-site.page-home .home-scroll-wrapper {
+  width: 100%;
+}
+.lsh-site.page-home .home-motion-line {
+  display: block;
+  position: relative;
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+/* Keep existing button rotations: individual translate composes with transform. */
+@media (prefers-reduced-motion: no-preference) and (hover: hover) and (pointer: fine) {
+  .lsh-site.page-home
+    :where(.button, .category, .search-form__submit, .contact__button) {
+    transition:
+      translate 0.22s ease,
+      box-shadow 0.22s ease,
+      filter 0.22s ease;
+  }
+  .lsh-site.page-home
+    :where(.button, .category, .search-form__submit, .contact__button):hover {
+    translate: 0 -3px;
+    filter: brightness(1.04);
+  }
+  .lsh-site.page-home
+    :where(.button, .category, .search-form__submit, .contact__button):active {
+    translate: 0 0;
+  }
+  .lsh-site.page-home .button .icon {
+    transition: translate 0.22s ease;
+  }
+  .lsh-site.page-home .button:hover .icon {
+    translate: 3px 0;
+  }
+}
+/* Print retains a complete, readable document. */
+@media print {
+  .lsh-site.page-home {
+    height: auto !important;
+  }
+  .lsh-site.page-home .home-scroll-wrapper {
+    position: static !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+  .lsh-site.page-home .site-shell {
+    transform: none !important;
+  }
+  .lsh-site.page-home [data-motion-reveal] {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+}

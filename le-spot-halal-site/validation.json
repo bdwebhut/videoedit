@@ -187,7 +187,7 @@
     "no-JavaScript navigation"
   ],
   "pythonTests": {
-    "passed": 21,
+    "passed": 22,
     "failed": 0
   },
   "assets": {
@@ -271,5 +271,22 @@
     ],
     "errors": [],
     "networkPosts": []
+  },
+  "homepageMotion": {
+    "vendorVersion": "GSAP 3.14.2",
+    "responsiveWidths": 20,
+    "checks": [
+      "20 responsive widths with live line resplitting and bounded trigger counts",
+      "local GSAP dependencies; desktop smoothing and native phone scrolling",
+      "text, card and section reveals; decorative float and hover effects",
+      "anchors, keyboard focus, filters, dialogs and reset",
+      "live reduced-motion teardown/restart",
+      "missing dependency and initialization-failure static fallback",
+      "no-JavaScript content and real homepage CTA links",
+      "other pages load no motion dependencies"
+    ],
+    "errors": [],
+    "remoteRequests": [],
+    "normalPreviewDependencies": "Locally committed GSAP, ScrollTrigger, ScrollSmoother and SplitText; no CDN or installation step."
   }
 }

@@ -1,0 +1,13 @@
+GSAP 3.14.2 — GreenSock
+Official distribution: https://www.npmjs.com/package/gsap/v/3.14.2
+Upstream: https://github.com/greensock/GSAP
+License: https://gsap.com/standard-license
+Package license declaration: Standard 'no charge' license.
+
+Files copied unchanged from the official gsap@3.14.2 npm package:
+- dist/gsap.min.js
+- dist/ScrollTrigger.min.js
+- dist/ScrollSmoother.min.js
+- dist/SplitText.min.js
+Original copyright/license notices are preserved in every file.
+Only homepage animation scripts depend on these files. No CDN requests are made.

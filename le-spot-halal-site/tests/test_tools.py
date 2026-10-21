@@ -137,6 +137,19 @@ class BuildTests(unittest.TestCase):
         for page in build.PAGES:
             self.assertIn('href="add-restaurant.html"', build.build(page))
 
+    def test_home_motion_dependencies_are_local_and_home_only(self):
+        output = build.build('home')
+        self.assertIn('assets/js/home-motion.js', output)
+        self.assertIn('assets/css/pages/home-motion.css', output)
+        for name in ('gsap', 'ScrollTrigger', 'ScrollSmoother', 'SplitText'):
+            relative = 'assets/js/vendor/gsap/' + name + '.min.js'
+            self.assertIn(relative, output)
+            self.assertTrue((ROOT / relative).is_file())
+        for page in build.PAGES:
+            if page != 'home':
+                self.assertNotIn('home-motion', build.build(page))
+                self.assertNotIn('vendor/gsap', build.build(page))
+
     def test_missing_template_values_fail_clearly(self):
         with self.assertRaisesRegex(ValueError, 'Missing template value'):
             build.render('{{missing}}', {})

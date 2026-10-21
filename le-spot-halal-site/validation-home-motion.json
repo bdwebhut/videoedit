@@ -1,0 +1,219 @@
+{
+  "sizes": [
+    {
+      "width": 320,
+      "documentWidth": 320,
+      "height": 6359,
+      "smoother": false,
+      "heroLines": 3,
+      "lineOverflow": false,
+      "wrappers": 0,
+      "triggers": 37
+    },
+    {
+      "width": 360,
+      "documentWidth": 360,
+      "height": 6271,
+      "smoother": false,
+      "heroLines": 3,
+      "lineOverflow": false,
+      "wrappers": 0,
+      "triggers": 37
+    },
+    {
+      "width": 375,
+      "documentWidth": 375,
+      "height": 6241,
+      "smoother": false,
+      "heroLines": 3,
+      "lineOverflow": false,
+      "wrappers": 0,
+      "triggers": 36
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "height": 6167,
+      "smoother": false,
+      "heroLines": 3,
+      "lineOverflow": false,
+      "wrappers": 0,
+      "triggers": 36
+    },
+    {
+      "width": 430,
+      "documentWidth": 430,
+      "height": 6098,
+      "smoother": false,
+      "heroLines": 3,
+      "lineOverflow": false,
+      "wrappers": 0,
+      "triggers": 36
+    },
+    {
+      "width": 540,
+      "documentWidth": 540,
+      "height": 5963,
+      "smoother": false,
+      "heroLines": 3,
+      "lineOverflow": false,
+      "wrappers": 0,
+      "triggers": 36
+    },
+    {
+      "width": 639,
+      "documentWidth": 639,
+      "height": 5926,
+      "smoother": false,
+      "heroLines": 3,
+      "lineOverflow": false,
+      "wrappers": 0,
+      "triggers": 36
+    },
+    {
+      "width": 640,
+      "documentWidth": 640,
+      "height": 5206,
+      "smoother": false,
+      "heroLines": 3,
+      "lineOverflow": false,
+      "wrappers": 0,
+      "triggers": 36
+    },
+    {
+      "width": 767,
+      "documentWidth": 767,
+      "height": 5139,
+      "smoother": false,
+      "heroLines": 3,
+      "lineOverflow": false,
+      "wrappers": 0,
+      "triggers": 36
+    },
+    {
+      "width": 768,
+      "documentWidth": 768,
+      "height": 4728,
+      "smoother": false,
+      "heroLines": 3,
+      "lineOverflow": false,
+      "wrappers": 0,
+      "triggers": 36
+    },
+    {
+      "width": 820,
+      "documentWidth": 820,
+      "height": 4733,
+      "smoother": false,
+      "heroLines": 3,
+      "lineOverflow": false,
+      "wrappers": 0,
+      "triggers": 35
+    },
+    {
+      "width": 912,
+      "documentWidth": 912,
+      "height": 4752,
+      "smoother": false,
+      "heroLines": 2,
+      "lineOverflow": false,
+      "wrappers": 0,
+      "triggers": 35
+    },
+    {
+      "width": 1023,
+      "documentWidth": 1023,
+      "height": 4790,
+      "smoother": false,
+      "heroLines": 2,
+      "lineOverflow": false,
+      "wrappers": 0,
+      "triggers": 35
+    },
+    {
+      "width": 1024,
+      "documentWidth": 1024,
+      "height": 5107,
+      "smoother": true,
+      "heroLines": 2,
+      "lineOverflow": false,
+      "wrappers": 1,
+      "triggers": 37
+    },
+    {
+      "width": 1280,
+      "documentWidth": 1280,
+      "height": 5172,
+      "smoother": true,
+      "heroLines": 2,
+      "lineOverflow": false,
+      "wrappers": 1,
+      "triggers": 37
+    },
+    {
+      "width": 1366,
+      "documentWidth": 1366,
+      "height": 5222,
+      "smoother": true,
+      "heroLines": 2,
+      "lineOverflow": false,
+      "wrappers": 1,
+      "triggers": 37
+    },
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "height": 5736,
+      "smoother": true,
+      "heroLines": 2,
+      "lineOverflow": false,
+      "wrappers": 1,
+      "triggers": 37
+    },
+    {
+      "width": 1600,
+      "documentWidth": 1600,
+      "height": 5857,
+      "smoother": true,
+      "heroLines": 3,
+      "lineOverflow": false,
+      "wrappers": 1,
+      "triggers": 37
+    },
+    {
+      "width": 1920,
+      "documentWidth": 1920,
+      "height": 6122,
+      "smoother": true,
+      "heroLines": 3,
+      "lineOverflow": false,
+      "wrappers": 1,
+      "triggers": 37
+    },
+    {
+      "width": 2560,
+      "documentWidth": 2560,
+      "height": 6122,
+      "smoother": true,
+      "heroLines": 3,
+      "lineOverflow": false,
+      "wrappers": 1,
+      "triggers": 37
+    }
+  ],
+  "checks": [
+    "20 responsive widths with live line resplitting and bounded trigger counts",
+    "local GSAP dependencies; desktop smoothing and native phone scrolling",
+    "text, card and section reveals; decorative float and hover effects",
+    "anchors, keyboard focus, filters, dialogs and reset",
+    "live reduced-motion teardown/restart",
+    "missing dependency and initialization-failure static fallback",
+    "no-JavaScript content and real homepage CTA links",
+    "other pages load no motion dependencies"
+  ],
+  "errors": [],
+  "remoteRequests": [],
+  "visualLimit": "Original photos/SVGs are absent in this checkout; final appearance requires the local asset download.",
+  "vendorVersion": "GSAP 3.14.2",
+  "scope": "Homepage only; local dependencies; other pages unchanged apart from generated whitespace."
+}

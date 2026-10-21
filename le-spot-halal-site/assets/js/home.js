@@ -18,7 +18,13 @@
     `https://www.google.com/maps/search/${encodeURIComponent(query)}`;
 
   function scrollToSection(id) {
-    homepage.querySelector(id).scrollIntoView({
+    const target = homepage.querySelector(id);
+    const request = new CustomEvent("lsh:scroll-to", {
+      cancelable: true,
+      detail: { target },
+    });
+    if (!homepage.dispatchEvent(request)) return;
+    target.scrollIntoView({
       behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
         ? "instant"
         : "smooth",
@@ -53,6 +59,7 @@
     status.textContent = normalizedQuery
       ? `${visibleCount} restaurant${plural} trouvé${plural}`
       : "";
+    homepage.dispatchEvent(new CustomEvent("lsh:results-updated"));
     scrollToSection("#restaurants");
   }
 

@@ -136,6 +136,14 @@ Content is static. The listing preserves the reference's five cards named “Le 
 
 Local search, cuisine filters, sorting, dialogs, email links, and homepage/listing/details/map navigation work in the browser. No database, authentication, submission API, tracking, or WordPress theme was added. The add-restaurant draft is stored locally only when explicitly requested. Other page connections and dynamic features remain for later tasks.
 
+## Homepage animation preview
+
+The first motion pass is limited to `index.html`. It uses locally bundled **GSAP 3.14.2**, ScrollTrigger, SplitText, and ScrollSmoother from the official npm package. Text lines reveal as you scroll and split again when fonts/widths change; cards and sections fade/slide into view once; decorative stickers float while visible; buttons lift gently on desktop hover. Existing layout, colors, photos, and content remain the reference.
+
+ScrollSmoother runs on desktop devices with a fine pointer from 1024px; phones/tablets keep native touch scrolling. OS/browser **Reduce motion** disables reveals, floating, hover motion, and smooth scrolling, including live changes to that preference. The page stays readable with JavaScript disabled or a missing animation dependency. Homepage search, filtering, anchor links, keyboard focus, and dialogs continue working. Other pages load none of these animation files.
+
+Change timing and target selectors in `assets/js/home-motion.js`; hover/line styles are in `assets/css/pages/home-motion.css`. `src/partials/home-motion-assets.html` registers the local dependencies through the shared builder. No CDN, npm install, or extra asset download is needed for normal previewing. Vendor versions/source/license notices are in `assets/js/vendor/gsap/NOTICE.txt`. Preview locally, pull updates, and hard-refresh as usual. The homepage banner actions now link to the existing map and add-restaurant pages.
+
 ## Verification
 
 Python checks require only the standard library:
@@ -153,8 +161,11 @@ SITE_URL=http://127.0.0.1:8000/ node tests/listing.cjs
 SITE_URL=http://127.0.0.1:8000/ node tests/details.cjs
 SITE_URL=http://127.0.0.1:8000/ node tests/map.cjs
 SITE_URL=http://127.0.0.1:8000/ node tests/add-restaurant.cjs
+SITE_URL=http://127.0.0.1:8000/ node tests/home-motion.cjs
 ```
 
 `PLAYWRIGHT_MODULE` may point to another existing Playwright installation; `CHROMIUM_PATH` overrides `/usr/bin/chromium`. Screenshots and reports go to ignored `tests/results/`.
 
 All five pages are checked at 20 widths from 320px to 2560px for overflow, type, responsive layouts, keyboard navigation, local controls, dialogs, and no-JavaScript navigation. Complete original-image verification still requires the user's local assets; no stock substitutions were made. The supplied palette and its existing contrast limitations are preserved. Reports are recorded in `validation.json`, `validation-restaurants.json`, `validation-details.json`, `validation-map.json`, and `validation-add-restaurant.json`.
+
+`tests/home-motion.cjs` additionally checks normal-motion behavior, 20 live resize widths, local dependency requests, responsive line splitting, scrolling/filtering, hover/float effects, preference changes, keyboard dialogs, failure recovery, and static fallbacks. Its report is `validation-home-motion.json`. Complete original-photo/SVG appearance still requires the local downloader.
