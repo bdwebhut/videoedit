@@ -1,6 +1,6 @@
 # Le spot halal — shared static site
 
-**This is the complete working site folder.** It contains the ready-to-open pages, all shared assets, and editable sources. The homepage, restaurant listing, and restaurant details have been refined so far; original export folders remain unchanged as references.
+**This is the complete working site folder.** It contains the ready-to-open pages, all shared assets, and editable sources. The homepage, restaurant listing, restaurant details, and map page have been refined so far; original export folders remain unchanged as references.
 
 ## Open these complete pages
 
@@ -9,6 +9,7 @@
 | Homepage | `index.html` | http://localhost:8000/ |
 | Restaurant listing | `restaurants.html` | http://localhost:8000/restaurants.html |
 | Restaurant details | `details.html` | http://localhost:8000/details.html |
+| Restaurant map | `map.html` | http://localhost:8000/map.html |
 
 **Files in `src/pages/` are editing templates, not standalone webpages.** They contain page content only. The builder adds the shared document, header, footer, styles, and scripts. Open the complete files above to see the full design.
 
@@ -26,7 +27,7 @@ Open a preview URL from the table and hard-refresh with **Ctrl+Shift+R**. Stop t
 
 The importer checks every original `le-spot-halal-*/assets/` folder, including nested caches, and reads both original manifest formats for URL fallbacks. It reuses valid originals before downloading missing files with curl (or Python's standard library if curl is unavailable). JPEG/WebP photos exported with `.png` filenames are accepted. Existing valid files stay in place.
 
-The three pages share **87 unique image/SVG assets**. Parkinsans and Inter fonts and their licenses are bundled locally. All runtime asset paths are local. Temporary Figma URLs exist only in download tooling and can expire after seven days; refresh original or shared manifests through Figma MCP when needed.
+The four pages share **99 unique image/SVG assets**. Parkinsans and Inter fonts and their licenses are bundled locally. All runtime asset paths are local. Temporary Figma URLs exist only in download tooling and can expire after seven days; refresh original or shared manifests through Figma MCP when needed.
 
 Audit the shared files without changing or downloading anything:
 
@@ -40,7 +41,7 @@ Reuse files from another checkout or directory:
 python3 download-assets.py --assets-dir /path/to/original-downloads
 ```
 
-Subdirectories are searched. Repeat `--assets-dir` for multiple locations; add `--local-only` to avoid network requests. Success ends with `All 87 original assets are ready`; failed paths are listed explicitly.
+Subdirectories are searched. Repeat `--assets-dir` for multiple locations; add `--local-only` to avoid network requests. Success ends with `All 99 original assets are ready`; failed paths are listed explicitly.
 
 ## One folder, one zip
 
@@ -69,6 +70,7 @@ le-spot-halal-site/
 ├── index.html                         # Complete generated homepage
 ├── restaurants.html                   # Complete generated restaurant listing
 ├── details.html                       # Complete generated restaurant details
+├── map.html                           # Complete generated restaurant map
 ├── build.py                           # Build all pages from shared sources
 ├── download-assets.py
 ├── asset-manifest.json
@@ -106,9 +108,9 @@ le-spot-halal-site/
 └── tests/
 ```
 
-Edit source templates/data, then run `python3 build.py` to regenerate **all three complete pages**, including shared header/footer changes. Do not maintain another header/footer copy in generated HTML. Page metadata and brand artwork are registered in `build.py`.
+Edit source templates/data, then run `python3 build.py` to regenerate **all four complete pages**, including shared header/footer changes. Do not maintain another header/footer copy in generated HTML. Page metadata and brand artwork are registered in `build.py`.
 
-`python3 build.py --check` detects outdated generated files. `--page home`, `--page restaurants`, or `--page details` limits a build/check to one page. Shared CSS is scoped under `.lsh-site`; page composition uses `.page-home`, `.page-restaurants`, or `.page-details`. Future pages belong here using the same shell, components, tokens, and assets.
+`python3 build.py --check` detects outdated generated files. `--page home`, `--page restaurants`, `--page details`, or `--page map` limits a build/check to one page. Shared CSS is scoped under `.lsh-site`; page composition uses `.page-home`, `.page-restaurants`, `.page-details`, or `.page-map`. Future pages belong here using the same shell, components, tokens, and assets.
 
 ## Responsive behavior and static scope
 
@@ -120,9 +122,13 @@ The details page preserves its 390 × 3961 mobile and 1920 × 3272 desktop layou
 
 Details content lives in `src/pages/details.html` and `src/data/restaurant-details.json`; repeated menu/review markup is in `src/partials/menu-item.html` and `review.html`. Its page styles/scripts are `assets/css/pages/details.css` and `assets/js/details.js`. Shared header/footer edits apply to every page.
 
+The map page preserves the supplied 390 × 2440 mobile and 1920 × 2306 desktop references. Phones show a 430px map followed by six horizontal cards. Tablets show two card columns below the map; laptops use a scrollable results panel beside it. Wider desktops show two columns of vertical cards. The map uses the original raster artwork with seven positioned HTML markers, without a live map SDK, geographic coordinates, zoom, or panning. Local search, multi-cuisine filters, reset, empty results, keyboard marker/card selection, and city/filter dialogs work. Genève is the only supplied city; the duplicate Pizza Time card remains. Marker positions adapt to the two supplied layouts. The Le Comptoir title links to `details.html`, and shared header/footer Carte links now open `map.html` on every page.
+
+Edit `src/pages/map.html`, `src/partials/map-card.html`, `src/partials/map-dialogs.html`, and `src/data/map-restaurants.json` / `map-markers.json`. The page stylesheet and script are `assets/css/pages/map.css` and `assets/js/map.js`.
+
 Content is static. The listing preserves the reference's five cards named “Le Comptoir,” their cuisine/location labels, and the initial “27 spots trouvés.” label. Using a local filter, sort, or search recomputes the count from the actual five records. No extra restaurant records were invented.
 
-Local search, cuisine filters, sorting, dialogs, email links, and homepage/listing/details navigation work in the browser. No database, authentication, submission API, tracking, storage, or WordPress theme was added. Other page connections and dynamic features remain for later tasks.
+Local search, cuisine filters, sorting, dialogs, email links, and homepage/listing/details/map navigation work in the browser. No database, authentication, submission API, tracking, storage, or WordPress theme was added. Other page connections and dynamic features remain for later tasks.
 
 ## Verification
 
@@ -139,8 +145,9 @@ Optional browser checks use `playwright-core` and an existing Chromium installat
 SITE_URL=http://127.0.0.1:8000/ node tests/responsive.cjs
 SITE_URL=http://127.0.0.1:8000/ node tests/listing.cjs
 SITE_URL=http://127.0.0.1:8000/ node tests/details.cjs
+SITE_URL=http://127.0.0.1:8000/ node tests/map.cjs
 ```
 
 `PLAYWRIGHT_MODULE` may point to another existing Playwright installation; `CHROMIUM_PATH` overrides `/usr/bin/chromium`. Screenshots and reports go to ignored `tests/results/`.
 
-All three pages are checked at 20 widths from 320px to 2560px for overflow, type, responsive layouts, keyboard navigation, local controls, dialogs, and no-JavaScript navigation. Complete original-image verification still requires the user's local assets; no stock substitutions were made. The supplied palette and its existing contrast limitations are preserved. Reports are recorded in `validation.json`, `validation-restaurants.json`, and `validation-details.json`.
+All four pages are checked at 20 widths from 320px to 2560px for overflow, type, responsive layouts, keyboard navigation, local controls, dialogs, and no-JavaScript navigation. Complete original-image verification still requires the user's local assets; no stock substitutions were made. The supplied palette and its existing contrast limitations are preserved. Reports are recorded in `validation.json`, `validation-restaurants.json`, `validation-details.json`, and `validation-map.json`.

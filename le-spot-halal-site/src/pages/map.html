@@ -1,0 +1,90 @@
+<main class="map-page" id="main-content" tabindex="-1">
+  <h1>Explore la map.</h1>
+  <div class="map-toolbar">
+    <form class="map-search" id="map-search" role="search">
+      <div class="map-search__field">
+        <picture class="responsive-art">
+          <source
+            media="(max-width:63.99rem)"
+            srcset="assets/icons/073ad.svg"
+          />
+          <img src="assets/icons/05cb5.svg" alt="" aria-hidden="true" />
+        </picture>
+        <input
+          id="map-query"
+          name="query"
+          type="search"
+          aria-label="Restaurant, lieu, mood"
+          placeholder="Restaurant, lieu, mood..."
+        />
+      </div>
+      <button class="map-search__submit" type="submit">Recherche</button>
+    </form>
+    <div class="map-toolbar__controls">
+      <button
+        class="map-city"
+        type="button"
+        data-map-city
+        aria-haspopup="dialog"
+        aria-controls="map-city-dialog"
+      >
+        <picture class="responsive-art">
+          <source
+            media="(max-width:63.99rem)"
+            srcset="assets/icons/4bd13.svg"
+          />
+          <img src="assets/icons/81a55.svg" alt="" aria-hidden="true" />
+        </picture>
+        <span>Genève</span>
+      </button>
+      <button
+        class="map-filter"
+        type="button"
+        data-map-filter
+        aria-haspopup="dialog"
+        aria-controls="map-filter-dialog"
+      >
+        <span class="map-filter__icon">
+          <picture class="responsive-art">
+            <source
+              media="(max-width:63.99rem)"
+              srcset="assets/icons/1ed9c.svg"
+            />
+            <img src="assets/icons/c6ff2.svg" alt="" aria-hidden="true" />
+          </picture>
+          <img
+            class="map-filter__overlay"
+            src="assets/icons/c53b2.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </span>
+        <span data-filter-label>Filtres</span>
+      </button>
+    </div>
+  </div>
+  <div class="map-workspace">
+    <section class="map-canvas" aria-label="Carte des restaurants à Genève">
+      <div class="map-canvas__image">
+        <img
+          src="assets/images/5250a.png"
+          alt="Plan de Genève et de ses environs"
+        />
+      </div>
+      {{map_markers}}
+      <p
+        class="map-status"
+        id="map-status"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+    </section>
+    <section class="map-results" aria-label="Restaurants à Genève" tabindex="0">
+      <div class="map-cards">{{map_cards}}</div>
+      <p id="map-empty" hidden>
+        Aucun spot trouvé. Essayez une autre recherche ou effacez les filtres.
+      </p>
+    </section>
+  </div>
+</main>

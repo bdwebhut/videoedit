@@ -1,0 +1,72 @@
+[
+  {
+    "id": "0",
+    "target": "0",
+    "color": "yellow",
+    "desktopLeft": 40.25974025974026,
+    "desktopTop": 44.232437120555076,
+    "mobileLeft": 43,
+    "mobileTop": 44,
+    "featured": false
+  },
+  {
+    "id": "1",
+    "target": "1",
+    "color": "orange",
+    "desktopLeft": 21.73160173160173,
+    "desktopTop": 51.95143104943626,
+    "mobileLeft": 20,
+    "mobileTop": 52,
+    "featured": false
+  },
+  {
+    "id": "2",
+    "target": "2",
+    "color": "green",
+    "desktopLeft": 19.047619047619047,
+    "desktopTop": 33.91153512575889,
+    "mobileLeft": 18,
+    "mobileTop": 35,
+    "featured": true
+  },
+  {
+    "id": "3",
+    "target": "4",
+    "color": "yellow",
+    "desktopLeft": 37.66233766233766,
+    "desktopTop": 72.33304423243712,
+    "mobileLeft": 44,
+    "mobileTop": 83,
+    "featured": false
+  },
+  {
+    "id": "4",
+    "target": "3",
+    "color": "green",
+    "desktopLeft": 22.597402597402596,
+    "desktopTop": 63.66001734605378,
+    "mobileLeft": 21,
+    "mobileTop": 69,
+    "featured": false
+  },
+  {
+    "id": "5",
+    "target": "5",
+    "color": "pink",
+    "desktopLeft": 53.160173160173166,
+    "desktopTop": 59.583694709453596,
+    "mobileLeft": 62,
+    "mobileTop": 60,
+    "featured": false
+  },
+  {
+    "id": "6",
+    "target": "4",
+    "color": "yellow",
+    "desktopLeft": 12.207792207792208,
+    "desktopTop": 73.02688638334779,
+    "mobileLeft": 12,
+    "mobileTop": 83,
+    "featured": false
+  }
+]

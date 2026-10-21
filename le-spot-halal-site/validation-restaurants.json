@@ -272,21 +272,10 @@
     "category sorting and restored original order",
     "accent-insensitive search and neighborhood query",
     "shared menu and search dialogs",
-    "shared map dialog and Escape dismissal",
+    "shared map page navigation",
     "homepage/listing navigation",
     "navigation and content without JavaScript"
   ],
   "errors": [],
-  "visualLimit": "Original assets remain on the user’s machine; complete loaded-image verification is pending.",
-  "references": {
-    "mobile": {
-      "width": 390,
-      "height": 2949
-    },
-    "desktop": {
-      "width": 1920,
-      "height": 2835
-    }
-  },
-  "staticContent": "Five supplied cards; the initial 27-spot reference label is retained until using a local control."
+  "visualLimit": "Original assets remain on the user’s machine; complete loaded-image verification is pending."
 }

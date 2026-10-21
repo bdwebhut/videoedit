@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explorez les restaurants halal à Genève sur la carte."
+    />
+    <title>Explore la map — Le spot halal</title>
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/pages/map.css" />
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/map.js" defer></script>
+  </head>
+  <body class="lsh-site page-map">
+    <div class="site-shell">
+      <a class="skip-link" href="#main-content">Aller au contenu</a>
+      <header class="site-header">
+        <button
+          class="site-header__menu"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <img src="assets/icons/7b8b8.svg" alt="" width="44" height="44" />
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav
+          class="site-header__nav"
+          aria-label="Navigation principale"
+          id="primary-navigation"
+          data-navigation=""
+        >
+          <a
+            class="site-header__link "
+
+            href="restaurants.html"
+          >
+            À proximité
+          </a>
+          <a
+            class="site-header__link site-header__link--active"
+            aria-current="page"
+            href="map.html"
+            data-action="map"
+          >
+            Carte
+          </a>
+          <a class="site-header__link" href="index.html#about">À propos</a>
+        </nav>
+        <a
+          class="site-header__brand"
+          href="index.html"
+          aria-label="Le spot halal — Accueil"
+        >
+          <picture class="responsive-art">
+            <source
+              media="(max-width: 47.99rem)"
+              srcset="assets/icons/6d906.svg"
+            />
+            <img src="assets/icons/67d68.svg" alt="Le spot halal" />
+          </picture>
+        </a>
+        <div class="site-header__tools">
+          <a
+            href="#map-query"
+            class="site-header__search"
+            aria-label="Rechercher un restaurant"
+          >
+            <picture class="responsive-art">
+              <source
+                media="(max-width: 47.99rem)"
+                srcset="assets/icons/01fd5.svg"
+              />
+              <img
+                src="assets/icons/2c857.svg"
+                alt=""
+                class="site-header__search-icon"
+                aria-hidden="true"
+              />
+            </picture>
+          </a>
+          <a
+            class="button button--add site-header__add"
+            href="mailto:hello@lespothalal.com?subject=Ajouter%20mon%20restaurant"
+          >
+            <img
+              src="assets/icons/2c600.svg"
+              alt=""
+              class="icon"
+              aria-hidden="true"
+            />
+            <span>Ajouter</span>
+          </a>
+        </div>
+        <img
+          src="assets/icons/959cd.svg"
+          alt=""
+          class="site-header__decoration site-header__decoration--first"
+          aria-hidden="true"
+        />
+        <img
+          src="assets/icons/42096.svg"
+          alt=""
+          class="site-header__decoration site-header__decoration--second"
+          aria-hidden="true"
+        />
+      </header>
+      <main class="map-page" id="main-content" tabindex="-1">
+        <h1>Explore la map.</h1>
+        <div class="map-toolbar">
+          <form class="map-search" id="map-search" role="search">
+            <div class="map-search__field">
+              <picture class="responsive-art">
+                <source
+                  media="(max-width:63.99rem)"
+                  srcset="assets/icons/073ad.svg"
+                />
+                <img src="assets/icons/05cb5.svg" alt="" aria-hidden="true" />
+              </picture>
+              <input
+                id="map-query"
+                name="query"
+                type="search"
+                aria-label="Restaurant, lieu, mood"
+                placeholder="Restaurant, lieu, mood..."
+              />
+            </div>
+            <button class="map-search__submit" type="submit">Recherche</button>
+          </form>
+          <div class="map-toolbar__controls">
+            <button
+              class="map-city"
+              type="button"
+              data-map-city
+              aria-haspopup="dialog"
+              aria-controls="map-city-dialog"
+            >
+              <picture class="responsive-art">
+                <source
+                  media="(max-width:63.99rem)"
+                  srcset="assets/icons/4bd13.svg"
+                />
+                <img src="assets/icons/81a55.svg" alt="" aria-hidden="true" />
+              </picture>
+              <span>Genève</span>
+            </button>
+            <button
+              class="map-filter"
+              type="button"
+              data-map-filter
+              aria-haspopup="dialog"
+              aria-controls="map-filter-dialog"
+            >
+              <span class="map-filter__icon">
+                <picture class="responsive-art">
+                  <source
+                    media="(max-width:63.99rem)"
+                    srcset="assets/icons/1ed9c.svg"
+                  />
+                  <img src="assets/icons/c6ff2.svg" alt="" aria-hidden="true" />
+                </picture>
+                <img
+                  class="map-filter__overlay"
+                  src="assets/icons/c53b2.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </span>
+              <span data-filter-label>Filtres</span>
+            </button>
+          </div>
+        </div>
+        <div class="map-workspace">
+          <section class="map-canvas" aria-label="Carte des restaurants à Genève">
+            <div class="map-canvas__image">
+              <img
+                src="assets/images/5250a.png"
+                alt="Plan de Genève et de ses environs"
+              />
+            </div>
+            <button
+              class="map-marker map-marker--yellow"
+              type="button"
+              style="--marker-x: 43%; --marker-y: 44%; --marker-desktop-x: 40.259740%; --marker-desktop-y: 44.232437%"
+              data-marker-target="0"
+              aria-label="Afficher Maison Yemma"
+              aria-pressed="false"
+            >
+              <picture class="responsive-art">
+                <source media="(max-width:63.99rem)" srcset="assets/icons/8d991.svg" />
+                <img src="assets/icons/cbd2f.svg" alt="" aria-hidden="true" />
+              </picture>
+            </button>
+
+            <button
+              class="map-marker map-marker--orange"
+              type="button"
+              style="--marker-x: 20%; --marker-y: 52%; --marker-desktop-x: 21.731602%; --marker-desktop-y: 51.951431%"
+              data-marker-target="1"
+              aria-label="Afficher Smash Club"
+              aria-pressed="false"
+            >
+              <picture class="responsive-art">
+                <source media="(max-width:63.99rem)" srcset="assets/icons/8d991.svg" />
+                <img src="assets/icons/cbd2f.svg" alt="" aria-hidden="true" />
+              </picture>
+            </button>
+
+            <button
+              class="map-marker map-marker--green map-marker--featured"
+              type="button"
+              style="--marker-x: 18%; --marker-y: 35%; --marker-desktop-x: 19.047619%; --marker-desktop-y: 33.911535%"
+              data-marker-target="2"
+              aria-label="Afficher Le Comptoir"
+              aria-pressed="false"
+            >
+              <picture class="responsive-art">
+                <source media="(max-width:63.99rem)" srcset="assets/icons/8d991.svg" />
+                <img src="assets/icons/ac3ec.svg" alt="" aria-hidden="true" />
+              </picture>
+            </button>
+
+            <button
+              class="map-marker map-marker--yellow"
+              type="button"
+              style="--marker-x: 44%; --marker-y: 83%; --marker-desktop-x: 37.662338%; --marker-desktop-y: 72.333044%"
+              data-marker-target="4"
+              aria-label="Afficher Pizza Time"
+              aria-pressed="false"
+            >
+              <picture class="responsive-art">
+                <source media="(max-width:63.99rem)" srcset="assets/icons/8d991.svg" />
+                <img src="assets/icons/cbd2f.svg" alt="" aria-hidden="true" />
+              </picture>
+            </button>
+
+            <button
+              class="map-marker map-marker--green"
+              type="button"
+              style="--marker-x: 21%; --marker-y: 69%; --marker-desktop-x: 22.597403%; --marker-desktop-y: 63.660017%"
+              data-marker-target="3"
+              aria-label="Afficher Nomad Coffee"
+              aria-pressed="false"
+            >
+              <picture class="responsive-art">
+                <source media="(max-width:63.99rem)" srcset="assets/icons/8d991.svg" />
+                <img src="assets/icons/cbd2f.svg" alt="" aria-hidden="true" />
+              </picture>
+            </button>
+
+            <button
+              class="map-marker map-marker--pink"
+              type="button"
+              style="--marker-x: 62%; --marker-y: 60%; --marker-desktop-x: 53.160173%; --marker-desktop-y: 59.583695%"
+              data-marker-target="5"
+              aria-label="Afficher Pizza Time"
+              aria-pressed="false"
+            >
+              <picture class="responsive-art">
+                <source media="(max-width:63.99rem)" srcset="assets/icons/8d991.svg" />
+                <img src="assets/icons/cbd2f.svg" alt="" aria-hidden="true" />
+              </picture>
+            </button>
+
+            <button
+              class="map-marker map-marker--yellow"
+              type="button"
+              style="--marker-x: 12%; --marker-y: 83%; --marker-desktop-x: 12.207792%; --marker-desktop-y: 73.026886%"
+              data-marker-target="4"
+              aria-label="Afficher Pizza Time"
+              aria-pressed="false"
+            >
+              <picture class="responsive-art">
+                <source media="(max-width:63.99rem)" srcset="assets/icons/8d991.svg" />
+                <img src="assets/icons/cbd2f.svg" alt="" aria-hidden="true" />
+              </picture>
+            </button>
+            <p
+              class="map-status"
+              id="map-status"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></p>
+          </section>
+          <section class="map-results" aria-label="Restaurants à Genève" tabindex="0">
+            <div class="map-cards"><article
+        class="map-card map-card--cropped"
+        id="map-card-0"
+        data-map-card="0"
+        data-name="Maison Yemma"
+        data-category="Marocain"
+        data-location="Eaux-Vives"
+      >
+        <div class="map-card__photo">
+          <img src="assets/images/624d4.png" alt="Maison Yemma" loading="lazy" />
+          <span class="map-card__badge">Sponsorisé</span>
+        </div>
+        <div class="map-card__body">
+          <div class="map-card__heading">
+            <h2>Maison <br class="map-card__break">Yemma</h2>
+            <span class="map-card__rating">
+              <span class="map-card__mobile-star" aria-hidden="true">★</span>
+              <img src="assets/icons/af291.svg" alt="" aria-hidden="true" />
+              <span>4.9</span>
+            </span>
+          </div>
+          <div class="map-card__tags">
+            <span class="map-card__tag map-card__tag--yellow">Marocain</span>
+            <span class="map-card__tag map-card__tag--green map-card__extra-tag">Healthy</span>
+            <span class="map-card__location">· Eaux-Vives</span>
+          </div>
+          <p class="map-card__quote">
+            <span class="map-card__quote-mobile">"Brunch épicé"</span>
+            <span class="map-card__quote-desktop">“Brunch épicé”</span>
+          </p>
+          <div class="map-card__services">
+            <span><img src="assets/icons/ad74a.svg" alt="Instagram" /></span>
+            <span><img src="assets/icons/4ec08.svg" alt="Livraison" /></span>
+          </div>
+        </div>
+        <button
+          class="map-card__select"
+          type="button"
+          data-select-card="0"
+          aria-label="Afficher Maison Yemma sur la carte"
+          aria-pressed="false"
+        ></button>
+      </article>
+
+      <article
+        class="map-card map-card--cropped"
+        id="map-card-1"
+        data-map-card="1"
+        data-name="Smash Club"
+        data-category="Burgers"
+        data-location="Plainpalais"
+      >
+        <div class="map-card__photo">
+          <img src="assets/images/3a4b8.png" alt="Smash Club" loading="lazy" />
+          <span class="map-card__badge">Coup de cœur</span>
+        </div>
+        <div class="map-card__body">
+          <div class="map-card__heading">
+            <h2>Smash <br class="map-card__break">Club</h2>
+            <span class="map-card__rating">
+              <span class="map-card__mobile-star" aria-hidden="true">★</span>
+              <img src="assets/icons/af291.svg" alt="" aria-hidden="true" />
+              <span>4.9</span>
+            </span>
+          </div>
+          <div class="map-card__tags">
+            <span class="map-card__tag map-card__tag--orange">Burgers</span>
+
+            <span class="map-card__location">· Plainpalais</span>
+          </div>
+          <p class="map-card__quote">
+            <span class="map-card__quote-mobile">"Meilleur smash"</span>
+            <span class="map-card__quote-desktop">“Meilleur smash”</span>
+          </p>
+          <div class="map-card__services">
+            <span><img src="assets/icons/ad74a.svg" alt="Instagram" /></span>
+            <span><img src="assets/icons/4ec08.svg" alt="Livraison" /></span>
+          </div>
+        </div>
+        <button
+          class="map-card__select"
+          type="button"
+          data-select-card="1"
+          aria-label="Afficher Smash Club sur la carte"
+          aria-pressed="false"
+        ></button>
+      </article>
+
+      <article
+        class="map-card "
+        id="map-card-2"
+        data-map-card="2"
+        data-name="Le Comptoir"
+        data-category="Healthy"
+        data-location="Annemasse"
+      >
+        <div class="map-card__photo">
+          <img src="assets/images/0e26d.png" alt="Le Comptoir" loading="lazy" />
+          <span class="map-card__badge">À tester</span>
+        </div>
+        <div class="map-card__body">
+          <div class="map-card__heading">
+            <h2><a class="map-card__link" href="details.html">Le <br class="map-card__break">Comptoir</a></h2>
+            <span class="map-card__rating">
+              <span class="map-card__mobile-star" aria-hidden="true">★</span>
+              <img src="assets/icons/af291.svg" alt="" aria-hidden="true" />
+              <span>4.9</span>
+            </span>
+          </div>
+          <div class="map-card__tags">
+            <span class="map-card__tag map-card__tag--green">Healthy</span>
+
+            <span class="map-card__location">· Annemasse</span>
+          </div>
+          <p class="map-card__quote">
+            <span class="map-card__quote-mobile">"Viande d’exception"</span>
+            <span class="map-card__quote-desktop">“Viande d’exception”</span>
+          </p>
+          <div class="map-card__services">
+            <span><img src="assets/icons/ad74a.svg" alt="Instagram" /></span>
+            <span><img src="assets/icons/4ec08.svg" alt="Livraison" /></span>
+          </div>
+        </div>
+        <button
+          class="map-card__select"
+          type="button"
+          data-select-card="2"
+          aria-label="Afficher Le Comptoir sur la carte"
+          aria-pressed="false"
+        ></button>
+      </article>
+
+      <article
+        class="map-card map-card--cropped"
+        id="map-card-3"
+        data-map-card="3"
+        data-name="Nomad Coffee"
+        data-category="Café"
+        data-location="Carouge"
+      >
+        <div class="map-card__photo">
+          <img src="assets/images/35d8f.png" alt="Nomad Coffee" loading="lazy" />
+          <span class="map-card__badge">Nouveau</span>
+        </div>
+        <div class="map-card__body">
+          <div class="map-card__heading">
+            <h2>Nomad <br class="map-card__break">Coffee</h2>
+            <span class="map-card__rating">
+              <span class="map-card__mobile-star" aria-hidden="true">★</span>
+              <img src="assets/icons/af291.svg" alt="" aria-hidden="true" />
+              <span>4.9</span>
+            </span>
+          </div>
+          <div class="map-card__tags">
+            <span class="map-card__tag map-card__tag--paper">Café</span>
+
+            <span class="map-card__location">· Carouge</span>
+          </div>
+          <p class="map-card__quote">
+            <span class="map-card__quote-mobile">"Pâtisseries maison"</span>
+            <span class="map-card__quote-desktop">“Pâtisseries maison”</span>
+          </p>
+          <div class="map-card__services">
+            <span><img src="assets/icons/ad74a.svg" alt="Instagram" /></span>
+            <span><img src="assets/icons/4ec08.svg" alt="Livraison" /></span>
+          </div>
+        </div>
+        <button
+          class="map-card__select"
+          type="button"
+          data-select-card="3"
+          aria-label="Afficher Nomad Coffee sur la carte"
+          aria-pressed="false"
+        ></button>
+      </article>
+
+      <article
+        class="map-card "
+        id="map-card-4"
+        data-map-card="4"
+        data-name="Pizza Time"
+        data-category="Pizza"
+        data-location="Charmilles"
+      >
+        <div class="map-card__photo">
+          <img src="assets/images/c5c61.png" alt="Pizza Time" loading="lazy" />
+          <span class="map-card__badge">Nouveau</span>
+        </div>
+        <div class="map-card__body">
+          <div class="map-card__heading">
+            <h2>Pizza <br class="map-card__break">Time</h2>
+            <span class="map-card__rating">
+              <span class="map-card__mobile-star" aria-hidden="true">★</span>
+              <img src="assets/icons/af291.svg" alt="" aria-hidden="true" />
+              <span>4.9</span>
+            </span>
+          </div>
+          <div class="map-card__tags">
+            <span class="map-card__tag map-card__tag--yellow">Pizza</span>
+
+            <span class="map-card__location">· Charmilles</span>
+          </div>
+          <p class="map-card__quote">
+            <span class="map-card__quote-mobile">"Pizza exceptionnelle"</span>
+            <span class="map-card__quote-desktop">“Pizza exceptionnelle”</span>
+          </p>
+          <div class="map-card__services">
+            <span><img src="assets/icons/ad74a.svg" alt="Instagram" /></span>
+            <span><img src="assets/icons/4ec08.svg" alt="Livraison" /></span>
+          </div>
+        </div>
+        <button
+          class="map-card__select"
+          type="button"
+          data-select-card="4"
+          aria-label="Afficher Pizza Time sur la carte"
+          aria-pressed="false"
+        ></button>
+      </article>
+
+      <article
+        class="map-card "
+        id="map-card-5"
+        data-map-card="5"
+        data-name="Pizza Time"
+        data-category="Pizza"
+        data-location="Charmilles"
+      >
+        <div class="map-card__photo">
+          <img src="assets/images/c5c61.png" alt="Pizza Time" loading="lazy" />
+          <span class="map-card__badge">Nouveau</span>
+        </div>
+        <div class="map-card__body">
+          <div class="map-card__heading">
+            <h2>Pizza <br class="map-card__break">Time</h2>
+            <span class="map-card__rating">
+              <span class="map-card__mobile-star" aria-hidden="true">★</span>
+              <img src="assets/icons/af291.svg" alt="" aria-hidden="true" />
+              <span>4.9</span>
+            </span>
+          </div>
+          <div class="map-card__tags">
+            <span class="map-card__tag map-card__tag--yellow">Pizza</span>
+
+            <span class="map-card__location">· Charmilles</span>
+          </div>
+          <p class="map-card__quote">
+            <span class="map-card__quote-mobile">"Pizza exceptionnelle"</span>
+            <span class="map-card__quote-desktop">“Pizza exceptionnelle”</span>
+          </p>
+          <div class="map-card__services">
+            <span><img src="assets/icons/ad74a.svg" alt="Instagram" /></span>
+            <span><img src="assets/icons/4ec08.svg" alt="Livraison" /></span>
+          </div>
+        </div>
+        <button
+          class="map-card__select"
+          type="button"
+          data-select-card="5"
+          aria-label="Afficher Pizza Time sur la carte"
+          aria-pressed="false"
+        ></button>
+      </article>
+      </div>
+            <p id="map-empty" hidden>
+              Aucun spot trouvé. Essayez une autre recherche ou effacez les filtres.
+            </p>
+          </section>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <picture class="responsive-art">
+          <source
+            media="(max-width: 47.99rem)"
+            srcset="assets/icons/f615a.svg"
+          />
+          <img
+            src="assets/icons/95b92.svg"
+            alt="Le spot halal"
+            class="site-footer__logo"
+          />
+        </picture>
+        <nav class="site-footer__navigation" aria-label="Navigation de pied de page">
+          <h2 class="site-footer__heading">Navigation</h2>
+          <ul>
+            <li><a href="restaurants.html">À proximité</a></li>
+            <li><a href="map.html" data-action="map">Carte</a></li>
+            <li><a href="index.html#about">À Propos</a></li>
+          </ul>
+        </nav>
+        <div class="site-footer__legal">
+          <h2 class="site-footer__heading">Légal</h2>
+          <ul>
+            <li>Mentions légales</li>
+            <li>Confidentialité</li>
+            <li>CGU</li>
+          </ul>
+        </div>
+        <div class="site-footer__address">
+          <h2 class="site-footer__heading">Adresse</h2>
+          <address>
+            Annemasse, 74100
+            <br />
+            France
+          </address>
+        </div>
+        <div class="site-footer__contact" id="contact">
+          <h2 class="site-footer__heading">Contactez-nous</h2>
+          <a href="mailto:hello@lespothalal.com">hello@lespothalal.com</a>
+        </div>
+        <p class="site-footer__credits">
+          © 2026 le spot halal
+          <br />
+          Made by Aleph
+        </p>
+        <a
+          class="button button--add site-footer__add"
+          href="mailto:hello@lespothalal.com?subject=Ajouter%20mon%20restaurant"
+        >
+          <img src="assets/icons/2c600.svg" alt="" class="icon" aria-hidden="true" />
+          <span>Ajouter mon restaurant</span>
+        </a>
+      </footer>
+    </div>
+    <dialog
+      class="info-dialog"
+      id="info-dialog"
+      aria-labelledby="dialog-title"
+      aria-describedby="dialog-copy"
+    >
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-copy"></p>
+      <a id="dialog-link" target="_blank" rel="noopener noreferrer">
+        En savoir plus
+      </a>
+      <form method="dialog"><button type="submit">Fermer</button></form>
+    </dialog>
+
+    <dialog
+      class="info-dialog map-dialog"
+      id="map-filter-dialog"
+      aria-labelledby="map-filter-title"
+    >
+      <h2 id="map-filter-title">Filtres</h2>
+      <form id="map-filter-form">
+        <fieldset>
+          <legend>Type de cuisine</legend>
+          <label>
+            <input type="checkbox" name="cuisine" value="Marocain" />
+            Marocain
+          </label>
+          <label>
+            <input type="checkbox" name="cuisine" value="Burgers" />
+            Burgers
+          </label>
+          <label>
+            <input type="checkbox" name="cuisine" value="Healthy" />
+            Healthy
+          </label>
+          <label>
+            <input type="checkbox" name="cuisine" value="Café" />
+            Café
+          </label>
+          <label>
+            <input type="checkbox" name="cuisine" value="Pizza" />
+            Pizza
+          </label>
+        </fieldset>
+        <button type="button" data-map-reset>Tout effacer</button>
+        <button type="submit">Appliquer</button>
+      </form>
+      <form method="dialog"><button type="submit">Fermer</button></form>
+    </dialog>
+    <dialog
+      class="info-dialog map-dialog"
+      id="map-city-dialog"
+      aria-labelledby="map-city-title"
+    >
+      <h2 id="map-city-title">Choisir une ville</h2>
+      <form id="map-city-form">
+        <label for="map-city">Ville</label>
+        <select id="map-city" name="city">
+          <option>Genève</option>
+        </select>
+        <button type="submit">Appliquer</button>
+      </form>
+      <form method="dialog"><button type="submit">Fermer</button></form>
+    </dialog>
+  </body>
+</html>

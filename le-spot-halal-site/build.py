@@ -103,6 +103,21 @@ PAGES = {
         'footer_mobile_logo': 'f615a.svg',
         'footer_desktop_logo': 'c36fe.svg',
     },
+    'map': {
+        'output': 'map.html',
+        'page_title': 'Explore la map — Le spot halal',
+        'page_description': 'Explorez les restaurants halal à Genève sur la carte.',
+        'page_stylesheet': 'assets/css/pages/map.css',
+        'page_script': 'assets/js/map.js',
+        'page_class': 'page-map',
+        'about_url': 'index.html#about',
+        'search_url': '#map-query',
+        'nearby_current': '',
+        'header_mobile_logo': '6d906.svg',
+        'header_mobile_search': '01fd5.svg',
+        'footer_mobile_logo': 'f615a.svg',
+        'footer_desktop_logo': '95b92.svg',
+    },
 }
 
 
@@ -134,9 +149,38 @@ def details_content():
     }
 
 
+def map_content():
+    records = json.loads(read('data/map-restaurants.json'))
+    cards = []
+    for record in records:
+        values = {key: escape(value, quote=True) for key, value in record.items() if isinstance(value, str)}
+        words = record['name'].split(' ', 1)
+        values['title'] = ' <br class="map-card__break">'.join(escape(word) for word in words)
+        if record.get('detailsUrl'):
+            values['title'] = f'<a class="map-card__link" href="{escape(record["detailsUrl"], quote=True)}">{values["title"]}</a>'
+        values['crop_class'] = 'map-card--cropped' if record['cropped'] else ''
+        values['extra_tag'] = '<span class="map-card__tag map-card__tag--green map-card__extra-tag">Healthy</span>' if record['id'] == '0' else ''
+        cards.append(render(read('partials/map-card.html'), values))
+    markers = []
+    for marker in json.loads(read('data/map-markers.json')):
+        record = next(record for record in records if record['id'] == marker['target'])
+        featured = ' map-marker--featured' if marker['featured'] else ''
+        icon = 'ac3ec.svg' if marker['featured'] else 'cbd2f.svg'
+        style = f'--marker-x: {marker["mobileLeft"]}%; --marker-y: {marker["mobileTop"]}%; --marker-desktop-x: {marker["desktopLeft"]:.6f}%; --marker-desktop-y: {marker["desktopTop"]:.6f}%'
+        markers.append(render(read('partials/map-marker.html'), {
+            'color': escape(marker['color'], quote=True),
+            'featured_class': featured,
+            'position_style': style,
+            'target': escape(marker['target'], quote=True),
+            'name': escape(record['name'], quote=True),
+            'icon': icon,
+        }))
+    return {'map_cards': '\n'.join(cards), 'map_markers': '\n'.join(markers)}
+
+
 def build(page='home'):
-    settings = dict(PAGES[page], nearby_url='restaurants.html')
-    content_values = {'home': lambda: {'restaurant_cards': restaurant_cards()}, 'restaurants': lambda: {'listing_cards': listing_cards()}, 'details': details_content}
+    settings = dict(PAGES[page], nearby_url='restaurants.html', nearby_active='' if page == 'map' else 'site-header__link--active', map_active='site-header__link--active' if page == 'map' else '', map_current='aria-current="page"' if page == 'map' else '')
+    content_values = {'home': lambda: {'restaurant_cards': restaurant_cards()}, 'restaurants': lambda: {'listing_cards': listing_cards()}, 'details': details_content, 'map': map_content}
     cards = content_values[page]()
     content = render(read(f'pages/{page}.html'), cards)
     dialogs = read('partials/info-dialog.html')
@@ -144,6 +188,8 @@ def build(page='home'):
         dialogs += '\n' + read('partials/listing-search.html')
     if page == 'details':
         dialogs += '\n' + read('partials/detail-dialogs.html')
+    if page == 'map':
+        dialogs += '\n' + read('partials/map-dialogs.html')
     output = render(read('layout.html'), dict(settings,
         header=render(read('partials/header.html'), settings),
         content=content,

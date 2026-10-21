@@ -17,15 +17,20 @@
     data-navigation=""
   >
     <a
-      class="site-header__link site-header__link--active"
+      class="site-header__link {{nearby_active}}"
       {{nearby_current}}
       href="{{nearby_url}}"
     >
       À proximité
     </a>
-    <button class="site-header__link" type="button" data-action="map">
+    <a
+      class="site-header__link {{map_active}}"
+      {{map_current}}
+      href="map.html"
+      data-action="map"
+    >
       Carte
-    </button>
+    </a>
     <a class="site-header__link" href="{{about_url}}">À propos</a>
   </nav>
   <a

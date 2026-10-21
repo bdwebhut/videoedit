@@ -1,0 +1,74 @@
+[
+  {
+    "id": "0",
+    "name": "Maison Yemma",
+    "category": "Marocain",
+    "color": "yellow",
+    "photo": "624d4.png",
+    "location": "Eaux-Vives",
+    "quote": "Brunch épicé",
+    "badge": "Sponsorisé",
+    "cropped": true,
+    "detailsUrl": ""
+  },
+  {
+    "id": "1",
+    "name": "Smash Club",
+    "category": "Burgers",
+    "color": "orange",
+    "photo": "3a4b8.png",
+    "location": "Plainpalais",
+    "quote": "Meilleur smash",
+    "badge": "Coup de cœur",
+    "cropped": true,
+    "detailsUrl": ""
+  },
+  {
+    "id": "2",
+    "name": "Le Comptoir",
+    "category": "Healthy",
+    "color": "green",
+    "photo": "0e26d.png",
+    "location": "Annemasse",
+    "quote": "Viande d’exception",
+    "badge": "À tester",
+    "cropped": false,
+    "detailsUrl": "details.html"
+  },
+  {
+    "id": "3",
+    "name": "Nomad Coffee",
+    "category": "Café",
+    "color": "paper",
+    "photo": "35d8f.png",
+    "location": "Carouge",
+    "quote": "Pâtisseries maison",
+    "badge": "Nouveau",
+    "cropped": true,
+    "detailsUrl": ""
+  },
+  {
+    "id": "4",
+    "name": "Pizza Time",
+    "category": "Pizza",
+    "color": "yellow",
+    "photo": "c5c61.png",
+    "location": "Charmilles",
+    "quote": "Pizza exceptionnelle",
+    "badge": "Nouveau",
+    "cropped": false,
+    "detailsUrl": ""
+  },
+  {
+    "id": "5",
+    "name": "Pizza Time",
+    "category": "Pizza",
+    "color": "yellow",
+    "photo": "c5c61.png",
+    "location": "Charmilles",
+    "quote": "Pizza exceptionnelle",
+    "badge": "Nouveau",
+    "cropped": false,
+    "detailsUrl": ""
+  }
+]

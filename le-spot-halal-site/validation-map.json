@@ -1,0 +1,451 @@
+{
+  "sizes": [
+    {
+      "width": 320,
+      "documentWidth": 320,
+      "height": 2500,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 1,
+      "mapBeforeResults": true,
+      "mapBesideResults": false,
+      "map": {
+        "x": 16,
+        "y": 442.375,
+        "width": 288,
+        "height": 430
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 360,
+      "documentWidth": 360,
+      "height": 2440,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 1,
+      "mapBeforeResults": true,
+      "mapBesideResults": false,
+      "map": {
+        "x": 16,
+        "y": 399.1875,
+        "width": 328,
+        "height": 430
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 375,
+      "documentWidth": 375,
+      "height": 2440,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 1,
+      "mapBeforeResults": true,
+      "mapBesideResults": false,
+      "map": {
+        "x": 16,
+        "y": 399.1875,
+        "width": 343,
+        "height": 430
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "height": 2440,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 1,
+      "mapBeforeResults": true,
+      "mapBesideResults": false,
+      "map": {
+        "x": 16,
+        "y": 399.1875,
+        "width": 358,
+        "height": 430
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 430,
+      "documentWidth": 430,
+      "height": 2440,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 1,
+      "mapBeforeResults": true,
+      "mapBesideResults": false,
+      "map": {
+        "x": 16,
+        "y": 399.1875,
+        "width": 398,
+        "height": 430
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 540,
+      "documentWidth": 540,
+      "height": 2440,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 1,
+      "mapBeforeResults": true,
+      "mapBesideResults": false,
+      "map": {
+        "x": 16,
+        "y": 399.1875,
+        "width": 508,
+        "height": 430
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 639,
+      "documentWidth": 639,
+      "height": 2440,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 1,
+      "mapBeforeResults": true,
+      "mapBesideResults": false,
+      "map": {
+        "x": 16,
+        "y": 399.1875,
+        "width": 607,
+        "height": 430
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 640,
+      "documentWidth": 640,
+      "height": 1992,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 2,
+      "mapBeforeResults": true,
+      "mapBesideResults": false,
+      "map": {
+        "x": 16,
+        "y": 339.1875,
+        "width": 608,
+        "height": 540
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 767,
+      "documentWidth": 767,
+      "height": 1992,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 2,
+      "mapBeforeResults": true,
+      "mapBesideResults": false,
+      "map": {
+        "x": 16,
+        "y": 339.1875,
+        "width": 735,
+        "height": 540
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "documentWidth": 768,
+      "height": 1926,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 2,
+      "mapBeforeResults": true,
+      "mapBesideResults": false,
+      "map": {
+        "x": 40,
+        "y": 373.1875,
+        "width": 688,
+        "height": 540
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 820,
+      "documentWidth": 820,
+      "height": 1926,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 2,
+      "mapBeforeResults": true,
+      "mapBesideResults": false,
+      "map": {
+        "x": 41.625,
+        "y": 373.1875,
+        "width": 736.75,
+        "height": 540
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 912,
+      "documentWidth": 912,
+      "height": 1926,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 2,
+      "mapBeforeResults": true,
+      "mapBesideResults": false,
+      "map": {
+        "x": 44.5,
+        "y": 373.1875,
+        "width": 823,
+        "height": 540
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 1023,
+      "documentWidth": 1023,
+      "height": 1926,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 2,
+      "mapBeforeResults": true,
+      "mapBesideResults": false,
+      "map": {
+        "x": 48.484375,
+        "y": 373.1875,
+        "width": 926.03125,
+        "height": 540
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 1024,
+      "documentWidth": 1024,
+      "height": 1734,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 1,
+      "mapBeforeResults": false,
+      "mapBesideResults": true,
+      "map": {
+        "x": 370.171875,
+        "y": 384.578125,
+        "width": 605.296875,
+        "height": 800
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 1280,
+      "documentWidth": 1280,
+      "height": 1752,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 1,
+      "mapBeforeResults": false,
+      "mapBesideResults": true,
+      "map": {
+        "x": 459.546875,
+        "y": 400.453125,
+        "width": 759.78125,
+        "height": 800
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 1366,
+      "documentWidth": 1366,
+      "height": 1764,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 1,
+      "mapBeforeResults": false,
+      "mapBesideResults": true,
+      "map": {
+        "x": 489.578125,
+        "y": 408.3125,
+        "width": 811.6875,
+        "height": 800
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "height": 1938,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 2,
+      "mapBeforeResults": false,
+      "mapBesideResults": true,
+      "map": {
+        "x": 510.6875,
+        "y": 415.84375,
+        "width": 861.0625,
+        "height": 859.5625
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 1600,
+      "documentWidth": 1600,
+      "height": 2054,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 2,
+      "mapBeforeResults": false,
+      "mapBesideResults": true,
+      "map": {
+        "x": 566.015625,
+        "y": 434.0625,
+        "width": 958.15625,
+        "height": 956.484375
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 1920,
+      "documentWidth": 1920,
+      "height": 2306,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 2,
+      "mapBeforeResults": false,
+      "mapBesideResults": true,
+      "map": {
+        "x": 678,
+        "y": 486.96875,
+        "width": 1155,
+        "height": 1153
+      },
+      "missingImages": 44,
+      "overflow": []
+    },
+    {
+      "width": 2560,
+      "documentWidth": 2560,
+      "height": 2306,
+      "cards": 6,
+      "markers": 7,
+      "headings": 1,
+      "duplicateIds": 0,
+      "fontLoaded": true,
+      "columns": 2,
+      "mapBeforeResults": false,
+      "mapBesideResults": true,
+      "map": {
+        "x": 998,
+        "y": 486.96875,
+        "width": 1155,
+        "height": 1153
+      },
+      "missingImages": 44,
+      "overflow": []
+    }
+  ],
+  "checks": [
+    "20 responsive widths without overflow",
+    "mobile map before cards and desktop map beside results",
+    "reference dimensions and map placement",
+    "six cards including repeated Pizza Time and seven markers",
+    "accent-insensitive search, multi-cuisine filters, reset and empty state",
+    "marker/card selection, linked duplicate markers and panel scrolling",
+    "keyboard activation and dialog Escape/focus return",
+    "shared map navigation and restaurant details link",
+    "static content and links without JavaScript"
+  ],
+  "errors": [],
+  "visualLimit": "Original photos and SVGs are not present in this checkout; final image verification requires the user’s local download.",
+  "references": {
+    "mobile": {
+      "width": 390,
+      "height": 2440
+    },
+    "desktop": {
+      "width": 1920,
+      "height": 2306
+    }
+  },
+  "sourceFolders": [
+    "le-spot-halal-map",
+    "le-spot-halal-mobile-map"
+  ]
+}

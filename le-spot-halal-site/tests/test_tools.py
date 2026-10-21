@@ -98,6 +98,28 @@ class BuildTests(unittest.TestCase):
         self.assertNotIn('<script>', output)
         self.assertIn('&lt;script&gt;', output)
 
+    def test_map_assets_card_marker_associations_and_routes(self):
+        output = build.build('map')
+        markup = Markup()
+        markup.feed(output)
+        self.assertEqual(markup.headings, 1)
+        self.assertEqual(len(markup.ids), len(set(markup.ids)))
+        declared = {'assets/' + asset['path'] for asset in json.loads((ROOT / 'asset-manifest.json').read_text())['assets']}
+        for asset in markup.assets:
+            self.assertTrue((ROOT / asset).exists() or asset in declared, asset)
+        self.assertNotIn('{{', output)
+        self.assertNotIn('../le-spot-halal-', output)
+        records = json.loads(build.read('data/map-restaurants.json'))
+        markers = json.loads(build.read('data/map-markers.json'))
+        self.assertEqual(len(records), 6)
+        self.assertEqual(len(markers), 7)
+        self.assertEqual(sum(record['name'] == 'Pizza Time' for record in records), 2)
+        for marker in markers:
+            self.assertIn(marker['target'], {record['id'] for record in records})
+        self.assertEqual(output.count('aria-current="page"'), 1)
+        for page in build.PAGES:
+            self.assertIn('href="map.html"', build.build(page))
+
     def test_missing_template_values_fail_clearly(self):
         with self.assertRaisesRegex(ValueError, 'Missing template value'):
             build.render('{{missing}}', {})

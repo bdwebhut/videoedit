@@ -1,0 +1,50 @@
+<dialog
+  class="info-dialog map-dialog"
+  id="map-filter-dialog"
+  aria-labelledby="map-filter-title"
+>
+  <h2 id="map-filter-title">Filtres</h2>
+  <form id="map-filter-form">
+    <fieldset>
+      <legend>Type de cuisine</legend>
+      <label>
+        <input type="checkbox" name="cuisine" value="Marocain" />
+        Marocain
+      </label>
+      <label>
+        <input type="checkbox" name="cuisine" value="Burgers" />
+        Burgers
+      </label>
+      <label>
+        <input type="checkbox" name="cuisine" value="Healthy" />
+        Healthy
+      </label>
+      <label>
+        <input type="checkbox" name="cuisine" value="Café" />
+        Café
+      </label>
+      <label>
+        <input type="checkbox" name="cuisine" value="Pizza" />
+        Pizza
+      </label>
+    </fieldset>
+    <button type="button" data-map-reset>Tout effacer</button>
+    <button type="submit">Appliquer</button>
+  </form>
+  <form method="dialog"><button type="submit">Fermer</button></form>
+</dialog>
+<dialog
+  class="info-dialog map-dialog"
+  id="map-city-dialog"
+  aria-labelledby="map-city-title"
+>
+  <h2 id="map-city-title">Choisir une ville</h2>
+  <form id="map-city-form">
+    <label for="map-city">Ville</label>
+    <select id="map-city" name="city">
+      <option>Genève</option>
+    </select>
+    <button type="submit">Appliquer</button>
+  </form>
+  <form method="dialog"><button type="submit">Fermer</button></form>
+</dialog>

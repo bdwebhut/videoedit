@@ -1,0 +1,43 @@
+<article
+  class="map-card {{crop_class}}"
+  id="map-card-{{id}}"
+  data-map-card="{{id}}"
+  data-name="{{name}}"
+  data-category="{{category}}"
+  data-location="{{location}}"
+>
+  <div class="map-card__photo">
+    <img src="assets/images/{{photo}}" alt="{{name}}" loading="lazy" />
+    <span class="map-card__badge">{{badge}}</span>
+  </div>
+  <div class="map-card__body">
+    <div class="map-card__heading">
+      <h2>{{title}}</h2>
+      <span class="map-card__rating">
+        <span class="map-card__mobile-star" aria-hidden="true">★</span>
+        <img src="assets/icons/af291.svg" alt="" aria-hidden="true" />
+        <span>4.9</span>
+      </span>
+    </div>
+    <div class="map-card__tags">
+      <span class="map-card__tag map-card__tag--{{color}}">{{category}}</span>
+      {{extra_tag}}
+      <span class="map-card__location">· {{location}}</span>
+    </div>
+    <p class="map-card__quote">
+      <span class="map-card__quote-mobile">"{{quote}}"</span>
+      <span class="map-card__quote-desktop">“{{quote}}”</span>
+    </p>
+    <div class="map-card__services">
+      <span><img src="assets/icons/ad74a.svg" alt="Instagram" /></span>
+      <span><img src="assets/icons/4ec08.svg" alt="Livraison" /></span>
+    </div>
+  </div>
+  <button
+    class="map-card__select"
+    type="button"
+    data-select-card="{{id}}"
+    aria-label="Afficher {{name}} sur la carte"
+    aria-pressed="false"
+  ></button>
+</article>

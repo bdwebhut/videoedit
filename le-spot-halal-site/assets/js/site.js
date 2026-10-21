@@ -14,16 +14,6 @@
     dialog.showModal();
   }
   site.addEventListener("lsh:show-info", (event) => showInfo(event.detail));
-  site.addEventListener("click", (event) => {
-    if (event.target.closest('[data-action="map"]')) {
-      showInfo({
-        title: "Les spots sur la carte",
-        copy: "Retrouvez les restaurants halal autour de Genève et en France voisine.",
-        href: "https://www.google.com/maps/search/restaurants+halal+Gen%C3%A8ve/",
-        label: "Ouvrir la carte",
-      });
-    }
-  });
   site.querySelectorAll("dialog").forEach((element) => {
     element.addEventListener("click", (event) => {
       if (event.target === element) element.close();

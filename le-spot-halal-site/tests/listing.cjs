@@ -157,10 +157,13 @@ const { chromium } = require(
   await page.locator("[data-reset-listing]").click();
   await page.locator("[data-menu-toggle]").click();
   await page.locator('[data-navigation] [data-action="map"]').click();
-  assert(await page.locator("#info-dialog").evaluate((dialog) => dialog.open));
-  await page.keyboard.press("Escape");
-  assert(
-    !(await page.locator("#info-dialog").evaluate((dialog) => dialog.open)),
+  assert(page.url().endsWith("/map.html"));
+  assert.equal(
+    await page
+      .locator('[data-navigation] [aria-current="page"]')
+      .textContent()
+      .then((text) => text.trim()),
+    "Carte",
   );
   await page.locator(".site-header__brand").click();
   assert(page.url().endsWith("/index.html"));
@@ -195,7 +198,7 @@ const { chromium } = require(
       "category sorting and restored original order",
       "accent-insensitive search and neighborhood query",
       "shared menu and search dialogs",
-      "shared map dialog and Escape dismissal",
+      "shared map page navigation",
       "homepage/listing navigation",
       "navigation and content without JavaScript",
     ],
