@@ -1,0 +1,15 @@
+{
+  "layout": {
+    "width": 1920,
+    "height": 6031,
+    "cards": 5,
+    "fontLoaded": true,
+    "missingImages": 57,
+    "temporaryRuntimeUrls": 0
+  },
+  "search": "1 restaurant trouvé",
+  "visibleCards": 1,
+  "resetCount": 5,
+  "mapDialog": true,
+  "errors": []
+}
