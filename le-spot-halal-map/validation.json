@@ -1,0 +1,30 @@
+{
+  "layout": {
+    "width": 1920,
+    "height": 2306,
+    "cards": 6,
+    "markers": 7,
+    "fontLoaded": true,
+    "map": {
+      "x": 678,
+      "y": 486.984375,
+      "width": 1155,
+      "height": 1153,
+      "top": 486.984375,
+      "right": 1833,
+      "bottom": 1639.984375,
+      "left": 678
+    },
+    "footerTop": 1713.984375
+  },
+  "checks": {
+    "pizza": 2,
+    "filterDialog": true,
+    "reset": 6,
+    "healthy": 1,
+    "markerSelect": true,
+    "city": true,
+    "empty": true
+  },
+  "errors": []
+}
