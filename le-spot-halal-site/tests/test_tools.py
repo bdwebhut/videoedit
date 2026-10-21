@@ -120,6 +120,23 @@ class BuildTests(unittest.TestCase):
         for page in build.PAGES:
             self.assertIn('href="map.html"', build.build(page))
 
+    def test_add_restaurant_has_labeled_fields_and_only_local_routes(self):
+        output = build.build('add-restaurant')
+        markup = Markup()
+        markup.feed(output)
+        self.assertEqual(markup.headings, 1)
+        self.assertEqual(len(markup.ids), len(set(markup.ids)))
+        declared = {'assets/' + asset['path'] for asset in json.loads((ROOT / 'asset-manifest.json').read_text())['assets']}
+        for asset in markup.assets:
+            self.assertTrue((ROOT / asset).exists() or asset in declared, asset)
+        self.assertNotIn('{{', output)
+        self.assertNotIn('data-node-id', output)
+        self.assertNotIn('../le-spot-halal-', output)
+        self.assertEqual(output.count('class="add-section"'), 6)
+        self.assertEqual(output.count('data-hours-row'), 7)
+        for page in build.PAGES:
+            self.assertIn('href="add-restaurant.html"', build.build(page))
+
     def test_missing_template_values_fail_clearly(self):
         with self.assertRaisesRegex(ValueError, 'Missing template value'):
             build.render('{{missing}}', {})

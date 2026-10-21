@@ -1,0 +1,2325 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Présentez votre restaurant et vos pratiques en toute transparence."
+    />
+    <title>Ajouter mon restaurant — Le spot halal</title>
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/pages/add-restaurant.css" />
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/add-restaurant.js" defer></script>
+  </head>
+  <body class="lsh-site page-add-restaurant">
+    <div class="site-shell">
+      <a class="skip-link" href="#main-content">Aller au contenu</a>
+      <header class="site-header">
+        <button
+          class="site-header__menu"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <img src="assets/icons/7b8b8.svg" alt="" width="44" height="44" />
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav
+          class="site-header__nav"
+          aria-label="Navigation principale"
+          id="primary-navigation"
+          data-navigation=""
+        >
+          <a
+            class="site-header__link "
+
+            href="restaurants.html"
+          >
+            À proximité
+          </a>
+          <a
+            class="site-header__link "
+
+            href="map.html"
+            data-action="map"
+          >
+            Carte
+          </a>
+          <a class="site-header__link" href="index.html#about">À propos</a>
+        </nav>
+        <a
+          class="site-header__brand"
+          href="index.html"
+          aria-label="Le spot halal — Accueil"
+        >
+          <picture class="responsive-art">
+            <source
+              media="(max-width: 47.99rem)"
+              srcset="assets/icons/6d906.svg"
+            />
+            <img src="assets/icons/67d68.svg" alt="Le spot halal" />
+          </picture>
+        </a>
+        <div class="site-header__tools">
+          <a
+            href="restaurants.html"
+            class="site-header__search"
+            aria-label="Rechercher un restaurant"
+          >
+            <picture class="responsive-art">
+              <source
+                media="(max-width: 47.99rem)"
+                srcset="assets/icons/01fd5.svg"
+              />
+              <img
+                src="assets/icons/2c857.svg"
+                alt=""
+                class="site-header__search-icon"
+                aria-hidden="true"
+              />
+            </picture>
+          </a>
+          <a
+            class="button button--add site-header__add"
+            href="add-restaurant.html"
+          >
+            <img
+              src="assets/icons/2c600.svg"
+              alt=""
+              class="icon"
+              aria-hidden="true"
+            />
+            <span>Ajouter</span>
+          </a>
+        </div>
+        <img
+          src="assets/icons/959cd.svg"
+          alt=""
+          class="site-header__decoration site-header__decoration--first"
+          aria-hidden="true"
+        />
+        <img
+          src="assets/icons/42096.svg"
+          alt=""
+          class="site-header__decoration site-header__decoration--second"
+          aria-hidden="true"
+        />
+      </header>
+      <main class="add-page" id="main-content" tabindex="-1">
+        <div class="add-intro-slot">
+          <div class="add-intro">
+            <nav aria-label="Fil d’Ariane" class="add-breadcrumb">
+              <a href="index.html">Accueil</a>
+              / Ajouter mon restaurant
+            </nav>
+            <div class="add-hero">
+              <div class="add-hero__copy">
+                <div class="add-hero__badge">
+                  <p class="add-hero__eyebrow">POUR LES RESTAURATEURS</p>
+                </div>
+                <h1 class="add-hero__title">
+                  <span class="add-hero__line">Ajouter mon</span>
+                  <span class="add-hero__line">restaurant.</span>
+                </h1>
+                <p class="add-hero__description">
+                  Votre spot mérite d’être découvert. Présentez votre adresse et vos
+                  pratiques pour aider chacun à choisir en toute transparence.
+                </p>
+              </div>
+              <div class="add-promise-wrap">
+                <div class="add-promise-tilt">
+                  <div class="add-promise">
+                    <div class="add-promise__icon">
+                      <img alt="" class="add-art" src="assets/icons/89fa4.svg" />
+                    </div>
+                    <div class="add-promise__title">
+                      <p class="add-promise__line">Un bon spot,</p>
+                      <p class="add-promise__line">des infos claires.</p>
+                    </div>
+                    <p class="add-promise__copy">
+                      Carte halal, pratiques en cuisine, alcool : on vous laisse la
+                      place d’expliquer, sans raccourcis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="add-overview">
+              <div class="add-overview__heading">
+                <p class="add-overview__title">Votre spot, de A à Z.</p>
+                <p class="add-overview__required">
+                  * Obligatoire · Les autres champs sont facultatifs
+                </p>
+              </div>
+              <div class="add-steps">
+                <a class="add-step--first add-step" href="#part-1">
+                  <p class="add-step__number">01</p>
+                  <p class="add-step__title">Votre spot</p>
+                </a>
+                <a class="add-step--plain add-step" href="#part-2">
+                  <p class="add-step__number">02</p>
+                  <p class="add-step__title">Votre contact</p>
+                </a>
+                <a class="add-step--plain add-step" href="#part-3">
+                  <p class="add-step__number">03</p>
+                  <p class="add-step__title">Le halal</p>
+                </a>
+                <a class="add-step--plain add-step" href="#part-4">
+                  <p class="add-step__number">04</p>
+                  <p class="add-step__title">L’alcool</p>
+                </a>
+                <a class="add-step--plain add-step" href="#part-5">
+                  <p class="add-step__number">05</p>
+                  <p class="add-step__title">Les pièces</p>
+                </a>
+                <a class="add-step--plain add-step" href="#part-6">
+                  <p class="add-step__number">06</p>
+                  <p class="add-step__title">L’envoi</p>
+                </a>
+              </div>
+              <div class="add-row">
+                <div class="add-visibility--public add-visibility">
+                  <div class="add-icon--small">
+                    <img alt="" class="add-art" src="assets/icons/fe89e.svg" />
+                  </div>
+                  <p class="add-visibility__label">Public · fiche restaurant</p>
+                </div>
+                <div class="add-visibility--private add-visibility">
+                  <div class="add-icon--small">
+                    <img alt="" class="add-art" src="assets/icons/6fe79.svg" />
+                  </div>
+                  <p class="add-visibility__label">
+                    Privé · contact et justificatifs
+                  </p>
+                </div>
+                <p class="add-overview__note">
+                  Toutes les parties sont ouvertes ci-dessous. Aucune réponse n’est
+                  présélectionnée.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form
+          action="#restaurant-form"
+          class="add-form"
+          id="restaurant-form"
+          method="get"
+        >
+          <section aria-labelledby="part-1-title" class="add-section" id="part-1">
+            <div class="add-row add-section__heading">
+              <div class="add-section__number--yellow">
+                <p class="add-section__index">01</p>
+              </div>
+              <h2 class="add-section__title" id="part-1-title">
+                Faisons connaissance avec votre spot.
+              </h2>
+              <div class="add-visibility--public add-visibility">
+                <div class="add-icon--small">
+                  <img alt="" class="add-art" src="assets/icons/fe89e.svg" />
+                </div>
+                <p class="add-visibility__label">Informations publiques</p>
+              </div>
+            </div>
+            <p class="add-section__description">
+              Ces informations sont destinées à votre fiche publique, après revue.
+              Renseignez les coordonnées du restaurant, pas celles de votre contact privé.
+            </p>
+            <div class="add-divider"></div>
+            <div class="add-fields">
+              <div class="add-field">
+                <label class="add-field__label" for="nom-du-restaurant">
+                  Nom du restaurant *
+                </label>
+                <div class="add-input-shell add-control-wrap">
+                  <input
+                    aria-label="Nom du restaurant *"
+                    class="add-control"
+                    id="nom-du-restaurant"
+                    name="nom-du-restaurant"
+                    placeholder="Le nom affiché sur votre enseigne"
+                    required=""
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="add-field">
+                <label class="add-field__label" for="cuisine-categorie">
+                  Cuisine / catégorie *
+                </label>
+                <div class="add-input-shell add-control-wrap">
+                  <select
+                    aria-label="Cuisine / catégorie *"
+                    class="add-control"
+                    id="cuisine-categorie"
+                    name="cuisine-categorie"
+                    required=""
+                  >
+                    <option value="">Choisir une catégorie</option>
+                    <option value="Burgers">Burgers</option>
+                    <option value="Café">Café</option>
+                    <option value="Marocain">Marocain</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Healthy">Healthy</option>
+                    <option value="Street food">Street food</option>
+                    <option value="Asiatique">Asiatique</option>
+                    <option value="Grill">Grill</option>
+                    <option value="Autre">Autre</option>
+                  </select>
+                  <div aria-hidden="true" class="add-icon--medium">
+                    <img alt="" class="add-art" src="assets/icons/247b6.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="add-field--full">
+              <label class="add-field__label" for="description-courte">
+                Description courte *
+              </label>
+              <div class="add-input-shell--textarea add-control-wrap">
+                <textarea
+                  aria-label="Description courte *"
+                  class="add-control"
+                  id="description-courte"
+                  name="description-courte"
+                  placeholder="Votre cuisine, votre ambiance, ce qui rend votre adresse unique…"
+                  required=""
+                ></textarea>
+              </div>
+              <p class="add-field__help">
+                Présentez le restaurant en quelques phrases, sans données personnelles.
+              </p>
+            </div>
+            <div class="add-field--full">
+              <label class="add-field__label" for="adresse-complete">
+                Adresse complète *
+              </label>
+              <div class="add-input-shell add-control-wrap">
+                <input
+                  aria-label="Adresse complète *"
+                  class="add-control"
+                  id="adresse-complete"
+                  name="adresse-complete"
+                  placeholder="Numéro et nom de rue, complément d’adresse"
+                  required=""
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="add-fields">
+              <div class="add-field">
+                <label class="add-field__label" for="code-postal">Code postal *</label>
+                <div class="add-input-shell add-control-wrap">
+                  <input
+                    aria-label="Code postal *"
+                    class="add-control"
+                    id="code-postal"
+                    name="code-postal"
+                    placeholder="Code postal"
+                    required=""
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="add-field">
+                <label class="add-field__label" for="ville">Ville *</label>
+                <div class="add-input-shell add-control-wrap">
+                  <input
+                    aria-label="Ville *"
+                    class="add-control"
+                    id="ville"
+                    name="ville"
+                    placeholder="Ville"
+                    required=""
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="add-field">
+                <label class="add-field__label" for="pays">Pays *</label>
+                <div class="add-input-shell add-control-wrap">
+                  <select
+                    aria-label="Pays *"
+                    class="add-control"
+                    id="pays"
+                    name="pays"
+                    required=""
+                  >
+                    <option value="">Choisir un pays</option>
+                    <option value="France">France</option>
+                    <option value="Suisse">Suisse</option>
+                    <option value="Belgique">Belgique</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Autre">Autre</option>
+                  </select>
+                  <div aria-hidden="true" class="add-icon--medium">
+                    <img alt="" class="add-art" src="assets/icons/247b6.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="add-fields">
+              <div class="add-field">
+                <label class="add-field__label" for="telephone-public">
+                  Téléphone public *
+                </label>
+                <div class="add-input-shell add-control-wrap">
+                  <input
+                    aria-label="Téléphone public *"
+                    class="add-control"
+                    id="telephone-public"
+                    name="telephone-public"
+                    placeholder="Indicatif et numéro du restaurant"
+                    required=""
+                    type="tel"
+                  />
+                </div>
+              </div>
+              <div class="add-field">
+                <label class="add-field__label" for="e-mail-public">
+                  E-mail public *
+                </label>
+                <div class="add-input-shell add-control-wrap">
+                  <input
+                    aria-label="E-mail public *"
+                    class="add-control"
+                    id="e-mail-public"
+                    name="e-mail-public"
+                    placeholder="Adresse de contact du restaurant"
+                    required=""
+                    type="email"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="add-fields">
+              <div class="add-field">
+                <label class="add-field__label" for="site-web-facultatif">
+                  Site web · facultatif
+                </label>
+                <div class="add-input-shell add-control-wrap">
+                  <input
+                    aria-label="Site web · facultatif"
+                    class="add-control"
+                    id="site-web-facultatif"
+                    name="site-web-facultatif"
+                    placeholder="https://…"
+                    type="url"
+                  />
+                </div>
+              </div>
+              <div class="add-field">
+                <label class="add-field__label" for="instagram-facultatif">
+                  Instagram · facultatif
+                </label>
+                <div class="add-input-shell add-control-wrap">
+                  <input
+                    aria-label="Instagram · facultatif"
+                    class="add-control"
+                    id="instagram-facultatif"
+                    name="instagram-facultatif"
+                    placeholder="Lien du profil ou @identifiant"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="add-field">
+                <label class="add-field__label" for="tiktok-facultatif">
+                  TikTok · facultatif
+                </label>
+                <div class="add-input-shell add-control-wrap">
+                  <input
+                    aria-label="TikTok · facultatif"
+                    class="add-control"
+                    id="tiktok-facultatif"
+                    name="tiktok-facultatif"
+                    placeholder="Lien du profil ou @identifiant"
+                    type="text"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="add-question">
+              <p class="add-question__title">Horaires d’ouverture *</p>
+              <p class="add-field__help">
+                Renseignez un créneau ou cochez « Fermé » pour chaque jour. Ajoutez un
+                second créneau si vous fermez entre deux services.
+              </p>
+              <div class="add-hours__head">
+                <p class="add-hours__day-heading">Jour</p>
+                <p class="add-hours__slot-heading">Premier créneau</p>
+                <p class="add-hours__slot-heading">Second créneau · facultatif</p>
+                <p class="add-hours__closed-heading">Fermé</p>
+              </div>
+              <div class="add-hours__rows">
+                <div class="add-hours__row" data-hours-row="">
+                  <p class="add-hours__day">Lundi</p>
+                  <div class="add-hours__slot add-control-wrap">
+                    <input
+                      aria-label="Lundi · Premier créneau"
+                      class="add-control"
+                      name="lundi-premier-creneau"
+                      pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+                      placeholder="HH:MM – HH:MM"
+                      required=""
+                      title="Format : 12:00 – 14:00"
+                      type="text"
+                    />
+                  </div>
+                  <div class="add-hours__slot add-control-wrap">
+                    <input
+                      aria-label="Lundi · Second créneau"
+                      class="add-control"
+                      name="lundi-second-creneau"
+                      pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+                      placeholder="HH:MM – HH:MM"
+                      title="Format : 12:00 – 14:00"
+                      type="text"
+                    />
+                  </div>
+                  <label class="add-hours__closed add-native-checkbox">
+                    <input
+                      aria-label="Lundi · Fermé"
+                      class="add-choice-input"
+                      name="lundi-ferme"
+                      type="checkbox"
+                      value="oui"
+                    />
+                    <span class="add-choice__box add-choice__check"></span>
+                  </label>
+                </div>
+                <div class="add-hours__row" data-hours-row="">
+                  <p class="add-hours__day">Mardi</p>
+                  <div class="add-hours__slot add-control-wrap">
+                    <input
+                      aria-label="Mardi · Premier créneau"
+                      class="add-control"
+                      name="mardi-premier-creneau"
+                      pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+                      placeholder="HH:MM – HH:MM"
+                      required=""
+                      title="Format : 12:00 – 14:00"
+                      type="text"
+                    />
+                  </div>
+                  <div class="add-hours__slot add-control-wrap">
+                    <input
+                      aria-label="Mardi · Second créneau"
+                      class="add-control"
+                      name="mardi-second-creneau"
+                      pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+                      placeholder="HH:MM – HH:MM"
+                      title="Format : 12:00 – 14:00"
+                      type="text"
+                    />
+                  </div>
+                  <label class="add-hours__closed add-native-checkbox">
+                    <input
+                      aria-label="Mardi · Fermé"
+                      class="add-choice-input"
+                      name="mardi-ferme"
+                      type="checkbox"
+                      value="oui"
+                    />
+                    <span class="add-choice__box add-choice__check"></span>
+                  </label>
+                </div>
+                <div class="add-hours__row" data-hours-row="">
+                  <p class="add-hours__day">Mercredi</p>
+                  <div class="add-hours__slot add-control-wrap">
+                    <input
+                      aria-label="Mercredi · Premier créneau"
+                      class="add-control"
+                      name="mercredi-premier-creneau"
+                      pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+                      placeholder="HH:MM – HH:MM"
+                      required=""
+                      title="Format : 12:00 – 14:00"
+                      type="text"
+                    />
+                  </div>
+                  <div class="add-hours__slot add-control-wrap">
+                    <input
+                      aria-label="Mercredi · Second créneau"
+                      class="add-control"
+                      name="mercredi-second-creneau"
+                      pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+                      placeholder="HH:MM – HH:MM"
+                      title="Format : 12:00 – 14:00"
+                      type="text"
+                    />
+                  </div>
+                  <label class="add-hours__closed add-native-checkbox">
+                    <input
+                      aria-label="Mercredi · Fermé"
+                      class="add-choice-input"
+                      name="mercredi-ferme"
+                      type="checkbox"
+                      value="oui"
+                    />
+                    <span class="add-choice__box add-choice__check"></span>
+                  </label>
+                </div>
+                <div class="add-hours__row" data-hours-row="">
+                  <p class="add-hours__day">Jeudi</p>
+                  <div class="add-hours__slot add-control-wrap">
+                    <input
+                      aria-label="Jeudi · Premier créneau"
+                      class="add-control"
+                      name="jeudi-premier-creneau"
+                      pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+                      placeholder="HH:MM – HH:MM"
+                      required=""
+                      title="Format : 12:00 – 14:00"
+                      type="text"
+                    />
+                  </div>
+                  <div class="add-hours__slot add-control-wrap">
+                    <input
+                      aria-label="Jeudi · Second créneau"
+                      class="add-control"
+                      name="jeudi-second-creneau"
+                      pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+                      placeholder="HH:MM – HH:MM"
+                      title="Format : 12:00 – 14:00"
+                      type="text"
+                    />
+                  </div>
+                  <label class="add-hours__closed add-native-checkbox">
+                    <input
+                      aria-label="Jeudi · Fermé"
+                      class="add-choice-input"
+                      name="jeudi-ferme"
+                      type="checkbox"
+                      value="oui"
+                    />
+                    <span class="add-choice__box add-choice__check"></span>
+                  </label>
+                </div>
+                <div class="add-hours__row" data-hours-row="">
+                  <p class="add-hours__day">Vendredi</p>
+                  <div class="add-hours__slot add-control-wrap">
+                    <input
+                      aria-label="Vendredi · Premier créneau"
+                      class="add-control"
+                      name="vendredi-premier-creneau"
+                      pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+                      placeholder="HH:MM – HH:MM"
+                      required=""
+                      title="Format : 12:00 – 14:00"
+                      type="text"
+                    />
+                  </div>
+                  <div class="add-hours__slot add-control-wrap">
+                    <input
+                      aria-label="Vendredi · Second créneau"
+                      class="add-control"
+                      name="vendredi-second-creneau"
+                      pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+                      placeholder="HH:MM – HH:MM"
+                      title="Format : 12:00 – 14:00"
+                      type="text"
+                    />
+                  </div>
+                  <label class="add-hours__closed add-native-checkbox">
+                    <input
+                      aria-label="Vendredi · Fermé"
+                      class="add-choice-input"
+                      name="vendredi-ferme"
+                      type="checkbox"
+                      value="oui"
+                    />
+                    <span class="add-choice__box add-choice__check"></span>
+                  </label>
+                </div>
+                <div class="add-hours__row" data-hours-row="">
+                  <p class="add-hours__day">Samedi</p>
+                  <div class="add-hours__slot add-control-wrap">
+                    <input
+                      aria-label="Samedi · Premier créneau"
+                      class="add-control"
+                      name="samedi-premier-creneau"
+                      pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+                      placeholder="HH:MM – HH:MM"
+                      required=""
+                      title="Format : 12:00 – 14:00"
+                      type="text"
+                    />
+                  </div>
+                  <div class="add-hours__slot add-control-wrap">
+                    <input
+                      aria-label="Samedi · Second créneau"
+                      class="add-control"
+                      name="samedi-second-creneau"
+                      pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+                      placeholder="HH:MM – HH:MM"
+                      title="Format : 12:00 – 14:00"
+                      type="text"
+                    />
+                  </div>
+                  <label class="add-hours__closed add-native-checkbox">
+                    <input
+                      aria-label="Samedi · Fermé"
+                      class="add-choice-input"
+                      name="samedi-ferme"
+                      type="checkbox"
+                      value="oui"
+                    />
+                    <span class="add-choice__box add-choice__check"></span>
+                  </label>
+                </div>
+                <div class="add-hours__row" data-hours-row="">
+                  <p class="add-hours__day">Dimanche</p>
+                  <div class="add-hours__slot add-control-wrap">
+                    <input
+                      aria-label="Dimanche · Premier créneau"
+                      class="add-control"
+                      name="dimanche-premier-creneau"
+                      pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+                      placeholder="HH:MM – HH:MM"
+                      required=""
+                      title="Format : 12:00 – 14:00"
+                      type="text"
+                    />
+                  </div>
+                  <div class="add-hours__slot add-control-wrap">
+                    <input
+                      aria-label="Dimanche · Second créneau"
+                      class="add-control"
+                      name="dimanche-second-creneau"
+                      pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+                      placeholder="HH:MM – HH:MM"
+                      title="Format : 12:00 – 14:00"
+                      type="text"
+                    />
+                  </div>
+                  <label class="add-hours__closed add-native-checkbox">
+                    <input
+                      aria-label="Dimanche · Fermé"
+                      class="add-choice-input"
+                      name="dimanche-ferme"
+                      type="checkbox"
+                      value="oui"
+                    />
+                    <span class="add-choice__box add-choice__check"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="add-field--full">
+                <label
+                  class="add-field__label"
+                  for="precisions-sur-les-horaires-facultatif"
+                >
+                  Précisions sur les horaires · facultatif
+                </label>
+                <div class="add-input-shell add-control-wrap">
+                  <input
+                    aria-label="Précisions sur les horaires · facultatif"
+                    class="add-control"
+                    id="precisions-sur-les-horaires-facultatif"
+                    name="precisions-sur-les-horaires-facultatif"
+                    placeholder="Variations saisonnières, jours fériés ou horaires particuliers…"
+                    type="text"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-labelledby="question-quels-services-proposez-vous"
+              class="add-question"
+              role="group"
+            >
+              <p class="add-field__label" id="question-quels-services-proposez-vous">
+                Quels services proposez-vous ? *
+              </p>
+              <div class="add-choices" data-services="">
+                <label class="add-choice add-native-choice">
+                  <input
+                    aria-label="Quels services proposez-vous ? * · Sur place"
+                    class="add-choice-input"
+                    name="quels-services-proposez-vous"
+                    type="checkbox"
+                    value="Sur place"
+                  />
+                  <span class="add-choice__box add-choice__check"></span>
+                  <span class="add-choice__label">Sur place</span>
+                </label>
+                <label class="add-choice add-native-choice">
+                  <input
+                    aria-label="Quels services proposez-vous ? * · À emporter"
+                    class="add-choice-input"
+                    name="quels-services-proposez-vous"
+                    type="checkbox"
+                    value="À emporter"
+                  />
+                  <span class="add-choice__box add-choice__check"></span>
+                  <span class="add-choice__label">À emporter</span>
+                </label>
+                <label class="add-choice add-native-choice">
+                  <input
+                    aria-label="Quels services proposez-vous ? * · Livraison"
+                    class="add-choice-input"
+                    name="quels-services-proposez-vous"
+                    type="checkbox"
+                    value="Livraison"
+                  />
+                  <span class="add-choice__box add-choice__check"></span>
+                  <span class="add-choice__label">Livraison</span>
+                </label>
+              </div>
+              <p class="add-field__help">
+                Plusieurs choix possibles. Cochez uniquement les services disponibles.
+              </p>
+            </div>
+            <div class="add-field--full">
+              <label
+                class="add-field__label"
+                for="lien-de-commande-livraison-si-livraison-proposee"
+              >
+                Lien de commande / livraison · si livraison proposée
+              </label>
+              <div class="add-link-fields">
+                <div class="add-input-shell--link add-control-wrap">
+                  <input
+                    aria-label="Lien de commande / livraison · si livraison proposée"
+                    class="add-control"
+                    id="lien-de-commande-livraison-si-livraison-proposee"
+                    name="lien-de-commande-livraison-si-livraison-proposee"
+                    placeholder="https://…"
+                    type="url"
+                  />
+                </div>
+                <div class="add-input-shell--link add-control-wrap">
+                  <input
+                    aria-label="Lien de votre service de livraison ou de votre page de commande, si disponible."
+                    class="add-control"
+                    id="lien-de-votre-service-de-livraison-ou-de-votre-page-de-commande-si-dispo"
+                    name="lien-de-votre-service-de-livraison-ou-de-votre-page-de-commande-si-dispo"
+                    placeholder="https://…"
+                    type="url"
+                  />
+                </div>
+              </div>
+              <label
+                class="add-field__help"
+                for="lien-de-votre-service-de-livraison-ou-de-votre-page-de-commande-si-dispo"
+              >
+                Lien de votre service de livraison ou de votre page de commande, si
+                disponible.
+              </label>
+            </div>
+          </section><section aria-labelledby="part-2-title" class="add-section" id="part-2">
+        <div class="add-row add-section__heading">
+          <div class="add-section__number--pink">
+            <p class="add-section__index">02</p>
+          </div>
+          <h2 class="add-section__title" id="part-2-title">
+            Et vous, qui êtes-vous ?
+          </h2>
+          <div class="add-visibility--private add-visibility">
+            <div class="add-icon--small">
+              <img alt="" class="add-art" src="assets/icons/6fe79.svg" />
+            </div>
+            <p class="add-visibility__label">Privé · pour la revue</p>
+          </div>
+        </div>
+        <p class="add-section__description">
+          Le contact du propriétaire ou de la personne autorisée à représenter le
+          restaurant. Ces coordonnées servent à examiner votre demande et ne seront
+          pas publiques.
+        </p>
+        <div class="add-divider"></div>
+        <div class="add-fields">
+          <div class="add-field">
+            <label class="add-field__label" for="nom-et-prenom-du-contact">
+              Nom et prénom du contact *
+            </label>
+            <div class="add-input-shell add-control-wrap">
+              <input
+                aria-label="Nom et prénom du contact *"
+                class="add-control"
+                id="nom-et-prenom-du-contact"
+                name="nom-et-prenom-du-contact"
+                placeholder="Votre nom et prénom"
+                required=""
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="add-field">
+            <label class="add-field__label" for="fonction-role">
+              Fonction / rôle *
+            </label>
+            <div class="add-input-shell add-control-wrap">
+              <input
+                aria-label="Fonction / rôle *"
+                class="add-control"
+                id="fonction-role"
+                name="fonction-role"
+                placeholder="Votre rôle au sein de l’établissement"
+                required=""
+                type="text"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="add-fields">
+          <div class="add-field">
+            <label class="add-field__label" for="e-mail-professionnel">
+              E-mail professionnel *
+            </label>
+            <div class="add-input-shell add-control-wrap">
+              <input
+                aria-label="E-mail professionnel *"
+                class="add-control"
+                id="e-mail-professionnel"
+                name="e-mail-professionnel"
+                placeholder="Votre adresse professionnelle"
+                required=""
+                type="email"
+              />
+            </div>
+          </div>
+          <div class="add-field">
+            <label class="add-field__label" for="telephone-professionnel">
+              Téléphone professionnel *
+            </label>
+            <div class="add-input-shell add-control-wrap">
+              <input
+                aria-label="Téléphone professionnel *"
+                class="add-control"
+                id="telephone-professionnel"
+                name="telephone-professionnel"
+                placeholder="Indicatif et numéro pour vous joindre"
+                required=""
+                type="tel"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="add-fields">
+          <div class="add-field">
+            <label
+              class="add-field__label"
+              for="raison-sociale-nom-legal-de-lentreprise"
+            >
+              Raison sociale / nom légal de l’entreprise *
+            </label>
+            <div class="add-input-shell add-control-wrap">
+              <input
+                aria-label="Raison sociale / nom légal de l’entreprise *"
+                class="add-control"
+                id="raison-sociale-nom-legal-de-lentreprise"
+                name="raison-sociale-nom-legal-de-lentreprise"
+                placeholder="Dénomination de l’entreprise"
+                required=""
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="add-field">
+            <label
+              class="add-field__label"
+              for="identifiant-dimmatriculation-facultatif"
+            >
+              Identifiant d’immatriculation · facultatif
+            </label>
+            <div class="add-input-shell add-control-wrap">
+              <input
+                aria-label="Identifiant d’immatriculation · facultatif"
+                class="add-control"
+                id="identifiant-dimmatriculation-facultatif"
+                name="identifiant-dimmatriculation-facultatif"
+                placeholder="Identifiant de l’entreprise, si disponible"
+                type="text"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="add-notice">
+          <div class="add-icon--notice">
+            <img alt="" class="add-art" src="assets/icons/9092e.svg" />
+          </div>
+          <div class="add-notice__body">
+            <p class="add-notice__title">Seulement ce qui est utile à la demande.</p>
+            <p class="add-notice__copy">
+              N’envoyez ni pièce d’identité, ni coordonnées bancaires, ni informations
+              personnelles sans rapport avec votre établissement.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="part-3-title" class="add-section" id="part-3">
+        <div class="add-row add-section__heading">
+          <div class="add-section__number--yellow">
+            <p class="add-section__index">03</p>
+          </div>
+          <h2 class="add-section__title" id="part-3-title">
+            Le halal, en toute transparence.
+          </h2>
+          <div class="add-visibility--public add-visibility">
+            <div class="add-icon--small">
+              <img alt="" class="add-art" src="assets/icons/fe89e.svg" />
+            </div>
+            <p class="add-visibility__label">Informations publiques</p>
+          </div>
+        </div>
+        <p class="add-section__description">
+          Décrivez ce que vous proposez et comment vous travaillez. Une déclaration de
+          l’établissement n’est pas une certification vérifiée.
+        </p>
+        <div class="add-divider"></div>
+        <div
+          aria-labelledby="question-quelle-est-la-couverture-halal-de-votre-carte"
+          class="add-question"
+          role="group"
+        >
+          <p
+            class="add-field__label"
+            id="question-quelle-est-la-couverture-halal-de-votre-carte"
+          >
+            Quelle est la couverture halal de votre carte ? *
+          </p>
+          <div class="add-choices">
+            <label class="add-choice add-native-choice">
+              <input
+                aria-label="Quelle est la couverture halal de votre carte ? * · Toute la carte est halal"
+                class="add-choice-input"
+                name="quelle-est-la-couverture-halal-de-votre-carte"
+                required=""
+                type="radio"
+                value="Toute la carte est halal"
+              />
+              <span class="add-icon--radio add-choice__radio">
+                <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+              </span>
+              <span class="add-choice__label">Toute la carte est halal</span>
+            </label>
+            <label class="add-choice add-native-choice">
+              <input
+                aria-label="Quelle est la couverture halal de votre carte ? * · Une partie de la carte est halal"
+                class="add-choice-input"
+                name="quelle-est-la-couverture-halal-de-votre-carte"
+                required=""
+                type="radio"
+                value="Une partie de la carte est halal"
+              />
+              <span class="add-icon--radio add-choice__radio">
+                <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+              </span>
+              <span class="add-choice__label">Une partie de la carte est halal</span>
+            </label>
+            <label class="add-choice add-native-choice">
+              <input
+                aria-label="Quelle est la couverture halal de votre carte ? * · À préciser"
+                class="add-choice-input"
+                name="quelle-est-la-couverture-halal-de-votre-carte"
+                required=""
+                type="radio"
+                value="À préciser"
+              />
+              <span class="add-icon--radio add-choice__radio">
+                <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+              </span>
+              <span class="add-choice__label">À préciser</span>
+            </label>
+          </div>
+        </div>
+        <div class="add-fields">
+          <div class="add-field">
+            <label class="add-field__label" for="plats-viandes-et-produits-halal">
+              Plats, viandes et produits halal *
+            </label>
+            <div class="add-input-shell--textarea add-control-wrap">
+              <textarea
+                aria-label="Plats, viandes et produits halal *"
+                class="add-control"
+                id="plats-viandes-et-produits-halal"
+                name="plats-viandes-et-produits-halal"
+                placeholder="Listez précisément les produits et plats concernés."
+                required=""
+              ></textarea>
+            </div>
+            <p class="add-field__help">
+              Mentionnez les viandes, ingrédients, sauces et desserts concernés.
+            </p>
+          </div>
+          <div class="add-field">
+            <label class="add-field__label" for="plats-viandes-et-produits-non-halal">
+              Plats, viandes et produits non halal *
+            </label>
+            <div class="add-input-shell--textarea add-control-wrap">
+              <textarea
+                aria-label="Plats, viandes et produits non halal *"
+                class="add-control"
+                id="plats-viandes-et-produits-non-halal"
+                name="plats-viandes-et-produits-non-halal"
+                placeholder="Listez les exceptions, ou indiquez « aucun »."
+                required=""
+              ></textarea>
+            </div>
+            <p class="add-field__help">
+              Si seule une partie de la carte est halal, détaillez clairement les
+              éléments qui ne le sont pas.
+            </p>
+          </div>
+        </div>
+        <div
+          aria-labelledby="question-du-porc-ou-des-produits-non-halal-sont-ils-presents-dans-letablissement"
+          class="add-question"
+          role="group"
+        >
+          <p
+            class="add-field__label"
+            id="question-du-porc-ou-des-produits-non-halal-sont-ils-presents-dans-letablissement"
+          >
+            Du porc ou des produits non halal sont-ils présents dans l’établissement ?
+            *
+          </p>
+          <div class="add-choices">
+            <label class="add-choice add-native-choice">
+              <input
+                aria-label="Du porc ou des produits non halal sont-ils présents dans l’établissement ? * · Oui"
+                class="add-choice-input"
+                name="du-porc-ou-des-produits-non-halal-sont-ils-presents-dans-letablissement"
+                required=""
+                type="radio"
+                value="Oui"
+              />
+              <span class="add-icon--radio add-choice__radio">
+                <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+              </span>
+              <span class="add-choice__label">Oui</span>
+            </label>
+            <label class="add-choice add-native-choice">
+              <input
+                aria-label="Du porc ou des produits non halal sont-ils présents dans l’établissement ? * · Non"
+                class="add-choice-input"
+                name="du-porc-ou-des-produits-non-halal-sont-ils-presents-dans-letablissement"
+                required=""
+                type="radio"
+                value="Non"
+              />
+              <span class="add-icon--radio add-choice__radio">
+                <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+              </span>
+              <span class="add-choice__label">Non</span>
+            </label>
+            <label class="add-choice add-native-choice">
+              <input
+                aria-label="Du porc ou des produits non halal sont-ils présents dans l’établissement ? * · À préciser"
+                class="add-choice-input"
+                name="du-porc-ou-des-produits-non-halal-sont-ils-presents-dans-letablissement"
+                required=""
+                type="radio"
+                value="À préciser"
+              />
+              <span class="add-icon--radio add-choice__radio">
+                <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+              </span>
+              <span class="add-choice__label">À préciser</span>
+            </label>
+          </div>
+          <p class="add-field__help">
+            Cela inclut les produits stockés, préparés ou servis, même hors de votre
+            offre halal.
+          </p>
+        </div>
+        <div class="add-field--full">
+          <label
+            class="add-field__label"
+            for="produits-concernes-et-precisions-si-oui-ou-a-preciser"
+          >
+            Produits concernés et précisions · si oui ou à préciser
+          </label>
+          <div class="add-input-shell--textarea add-control-wrap">
+            <textarea
+              aria-label="Produits concernés et précisions · si oui ou à préciser"
+              class="add-control"
+              id="produits-concernes-et-precisions-si-oui-ou-a-preciser"
+              name="produits-concernes-et-precisions-si-oui-ou-a-preciser"
+              placeholder="Quels produits ? Où sont-ils stockés, préparés ou servis ?"
+            ></textarea>
+          </div>
+        </div>
+        <div class="add-practices">
+          <p class="add-question__title">
+            Les produits halal et non halal partagent-ils les espaces ou équipements
+            suivants ? *
+          </p>
+          <p class="add-field__help">
+            Répondez pour chaque ligne. S’il n’y a aucun produit non halal sur place,
+            indiquez « Non » et précisez-le ci-dessous.
+          </p>
+          <div
+            aria-labelledby="question-stockage-refrigerateurs-congelateurs-reserves"
+            class="add-practice"
+            role="group"
+          >
+            <p
+              class="add-practice__label"
+              id="question-stockage-refrigerateurs-congelateurs-reserves"
+            >
+              Stockage : réfrigérateurs, congélateurs, réserves *
+            </p>
+            <div class="add-practice__choices">
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Stockage : réfrigérateurs, congélateurs, réserves * · Oui"
+                  class="add-choice-input"
+                  name="stockage-refrigerateurs-congelateurs-reserves"
+                  required=""
+                  type="radio"
+                  value="Oui"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">Oui</span>
+              </label>
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Stockage : réfrigérateurs, congélateurs, réserves * · Non"
+                  class="add-choice-input"
+                  name="stockage-refrigerateurs-congelateurs-reserves"
+                  required=""
+                  type="radio"
+                  value="Non"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">Non</span>
+              </label>
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Stockage : réfrigérateurs, congélateurs, réserves * · À préciser"
+                  class="add-choice-input"
+                  name="stockage-refrigerateurs-congelateurs-reserves"
+                  required=""
+                  type="radio"
+                  value="À préciser"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">À préciser</span>
+              </label>
+            </div>
+          </div>
+          <div
+            aria-labelledby="question-zones-et-plans-de-preparation"
+            class="add-practice"
+            role="group"
+          >
+            <p
+              class="add-practice__label"
+              id="question-zones-et-plans-de-preparation"
+            >
+              Zones et plans de préparation *
+            </p>
+            <div class="add-practice__choices">
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Zones et plans de préparation * · Oui"
+                  class="add-choice-input"
+                  name="zones-et-plans-de-preparation"
+                  required=""
+                  type="radio"
+                  value="Oui"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">Oui</span>
+              </label>
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Zones et plans de préparation * · Non"
+                  class="add-choice-input"
+                  name="zones-et-plans-de-preparation"
+                  required=""
+                  type="radio"
+                  value="Non"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">Non</span>
+              </label>
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Zones et plans de préparation * · À préciser"
+                  class="add-choice-input"
+                  name="zones-et-plans-de-preparation"
+                  required=""
+                  type="radio"
+                  value="À préciser"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">À préciser</span>
+              </label>
+            </div>
+          </div>
+          <div
+            aria-labelledby="question-surfaces-de-cuisson-grils-plaques-fours"
+            class="add-practice"
+            role="group"
+          >
+            <p
+              class="add-practice__label"
+              id="question-surfaces-de-cuisson-grils-plaques-fours"
+            >
+              Surfaces de cuisson : grils, plaques, fours *
+            </p>
+            <div class="add-practice__choices">
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Surfaces de cuisson : grils, plaques, fours * · Oui"
+                  class="add-choice-input"
+                  name="surfaces-de-cuisson-grils-plaques-fours"
+                  required=""
+                  type="radio"
+                  value="Oui"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">Oui</span>
+              </label>
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Surfaces de cuisson : grils, plaques, fours * · Non"
+                  class="add-choice-input"
+                  name="surfaces-de-cuisson-grils-plaques-fours"
+                  required=""
+                  type="radio"
+                  value="Non"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">Non</span>
+              </label>
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Surfaces de cuisson : grils, plaques, fours * · À préciser"
+                  class="add-choice-input"
+                  name="surfaces-de-cuisson-grils-plaques-fours"
+                  required=""
+                  type="radio"
+                  value="À préciser"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">À préciser</span>
+              </label>
+            </div>
+          </div>
+          <div
+            aria-labelledby="question-ustensiles-et-materiel-de-cuisine"
+            class="add-practice"
+            role="group"
+          >
+            <p
+              class="add-practice__label"
+              id="question-ustensiles-et-materiel-de-cuisine"
+            >
+              Ustensiles et matériel de cuisine *
+            </p>
+            <div class="add-practice__choices">
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Ustensiles et matériel de cuisine * · Oui"
+                  class="add-choice-input"
+                  name="ustensiles-et-materiel-de-cuisine"
+                  required=""
+                  type="radio"
+                  value="Oui"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">Oui</span>
+              </label>
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Ustensiles et matériel de cuisine * · Non"
+                  class="add-choice-input"
+                  name="ustensiles-et-materiel-de-cuisine"
+                  required=""
+                  type="radio"
+                  value="Non"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">Non</span>
+              </label>
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Ustensiles et matériel de cuisine * · À préciser"
+                  class="add-choice-input"
+                  name="ustensiles-et-materiel-de-cuisine"
+                  required=""
+                  type="radio"
+                  value="À préciser"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">À préciser</span>
+              </label>
+            </div>
+          </div>
+          <div
+            aria-labelledby="question-friteuses-et-huiles-de-friture"
+            class="add-practice"
+            role="group"
+          >
+            <p
+              class="add-practice__label"
+              id="question-friteuses-et-huiles-de-friture"
+            >
+              Friteuses et huiles de friture *
+            </p>
+            <div class="add-practice__choices">
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Friteuses et huiles de friture * · Oui"
+                  class="add-choice-input"
+                  name="friteuses-et-huiles-de-friture"
+                  required=""
+                  type="radio"
+                  value="Oui"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">Oui</span>
+              </label>
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Friteuses et huiles de friture * · Non"
+                  class="add-choice-input"
+                  name="friteuses-et-huiles-de-friture"
+                  required=""
+                  type="radio"
+                  value="Non"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">Non</span>
+              </label>
+              <label class="add-practice__choice add-native-choice">
+                <input
+                  aria-label="Friteuses et huiles de friture * · À préciser"
+                  class="add-choice-input"
+                  name="friteuses-et-huiles-de-friture"
+                  required=""
+                  type="radio"
+                  value="À préciser"
+                />
+                <span class="add-icon--medium add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c5c18.svg" />
+                </span>
+                <span class="add-practice__answer">À préciser</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="add-field--full">
+          <label class="add-field__label" for="separation-et-pratiques-en-cuisine">
+            Séparation et pratiques en cuisine *
+          </label>
+          <div class="add-input-shell--textarea add-control-wrap">
+            <textarea
+              aria-label="Séparation et pratiques en cuisine *"
+              class="add-control"
+              id="separation-et-pratiques-en-cuisine"
+              name="separation-et-pratiques-en-cuisine"
+              placeholder="Décrivez la séparation, le matériel dédié, le nettoyage et la gestion des huiles…"
+              required=""
+            ></textarea>
+          </div>
+          <p class="add-field__help">
+            Précisez les mesures appliquées, ou indiquez qu’aucune séparation n’est
+            prévue. Décrivez les pratiques réelles.
+          </p>
+        </div>
+        <div class="add-field--full">
+          <label
+            class="add-field__label"
+            for="fournisseurs-et-tracabilite-des-produits-halal"
+          >
+            Fournisseurs et traçabilité des produits halal *
+          </label>
+          <div class="add-input-shell--textarea add-control-wrap">
+            <textarea
+              aria-label="Fournisseurs et traçabilité des produits halal *"
+              class="add-control"
+              id="fournisseurs-et-tracabilite-des-produits-halal"
+              name="fournisseurs-et-tracabilite-des-produits-halal"
+              placeholder="Fournisseurs, produits concernés et moyens de traçabilité…"
+              required=""
+            ></textarea>
+          </div>
+          <p class="add-field__help">
+            Expliquez comment vous identifiez l’origine et le statut halal des
+            produits. Les justificatifs facultatifs se déposent en partie 05.
+          </p>
+        </div>
+        <div
+          aria-labelledby="question-quel-est-votre-statut-de-certification"
+          class="add-question"
+          role="group"
+        >
+          <p
+            class="add-field__label"
+            id="question-quel-est-votre-statut-de-certification"
+          >
+            Quel est votre statut de certification ? *
+          </p>
+          <div class="add-choices">
+            <label class="add-choice add-native-choice">
+              <input
+                aria-label="Quel est votre statut de certification ? * · Certifié"
+                class="add-choice-input"
+                name="quel-est-votre-statut-de-certification"
+                required=""
+                type="radio"
+                value="Certifié"
+              />
+              <span class="add-icon--radio add-choice__radio">
+                <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+              </span>
+              <span class="add-choice__label">Certifié</span>
+            </label>
+            <label class="add-choice add-native-choice">
+              <input
+                aria-label="Quel est votre statut de certification ? * · Non certifié"
+                class="add-choice-input"
+                name="quel-est-votre-statut-de-certification"
+                required=""
+                type="radio"
+                value="Non certifié"
+              />
+              <span class="add-icon--radio add-choice__radio">
+                <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+              </span>
+              <span class="add-choice__label">Non certifié</span>
+            </label>
+            <label class="add-choice add-native-choice">
+              <input
+                aria-label="Quel est votre statut de certification ? * · En cours"
+                class="add-choice-input"
+                name="quel-est-votre-statut-de-certification"
+                required=""
+                type="radio"
+                value="En cours"
+              />
+              <span class="add-icon--radio add-choice__radio">
+                <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+              </span>
+              <span class="add-choice__label">En cours</span>
+            </label>
+            <label class="add-choice add-native-choice">
+              <input
+                aria-label="Quel est votre statut de certification ? * · À préciser"
+                class="add-choice-input"
+                name="quel-est-votre-statut-de-certification"
+                required=""
+                type="radio"
+                value="À préciser"
+              />
+              <span class="add-icon--radio add-choice__radio">
+                <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+              </span>
+              <span class="add-choice__label">À préciser</span>
+            </label>
+          </div>
+          <p class="add-field__help">
+            La certification n’est pas supposée. Indiquez son périmètre :
+            établissement, produits ou fournisseurs.
+          </p>
+        </div>
+        <div class="add-fields">
+          <div class="add-field">
+            <label
+              class="add-field__label"
+              for="organisme-certificateur-si-applicable"
+            >
+              Organisme certificateur · si applicable
+            </label>
+            <div class="add-input-shell add-control-wrap">
+              <input
+                aria-label="Organisme certificateur · si applicable"
+                class="add-control"
+                id="organisme-certificateur-si-applicable"
+                name="organisme-certificateur-si-applicable"
+                placeholder="Nom de l’organisme"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="add-field">
+            <label
+              class="add-field__label"
+              for="date-periode-de-validite-si-applicable"
+            >
+              Date / période de validité · si applicable
+            </label>
+            <div class="add-input-shell add-control-wrap">
+              <input
+                aria-label="Date / période de validité · si applicable"
+                class="add-control"
+                id="date-periode-de-validite-si-applicable"
+                name="date-periode-de-validite-si-applicable"
+                placeholder="Début et fin de validité"
+                type="text"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="add-field--full">
+          <label
+            class="add-field__label"
+            for="perimetre-de-certification-et-precisions-si-applicable"
+          >
+            Périmètre de certification et précisions · si applicable
+          </label>
+          <div class="add-input-shell--textarea add-control-wrap">
+            <textarea
+              aria-label="Périmètre de certification et précisions · si applicable"
+              class="add-control"
+              id="perimetre-de-certification-et-precisions-si-applicable"
+              name="perimetre-de-certification-et-precisions-si-applicable"
+              placeholder="Quels produits, fournisseurs ou activités sont couverts ?"
+            ></textarea>
+          </div>
+        </div>
+        <div class="add-notice">
+          <div class="add-icon--notice">
+            <img alt="" class="add-art" src="assets/icons/9092e.svg" />
+          </div>
+          <div class="add-notice__body">
+            <p class="add-notice__title">
+              Déclaré par l’établissement, revu avant publication.
+            </p>
+            <p class="add-notice__copy">
+              Ces informations seront examinées avant publication. Le fait de déclarer
+              une certification ou de fournir un document ne constitue pas, à lui
+              seul, une certification vérifiée par Le Spot Halal.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="part-4-title" class="add-section" id="part-4">
+        <div class="add-row add-section__heading">
+          <div class="add-section__number--yellow">
+            <p class="add-section__index">04</p>
+          </div>
+          <h2 class="add-section__title" id="part-4-title">
+            Parlons aussi de l’alcool.
+          </h2>
+          <div class="add-visibility--public add-visibility">
+            <div class="add-icon--small">
+              <img alt="" class="add-art" src="assets/icons/fe89e.svg" />
+            </div>
+            <p class="add-visibility__label">Informations publiques</p>
+          </div>
+        </div>
+        <p class="add-section__description">
+          Trois pratiques différentes, trois réponses distinctes. Ces informations
+          aident les visiteurs à comprendre votre offre ; elles ne sont pas un
+          jugement binaire sur le halal.
+        </p>
+        <div class="add-divider"></div>
+        <div class="add-uploads">
+          <div
+            aria-labelledby="question-vendez-vous-ou-servez-vous-de-lalcool-sur-place"
+            class="add-question"
+            role="group"
+          >
+            <p
+              class="add-field__label"
+              id="question-vendez-vous-ou-servez-vous-de-lalcool-sur-place"
+            >
+              Vendez-vous ou servez-vous de l’alcool sur place ? *
+            </p>
+            <div class="add-choices">
+              <label class="add-choice add-native-choice">
+                <input
+                  aria-label="Vendez-vous ou servez-vous de l’alcool sur place ? * · Oui"
+                  class="add-choice-input"
+                  name="vendez-vous-ou-servez-vous-de-lalcool-sur-place"
+                  required=""
+                  type="radio"
+                  value="Oui"
+                />
+                <span class="add-icon--radio add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+                </span>
+                <span class="add-choice__label">Oui</span>
+              </label>
+              <label class="add-choice add-native-choice">
+                <input
+                  aria-label="Vendez-vous ou servez-vous de l’alcool sur place ? * · Non"
+                  class="add-choice-input"
+                  name="vendez-vous-ou-servez-vous-de-lalcool-sur-place"
+                  required=""
+                  type="radio"
+                  value="Non"
+                />
+                <span class="add-icon--radio add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+                </span>
+                <span class="add-choice__label">Non</span>
+              </label>
+              <label class="add-choice add-native-choice">
+                <input
+                  aria-label="Vendez-vous ou servez-vous de l’alcool sur place ? * · À préciser"
+                  class="add-choice-input"
+                  name="vendez-vous-ou-servez-vous-de-lalcool-sur-place"
+                  required=""
+                  type="radio"
+                  value="À préciser"
+                />
+                <span class="add-icon--radio add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+                </span>
+                <span class="add-choice__label">À préciser</span>
+              </label>
+            </div>
+          </div>
+          <div class="add-field--full">
+            <label class="add-field__label" for="details-facultatif">
+              Détails · facultatif
+            </label>
+            <div class="add-input-shell add-control-wrap">
+              <input
+                aria-label="Détails · facultatif"
+                class="add-control"
+                id="details-facultatif"
+                name="details-facultatif"
+                placeholder="Types de boissons, lieux ou occasions de service…"
+                type="text"
+              />
+            </div>
+            <p class="add-field__help">
+              Si oui ou à préciser, détaillez les produits ou les conditions
+              concernés.
+            </p>
+          </div>
+        </div>
+        <div class="add-uploads">
+          <div
+            aria-labelledby="question-utilisez-vous-de-lalcool-comme-ingredient-dans-vos-recettes"
+            class="add-question"
+            role="group"
+          >
+            <p
+              class="add-field__label"
+              id="question-utilisez-vous-de-lalcool-comme-ingredient-dans-vos-recettes"
+            >
+              Utilisez-vous de l’alcool comme ingrédient dans vos recettes ? *
+            </p>
+            <div class="add-choices">
+              <label class="add-choice add-native-choice">
+                <input
+                  aria-label="Utilisez-vous de l’alcool comme ingrédient dans vos recettes ? * · Oui"
+                  class="add-choice-input"
+                  name="utilisez-vous-de-lalcool-comme-ingredient-dans-vos-recettes"
+                  required=""
+                  type="radio"
+                  value="Oui"
+                />
+                <span class="add-icon--radio add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+                </span>
+                <span class="add-choice__label">Oui</span>
+              </label>
+              <label class="add-choice add-native-choice">
+                <input
+                  aria-label="Utilisez-vous de l’alcool comme ingrédient dans vos recettes ? * · Non"
+                  class="add-choice-input"
+                  name="utilisez-vous-de-lalcool-comme-ingredient-dans-vos-recettes"
+                  required=""
+                  type="radio"
+                  value="Non"
+                />
+                <span class="add-icon--radio add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+                </span>
+                <span class="add-choice__label">Non</span>
+              </label>
+              <label class="add-choice add-native-choice">
+                <input
+                  aria-label="Utilisez-vous de l’alcool comme ingrédient dans vos recettes ? * · À préciser"
+                  class="add-choice-input"
+                  name="utilisez-vous-de-lalcool-comme-ingredient-dans-vos-recettes"
+                  required=""
+                  type="radio"
+                  value="À préciser"
+                />
+                <span class="add-icon--radio add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+                </span>
+                <span class="add-choice__label">À préciser</span>
+              </label>
+            </div>
+          </div>
+          <div class="add-field--full">
+            <label class="add-field__label" for="details-facultatif-2">
+              Détails · facultatif
+            </label>
+            <div class="add-input-shell add-control-wrap">
+              <input
+                aria-label="Détails · facultatif"
+                class="add-control"
+                id="details-facultatif-2"
+                name="details-facultatif-2"
+                placeholder="Plats, sauces, marinades ou desserts concernés…"
+                type="text"
+              />
+            </div>
+            <p class="add-field__help">
+              Si oui ou à préciser, détaillez les produits ou les conditions
+              concernés.
+            </p>
+          </div>
+        </div>
+        <div class="add-uploads">
+          <div
+            aria-labelledby="question-les-clients-peuvent-ils-apporter-leur-propre-alcool"
+            class="add-question"
+            role="group"
+          >
+            <p
+              class="add-field__label"
+              id="question-les-clients-peuvent-ils-apporter-leur-propre-alcool"
+            >
+              Les clients peuvent-ils apporter leur propre alcool ? *
+            </p>
+            <div class="add-choices">
+              <label class="add-choice add-native-choice">
+                <input
+                  aria-label="Les clients peuvent-ils apporter leur propre alcool ? * · Oui"
+                  class="add-choice-input"
+                  name="les-clients-peuvent-ils-apporter-leur-propre-alcool"
+                  required=""
+                  type="radio"
+                  value="Oui"
+                />
+                <span class="add-icon--radio add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+                </span>
+                <span class="add-choice__label">Oui</span>
+              </label>
+              <label class="add-choice add-native-choice">
+                <input
+                  aria-label="Les clients peuvent-ils apporter leur propre alcool ? * · Non"
+                  class="add-choice-input"
+                  name="les-clients-peuvent-ils-apporter-leur-propre-alcool"
+                  required=""
+                  type="radio"
+                  value="Non"
+                />
+                <span class="add-icon--radio add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+                </span>
+                <span class="add-choice__label">Non</span>
+              </label>
+              <label class="add-choice add-native-choice">
+                <input
+                  aria-label="Les clients peuvent-ils apporter leur propre alcool ? * · À préciser"
+                  class="add-choice-input"
+                  name="les-clients-peuvent-ils-apporter-leur-propre-alcool"
+                  required=""
+                  type="radio"
+                  value="À préciser"
+                />
+                <span class="add-icon--radio add-choice__radio">
+                  <img alt="" class="add-art" src="assets/icons/c0fb3.svg" />
+                </span>
+                <span class="add-choice__label">À préciser</span>
+              </label>
+            </div>
+          </div>
+          <div class="add-field--full">
+            <label class="add-field__label" for="details-facultatif-3">
+              Détails · facultatif
+            </label>
+            <div class="add-input-shell add-control-wrap">
+              <input
+                aria-label="Détails · facultatif"
+                class="add-control"
+                id="details-facultatif-3"
+                name="details-facultatif-3"
+                placeholder="Conditions, restrictions ou pratiques de l’établissement…"
+                type="text"
+              />
+            </div>
+            <p class="add-field__help">
+              Si oui ou à préciser, détaillez les produits ou les conditions
+              concernés.
+            </p>
+          </div>
+        </div>
+        <div class="add-notice">
+          <div class="add-icon--notice">
+            <img alt="" class="add-art" src="assets/icons/9092e.svg" />
+          </div>
+          <div class="add-notice__body">
+            <p class="add-notice__title">Le détail fait la différence.</p>
+            <p class="add-notice__copy">
+              La vente de boissons, l’usage dans une recette et l’apport par les
+              clients seront présentés séparément. Décrivez chaque pratique, même
+              lorsqu’elle ne concerne qu’une partie de votre offre.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="part-5-title" class="add-section" id="part-5">
+        <div class="add-row add-section__heading">
+          <div class="add-section__number--pink">
+            <p class="add-section__index">05</p>
+          </div>
+          <h2 class="add-section__title" id="part-5-title">
+            Quelques pièces pour compléter.
+          </h2>
+          <div class="add-visibility--private add-visibility">
+            <div class="add-icon--small">
+              <img alt="" class="add-art" src="assets/icons/6fe79.svg" />
+            </div>
+            <p class="add-visibility__label">Privé · pour la revue</p>
+          </div>
+        </div>
+        <p class="add-upload__description">
+          Les ajouts de cette partie sont facultatifs. Distinguez les justificatifs
+          pour la revue des contenus destinés à la fiche publique.
+        </p>
+        <div class="add-divider"></div>
+        <div class="add-visibility--private add-visibility">
+          <div class="add-icon--small">
+            <img alt="" class="add-art" src="assets/icons/6fe79.svg" />
+          </div>
+          <p class="add-visibility__label">Privé · justificatifs non publics</p>
+        </div>
+        <div class="add-fields">
+          <div class="add-upload add-upload-zone">
+            <div class="add-upload__heading">
+              <div class="add-icon--upload">
+                <img alt="" class="add-art" src="assets/icons/18992.svg" />
+              </div>
+              <p class="add-upload__title">Certificat halal · facultatif</p>
+            </div>
+            <p class="add-field__help">
+              Si vous en disposez : document de certification et périmètre concerné.
+            </p>
+            <label
+              class="add-upload__button add-file-button"
+              for="certificat-halal-facultatif"
+            >
+              <div class="add-upload__button-label">
+                <p class="add-upload__button-line">Choisir des fichiers</p>
+              </div>
+              <div class="add-icon--tiny">
+                <img alt="" class="add-art" src="assets/icons/8ae19.svg" />
+              </div>
+            </label>
+            <p class="add-upload__help">
+              Privé · pièce de revue non publique · Aucun fichier ajouté
+            </p>
+            <input
+              accept=".pdf,.jpg,.jpeg,.png"
+              aria-label="Certificat halal · facultatif"
+              class="add-file-input"
+              id="certificat-halal-facultatif"
+              multiple=""
+              name="certificat-halal-facultatif"
+              type="file"
+            />
+            <output aria-live="polite" class="add-upload-status"></output>
+          </div>
+          <div class="add-upload add-upload-zone">
+            <div class="add-upload__heading">
+              <div class="add-icon--upload">
+                <img alt="" class="add-art" src="assets/icons/18992.svg" />
+              </div>
+              <p class="add-upload__title">Traçabilité · facultatif</p>
+            </div>
+            <p class="add-field__help">
+              Attestations fournisseurs ou éléments utiles à la compréhension de votre
+              déclaration.
+            </p>
+            <label
+              class="add-upload__button add-file-button"
+              for="tracabilite-facultatif"
+            >
+              <div class="add-upload__button-label">
+                <p class="add-upload__button-line">Choisir des fichiers</p>
+              </div>
+              <div class="add-icon--tiny">
+                <img alt="" class="add-art" src="assets/icons/8ae19.svg" />
+              </div>
+            </label>
+            <p class="add-upload__help">
+              Privé · pièce de revue non publique · Aucun fichier ajouté
+            </p>
+            <input
+              accept=".pdf,.jpg,.jpeg,.png"
+              aria-label="Traçabilité · facultatif"
+              class="add-file-input"
+              id="tracabilite-facultatif"
+              multiple=""
+              name="tracabilite-facultatif"
+              type="file"
+            />
+            <output aria-live="polite" class="add-upload-status"></output>
+          </div>
+        </div>
+        <div class="add-notice">
+          <div class="add-icon--notice">
+            <img alt="" class="add-art" src="assets/icons/9092e.svg" />
+          </div>
+          <div class="add-notice__body">
+            <p class="add-notice__title">
+              Masquez les informations personnelles inutiles.
+            </p>
+            <p class="add-notice__copy">
+              Avant de joindre un document, masquez les noms de tiers, signatures,
+              coordonnées personnelles et toute information sans lien avec la demande.
+              N’envoyez pas de pièce d’identité ni de document bancaire.
+            </p>
+          </div>
+        </div>
+        <div class="add-visibility--public add-visibility">
+          <div class="add-icon--small">
+            <img alt="" class="add-art" src="assets/icons/fe89e.svg" />
+          </div>
+          <p class="add-visibility__label">Public · menu et photos</p>
+        </div>
+        <div class="add-fields">
+          <div class="add-upload add-upload-zone">
+            <div class="add-upload__heading">
+              <div class="add-icon--upload">
+                <img alt="" class="add-art" src="assets/icons/18992.svg" />
+              </div>
+              <p class="add-upload__title">Menu · facultatif</p>
+            </div>
+            <p class="add-field__help">
+              Votre carte actuelle, avec les indications utiles sur les produits
+              proposés.
+            </p>
+            <label class="add-upload__button add-file-button" for="menu-facultatif">
+              <div class="add-upload__button-label">
+                <p class="add-upload__button-line">Choisir des fichiers</p>
+              </div>
+              <div class="add-icon--tiny">
+                <img alt="" class="add-art" src="assets/icons/8ae19.svg" />
+              </div>
+            </label>
+            <p class="add-upload__help">
+              Public · après revue et autorisation · Aucun fichier ajouté
+            </p>
+            <input
+              accept=".pdf,.jpg,.jpeg,.png"
+              aria-label="Menu · facultatif"
+              class="add-file-input"
+              id="menu-facultatif"
+              multiple=""
+              name="menu-facultatif"
+              type="file"
+            />
+            <output aria-live="polite" class="add-upload-status"></output>
+          </div>
+          <div class="add-upload add-upload-zone">
+            <div class="add-upload__heading">
+              <div class="add-icon--upload">
+                <img alt="" class="add-art" src="assets/icons/18992.svg" />
+              </div>
+              <p class="add-upload__title">Photos du spot · facultatif</p>
+            </div>
+            <p class="add-field__help">
+              Façade, salle ou plats : ajoutez uniquement des images que vous pouvez
+              partager.
+            </p>
+            <label
+              class="add-upload__button add-file-button"
+              for="photos-du-spot-facultatif"
+            >
+              <div class="add-upload__button-label">
+                <p class="add-upload__button-line">Choisir des fichiers</p>
+              </div>
+              <div class="add-icon--tiny">
+                <img alt="" class="add-art" src="assets/icons/8ae19.svg" />
+              </div>
+            </label>
+            <p class="add-upload__help">
+              Public · après revue et autorisation · Aucun fichier ajouté
+            </p>
+            <input
+              accept=".pdf,.jpg,.jpeg,.png"
+              aria-label="Photos du spot · facultatif"
+              class="add-file-input"
+              data-photo-upload=""
+              id="photos-du-spot-facultatif"
+              multiple=""
+              name="photos-du-spot-facultatif"
+              type="file"
+            />
+            <output aria-live="polite" class="add-upload-status"></output>
+          </div>
+        </div>
+        <div class="add-field--full">
+          <label class="add-field__label" for="lien-vers-votre-menu-facultatif">
+            Lien vers votre menu · facultatif
+          </label>
+          <div class="add-input-shell add-control-wrap">
+            <input
+              aria-label="Lien vers votre menu · facultatif"
+              class="add-control"
+              id="lien-vers-votre-menu-facultatif"
+              name="lien-vers-votre-menu-facultatif"
+              placeholder="https://…"
+              type="url"
+            />
+          </div>
+          <p class="add-field__help">
+            En complément ou à la place d’un fichier. Pensez à rendre le lien
+            consultable.
+          </p>
+        </div>
+        <label class="add-confirmation add-native-checkbox">
+          <input
+            aria-label="Si je joins des photos, je confirme disposer des droits et autorisations nécessaires et j’autorise leur publication sur la fiche de mon restaurant. *"
+            class="add-choice-input"
+            data-photo-consent=""
+            name="si-je-joins-des-photos-je-confirme-disposer-des-droits-et-autorisations"
+            required=""
+            type="checkbox"
+            value="oui"
+          />
+          <span class="add-confirmation__box add-choice__check"></span>
+          <span class="add-confirmation__copy">
+            Si je joins des photos, je confirme disposer des droits et autorisations
+            nécessaires et j’autorise leur publication sur la fiche de mon restaurant.
+            *
+          </span>
+        </label>
+      </section>
+      <section aria-labelledby="part-6-title" class="add-section" id="part-6">
+        <div class="add-row add-section__heading">
+          <div class="add-section__number--pink">
+            <p class="add-section__index">06</p>
+          </div>
+          <h2 class="add-section__title" id="part-6-title">
+            Un dernier regard, et c’est parti.
+          </h2>
+          <div class="add-visibility--private add-visibility">
+            <div class="add-icon--small">
+              <img alt="" class="add-art" src="assets/icons/6fe79.svg" />
+            </div>
+            <p class="add-visibility__label">Privé · pour la revue</p>
+          </div>
+        </div>
+        <p class="add-section__description">
+          Relisez les informations publiques, les pratiques déclarées et les
+          coordonnées privées avant d’envoyer votre demande.
+        </p>
+        <div class="add-divider"></div>
+        <div class="add-assurances">
+          <div class="add-assurance--public">
+            <p class="add-assurance__title">Sur la fiche publique, après revue</p>
+            <p class="add-assurance__copy">
+              Présentation, coordonnées du restaurant, horaires, services,
+              déclarations halal et alcool, menu et photos autorisées.
+            </p>
+          </div>
+          <div class="add-assurance--private">
+            <p class="add-assurance__title">Pour la revue uniquement</p>
+            <p class="add-assurance__copy">
+              Contact professionnel, informations légales de l’entreprise et
+              justificatifs transmis. Pas de publication de ces données.
+            </p>
+          </div>
+        </div>
+        <label class="add-confirmation add-native-checkbox">
+          <input
+            aria-label="Je déclare que les informations transmises sont exactes et à jour, et que je suis autorisé·e à représenter cet établissement. *"
+            class="add-choice-input"
+            name="je-declare-que-les-informations-transmises-sont-exactes-et-a-jour-et-que"
+            required=""
+            type="checkbox"
+            value="oui"
+          />
+          <span class="add-confirmation__box add-choice__check"></span>
+          <span class="add-confirmation__copy">
+            Je déclare que les informations transmises sont exactes et à jour, et que
+            je suis autorisé·e à représenter cet établissement. *
+          </span>
+        </label>
+        <label class="add-confirmation add-native-checkbox">
+          <input
+            aria-label="Je prends connaissance du traitement de mes données pour l’examen de ma demande, décrit dans la page Confidentialité . *"
+            class="add-choice-input"
+            name="je-prends-connaissance-du-traitement-de-mes-donnees-pour-lexamen-de-ma-d"
+            required=""
+            type="checkbox"
+            value="oui"
+          />
+          <span class="add-confirmation__box add-choice__check"></span>
+          <span class="add-confirmation__copy">
+            <span class="add-text-line">
+              Je prends connaissance du traitement de mes données pour l’examen de ma
+              demande, décrit dans la page
+            </span>
+            <span class="add-text-link">Confidentialité</span>
+            <span class="add-text-line">. *</span>
+          </span>
+        </label>
+        <div class="add-notice">
+          <div class="add-icon--notice">
+            <img alt="" class="add-art" src="assets/icons/9092e.svg" />
+          </div>
+          <div class="add-notice__body">
+            <p class="add-notice__title">
+              Une demande, pas une publication automatique.
+            </p>
+            <p class="add-notice__copy">
+              Votre demande sera revue avant toute publication. Son envoi ne garantit
+              pas le référencement de votre restaurant.
+            </p>
+          </div>
+        </div>
+        <div class="add-actions">
+          <button
+            class="add-button--primary"
+            id="submit-request"
+            disabled
+            data-requires-script
+            type="submit"
+          >
+            <div class="add-button__label">
+              <p class="add-button__line">Envoyer ma demande</p>
+            </div>
+          </button>
+          <button
+            class="add-button--secondary"
+            id="save-draft"
+            disabled
+            data-requires-script
+            type="button"
+          >
+            <div class="add-button__label--dark">
+              <p class="add-button__line">Enregistrer un brouillon</p>
+            </div>
+          </button>
+        </div>
+        <p class="add-support">
+          <span class="add-support__line">Une question sur le formulaire ?</span>
+          <span class="add-support__link">hello@lespothalal.com</span>
+        </p>
+      </section>
+
+      <noscript>
+        <p>
+          Activez JavaScript pour préparer un fichier de demande ou enregistrer un
+          brouillon. Aucun envoi en ligne n’est disponible.
+        </p>
+      </noscript>
+
+        </form>
+        <p aria-live="polite" class="add-status" id="form-status" role="status"></p>
+      </main>
+      <footer class="site-footer">
+        <picture class="responsive-art">
+          <source
+            media="(max-width: 47.99rem)"
+            srcset="assets/icons/f615a.svg"
+          />
+          <img
+            src="assets/icons/ce9ce.svg"
+            alt="Le spot halal"
+            class="site-footer__logo"
+          />
+        </picture>
+        <nav class="site-footer__navigation" aria-label="Navigation de pied de page">
+          <h2 class="site-footer__heading">Navigation</h2>
+          <ul>
+            <li><a href="restaurants.html">À proximité</a></li>
+            <li><a href="map.html" data-action="map">Carte</a></li>
+            <li><a href="index.html#about">À Propos</a></li>
+          </ul>
+        </nav>
+        <div class="site-footer__legal">
+          <h2 class="site-footer__heading">Légal</h2>
+          <ul>
+            <li>Mentions légales</li>
+            <li>Confidentialité</li>
+            <li>CGU</li>
+          </ul>
+        </div>
+        <div class="site-footer__address">
+          <h2 class="site-footer__heading">Adresse</h2>
+          <address>
+            Annemasse, 74100
+            <br />
+            France
+          </address>
+        </div>
+        <div class="site-footer__contact" id="contact">
+          <h2 class="site-footer__heading">Contactez-nous</h2>
+          <a href="mailto:hello@lespothalal.com">hello@lespothalal.com</a>
+        </div>
+        <p class="site-footer__credits">
+          © 2026 le spot halal
+          <br />
+          Made by Aleph
+        </p>
+        <a
+          class="button button--add site-footer__add"
+          href="add-restaurant.html"
+        >
+          <img src="assets/icons/2c600.svg" alt="" class="icon" aria-hidden="true" />
+          <span>Ajouter mon restaurant</span>
+        </a>
+      </footer>
+    </div>
+    <dialog
+      class="info-dialog"
+      id="info-dialog"
+      aria-labelledby="dialog-title"
+      aria-describedby="dialog-copy"
+    >
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-copy"></p>
+      <a id="dialog-link" target="_blank" rel="noopener noreferrer">
+        En savoir plus
+      </a>
+      <form method="dialog"><button type="submit">Fermer</button></form>
+    </dialog>
+
+    <dialog
+      aria-labelledby="submission-title"
+      class="info-dialog"
+      id="submission-dialog"
+    >
+      <h2 id="submission-title">Votre demande est prête</h2>
+      <p id="submission-message"></p>
+      <form method="dialog"><button>Fermer</button></form>
+    </dialog>
+  </body>
+</html>

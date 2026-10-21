@@ -1,0 +1,603 @@
+<section aria-labelledby="part-1-title" class="add-section" id="part-1">
+  <div class="add-row add-section__heading">
+    <div class="add-section__number--yellow">
+      <p class="add-section__index">01</p>
+    </div>
+    <h2 class="add-section__title" id="part-1-title">
+      Faisons connaissance avec votre spot.
+    </h2>
+    <div class="add-visibility--public add-visibility">
+      <div class="add-icon--small">
+        <img alt="" class="add-art" src="assets/icons/fe89e.svg" />
+      </div>
+      <p class="add-visibility__label">Informations publiques</p>
+    </div>
+  </div>
+  <p class="add-section__description">
+    Ces informations sont destinées à votre fiche publique, après revue.
+    Renseignez les coordonnées du restaurant, pas celles de votre contact privé.
+  </p>
+  <div class="add-divider"></div>
+  <div class="add-fields">
+    <div class="add-field">
+      <label class="add-field__label" for="nom-du-restaurant">
+        Nom du restaurant *
+      </label>
+      <div class="add-input-shell add-control-wrap">
+        <input
+          aria-label="Nom du restaurant *"
+          class="add-control"
+          id="nom-du-restaurant"
+          name="nom-du-restaurant"
+          placeholder="Le nom affiché sur votre enseigne"
+          required=""
+          type="text"
+        />
+      </div>
+    </div>
+    <div class="add-field">
+      <label class="add-field__label" for="cuisine-categorie">
+        Cuisine / catégorie *
+      </label>
+      <div class="add-input-shell add-control-wrap">
+        <select
+          aria-label="Cuisine / catégorie *"
+          class="add-control"
+          id="cuisine-categorie"
+          name="cuisine-categorie"
+          required=""
+        >
+          <option value="">Choisir une catégorie</option>
+          <option value="Burgers">Burgers</option>
+          <option value="Café">Café</option>
+          <option value="Marocain">Marocain</option>
+          <option value="Pizza">Pizza</option>
+          <option value="Healthy">Healthy</option>
+          <option value="Street food">Street food</option>
+          <option value="Asiatique">Asiatique</option>
+          <option value="Grill">Grill</option>
+          <option value="Autre">Autre</option>
+        </select>
+        <div aria-hidden="true" class="add-icon--medium">
+          <img alt="" class="add-art" src="assets/icons/247b6.svg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="add-field--full">
+    <label class="add-field__label" for="description-courte">
+      Description courte *
+    </label>
+    <div class="add-input-shell--textarea add-control-wrap">
+      <textarea
+        aria-label="Description courte *"
+        class="add-control"
+        id="description-courte"
+        name="description-courte"
+        placeholder="Votre cuisine, votre ambiance, ce qui rend votre adresse unique…"
+        required=""
+      ></textarea>
+    </div>
+    <p class="add-field__help">
+      Présentez le restaurant en quelques phrases, sans données personnelles.
+    </p>
+  </div>
+  <div class="add-field--full">
+    <label class="add-field__label" for="adresse-complete">
+      Adresse complète *
+    </label>
+    <div class="add-input-shell add-control-wrap">
+      <input
+        aria-label="Adresse complète *"
+        class="add-control"
+        id="adresse-complete"
+        name="adresse-complete"
+        placeholder="Numéro et nom de rue, complément d’adresse"
+        required=""
+        type="text"
+      />
+    </div>
+  </div>
+  <div class="add-fields">
+    <div class="add-field">
+      <label class="add-field__label" for="code-postal">Code postal *</label>
+      <div class="add-input-shell add-control-wrap">
+        <input
+          aria-label="Code postal *"
+          class="add-control"
+          id="code-postal"
+          name="code-postal"
+          placeholder="Code postal"
+          required=""
+          type="text"
+        />
+      </div>
+    </div>
+    <div class="add-field">
+      <label class="add-field__label" for="ville">Ville *</label>
+      <div class="add-input-shell add-control-wrap">
+        <input
+          aria-label="Ville *"
+          class="add-control"
+          id="ville"
+          name="ville"
+          placeholder="Ville"
+          required=""
+          type="text"
+        />
+      </div>
+    </div>
+    <div class="add-field">
+      <label class="add-field__label" for="pays">Pays *</label>
+      <div class="add-input-shell add-control-wrap">
+        <select
+          aria-label="Pays *"
+          class="add-control"
+          id="pays"
+          name="pays"
+          required=""
+        >
+          <option value="">Choisir un pays</option>
+          <option value="France">France</option>
+          <option value="Suisse">Suisse</option>
+          <option value="Belgique">Belgique</option>
+          <option value="Luxembourg">Luxembourg</option>
+          <option value="Autre">Autre</option>
+        </select>
+        <div aria-hidden="true" class="add-icon--medium">
+          <img alt="" class="add-art" src="assets/icons/247b6.svg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="add-fields">
+    <div class="add-field">
+      <label class="add-field__label" for="telephone-public">
+        Téléphone public *
+      </label>
+      <div class="add-input-shell add-control-wrap">
+        <input
+          aria-label="Téléphone public *"
+          class="add-control"
+          id="telephone-public"
+          name="telephone-public"
+          placeholder="Indicatif et numéro du restaurant"
+          required=""
+          type="tel"
+        />
+      </div>
+    </div>
+    <div class="add-field">
+      <label class="add-field__label" for="e-mail-public">
+        E-mail public *
+      </label>
+      <div class="add-input-shell add-control-wrap">
+        <input
+          aria-label="E-mail public *"
+          class="add-control"
+          id="e-mail-public"
+          name="e-mail-public"
+          placeholder="Adresse de contact du restaurant"
+          required=""
+          type="email"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="add-fields">
+    <div class="add-field">
+      <label class="add-field__label" for="site-web-facultatif">
+        Site web · facultatif
+      </label>
+      <div class="add-input-shell add-control-wrap">
+        <input
+          aria-label="Site web · facultatif"
+          class="add-control"
+          id="site-web-facultatif"
+          name="site-web-facultatif"
+          placeholder="https://…"
+          type="url"
+        />
+      </div>
+    </div>
+    <div class="add-field">
+      <label class="add-field__label" for="instagram-facultatif">
+        Instagram · facultatif
+      </label>
+      <div class="add-input-shell add-control-wrap">
+        <input
+          aria-label="Instagram · facultatif"
+          class="add-control"
+          id="instagram-facultatif"
+          name="instagram-facultatif"
+          placeholder="Lien du profil ou @identifiant"
+          type="text"
+        />
+      </div>
+    </div>
+    <div class="add-field">
+      <label class="add-field__label" for="tiktok-facultatif">
+        TikTok · facultatif
+      </label>
+      <div class="add-input-shell add-control-wrap">
+        <input
+          aria-label="TikTok · facultatif"
+          class="add-control"
+          id="tiktok-facultatif"
+          name="tiktok-facultatif"
+          placeholder="Lien du profil ou @identifiant"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="add-question">
+    <p class="add-question__title">Horaires d’ouverture *</p>
+    <p class="add-field__help">
+      Renseignez un créneau ou cochez « Fermé » pour chaque jour. Ajoutez un
+      second créneau si vous fermez entre deux services.
+    </p>
+    <div class="add-hours__head">
+      <p class="add-hours__day-heading">Jour</p>
+      <p class="add-hours__slot-heading">Premier créneau</p>
+      <p class="add-hours__slot-heading">Second créneau · facultatif</p>
+      <p class="add-hours__closed-heading">Fermé</p>
+    </div>
+    <div class="add-hours__rows">
+      <div class="add-hours__row" data-hours-row="">
+        <p class="add-hours__day">Lundi</p>
+        <div class="add-hours__slot add-control-wrap">
+          <input
+            aria-label="Lundi · Premier créneau"
+            class="add-control"
+            name="lundi-premier-creneau"
+            pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+            placeholder="HH:MM – HH:MM"
+            required=""
+            title="Format : 12:00 – 14:00"
+            type="text"
+          />
+        </div>
+        <div class="add-hours__slot add-control-wrap">
+          <input
+            aria-label="Lundi · Second créneau"
+            class="add-control"
+            name="lundi-second-creneau"
+            pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+            placeholder="HH:MM – HH:MM"
+            title="Format : 12:00 – 14:00"
+            type="text"
+          />
+        </div>
+        <label class="add-hours__closed add-native-checkbox">
+          <input
+            aria-label="Lundi · Fermé"
+            class="add-choice-input"
+            name="lundi-ferme"
+            type="checkbox"
+            value="oui"
+          />
+          <span class="add-choice__box add-choice__check"></span>
+        </label>
+      </div>
+      <div class="add-hours__row" data-hours-row="">
+        <p class="add-hours__day">Mardi</p>
+        <div class="add-hours__slot add-control-wrap">
+          <input
+            aria-label="Mardi · Premier créneau"
+            class="add-control"
+            name="mardi-premier-creneau"
+            pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+            placeholder="HH:MM – HH:MM"
+            required=""
+            title="Format : 12:00 – 14:00"
+            type="text"
+          />
+        </div>
+        <div class="add-hours__slot add-control-wrap">
+          <input
+            aria-label="Mardi · Second créneau"
+            class="add-control"
+            name="mardi-second-creneau"
+            pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+            placeholder="HH:MM – HH:MM"
+            title="Format : 12:00 – 14:00"
+            type="text"
+          />
+        </div>
+        <label class="add-hours__closed add-native-checkbox">
+          <input
+            aria-label="Mardi · Fermé"
+            class="add-choice-input"
+            name="mardi-ferme"
+            type="checkbox"
+            value="oui"
+          />
+          <span class="add-choice__box add-choice__check"></span>
+        </label>
+      </div>
+      <div class="add-hours__row" data-hours-row="">
+        <p class="add-hours__day">Mercredi</p>
+        <div class="add-hours__slot add-control-wrap">
+          <input
+            aria-label="Mercredi · Premier créneau"
+            class="add-control"
+            name="mercredi-premier-creneau"
+            pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+            placeholder="HH:MM – HH:MM"
+            required=""
+            title="Format : 12:00 – 14:00"
+            type="text"
+          />
+        </div>
+        <div class="add-hours__slot add-control-wrap">
+          <input
+            aria-label="Mercredi · Second créneau"
+            class="add-control"
+            name="mercredi-second-creneau"
+            pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+            placeholder="HH:MM – HH:MM"
+            title="Format : 12:00 – 14:00"
+            type="text"
+          />
+        </div>
+        <label class="add-hours__closed add-native-checkbox">
+          <input
+            aria-label="Mercredi · Fermé"
+            class="add-choice-input"
+            name="mercredi-ferme"
+            type="checkbox"
+            value="oui"
+          />
+          <span class="add-choice__box add-choice__check"></span>
+        </label>
+      </div>
+      <div class="add-hours__row" data-hours-row="">
+        <p class="add-hours__day">Jeudi</p>
+        <div class="add-hours__slot add-control-wrap">
+          <input
+            aria-label="Jeudi · Premier créneau"
+            class="add-control"
+            name="jeudi-premier-creneau"
+            pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+            placeholder="HH:MM – HH:MM"
+            required=""
+            title="Format : 12:00 – 14:00"
+            type="text"
+          />
+        </div>
+        <div class="add-hours__slot add-control-wrap">
+          <input
+            aria-label="Jeudi · Second créneau"
+            class="add-control"
+            name="jeudi-second-creneau"
+            pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+            placeholder="HH:MM – HH:MM"
+            title="Format : 12:00 – 14:00"
+            type="text"
+          />
+        </div>
+        <label class="add-hours__closed add-native-checkbox">
+          <input
+            aria-label="Jeudi · Fermé"
+            class="add-choice-input"
+            name="jeudi-ferme"
+            type="checkbox"
+            value="oui"
+          />
+          <span class="add-choice__box add-choice__check"></span>
+        </label>
+      </div>
+      <div class="add-hours__row" data-hours-row="">
+        <p class="add-hours__day">Vendredi</p>
+        <div class="add-hours__slot add-control-wrap">
+          <input
+            aria-label="Vendredi · Premier créneau"
+            class="add-control"
+            name="vendredi-premier-creneau"
+            pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+            placeholder="HH:MM – HH:MM"
+            required=""
+            title="Format : 12:00 – 14:00"
+            type="text"
+          />
+        </div>
+        <div class="add-hours__slot add-control-wrap">
+          <input
+            aria-label="Vendredi · Second créneau"
+            class="add-control"
+            name="vendredi-second-creneau"
+            pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+            placeholder="HH:MM – HH:MM"
+            title="Format : 12:00 – 14:00"
+            type="text"
+          />
+        </div>
+        <label class="add-hours__closed add-native-checkbox">
+          <input
+            aria-label="Vendredi · Fermé"
+            class="add-choice-input"
+            name="vendredi-ferme"
+            type="checkbox"
+            value="oui"
+          />
+          <span class="add-choice__box add-choice__check"></span>
+        </label>
+      </div>
+      <div class="add-hours__row" data-hours-row="">
+        <p class="add-hours__day">Samedi</p>
+        <div class="add-hours__slot add-control-wrap">
+          <input
+            aria-label="Samedi · Premier créneau"
+            class="add-control"
+            name="samedi-premier-creneau"
+            pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+            placeholder="HH:MM – HH:MM"
+            required=""
+            title="Format : 12:00 – 14:00"
+            type="text"
+          />
+        </div>
+        <div class="add-hours__slot add-control-wrap">
+          <input
+            aria-label="Samedi · Second créneau"
+            class="add-control"
+            name="samedi-second-creneau"
+            pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+            placeholder="HH:MM – HH:MM"
+            title="Format : 12:00 – 14:00"
+            type="text"
+          />
+        </div>
+        <label class="add-hours__closed add-native-checkbox">
+          <input
+            aria-label="Samedi · Fermé"
+            class="add-choice-input"
+            name="samedi-ferme"
+            type="checkbox"
+            value="oui"
+          />
+          <span class="add-choice__box add-choice__check"></span>
+        </label>
+      </div>
+      <div class="add-hours__row" data-hours-row="">
+        <p class="add-hours__day">Dimanche</p>
+        <div class="add-hours__slot add-control-wrap">
+          <input
+            aria-label="Dimanche · Premier créneau"
+            class="add-control"
+            name="dimanche-premier-creneau"
+            pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+            placeholder="HH:MM – HH:MM"
+            required=""
+            title="Format : 12:00 – 14:00"
+            type="text"
+          />
+        </div>
+        <div class="add-hours__slot add-control-wrap">
+          <input
+            aria-label="Dimanche · Second créneau"
+            class="add-control"
+            name="dimanche-second-creneau"
+            pattern="(?:[01][0-9]|2[0-3]):[0-5][0-9]\s*(?:–|-)\s*(?:[01][0-9]|2[0-3]):[0-5][0-9]"
+            placeholder="HH:MM – HH:MM"
+            title="Format : 12:00 – 14:00"
+            type="text"
+          />
+        </div>
+        <label class="add-hours__closed add-native-checkbox">
+          <input
+            aria-label="Dimanche · Fermé"
+            class="add-choice-input"
+            name="dimanche-ferme"
+            type="checkbox"
+            value="oui"
+          />
+          <span class="add-choice__box add-choice__check"></span>
+        </label>
+      </div>
+    </div>
+    <div class="add-field--full">
+      <label
+        class="add-field__label"
+        for="precisions-sur-les-horaires-facultatif"
+      >
+        Précisions sur les horaires · facultatif
+      </label>
+      <div class="add-input-shell add-control-wrap">
+        <input
+          aria-label="Précisions sur les horaires · facultatif"
+          class="add-control"
+          id="precisions-sur-les-horaires-facultatif"
+          name="precisions-sur-les-horaires-facultatif"
+          placeholder="Variations saisonnières, jours fériés ou horaires particuliers…"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    aria-labelledby="question-quels-services-proposez-vous"
+    class="add-question"
+    role="group"
+  >
+    <p class="add-field__label" id="question-quels-services-proposez-vous">
+      Quels services proposez-vous ? *
+    </p>
+    <div class="add-choices" data-services="">
+      <label class="add-choice add-native-choice">
+        <input
+          aria-label="Quels services proposez-vous ? * · Sur place"
+          class="add-choice-input"
+          name="quels-services-proposez-vous"
+          type="checkbox"
+          value="Sur place"
+        />
+        <span class="add-choice__box add-choice__check"></span>
+        <span class="add-choice__label">Sur place</span>
+      </label>
+      <label class="add-choice add-native-choice">
+        <input
+          aria-label="Quels services proposez-vous ? * · À emporter"
+          class="add-choice-input"
+          name="quels-services-proposez-vous"
+          type="checkbox"
+          value="À emporter"
+        />
+        <span class="add-choice__box add-choice__check"></span>
+        <span class="add-choice__label">À emporter</span>
+      </label>
+      <label class="add-choice add-native-choice">
+        <input
+          aria-label="Quels services proposez-vous ? * · Livraison"
+          class="add-choice-input"
+          name="quels-services-proposez-vous"
+          type="checkbox"
+          value="Livraison"
+        />
+        <span class="add-choice__box add-choice__check"></span>
+        <span class="add-choice__label">Livraison</span>
+      </label>
+    </div>
+    <p class="add-field__help">
+      Plusieurs choix possibles. Cochez uniquement les services disponibles.
+    </p>
+  </div>
+  <div class="add-field--full">
+    <label
+      class="add-field__label"
+      for="lien-de-commande-livraison-si-livraison-proposee"
+    >
+      Lien de commande / livraison · si livraison proposée
+    </label>
+    <div class="add-link-fields">
+      <div class="add-input-shell--link add-control-wrap">
+        <input
+          aria-label="Lien de commande / livraison · si livraison proposée"
+          class="add-control"
+          id="lien-de-commande-livraison-si-livraison-proposee"
+          name="lien-de-commande-livraison-si-livraison-proposee"
+          placeholder="https://…"
+          type="url"
+        />
+      </div>
+      <div class="add-input-shell--link add-control-wrap">
+        <input
+          aria-label="Lien de votre service de livraison ou de votre page de commande, si disponible."
+          class="add-control"
+          id="lien-de-votre-service-de-livraison-ou-de-votre-page-de-commande-si-dispo"
+          name="lien-de-votre-service-de-livraison-ou-de-votre-page-de-commande-si-dispo"
+          placeholder="https://…"
+          type="url"
+        />
+      </div>
+    </div>
+    <label
+      class="add-field__help"
+      for="lien-de-votre-service-de-livraison-ou-de-votre-page-de-commande-si-dispo"
+    >
+      Lien de votre service de livraison ou de votre page de commande, si
+      disponible.
+    </label>
+  </div>
+</section>

@@ -118,6 +118,21 @@ PAGES = {
         'footer_mobile_logo': 'f615a.svg',
         'footer_desktop_logo': '95b92.svg',
     },
+    'add-restaurant': {
+        'output': 'add-restaurant.html',
+        'page_title': 'Ajouter mon restaurant — Le spot halal',
+        'page_description': 'Présentez votre restaurant et vos pratiques en toute transparence.',
+        'page_stylesheet': 'assets/css/pages/add-restaurant.css',
+        'page_script': 'assets/js/add-restaurant.js',
+        'page_class': 'page-add-restaurant',
+        'about_url': 'index.html#about',
+        'search_url': 'restaurants.html',
+        'nearby_current': '',
+        'header_mobile_logo': '6d906.svg',
+        'header_mobile_search': '01fd5.svg',
+        'footer_mobile_logo': 'f615a.svg',
+        'footer_desktop_logo': 'ce9ce.svg',
+    },
 }
 
 
@@ -178,9 +193,14 @@ def map_content():
     return {'map_cards': '\n'.join(cards), 'map_markers': '\n'.join(markers)}
 
 
+def add_restaurant_content():
+    sections = ('spot', 'contact', 'halal', 'alcohol', 'documents', 'confirmations')
+    return {'section_' + name: read(f'partials/add-restaurant/{name}.html') for name in sections}
+
+
 def build(page='home'):
-    settings = dict(PAGES[page], nearby_url='restaurants.html', nearby_active='' if page == 'map' else 'site-header__link--active', map_active='site-header__link--active' if page == 'map' else '', map_current='aria-current="page"' if page == 'map' else '')
-    content_values = {'home': lambda: {'restaurant_cards': restaurant_cards()}, 'restaurants': lambda: {'listing_cards': listing_cards()}, 'details': details_content, 'map': map_content}
+    settings = dict(PAGES[page], nearby_url='restaurants.html', nearby_active='' if page in {'map', 'add-restaurant'} else 'site-header__link--active', map_active='site-header__link--active' if page == 'map' else '', map_current='aria-current="page"' if page == 'map' else '')
+    content_values = {'home': lambda: {'restaurant_cards': restaurant_cards()}, 'restaurants': lambda: {'listing_cards': listing_cards()}, 'details': details_content, 'map': map_content, 'add-restaurant': add_restaurant_content}
     cards = content_values[page]()
     content = render(read(f'pages/{page}.html'), cards)
     dialogs = read('partials/info-dialog.html')
@@ -190,6 +210,8 @@ def build(page='home'):
         dialogs += '\n' + read('partials/detail-dialogs.html')
     if page == 'map':
         dialogs += '\n' + read('partials/map-dialogs.html')
+    if page == 'add-restaurant':
+        dialogs += '\n' + read('partials/add-restaurant/submission-dialog.html')
     output = render(read('layout.html'), dict(settings,
         header=render(read('partials/header.html'), settings),
         content=content,

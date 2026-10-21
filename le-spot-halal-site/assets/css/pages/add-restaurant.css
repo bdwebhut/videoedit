@@ -1,0 +1,1497 @@
+/* Add-restaurant form: shared tokens, semantic controls, six editable sections. */
+.lsh-site.page-add-restaurant .add-art {
+  display: block;
+  inset: 0px;
+  max-width: none;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-button--primary {
+  background-color: var(--color-orange);
+  border-color: var(--color-ink);
+  border-width: 2px;
+  border-style: solid;
+  filter: drop-shadow(4px 4px 0px var(--color-ink));
+  display: flex;
+  gap: 8px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 12.5px;
+  padding-top: 11.5px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: var(--radius-pill);
+}
+.lsh-site.page-add-restaurant .add-button__label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 0;
+  color: var(--color-paper);
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 0.9px;
+  white-space: nowrap;
+}
+.lsh-site.page-add-restaurant .add-button__line {
+  line-height: 32px;
+}
+.lsh-site.page-add-restaurant .add-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-breadcrumb {
+  font-weight: 400;
+  line-height: normal;
+  color: #79636b;
+  font-size: 18px;
+  white-space: pre;
+}
+.lsh-site.page-add-restaurant .add-hero {
+  background-color: var(--color-ink);
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  padding: 60px;
+  border-radius: 10px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-hero__copy {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  min-width: 0;
+}
+.lsh-site.page-add-restaurant .add-hero__badge {
+  background-color: var(--color-yellow);
+  display: flex;
+  align-items: flex-start;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 999px;
+}
+.lsh-site.page-add-restaurant .add-hero__eyebrow {
+  font-weight: 800;
+  line-height: normal;
+  color: var(--color-ink);
+  font-size: 18px;
+  white-space: nowrap;
+}
+.lsh-site.page-add-restaurant .add-hero__title {
+  font-weight: 800;
+  line-height: 0;
+  min-width: 0;
+  color: var(--color-paper);
+  font-size: 96px;
+  letter-spacing: -4.8px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-hero__line {
+  line-height: 0.98;
+  margin-bottom: 0;
+}
+.lsh-site.page-add-restaurant .add-hero__description {
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-paper);
+  font-size: 24px;
+  width: 1030px;
+}
+.lsh-site.page-add-restaurant .add-promise-wrap {
+  display: flex;
+  height: 414.16px;
+  align-items: center;
+  justify-content: center;
+  width: 483.604px;
+}
+.lsh-site.page-add-restaurant .add-promise-tilt {
+  flex: none;
+  rotate: 2deg;
+  transform: translate(0px, 0px) rotate(0deg);
+}
+.lsh-site.page-add-restaurant .add-promise {
+  background-color: var(--color-pink);
+  border-width: 2px;
+  border-color: var(--color-ink);
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 10px;
+  width: 470px;
+}
+.lsh-site.page-add-restaurant .add-promise__icon {
+  width: 104px;
+  height: 104px;
+}
+.lsh-site.page-add-restaurant .add-promise__title {
+  font-weight: 800;
+  line-height: 0;
+  min-width: 0;
+  color: var(--color-ink);
+  font-size: 42px;
+  letter-spacing: -1.68px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-promise__line {
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+.lsh-site.page-add-restaurant .add-promise__copy {
+  font-weight: 400;
+  line-height: 1.5;
+  min-width: 0;
+  color: var(--color-ink);
+  font-size: 20px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  padding-left: 180px;
+  padding-right: 180px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-overview__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: normal;
+  width: 100%;
+  white-space: nowrap;
+}
+.lsh-site.page-add-restaurant .add-overview__title {
+  font-weight: 800;
+  color: var(--color-ink);
+  font-size: 32px;
+}
+.lsh-site.page-add-restaurant .add-overview__required {
+  font-weight: 400;
+  color: #79636b;
+  font-size: 18px;
+}
+.lsh-site.page-add-restaurant .add-steps {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  line-height: normal;
+  color: var(--color-ink);
+  width: 100%;
+  white-space: nowrap;
+}
+.lsh-site.page-add-restaurant .add-step--first {
+  background-color: var(--color-yellow);
+  border-width: 2px;
+  border-color: var(--color-ink);
+  border-style: solid;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+.lsh-site.page-add-restaurant .add-step__number {
+  font-weight: 700;
+  font-size: 17px;
+}
+.lsh-site.page-add-restaurant .add-step__title {
+  font-weight: 800;
+  font-size: 21px;
+}
+.lsh-site.page-add-restaurant .add-step--plain {
+  background-color: var(--color-paper);
+  border-width: 2px;
+  border-color: var(--color-ink);
+  border-style: solid;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+.lsh-site.page-add-restaurant .add-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-visibility--public {
+  background-color: var(--color-green);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 999px;
+}
+.lsh-site.page-add-restaurant .add-icon--small {
+  width: 18px;
+  height: 18px;
+}
+.lsh-site.page-add-restaurant .add-visibility__label {
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-ink);
+  font-size: 16px;
+  white-space: nowrap;
+}
+.lsh-site.page-add-restaurant .add-visibility--private {
+  background-color: var(--color-pink);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 999px;
+}
+.lsh-site.page-add-restaurant .add-overview__note {
+  flex: 1 0 0;
+  font-weight: 400;
+  line-height: 1.5;
+  min-width: 0;
+  color: #79636b;
+  font-size: 17px;
+}
+.lsh-site.page-add-restaurant .add-section {
+  background-color: var(--color-paper);
+  border-width: 2px;
+  border-color: var(--color-ink);
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: flex-start;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-section__number--yellow {
+  background-color: var(--color-yellow);
+  border-width: 2px;
+  border-color: var(--color-ink);
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  width: 64px;
+  height: 64px;
+}
+.lsh-site.page-add-restaurant .add-section__index {
+  font-weight: 800;
+  line-height: normal;
+  color: var(--color-ink);
+  font-size: 26px;
+  white-space: nowrap;
+}
+.lsh-site.page-add-restaurant .add-section__title {
+  flex: 1 0 0;
+  font-weight: 800;
+  line-height: 1.15;
+  min-width: 0;
+  color: var(--color-ink);
+  font-size: 44px;
+  letter-spacing: -1.76px;
+}
+.lsh-site.page-add-restaurant .add-section__description {
+  font-weight: 400;
+  line-height: 1.5;
+  color: #79636b;
+  font-size: 20px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-divider {
+  background-color: #d8c9ce;
+  height: 1px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-fields {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-field {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  min-width: 0;
+}
+.lsh-site.page-add-restaurant .add-field__label {
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-ink);
+  font-size: 20px;
+  width: 100%;
+  min-width: 0;
+}
+.lsh-site.page-add-restaurant .add-input-shell {
+  background-color: var(--color-paper);
+  border-color: #d8c9ce;
+  border-width: 1.5px;
+  border-style: solid;
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  border-radius: 10px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-field__placeholder {
+  flex: 1 0 0;
+  font-weight: 400;
+  line-height: 1.4;
+  min-width: 0;
+  color: #79636b;
+  font-size: 19px;
+}
+.lsh-site.page-add-restaurant .add-icon--medium {
+  width: 22px;
+  height: 22px;
+}
+.lsh-site.page-add-restaurant .add-field--full {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-input-shell--textarea {
+  background-color: var(--color-paper);
+  border-color: #d8c9ce;
+  border-width: 1.5px;
+  border-style: solid;
+  display: flex;
+  height: 112px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 18px;
+  border-radius: 10px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-field__help {
+  font-weight: 400;
+  line-height: 1.5;
+  color: #79636b;
+  font-size: 17px;
+  width: 100%;
+  min-width: 0;
+}
+.lsh-site.page-add-restaurant .add-question {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-question__title {
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--color-ink);
+  font-size: 20px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-hours__head {
+  background-color: var(--color-yellow);
+  display: flex;
+  font-weight: 700;
+  gap: 24px;
+  align-items: flex-start;
+  line-height: normal;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 10px;
+  color: var(--color-ink);
+  font-size: 18px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-hours__day-heading {
+  width: 170px;
+}
+.lsh-site.page-add-restaurant .add-hours__slot-heading {
+  flex: 1 0 0;
+  min-width: 0;
+}
+.lsh-site.page-add-restaurant .add-hours__closed-heading {
+  width: 116px;
+}
+.lsh-site.page-add-restaurant .add-hours__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-hours__row {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding-left: 18px;
+  padding-right: 18px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-hours__day {
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-ink);
+  font-size: 19px;
+  width: 170px;
+}
+.lsh-site.page-add-restaurant .add-hours__slot {
+  border-color: #d8c9ce;
+  border-width: 1.5px;
+  border-style: solid;
+  display: flex;
+  flex: 1 0 0;
+  height: 52px;
+  align-items: center;
+  min-width: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 10px;
+}
+.lsh-site.page-add-restaurant .add-hours__placeholder {
+  font-weight: 400;
+  line-height: normal;
+  color: #79636b;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.lsh-site.page-add-restaurant .add-hours__closed {
+  display: flex;
+  height: 52px;
+  align-items: center;
+  width: 116px;
+}
+.lsh-site.page-add-restaurant .add-choice__box {
+  border-color: var(--color-ink);
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+}
+.lsh-site.page-add-restaurant .add-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-choice {
+  border-color: var(--color-ink);
+  border-width: 1.5px;
+  border-style: solid;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 999px;
+}
+.lsh-site.page-add-restaurant .add-choice__label {
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-ink);
+  font-size: 19px;
+  white-space: nowrap;
+}
+.lsh-site.page-add-restaurant .add-link-fields {
+  display: flex;
+  gap: 84px;
+  align-items: center;
+}
+.lsh-site.page-add-restaurant .add-input-shell--link {
+  background-color: var(--color-paper);
+  border-color: #d8c9ce;
+  border-width: 1.5px;
+  border-style: solid;
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  border-radius: 10px;
+  width: 596px;
+}
+.lsh-site.page-add-restaurant .add-section__number--pink {
+  background-color: var(--color-pink);
+  border-width: 2px;
+  border-color: var(--color-ink);
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  width: 64px;
+  height: 64px;
+}
+.lsh-site.page-add-restaurant .add-notice {
+  background-color: #faf2f4;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 22px;
+  border-radius: 10px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-icon--notice {
+  width: 24px;
+  height: 24px;
+}
+.lsh-site.page-add-restaurant .add-notice__body {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  line-height: 1.5;
+  min-width: 0;
+  color: var(--color-ink);
+  font-size: 18px;
+}
+.lsh-site.page-add-restaurant .add-notice__title {
+  font-weight: 700;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-notice__copy {
+  font-weight: 400;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-icon--radio {
+  width: 20px;
+  height: 20px;
+}
+.lsh-site.page-add-restaurant .add-practices {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-practice {
+  border-color: #d8c9ce;
+  border-bottom-width: 1px;
+  border-style: solid;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-practice__label {
+  flex: 1 0 0;
+  font-weight: 600;
+  line-height: normal;
+  min-width: 0;
+  color: var(--color-ink);
+  font-size: 19px;
+}
+.lsh-site.page-add-restaurant .add-practice__choices {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  width: 530px;
+}
+.lsh-site.page-add-restaurant .add-practice__choice {
+  display: flex;
+  flex: 1 0 0;
+  gap: 12px;
+  align-items: center;
+  min-width: 0;
+}
+.lsh-site.page-add-restaurant .add-practice__answer {
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-ink);
+  font-size: 18px;
+  white-space: nowrap;
+}
+.lsh-site.page-add-restaurant .add-uploads {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-upload__description {
+  font-weight: 400;
+  line-height: 1.5;
+  min-width: 0;
+  color: #79636b;
+  font-size: 20px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-upload {
+  background-color: #faf2f4;
+  border-width: 2px;
+  border-color: #d8c9ce;
+  border-style: dashed;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 24px;
+  border-radius: 10px;
+}
+.lsh-site.page-add-restaurant .add-upload__heading {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.lsh-site.page-add-restaurant .add-icon--upload {
+  width: 26px;
+  height: 26px;
+}
+.lsh-site.page-add-restaurant .add-upload__title {
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-ink);
+  font-size: 22px;
+  white-space: nowrap;
+}
+.lsh-site.page-add-restaurant .add-upload__button {
+  background-color: var(--color-paper);
+  border-color: var(--color-ink);
+  border-width: 2px;
+  border-style: solid;
+  filter: drop-shadow(4px 4px 0px black);
+  display: flex;
+  gap: 8px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10.5px;
+  padding-top: 9.5px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: var(--radius-pill);
+}
+.lsh-site.page-add-restaurant .add-upload__button-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 0;
+  color: var(--color-ink);
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+}
+.lsh-site.page-add-restaurant .add-upload__button-line {
+  line-height: 24px;
+}
+.lsh-site.page-add-restaurant .add-icon--tiny {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+.lsh-site.page-add-restaurant .add-upload__help {
+  font-weight: 400;
+  line-height: 1.5;
+  min-width: 0;
+  color: #79636b;
+  font-size: 16px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-confirmation {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-confirmation__box {
+  border-width: 2px;
+  border-color: var(--color-ink);
+  border-style: solid;
+  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+}
+.lsh-site.page-add-restaurant .add-confirmation__copy {
+  flex: 1 0 0;
+  font-weight: 400;
+  line-height: 0;
+  min-width: 0;
+  color: var(--color-ink);
+  font-size: 19px;
+}
+.lsh-site.page-add-restaurant .add-assurances {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  line-height: 1.5;
+  color: var(--color-ink);
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-assurance--public {
+  background-color: var(--color-green);
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 24px;
+  border-radius: 10px;
+}
+.lsh-site.page-add-restaurant .add-assurance__title {
+  font-weight: 700;
+  font-size: 20px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-assurance__copy {
+  font-weight: 400;
+  font-size: 18px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-assurance--private {
+  background-color: var(--color-pink);
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 24px;
+  border-radius: 10px;
+}
+.lsh-site.page-add-restaurant .add-text-line {
+  line-height: 1.5;
+}
+.lsh-site.page-add-restaurant .add-text-link {
+  text-decoration-skip-ink: none;
+  text-underline-position: from-font;
+  text-decoration-thickness: from-font;
+  text-decoration-style: solid;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--color-orange);
+  text-decoration-line: underline;
+}
+.lsh-site.page-add-restaurant .add-actions {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-button--secondary {
+  background-color: var(--color-paper);
+  border-color: var(--color-ink);
+  border-width: 2px;
+  border-style: solid;
+  filter: drop-shadow(4px 4px 0px var(--color-ink));
+  display: flex;
+  gap: 8px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 12.5px;
+  padding-top: 11.5px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: var(--radius-pill);
+}
+.lsh-site.page-add-restaurant .add-button__label--dark {
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 0;
+  color: var(--color-ink);
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 0.9px;
+  white-space: nowrap;
+}
+.lsh-site.page-add-restaurant .add-support {
+  font-weight: 400;
+  line-height: 0;
+  color: #79636b;
+  font-size: 18px;
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-support__line {
+  line-height: normal;
+}
+.lsh-site.page-add-restaurant .add-support__link {
+  text-decoration-skip-ink: none;
+  text-underline-position: from-font;
+  text-decoration-thickness: from-font;
+  text-decoration-style: solid;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-orange);
+  text-decoration-line: underline;
+}
+/* Shared form primitives. Source fields retain their labels and visibility notices. */
+.lsh-site.page-add-restaurant {
+  --color-field-border: #d8c9ce;
+  --color-form-muted: #79636b;
+}
+.lsh-site.page-add-restaurant .add-page {
+  margin-top: 44px;
+}
+.lsh-site.page-add-restaurant .add-page :where(fieldset, form) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+.lsh-site.page-add-restaurant .add-page :where(select, textarea) {
+  font: inherit;
+  color: inherit;
+}
+.lsh-site.page-add-restaurant .add-page :where(select, textarea):focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 4px;
+}
+.lsh-site.page-add-restaurant .add-page :where(p, h1, h2, span, label) {
+  overflow-wrap: anywhere;
+}
+.lsh-site.page-add-restaurant .add-hero__line {
+  display: block;
+}
+.lsh-site.page-add-restaurant .add-promise-wrap {
+  max-width: 28%;
+}
+.lsh-site.page-add-restaurant .add-promise {
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-hero__description {
+  width: 100%;
+  max-width: 1030px;
+}
+.lsh-site.page-add-restaurant .add-overview {
+  padding-inline: clamp(0px, 9.375vw, 180px);
+}
+.lsh-site.page-add-restaurant .add-step {
+  height: 103px;
+  padding: 17.5px;
+  border: 2px solid var(--color-ink);
+}
+.lsh-site.page-add-restaurant .add-overview__title {
+  line-height: 45px;
+}
+.lsh-site.page-add-restaurant .add-visibility {
+  height: 38px;
+  padding-block: 7.5px;
+}
+.lsh-site.page-add-restaurant .add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 1498px;
+  margin: 44px auto 0;
+}
+.lsh-site.page-add-restaurant .add-section {
+  padding: 38px;
+  height: auto;
+}
+.lsh-site.page-add-restaurant .add-control-wrap {
+  position: relative;
+}
+.lsh-site.page-add-restaurant .add-control {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  padding: 16.5px;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  font-size: 19px;
+  line-height: 1.4;
+}
+.lsh-site.page-add-restaurant .add-control::placeholder {
+  color: var(--color-form-muted);
+  opacity: 1;
+}
+.lsh-site.page-add-restaurant textarea.add-control {
+  resize: vertical;
+  min-height: 100%;
+}
+.lsh-site.page-add-restaurant select.add-control {
+  appearance: none;
+  padding-right: 48px;
+}
+.lsh-site.page-add-restaurant select.add-control:has(option[value=""]:checked) {
+  color: var(--color-form-muted);
+}
+.lsh-site.page-add-restaurant .add-control-wrap > .add-icon--medium {
+  margin-left: auto;
+  pointer-events: none;
+}
+.lsh-site.page-add-restaurant :where(.add-native-choice, .add-native-checkbox) {
+  position: relative;
+  cursor: pointer;
+}
+.lsh-site.page-add-restaurant .add-choice-input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.lsh-site.page-add-restaurant .add-choice {
+  padding: 12.5px 18.5px;
+}
+.lsh-site.page-add-restaurant .add-native-choice:has(input:checked) {
+  background: #ffedb4;
+  border-radius: var(--radius-pill);
+}
+.lsh-site.page-add-restaurant :where(.add-choice__radio, .add-choice__check) {
+  position: relative;
+  display: block;
+  flex: none;
+}
+.lsh-site.page-add-restaurant
+  .add-native-choice:has(input:checked)
+  .add-choice__radio::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  background: var(--color-ink);
+}
+.lsh-site.page-add-restaurant
+  :where(.add-native-choice, .add-native-checkbox):has(input:checked)
+  .add-choice__check::after {
+  content: "✓";
+  position: absolute;
+  inset: -3px;
+  display: grid;
+  place-items: center;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1;
+}
+.lsh-site.page-add-restaurant
+  :where(.add-native-choice, .add-native-checkbox):has(input:focus-visible) {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+.lsh-site.page-add-restaurant .add-control:disabled {
+  opacity: 0.45;
+  background: #f0ebed;
+}
+.lsh-site.page-add-restaurant
+  :where(
+    .add-icon--small,
+    .add-icon--medium,
+    .add-icon--radio,
+    .add-icon--notice,
+    .add-icon--tiny,
+    .add-icon--upload,
+    .add-promise__icon
+  ) {
+  position: relative;
+  flex: none;
+}
+.lsh-site.page-add-restaurant .add-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+.lsh-site.page-add-restaurant .add-upload-zone {
+  position: relative;
+  padding: 22px;
+}
+.lsh-site.page-add-restaurant .add-file-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  bottom: 0;
+  left: 24px;
+}
+.lsh-site.page-add-restaurant .add-file-button {
+  cursor: pointer;
+}
+.lsh-site.page-add-restaurant
+  .add-upload-zone:has(.add-file-input:focus-visible)
+  .add-file-button {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 4px;
+}
+.lsh-site.page-add-restaurant .add-upload-status:empty,
+.lsh-site.page-add-restaurant .add-status:empty {
+  display: none;
+}
+.lsh-site.page-add-restaurant .add-upload-status {
+  width: 100%;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.lsh-site.page-add-restaurant .add-upload-zone.drag-active {
+  background: #e7ffea;
+  outline: 3px solid var(--color-ink);
+}
+.lsh-site.page-add-restaurant .was-validated .add-control-wrap:has(:invalid),
+.lsh-site.page-add-restaurant .was-validated .add-upload-zone:has(:invalid) {
+  border-color: #bd1640;
+}
+.lsh-site.page-add-restaurant
+  .was-validated
+  :where(.add-native-choice, .add-native-checkbox):has(:invalid) {
+  outline: 1px solid #bd1640;
+}
+.lsh-site.page-add-restaurant .add-control:focus {
+  outline: 2px solid var(--color-focus);
+  outline-offset: -3px;
+}
+.lsh-site.page-add-restaurant .add-practice {
+  min-height: 59px;
+  padding-block: 15.5px;
+}
+.lsh-site.page-add-restaurant .add-practice__choices {
+  flex: none;
+}
+.lsh-site.page-add-restaurant .add-confirmation__box {
+  display: block;
+  flex: none;
+}
+.lsh-site.page-add-restaurant .add-status {
+  width: 100%;
+  max-width: 1498px;
+  margin: 24px auto 0;
+  padding: 16px 24px;
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-panel);
+  background: #fff1d4;
+  font-size: 18px;
+}
+.lsh-site.page-add-restaurant .add-actions {
+  flex-wrap: wrap;
+}
+.lsh-site.page-add-restaurant .add-page button:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+.lsh-site.page-add-restaurant .site-footer {
+  margin-top: 44px;
+}
+.lsh-site.page-add-restaurant .add-link-fields {
+  width: 100%;
+}
+.lsh-site.page-add-restaurant .add-input-shell--link {
+  flex: 1;
+  width: auto;
+  min-width: 0;
+}
+/* Laptops: keep the form grid fluid and give its long labels room to wrap. */
+@media (max-width: 111.99rem) {
+  .lsh-site.page-add-restaurant .add-hero {
+    padding: clamp(24px, 3.125vw, 60px);
+    gap: 32px;
+  }
+  .lsh-site.page-add-restaurant .add-hero__title {
+    font-size: clamp(48px, 5vw, 96px);
+  }
+  .lsh-site.page-add-restaurant .add-hero__description {
+    font-size: clamp(18px, 1.25vw, 24px);
+  }
+  .lsh-site.page-add-restaurant .add-promise-wrap {
+    height: auto;
+    width: 32%;
+    max-width: 32%;
+  }
+  .lsh-site.page-add-restaurant .add-promise {
+    padding: 24px;
+    gap: 20px;
+  }
+  .lsh-site.page-add-restaurant .add-promise__title {
+    font-size: 32px;
+  }
+  .lsh-site.page-add-restaurant .add-promise__copy {
+    font-size: 18px;
+  }
+  .lsh-site.page-add-restaurant .add-overview {
+    padding-inline: 0;
+  }
+  .lsh-site.page-add-restaurant .add-overview__heading {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .lsh-site.page-add-restaurant .add-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lsh-site.page-add-restaurant .add-row {
+    flex-wrap: wrap;
+  }
+  .lsh-site.page-add-restaurant .add-section__heading {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+  .lsh-site.page-add-restaurant .add-section__heading .add-visibility {
+    grid-column: 2;
+    width: fit-content;
+  }
+  .lsh-site.page-add-restaurant .add-section__title {
+    font-size: 36px;
+  }
+  .lsh-site.page-add-restaurant .add-section {
+    padding: 28px;
+  }
+  .lsh-site.page-add-restaurant .add-practice {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .lsh-site.page-add-restaurant .add-practice__choices {
+    width: 100%;
+  }
+  .lsh-site.page-add-restaurant .add-hours__day,
+  .lsh-site.page-add-restaurant .add-hours__day-heading {
+    width: 110px;
+  }
+  .lsh-site.page-add-restaurant .add-hours__closed,
+  .lsh-site.page-add-restaurant .add-hours__closed-heading {
+    width: 64px;
+  }
+  .lsh-site.page-add-restaurant .add-hours__head,
+  .lsh-site.page-add-restaurant .add-hours__row {
+    padding-inline: 0;
+    gap: 12px;
+  }
+}
+/* Phone/tablet layouts are inferred from the shared site's mobile design language. */
+@media (max-width: 63.99rem) {
+  .lsh-site.page-add-restaurant .add-page {
+    margin-top: 32px;
+  }
+  .lsh-site.page-add-restaurant .add-intro {
+    gap: 24px;
+  }
+  .lsh-site.page-add-restaurant .add-breadcrumb {
+    font-size: 13px;
+  }
+  .lsh-site.page-add-restaurant .add-hero {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+  }
+  .lsh-site.page-add-restaurant .add-hero__copy {
+    flex: auto;
+    width: 100%;
+    gap: 20px;
+  }
+  .lsh-site.page-add-restaurant .add-hero__badge {
+    padding: 8px 12px;
+  }
+  .lsh-site.page-add-restaurant .add-hero__eyebrow {
+    font-size: 12px;
+    white-space: normal;
+  }
+  .lsh-site.page-add-restaurant .add-hero__title {
+    font-size: clamp(36px, 7vw, 56px);
+    letter-spacing: -0.05em;
+  }
+  .lsh-site.page-add-restaurant .add-hero__description {
+    font-size: 16px;
+  }
+  .lsh-site.page-add-restaurant .add-promise-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+  .lsh-site.page-add-restaurant .add-promise-tilt {
+    rotate: 0deg;
+  }
+  .lsh-site.page-add-restaurant .add-promise {
+    padding: 20px;
+    gap: 16px;
+  }
+  .lsh-site.page-add-restaurant .add-promise__icon {
+    width: 64px;
+    height: 64px;
+  }
+  .lsh-site.page-add-restaurant .add-promise__title {
+    font-size: 28px;
+    letter-spacing: -0.04em;
+  }
+  .lsh-site.page-add-restaurant .add-promise__copy {
+    font-size: 15px;
+  }
+  .lsh-site.page-add-restaurant .add-overview {
+    gap: 20px;
+  }
+  .lsh-site.page-add-restaurant .add-overview__heading {
+    white-space: normal;
+  }
+  .lsh-site.page-add-restaurant .add-overview__title {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  .lsh-site.page-add-restaurant .add-overview__required {
+    font-size: 13px;
+  }
+  .lsh-site.page-add-restaurant .add-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    white-space: normal;
+  }
+  .lsh-site.page-add-restaurant .add-step {
+    min-width: 0;
+    height: auto;
+    min-height: 84px;
+    padding: 14px;
+    gap: 8px;
+  }
+  .lsh-site.page-add-restaurant .add-step__number {
+    font-size: 13px;
+  }
+  .lsh-site.page-add-restaurant .add-step__title {
+    font-size: 16px;
+  }
+  .lsh-site.page-add-restaurant .add-overview__note {
+    flex-basis: 100%;
+    font-size: 14px;
+  }
+  .lsh-site.page-add-restaurant .add-visibility {
+    max-width: 100%;
+    height: auto;
+    min-height: 34px;
+    padding: 8px 10px;
+  }
+  .lsh-site.page-add-restaurant .add-visibility__label {
+    font-size: 12px;
+    white-space: normal;
+  }
+  .lsh-site.page-add-restaurant .add-form {
+    margin-top: 32px;
+    gap: 24px;
+  }
+  .lsh-site.page-add-restaurant .add-section {
+    padding: 20px;
+    gap: 24px;
+  }
+  .lsh-site.page-add-restaurant .add-section__number--yellow,
+  .lsh-site.page-add-restaurant .add-section__number--pink {
+    width: 44px;
+    height: 44px;
+  }
+  .lsh-site.page-add-restaurant .add-section__index {
+    font-size: 18px;
+  }
+  .lsh-site.page-add-restaurant .add-section__title {
+    font-size: 28px;
+    letter-spacing: -0.04em;
+  }
+  .lsh-site.page-add-restaurant .add-section__description {
+    font-size: 15px;
+  }
+  .lsh-site.page-add-restaurant .add-fields,
+  .lsh-site.page-add-restaurant .add-assurances {
+    flex-direction: column;
+  }
+  .lsh-site.page-add-restaurant .add-field,
+  .lsh-site.page-add-restaurant .add-upload,
+  .lsh-site.page-add-restaurant .add-assurance--public,
+  .lsh-site.page-add-restaurant .add-assurance--private {
+    flex: auto;
+    width: 100%;
+  }
+  .lsh-site.page-add-restaurant .add-field__label,
+  .lsh-site.page-add-restaurant .add-question__title {
+    font-size: 16px;
+  }
+  .lsh-site.page-add-restaurant .add-field__help,
+  .lsh-site.page-add-restaurant .add-upload__description {
+    font-size: 14px;
+  }
+  .lsh-site.page-add-restaurant .add-control {
+    font-size: 16px;
+    padding: 14px;
+  }
+  .lsh-site.page-add-restaurant .add-input-shell,
+  .lsh-site.page-add-restaurant .add-input-shell--link {
+    height: 56px;
+  }
+  .lsh-site.page-add-restaurant .add-input-shell--textarea {
+    height: 120px;
+  }
+  .lsh-site.page-add-restaurant .add-choices {
+    gap: 10px;
+  }
+  .lsh-site.page-add-restaurant .add-choice {
+    padding: 10px 12px;
+    gap: 8px;
+    min-height: 44px;
+    max-width: 100%;
+  }
+  .lsh-site.page-add-restaurant .add-choice__label {
+    font-size: 15px;
+    white-space: normal;
+  }
+  .lsh-site.page-add-restaurant .add-notice {
+    padding: 16px;
+    gap: 12px;
+  }
+  .lsh-site.page-add-restaurant .add-notice__body {
+    font-size: 14px;
+  }
+  .lsh-site.page-add-restaurant .add-practice__label {
+    flex: auto;
+    font-size: 15px;
+  }
+  .lsh-site.page-add-restaurant .add-practice__answer {
+    font-size: 14px;
+  }
+  .lsh-site.page-add-restaurant .add-practice__choices {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .lsh-site.page-add-restaurant .add-practice__choice {
+    flex: 0 0 auto;
+    min-height: 44px;
+    gap: 8px;
+  }
+  .lsh-site.page-add-restaurant .add-link-fields {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .lsh-site.page-add-restaurant .add-input-shell--link {
+    flex: none;
+    width: 100%;
+  }
+  .lsh-site.page-add-restaurant .add-upload__title {
+    font-size: 18px;
+    white-space: normal;
+  }
+  .lsh-site.page-add-restaurant .add-upload__button {
+    max-width: 100%;
+    padding-inline: 16px;
+  }
+  .lsh-site.page-add-restaurant .add-upload__button-label {
+    font-size: 14px;
+    white-space: normal;
+  }
+  .lsh-site.page-add-restaurant .add-confirmation__copy {
+    font-size: 14px;
+  }
+  .lsh-site.page-add-restaurant .add-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .lsh-site.page-add-restaurant .add-button--primary,
+  .lsh-site.page-add-restaurant .add-button--secondary {
+    height: auto;
+    min-height: 56px;
+    padding: 12px 16px;
+  }
+  .lsh-site.page-add-restaurant .add-button__label,
+  .lsh-site.page-add-restaurant .add-button__label--dark {
+    font-size: 16px;
+    white-space: normal;
+  }
+  .lsh-site.page-add-restaurant .add-support {
+    font-size: 14px;
+  }
+  .lsh-site.page-add-restaurant .add-status {
+    font-size: 14px;
+  }
+  .lsh-site.page-add-restaurant .add-hours__head {
+    display: none;
+  }
+  .lsh-site.page-add-restaurant .add-hours__rows {
+    gap: 20px;
+  }
+  .lsh-site.page-add-restaurant .add-hours__row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 10px;
+  }
+  .lsh-site.page-add-restaurant .add-hours__day {
+    grid-column: 1;
+    grid-row: 1;
+    width: auto;
+    font-size: 16px;
+  }
+  .lsh-site.page-add-restaurant .add-hours__closed {
+    grid-column: 2;
+    grid-row: 1;
+    width: auto;
+    height: 44px;
+    gap: 8px;
+  }
+  .lsh-site.page-add-restaurant .add-hours__closed::after {
+    content: "Fermé";
+    font-size: 14px;
+  }
+  .lsh-site.page-add-restaurant .add-hours__slot {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 52px;
+    flex: auto;
+  }
+}
+.lsh-site.page-add-restaurant .add-promise-tilt {
+  width: 100%;
+  min-width: 0;
+}
+.lsh-site.page-add-restaurant .add-breadcrumb {
+  white-space: normal;
+}
+/* Textareas grow in normal flow so manual resizing never covers the next field. */
+.lsh-site.page-add-restaurant .add-input-shell--textarea {
+  height: auto;
+  padding: 0;
+}
+.lsh-site.page-add-restaurant .add-input-shell--textarea textarea {
+  position: relative;
+  inset: auto;
+  height: 109px;
+  min-height: 109px;
+  display: block;
+}
+@media (max-width: 63.99rem) {
+  .lsh-site.page-add-restaurant .add-input-shell--textarea textarea {
+    height: 117px;
+    min-height: 117px;
+  }
+}

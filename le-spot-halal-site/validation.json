@@ -1,5 +1,5 @@
 {
-  "scope": "Shared static homepage, restaurant listing, details, and map; original export folders unchanged.",
+  "scope": "Shared static site: homepage, restaurant listing, details, map, and add-restaurant form; original export folders unchanged.",
   "references": {
     "mobile": {
       "width": 390,
@@ -187,14 +187,14 @@
     "no-JavaScript navigation"
   ],
   "pythonTests": {
-    "passed": 20,
+    "passed": 21,
     "failed": 0
   },
   "assets": {
-    "uniqueManifestEntries": 99,
+    "uniqueManifestEntries": 112,
     "runtimePaths": "local shared assets only",
     "downloadBehavior": "Content-based image validation; scan all export caches; read both original manifest formats; curl download with original Figma fallback URLs.",
-    "officialUrlFallbacks": 166
+    "officialUrlFallbacks": 179
   },
   "errors": [],
   "limitations": [
@@ -217,7 +217,8 @@
     "index.html",
     "restaurants.html",
     "details.html",
-    "map.html"
+    "map.html",
+    "add-restaurant.html"
   ],
   "homepageRegression": {
     "passed": true,
@@ -253,5 +254,22 @@
       "static content and links without JavaScript"
     ],
     "errors": []
+  },
+  "addRestaurantRegression": {
+    "passed": true,
+    "viewportCount": 20,
+    "checks": [
+      "20 responsive widths; all 98 labeled controls and six sections without overflow",
+      "desktop geometry compared with original export; mobile/tablet layout inferred",
+      "empty initial choices and section anchors",
+      "required fields, schedule format and closed-day state",
+      "file type/size validation and conditional photo consent",
+      "explicit local draft restoration without attachment contents",
+      "valid local JSON export; contact data never posted",
+      "keyboard dialog dismissal and focus return",
+      "shared add-page navigation and no-JavaScript submit prevention"
+    ],
+    "errors": [],
+    "networkPosts": []
   }
 }
