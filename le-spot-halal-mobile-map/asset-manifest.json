@@ -1,0 +1,23 @@
+{
+  "baseUrl": "https://www.figma.com/api/mcp/asset/655f18b2-f905-44aa-9aa7-28697c7c3981",
+  "assets": {
+    "imgVariant4": "b14db.svg",
+    "imgVariant13": "073ad.svg",
+    "imgMap": "5250a.png",
+    "imgRestaurantPhoto": "624d4.png",
+    "imgRestaurantPhoto1": "3a4b8.png",
+    "imgRestaurantPhoto2": "0e26d.png",
+    "imgRestaurantPhoto3": "35d8f.png",
+    "imgRestaurantPhoto4": "c5c61.png",
+    "imgSearchAction": "7b8b8.svg",
+    "imgLeSpotHalal": "6d906.svg",
+    "imgRecherche": "01fd5.svg",
+    "imgLocation": "4bd13.svg",
+    "imgSlidersHorizontal": "1ed9c.svg",
+    "imgSpotFlag": "8d991.svg",
+    "imgLeSpotHalal1": "f615a.svg"
+  },
+  "fileKey": "mMPV21NfSMrHikvRVU0twE",
+  "nodeId": "1:236",
+  "retrievedOn": "2026-10-21"
+}

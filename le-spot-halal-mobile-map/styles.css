@@ -1,0 +1,78 @@
+/* Static mobile restaurant map. Figma frame 1:236, 390 × 2440. */
+@font-face{font-family:Parkinsans;src:url('assets/parkinsans.ttf') format('truetype');font-weight:300 900;font-style:normal;font-display:swap}body{margin:0;background:#fcfcfc}.mobile-map{width:100%;max-width:390px;margin:0 auto;font-family:Parkinsans,sans-serif;color:#2f0311}.mobile-map,.mobile-map *{box-sizing:border-box}.mobile-map *{border-width:0;border-style:solid;border-color:currentColor}.mobile-map :where(p,h1,h2){margin:0;font:inherit}.mobile-map img{display:block;vertical-align:middle}
+.mm1{background-color:#fcfcfc;align-content:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;padding:16px;position:relative;width:100%;height:100%}
+.mm2{background-color:#ffdb53;align-content:stretch;display:flex;flex-direction:column;align-items:flex-start;overflow:clip;padding:16px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mm3{align-content:stretch;display:flex;align-items:center;justify-content:space-between;position:relative;flex-shrink:0;width:100%}
+.mm4{position:relative;flex-shrink:0;width:44px;height:44px}
+.mm5{position:absolute;display:block;inset:0px;max-width:none;width:100%;height:100%}
+.mm6{height:42px;position:relative;flex-shrink:0;width:64px}
+.mm7{align-content:stretch;display:flex;align-items:center;justify-content:center;overflow:clip;position:relative;flex-shrink:0;width:44px;height:44px}
+.mm8{position:relative;flex-shrink:0;width:26px;height:26px}
+.mm9{align-content:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;position:relative;flex-shrink:0;width:100%}
+.mm10{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.08;position:relative;flex-shrink:0;color:#2f0311;font-size:40px;letter-spacing:-2px;width:100%}
+.mm11{align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:flex-start;position:relative;flex-shrink:0;width:100%}
+.mm12{background-color:#fcfcfc;border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;gap:12px;height:52px;align-items:center;overflow:clip;padding-left:16px;padding-right:16px;position:relative;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311;flex-shrink:0;width:100%}
+.mm13{position:relative;flex-shrink:0;width:20px;height:20px}
+.mm14{word-break:break-word;flex:1 0 0;font-family:Parkinsans,sans-serif;font-weight:400;line-height:normal;min-width:1px;position:relative;color:#9d9195;font-size:14px}
+.mm15{background-color:#ff5a1b;border-color:#2f0311;border-width:2px;border-style:solid;align-content:stretch;filter:drop-shadow(4px 4px 0px black);display:flex;gap:8px;align-items:center;justify-content:center;min-height:48px;padding-left:16px;padding-right:16px;padding-top:10px;padding-bottom:10px;position:relative;border-radius:999px;flex-shrink:0;width:100%}
+.mm16{word-break:break-word;display:flex;flex:1 0 0;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:800;justify-content:center;line-height:0;min-width:1px;position:relative;color:#fcfcfc;font-size:15px;text-align:center;letter-spacing:-0.3px}
+.mm17{line-height:22px}
+.mm18{align-content:stretch;display:flex;gap:12px;align-items:flex-start;position:relative;flex-shrink:0;width:100%}
+.mm19{background-color:#ffdb53;border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;flex:1 0 0;gap:10px;height:48px;align-items:center;min-width:1px;overflow:clip;padding-left:16px;padding-right:16px;position:relative;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311}
+.mm20{height:22px;position:relative;flex-shrink:0;width:18px}
+.mm21{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:15px;white-space:nowrap}
+.mm22{border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;gap:8px;height:48px;align-items:center;overflow:clip;padding-left:16px;padding-right:16px;position:relative;border-radius:999px;flex-shrink:0}
+.mm23{position:relative;flex-shrink:0;width:18px;height:18px}
+.mm24{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:14px;white-space:nowrap}
+.mm25{border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;flex-direction:column;height:430px;align-items:flex-start;overflow:clip;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mm26{position:absolute;inset:0px;overflow:hidden;pointer-events:none;border-radius:10px}
+.mm27{position:absolute;height:251.19%;left:-54.19%;max-width:none;top:-63.78%;width:179.21%}
+.mm28{position:absolute;background-color:#b6ffbd;border-width:3px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;inset:calc(35% - 0.6px) calc(69% + 0.76px) calc(54% + 0.16px) calc(18% - 1.28px);align-items:center;justify-content:center;overflow:clip;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311}
+.mm29{height:24px;position:relative;flex-shrink:0;width:23px}
+.mm30{position:absolute;background-color:#ffdb53;border-width:3px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;inset:calc(44% - 0.24px) calc(44% - 0.24px) calc(45% - 0.2px) calc(43% - 0.28px);align-items:center;justify-content:center;overflow:clip;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311}
+.mm31{position:absolute;background-color:#ff5a1b;border-width:3px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;inset:calc(52% + 0.08px) calc(67% + 0.68px) calc(37% - 0.52px) calc(20% - 1.2px);align-items:center;justify-content:center;overflow:clip;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311}
+.mm32{position:absolute;background-color:#ffb5d2;border-width:3px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;inset:calc(60% + 0.4px) calc(25% - 1px) calc(29% - 0.84px) calc(62% + 0.48px);align-items:center;justify-content:center;overflow:clip;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311}
+.mm33{position:absolute;background-color:#b6ffbd;border-width:3px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;inset:calc(69% + 0.76px) calc(66% + 0.64px) calc(20% - 1.2px) calc(21% - 1.16px);align-items:center;justify-content:center;overflow:clip;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311}
+.mm34{position:absolute;background-color:#ffdb53;border-width:3px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;inset:calc(83% + 1.32px) calc(75% + 1px) calc(6% - 1.76px) calc(12% - 1.52px);align-items:center;justify-content:center;overflow:clip;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311}
+.mm35{position:absolute;background-color:#ffdb53;border-width:3px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;inset:calc(83% + 1.32px) calc(43% - 0.28px) calc(6% - 1.76px) calc(44% - 0.24px);align-items:center;justify-content:center;overflow:clip;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311}
+.mm36{align-content:stretch;cursor:default;display:flex;flex-direction:column;gap:16px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.mm37{background-color:#fcfcfc;border-width:2px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mm38{align-content:stretch;display:flex;align-items:flex-start;min-height:150px;overflow:clip;padding:10px;position:relative;align-self:stretch;flex-shrink:0;width:112px}
+.mm39{position:absolute;inset:0px;overflow:hidden;pointer-events:none}
+.mm40{position:absolute;height:100%;left:-15.7%;max-width:none;top:0px;width:131.41%}
+.mm41{position:absolute;background-color:#fcfcfc;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;left:10px;overflow:clip;padding-left:8px;padding-right:8px;padding-top:4px;padding-bottom:4px;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311;top:10px}
+.mm42{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:10px;text-align:left;white-space:nowrap}
+.mm43{align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:12px;align-items:flex-start;min-width:1px;overflow:clip;padding:12px;position:relative}
+.mm44{align-content:stretch;display:flex;gap:8px;align-items:flex-start;position:relative;flex-shrink:0;width:100%}
+.mm45{word-break:break-word;flex:1 0 0;font-family:Parkinsans,sans-serif;font-weight:800;line-height:1.2;min-width:1px;position:relative;color:#2f0311;font-size:16px;text-align:left;letter-spacing:-0.48px}
+.mm46{background-color:#fcfcfc;border-color:#2f0311;border-width:1.5px;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;position:relative;border-radius:999px;box-shadow:3px 3px 0px 0px #2f0311;flex-shrink:0}
+.mm47{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:800;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:12px;text-align:left;white-space:nowrap}
+.mm48{align-content:flex-start;display:flex;flex-wrap:wrap;gap:6px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;width:100%}
+.mm49{background-color:#ffdb53;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:3px;padding-bottom:3px;position:relative;border-radius:3px;flex-shrink:0}
+.mm50{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;color:#2f0311;font-size:11px;text-align:left;white-space:nowrap}
+.mm51{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:1.8;position:relative;flex-shrink:0;color:#2f0311;font-size:11px;text-align:left;white-space:nowrap}
+.mm52{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:1.5;position:relative;flex-shrink:0;color:#2f0311;font-size:12px;text-align:left;width:100%}
+.mm53{background-color:#ff5a1b;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:3px;padding-bottom:3px;position:relative;border-radius:3px;flex-shrink:0}
+.mm54{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:700;line-height:normal;position:relative;flex-shrink:0;color:#fcfcfc;font-size:11px;text-align:left;white-space:nowrap}
+.mm55{position:absolute;inset:0px;max-width:none;object-fit:cover;pointer-events:none;width:100%;height:100%}
+.mm56{background-color:#b6ffbd;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:3px;padding-bottom:3px;position:relative;border-radius:3px;flex-shrink:0}
+.mm57{background-color:#fcfcfc;border-width:1px;border-color:#2f0311;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;overflow:clip;padding-left:5px;padding-right:5px;padding-top:3px;padding-bottom:3px;position:relative;border-radius:3px;flex-shrink:0}
+.mm58{background-color:#2f0311;align-content:stretch;display:flex;flex-direction:column;gap:28px;align-items:flex-start;overflow:clip;padding:24px;position:relative;border-radius:10px;flex-shrink:0;width:100%}
+.mm59{height:78px;position:relative;flex-shrink:0;width:112px}
+.mm60{word-break:break-word;align-content:stretch;display:flex;gap:16px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;color:#fcfcfc;width:100%}
+.mm61{align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:10px;align-items:flex-start;min-width:1px;overflow:clip;position:relative}
+.mm62{font-family:Parkinsans,sans-serif;font-weight:400;line-height:normal;opacity:.5;position:relative;flex-shrink:0;font-size:11px;width:100%}
+.mm63{font-family:Parkinsans,sans-serif;font-weight:600;line-height:1.4;position:relative;flex-shrink:0;font-size:13px;width:100%}
+.mm64{word-break:break-word;align-content:stretch;display:flex;flex-direction:column;font-family:Parkinsans,sans-serif;font-weight:400;gap:8px;align-items:flex-start;overflow:clip;position:relative;flex-shrink:0;color:#fcfcfc;width:100%}
+.mm65{line-height:normal;opacity:.5;position:relative;flex-shrink:0;font-size:11px;white-space:nowrap}
+.mm66{line-height:0;min-width:100%;position:relative;flex-shrink:0;font-size:14px;width:min-content}
+.mm67{line-height:1.5;margin-bottom:0}
+.mm68{line-height:1.5}
+.mm69{word-break:break-word;align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:flex-start;line-height:normal;overflow:clip;position:relative;flex-shrink:0;color:#fcfcfc;width:100%}
+.mm70{font-family:Parkinsans,sans-serif;font-weight:400;opacity:.5;position:relative;flex-shrink:0;font-size:11px;white-space:nowrap}
+.mm71{font-family:Parkinsans,sans-serif;font-weight:600;min-width:100%;position:relative;flex-shrink:0;font-size:14px;width:min-content}
+.mm72{word-break:break-word;font-family:Parkinsans,sans-serif;font-weight:400;line-height:0;min-width:100%;opacity:.5;position:relative;flex-shrink:0;color:#fcfcfc;font-size:12px;width:min-content}
+.mm73{line-height:1.6;margin-bottom:0}
+.mm74{line-height:1.6}
+/* Inside strokes preserve Figma auto-layout geometry. */
+.mobile-map [data-name="Restaurant card"]{border-width:0;outline:2px solid #2f0311;outline-offset:-2px;min-height:150px}.mobile-map [data-name="Cuisine"]{border-width:0;outline:1px solid #2f0311;outline-offset:-1px}.mobile-map [data-node-id="1:363"],.mobile-map [data-node-id="1:368"],.mobile-map [data-node-id="1:373"],.mobile-map [data-node-id="1:376"]{line-height:15px}.mobile-map [data-node-id="1:364"],.mobile-map [data-node-id="1:365"],.mobile-map [data-node-id="1:366"],.mobile-map [data-node-id="1:369"],.mobile-map [data-node-id="1:370"],.mobile-map [data-node-id="1:371"]{line-height:18px}.mobile-map [data-node-id="1:379"] p{line-height:19px}.mobile-map footer{min-height:559px}
