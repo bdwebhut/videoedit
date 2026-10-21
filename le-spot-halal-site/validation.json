@@ -1,0 +1,203 @@
+{
+  "scope": "Responsive static homepage only; source export folders unchanged.",
+  "references": {
+    "mobile": {
+      "width": 390,
+      "height": 6167
+    },
+    "desktop": {
+      "width": 1920,
+      "height": 6031
+    }
+  },
+  "viewports": [
+    {
+      "width": 320,
+      "documentWidth": 320,
+      "height": 6359,
+      "columns": 1,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 360,
+      "documentWidth": 360,
+      "height": 6271,
+      "columns": 1,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 375,
+      "documentWidth": 375,
+      "height": 6241,
+      "columns": 1,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "height": 6167,
+      "columns": 1,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 430,
+      "documentWidth": 430,
+      "height": 6020,
+      "columns": 1,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 540,
+      "documentWidth": 540,
+      "height": 5814,
+      "columns": 1,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 639,
+      "documentWidth": 639,
+      "height": 5814,
+      "columns": 1,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 640,
+      "documentWidth": 640,
+      "height": 5094,
+      "columns": 2,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 767,
+      "documentWidth": 767,
+      "height": 4983,
+      "columns": 2,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 768,
+      "documentWidth": 768,
+      "height": 4728,
+      "columns": 2,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 820,
+      "documentWidth": 820,
+      "height": 4733,
+      "columns": 2,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 912,
+      "documentWidth": 912,
+      "height": 4752,
+      "columns": 2,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 1023,
+      "documentWidth": 1023,
+      "height": 4790,
+      "columns": 2,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 1024,
+      "documentWidth": 1024,
+      "height": 5107,
+      "columns": 3,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 1280,
+      "documentWidth": 1280,
+      "height": 5172,
+      "columns": 3,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 1366,
+      "documentWidth": 1366,
+      "height": 5222,
+      "columns": 3,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "height": 5736,
+      "columns": 5,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 1600,
+      "documentWidth": 1600,
+      "height": 5839,
+      "columns": 5,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 1920,
+      "documentWidth": 1920,
+      "height": 6031,
+      "columns": 5,
+      "fontLoaded": true,
+      "missingImages": 59
+    },
+    {
+      "width": 2560,
+      "documentWidth": 2560,
+      "height": 6031,
+      "columns": 5,
+      "fontLoaded": true,
+      "missingImages": 59
+    }
+  ],
+  "browserChecks": [
+    "responsive grid",
+    "no horizontal overflow",
+    "hero text containment",
+    "desktop/mobile colors",
+    "unique IDs",
+    "local font",
+    "keyboard menu",
+    "Escape and focus return",
+    "menu closes on navigation and resize",
+    "search, categories, accents, empty results, reset",
+    "restaurant and city dialogs",
+    "no-JavaScript navigation"
+  ],
+  "pythonTests": {
+    "passed": 10,
+    "failed": 0
+  },
+  "assets": {
+    "uniqueManifestEntries": 58,
+    "runtimePaths": "local shared assets only",
+    "downloadBehavior": "Import existing original files first; download missing official Figma assets only."
+  },
+  "errors": [],
+  "limitations": [
+    "Original assets are not present; loaded-image visual verification is pending.",
+    "Figma colors are preserved; existing palette contrast has not been redesigned."
+  ]
+}

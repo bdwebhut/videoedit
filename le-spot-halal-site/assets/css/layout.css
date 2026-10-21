@@ -1,0 +1,272 @@
+/* Shared responsive header and footer. Edit the matching src/partials once. */
+.lsh-site .site-header {
+  position: relative;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 44px;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-radius: var(--radius-panel);
+  background: var(--color-yellow);
+}
+.lsh-site .site-header__menu {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+}
+.lsh-site .site-header__menu img {
+  width: 44px;
+  height: 44px;
+}
+.lsh-site .site-header__brand {
+  justify-self: center;
+}
+.lsh-site .site-header__brand img {
+  width: 64px;
+  height: 42px;
+  object-fit: contain;
+}
+.lsh-site .site-header__tools {
+  display: contents;
+}
+.lsh-site .site-header__search {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+}
+.lsh-site .site-header__search-icon {
+  width: 26px;
+  height: 26px;
+}
+.lsh-site .site-header__add,
+.lsh-site .site-header__decoration {
+  display: none;
+}
+.lsh-site .site-header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  padding-top: 12px;
+}
+.lsh-site.is-enhanced .site-header__nav:not(.is-open) {
+  display: none;
+}
+.lsh-site .site-header__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.lsh-site .site-header__link--active {
+  border-bottom: 4px solid var(--color-orange);
+  color: var(--color-orange);
+}
+.lsh-site .site-footer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas: "logo logo" "navigation legal" "address address" "contact contact" "add add" "credits credits";
+  gap: 28px 16px;
+  min-height: 559px;
+  margin-top: 32px;
+  padding: 24px;
+  border-radius: var(--radius-panel);
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+.lsh-site .site-footer__logo {
+  grid-area: logo;
+  width: 112px;
+  height: 78px;
+  object-fit: contain;
+}
+.lsh-site .site-footer__navigation {
+  grid-area: navigation;
+}
+.lsh-site .site-footer__legal {
+  grid-area: legal;
+}
+.lsh-site .site-footer__address {
+  grid-area: address;
+}
+.lsh-site .site-footer__contact {
+  grid-area: contact;
+  min-width: 0;
+}
+.lsh-site .site-footer__add {
+  grid-area: add;
+  width: 100%;
+}
+.lsh-site .site-footer__credits {
+  grid-area: credits;
+  opacity: 0.5;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.lsh-site .site-footer__heading {
+  margin-bottom: 10px;
+  opacity: 0.5;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.lsh-site .site-footer ul {
+  display: grid;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.lsh-site .site-footer button {
+  font: inherit;
+  letter-spacing: inherit;
+}
+.lsh-site .site-footer address {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+.lsh-site .site-footer__address .site-footer__heading,
+.lsh-site .site-footer__contact .site-footer__heading {
+  margin-bottom: 8px;
+}
+.lsh-site .site-footer__contact > a {
+  display: block;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+@media (min-width: 48rem) {
+  .lsh-site .site-footer {
+    min-height: 0;
+    grid-template-columns: 1.1fr 1fr 1fr;
+    grid-template-areas: "logo navigation legal" "logo address contact" "credits add add";
+    gap: 32px;
+    margin-top: var(--section-gap);
+    padding: clamp(32px, 2.605vw, 50px) clamp(32px, 3.125vw, 60px);
+  }
+  .lsh-site .site-footer__logo {
+    width: clamp(138px, 12.396vw, 238px);
+    height: auto;
+  }
+  .lsh-site .site-footer__heading {
+    margin-bottom: 7px;
+    font-size: clamp(14px, 1.042vw, 20px);
+    font-weight: 300;
+    line-height: 32px;
+  }
+  .lsh-site .site-footer ul {
+    gap: 0;
+    font-size: clamp(16px, 1.25vw, 24px);
+    line-height: 40px;
+    letter-spacing: -0.02em;
+  }
+  .lsh-site .site-footer address,
+  .lsh-site .site-footer__contact > a {
+    font-size: clamp(16px, 1.25vw, 24px);
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+  }
+  .lsh-site .site-footer__credits {
+    align-self: end;
+    font-size: clamp(14px, 1.042vw, 20px);
+    font-weight: 300;
+    line-height: 32px;
+  }
+  .lsh-site .site-footer__add {
+    justify-self: end;
+    width: min(380px, 100%);
+    align-self: end;
+    font-size: clamp(16px, 1.313vw, 25.2px);
+  }
+}
+@media (min-width: 64rem) {
+  .lsh-site .site-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    min-height: clamp(92px, 6.198vw, 119px);
+    padding: 20px clamp(24px, 3.178vw, 61px);
+  }
+  .lsh-site .site-header__menu {
+    display: none;
+  }
+  .lsh-site .site-header__nav,
+  .lsh-site.is-enhanced .site-header__nav:not(.is-open) {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: clamp(24px, 2.865vw, 55px);
+    padding: 0;
+  }
+  .lsh-site .site-header__link {
+    font-size: clamp(18px, 1.25vw, 24px);
+    letter-spacing: -0.0366em;
+    line-height: 40px;
+  }
+  .lsh-site .site-header__link--active {
+    border-bottom-width: 6px;
+  }
+  .lsh-site .site-header__brand {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .lsh-site .site-header__brand img {
+    width: clamp(90px, 6.719vw, 129px);
+    height: clamp(60px, 4.427vw, 85px);
+    transform: rotate(-6.87deg);
+  }
+  .lsh-site .site-header__tools {
+    display: flex;
+    align-items: center;
+    gap: clamp(24px, 3.125vw, 60px);
+  }
+  .lsh-site .site-header__search-icon {
+    width: 36.5px;
+    height: 36.5px;
+  }
+  .lsh-site .site-header__add {
+    display: inline-flex;
+    min-width: clamp(150px, 11.645vw, 223.56px);
+    min-height: clamp(60px, 3.802vw, 73px);
+    padding-inline: 24px;
+  }
+}
+@media (min-width: 90rem) {
+  .lsh-site .site-header__decoration {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 41px;
+    top: 33%;
+    pointer-events: none;
+  }
+  .lsh-site .site-header__decoration--first {
+    left: 73.57%;
+  }
+  .lsh-site .site-header__decoration--second {
+    left: 77.06%;
+  }
+  .lsh-site .site-footer {
+    min-height: 557px;
+    grid-template-areas: "logo navigation legal" "logo address contact" "credits . add";
+    grid-template-columns: 1.1fr 1fr 0.65fr;
+    grid-template-rows: 159px 140px 73px;
+    column-gap: clamp(32px, 3.125vw, 60px);
+    row-gap: 38px;
+    padding-bottom: 59px;
+  }
+}

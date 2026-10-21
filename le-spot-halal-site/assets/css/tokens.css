@@ -1,0 +1,27 @@
+/* Shared brand values. Change these once for every refined page. */
+@font-face {
+  font-family: Parkinsans;
+  src: url("../fonts/parkinsans.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+}
+.lsh-site {
+  --color-ink: #2f0311;
+  --color-paper: #fcfcfc;
+  --color-orange: #ff5a1b;
+  --color-pink: #ffb5d2;
+  --color-green: #b6ffbd;
+  --color-yellow: #ffdb53;
+  --color-blue: #3117f5;
+  --color-muted: #9d9195;
+  --color-focus: #3117f5;
+  --font-body: Parkinsans, sans-serif;
+  --radius-panel: 10px;
+  --radius-pill: 999px;
+  --shadow-small: 3px 3px 0 var(--color-ink);
+  --shadow-button: 4px 4px 0 #000;
+  --page-max: 1920px;
+  --page-gutter: clamp(16px, 1.615vw, 31px);
+  --section-gap: clamp(32px, 2.708vw, 52px);
+}

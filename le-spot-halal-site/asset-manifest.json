@@ -1,0 +1,552 @@
+{
+  "version": 1,
+  "page": "home",
+  "assets": [
+    {
+      "path": "icons/0260b.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/0260b.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/05cb5.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/05cb5.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/10507.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/10507.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/14c2a.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/14c2a.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/1eade.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/1eade.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/21e67.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/21e67.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/25dcb.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/25dcb.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/2639c.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/2639c.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/2c600.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/2c600.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/2c857.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/2c857.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/42096.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/42096.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/431b6.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/431b6.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/4c0d4.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/4c0d4.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/5d1e4.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/5d1e4.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/5d75e.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/5d75e.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/620c7.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/620c7.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/64176.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/64176.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/65cda.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/65cda.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/67d68.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/67d68.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/6aea3.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/6aea3.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/6e1a8.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/6e1a8.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/6ec5a.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/6ec5a.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/7b8b8.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/7b8b8.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/7eaf1.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/7eaf1.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/8158c.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/8158c.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/85ca2.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/85ca2.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/88653.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/88653.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/8ae19.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/8ae19.svg",
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/8ae19.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage",
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/8b691.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/8b691.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/8f3b2.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/8f3b2.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/8fbc5.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/8fbc5.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/91834.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/91834.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/959cd.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/959cd.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/a5865.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/a5865.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/a65d0.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/a65d0.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/a71cb.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/a71cb.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/aef09.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/aef09.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/b3297.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/b3297.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/b4f13.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/b4f13.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/b8020.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/b8020.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/bf17a.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/bf17a.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/c33d1.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/c33d1.svg",
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/c33d1.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage",
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/e5e99.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/e5e99.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/e852b.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/e852b.svg",
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/e852b.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage",
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/ecd81.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/ecd81.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "icons/eefe3.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/eefe3.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/fa908.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/fa908.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "icons/fe5fb.svg",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/fe5fb.svg"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    },
+    {
+      "path": "images/0e26d.png",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/0e26d.png",
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/0e26d.png"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage",
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "images/35d8f.png",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/35d8f.png",
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/35d8f.png"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage",
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "images/3a4b8.png",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/3a4b8.png",
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/3a4b8.png"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage",
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "images/3b987.png",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/3b987.png",
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/3b987.png"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage",
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "images/624d4.png",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/624d4.png",
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/624d4.png"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage",
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "images/764f1.png",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/764f1.png",
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/764f1.png"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage",
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "images/7d52d.png",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/7d52d.png",
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/7d52d.png"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage",
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "images/b698f.png",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/b698f.png",
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/b698f.png"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage",
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "images/c5c61.png",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/c5c61.png",
+        "https://www.figma.com/api/mcp/asset/4341eae6-6625-4870-91b2-b5091d5e81af/c5c61.png"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage",
+        "le-spot-halal-mobile-home"
+      ]
+    },
+    {
+      "path": "images/d6007.png",
+      "sources": [
+        "https://www.figma.com/api/mcp/asset/79673819-cd38-493e-bb27-a243d571c2ce/d6007.png"
+      ],
+      "sourceFolders": [
+        "le-spot-halal-homepage"
+      ]
+    }
+  ]
+}

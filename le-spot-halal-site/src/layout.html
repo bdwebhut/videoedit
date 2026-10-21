@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="{{page_description}}"
+    />
+    <title>{{page_title}}</title>
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="{{page_stylesheet}}" />
+    <script src="assets/js/site.js" defer></script>
+    <script src="{{page_script}}" defer></script>
+  </head>
+  <body class="lsh-site {{page_class}}">
+    <div class="site-shell">
+      <a class="skip-link" href="#main-content">Aller au contenu</a>
+      {{header}} {{content}} {{footer}}
+    </div>
+    {{dialog}}
+  </body>
+</html>

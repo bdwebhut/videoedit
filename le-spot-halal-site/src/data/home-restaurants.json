@@ -1,0 +1,76 @@
+[
+  {
+    "name": "Maison Yemma",
+    "slug": "maison-yemma",
+    "variant": "maison",
+    "photo": "624d4.png",
+    "badge": "Sponsorisé",
+    "quote": "“Brunch épicé”",
+    "tags": [
+      {
+        "label": "Marocain",
+        "color": "yellow"
+      },
+      {
+        "label": "Healthy",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "name": "Smash Club",
+    "slug": "smash-club",
+    "variant": "smash",
+    "photo": "3a4b8.png",
+    "badge": "Coup de cœur",
+    "quote": "“Meilleur smash”",
+    "tags": [
+      {
+        "label": "Burgers",
+        "color": "orange"
+      }
+    ]
+  },
+  {
+    "name": "Le Comptoir",
+    "slug": "le-comptoir",
+    "variant": "comptoir",
+    "photo": "0e26d.png",
+    "badge": "À tester",
+    "quote": "“Viande d’exception”",
+    "tags": [
+      {
+        "label": "Healthy",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "name": "Nomad Coffee",
+    "slug": "nomad-coffee",
+    "variant": "nomad",
+    "photo": "35d8f.png",
+    "badge": "Nouveau",
+    "quote": "“Pâtisseries maison”",
+    "tags": [
+      {
+        "label": "Café",
+        "color": "paper"
+      }
+    ]
+  },
+  {
+    "name": "Pizza Time",
+    "slug": "pizza-time",
+    "variant": "pizza",
+    "photo": "c5c61.png",
+    "badge": "Nouveau",
+    "quote": "“Pizza exceptionnelle”",
+    "tags": [
+      {
+        "label": "Pizza",
+        "color": "yellow"
+      }
+    ]
+  }
+]

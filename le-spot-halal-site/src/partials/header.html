@@ -1,0 +1,78 @@
+<header class="site-header">
+  <button
+    class="site-header__menu"
+    type="button"
+    aria-label="Ouvrir le menu"
+    aria-controls="primary-navigation"
+    aria-expanded="false"
+    data-menu-toggle
+  >
+    <img src="assets/icons/7b8b8.svg" alt="" width="44" height="44" />
+    <span class="visually-hidden">Menu</span>
+  </button>
+  <nav
+    class="site-header__nav"
+    aria-label="Navigation principale"
+    id="primary-navigation"
+    data-navigation=""
+  >
+    <a class="site-header__link site-header__link--active" href="#search">
+      À proximité
+    </a>
+    <button class="site-header__link" type="button" data-action="map">
+      Carte
+    </button>
+    <a class="site-header__link" href="#about">À propos</a>
+  </nav>
+  <a
+    class="site-header__brand"
+    href="#main-content"
+    aria-label="Le spot halal — Accueil"
+  >
+    <picture class="responsive-art">
+      <source media="(max-width: 47.99rem)" srcset="assets/icons/a71cb.svg" />
+      <img src="assets/icons/67d68.svg" alt="Le spot halal" />
+    </picture>
+  </a>
+  <div class="site-header__tools">
+    <a
+      href="#search"
+      class="site-header__search"
+      aria-label="Rechercher un restaurant"
+    >
+      <picture class="responsive-art">
+        <source media="(max-width: 47.99rem)" srcset="assets/icons/8b691.svg" />
+        <img
+          src="assets/icons/2c857.svg"
+          alt=""
+          class="site-header__search-icon"
+          aria-hidden="true"
+        />
+      </picture>
+    </a>
+    <a
+      class="button button--add site-header__add"
+      href="mailto:hello@lespothalal.com?subject=Ajouter%20mon%20restaurant"
+    >
+      <img
+        src="assets/icons/2c600.svg"
+        alt=""
+        class="icon"
+        aria-hidden="true"
+      />
+      <span>Ajouter</span>
+    </a>
+  </div>
+  <img
+    src="assets/icons/959cd.svg"
+    alt=""
+    class="site-header__decoration site-header__decoration--first"
+    aria-hidden="true"
+  />
+  <img
+    src="assets/icons/42096.svg"
+    alt=""
+    class="site-header__decoration site-header__decoration--second"
+    aria-hidden="true"
+  />
+</header>

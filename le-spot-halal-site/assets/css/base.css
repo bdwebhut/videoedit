@@ -1,0 +1,124 @@
+/* Local reset: no unscoped theme or plugin styles. */
+.lsh-site {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.lsh-site *,
+.lsh-site *::before,
+.lsh-site *::after {
+  box-sizing: border-box;
+}
+.lsh-site :where(h1, h2, h3, p, figure, ul) {
+  margin: 0;
+}
+.lsh-site ul {
+  padding: 0;
+  list-style: none;
+}
+.lsh-site img {
+  display: block;
+  max-width: 100%;
+}
+.lsh-site a {
+  color: inherit;
+  text-decoration: none;
+}
+.lsh-site button,
+.lsh-site input {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+.lsh-site button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.lsh-site input {
+  min-width: 0;
+}
+.lsh-site [hidden] {
+  display: none !important;
+}
+.lsh-site :where(a, button, input):focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 5px;
+}
+.lsh-site :where(section, main, [id]) {
+  scroll-margin-top: 100px;
+}
+.lsh-site .responsive-art {
+  display: contents;
+}
+.lsh-site .responsive-art > source {
+  display: none;
+}
+.lsh-site .visually-hidden,
+.lsh-site .skip-link:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.lsh-site .skip-link:focus {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 100;
+  padding: 12px;
+  background: var(--color-paper);
+}
+.lsh-site .site-shell {
+  width: 100%;
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 16px var(--page-gutter);
+}
+.lsh-site .icon {
+  width: 24px;
+  height: 24px;
+  flex: none;
+}
+.lsh-site .section-title {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+}
+.lsh-site .desktop-break {
+  display: none;
+}
+@media (min-width: 48rem) {
+  .lsh-site .site-shell {
+    padding-block: clamp(24px, 1.72vw, 33px) 32px;
+  }
+  .lsh-site :where(section, main, [id]) {
+    scroll-margin-top: 150px;
+  }
+  .lsh-site .section-title {
+    font-size: clamp(42px, 5vw, 96px);
+    font-weight: 900;
+    line-height: 0.95;
+  }
+}
+@media (min-width: 90rem) {
+  .lsh-site .desktop-break {
+    display: block;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lsh-site *,
+  .lsh-site *::before,
+  .lsh-site *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
