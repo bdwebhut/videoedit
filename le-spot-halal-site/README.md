@@ -1,10 +1,17 @@
 # Le spot halal — shared static site
 
-The refined homepage now combines the desktop and mobile Figma conversions into **one responsive HTML page**. This is the working folder for future refinements; the original export folders remain unchanged as references. Only the homepage has been migrated.
+**This is the complete working site folder.** It contains the ready-to-open pages, all shared assets, and editable sources. Only the homepage and restaurant listing have been refined so far; original export folders remain unchanged as references.
 
-## Download and preview on Linux
+## Open these complete pages
 
-From your existing local checkout:
+| Page | Complete file | Preview URL |
+| --- | --- | --- |
+| Homepage | `index.html` | http://localhost:8000/ |
+| Restaurant listing | `restaurants.html` | http://localhost:8000/restaurants.html |
+
+**`src/pages/home.html` and `src/pages/restaurants.html` are editing templates, not standalone webpages.** They contain page content only. The builder adds the shared document, header, footer, styles, and scripts. Open the complete files above to see the full design.
+
+## Update, download, and preview on Linux
 
 ```bash
 cd ~/le-spot-halal-local/videoedit
@@ -14,108 +21,119 @@ python3 download-assets.py
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open http://localhost:8000 and hard-refresh with **Ctrl+Shift+R**. Stop the server with **Ctrl+C**. No system installation, npm, or WordPress setup is required.
+Open a preview URL from the table and hard-refresh with **Ctrl+Shift+R**. Stop the server with **Ctrl+C**. Normal previewing needs no npm, system installation, or WordPress setup.
 
-The downloader first imports original files from all `le-spot-halal-*/assets/` folders, including nested caches. It reads every original asset manifest for matching filenames and additional Figma URL fallbacks, supporting both manifest formats used in this repository. It downloads only missing homepage assets, using the same curl transfer method as the original folder scripts (with a standard-library fallback if curl is unavailable). The two manifests are merged into **58 unique assets**, stored once under `assets/images/` and `assets/icons/`. The local Parkinsans font and license are already included under `assets/fonts/`.
+The importer checks every original `le-spot-halal-*/assets/` folder, including nested caches, and reads both original manifest formats for URL fallbacks. It reuses valid originals before downloading missing files with curl (or Python's standard library if curl is unavailable). JPEG/WebP photos exported with `.png` filenames are accepted. Existing valid files stay in place.
 
-Files are validated by content rather than filename: a JPEG or WebP exported with a `.png` filename is accepted, as it is by the browser. An HTML error response will not be saved as an image or SVG. Successful existing files are kept. Temporary Figma URLs can expire after seven days; refresh the original folder manifests or the shared manifest with Figma MCP URLs if needed; matching originals are read again on every run. `python3 download-assets.py --local-only` imports existing files without making network requests and reports any missing originals.
+Both pages share **67 unique image/SVG assets**, including nine additional listing icons/logos. The Parkinsans font and license are bundled once. All runtime asset paths are local. Temporary Figma URLs exist only in download tooling and can expire after seven days; refresh original or shared manifests through Figma MCP when needed.
 
-## Recover or check missing images
-
-After pulling the latest code, run `python3 download-assets.py` again. Existing valid originals stay in place; missing files are imported or downloaded. The terminal shows which files were reused and any transfer failures.
-
-To check the final shared files without changing or downloading anything:
+Audit the shared files without changing or downloading anything:
 
 ```bash
 python3 download-assets.py --check
 ```
 
-If your earlier downloads live in another checkout or directory, point the importer there (it searches subdirectories):
+Reuse files from another checkout or directory:
 
 ```bash
-python3 download-assets.py --assets-dir /path/to/your/original-downloads
+python3 download-assets.py --assets-dir /path/to/original-downloads
 ```
 
-Add `--local-only` to import without network requests. Repeat `--assets-dir` for multiple directories. A successful run ends with `All 58 original assets are ready`; a nonzero exit reports the exact missing paths. After recovery, hard-refresh the preview with **Ctrl+Shift+R**.
+Subdirectories are searched. Repeat `--assets-dir` for multiple locations; add `--local-only` to avoid network requests. Success ends with `All 67 original assets are ready`; failed paths are listed explicitly.
+
+## One folder, one zip
+
+When all requested pages are migrated, zip **the whole `le-spot-halal-site` folder**, not `src/pages/`. This keeps every complete page, image, stylesheet, script, font, and editable source together for the later WordPress conversion.
+
+From inside the site folder, first check:
+
+```bash
+python3 build.py
+python3 download-assets.py --check
+```
+
+Once both commands succeed:
+
+```bash
+cd ..
+python3 -m zipfile -c le-spot-halal-site.zip le-spot-halal-site
+```
+
+The archive contains one self-contained `le-spot-halal-site/` folder. Browsing its generated pages requires no other export folder, runtime template fetching, backend, or external CDN. Serving it locally is the recommended preview method.
 
 ## Where to edit
 
 ```text
 le-spot-halal-site/
-├── index.html                    # Generated, ready-to-open homepage
-├── build.py                      # Standard-library static HTML builder
-├── download-assets.py            # Import/download originals into shared assets
-├── asset-manifest.json           # Original URLs and source-folder provenance
+├── index.html                         # Complete generated homepage
+├── restaurants.html                   # Complete generated restaurant listing
+├── build.py                           # Build all pages from shared sources
+├── download-assets.py
+├── asset-manifest.json
 ├── src/
-│   ├── layout.html               # Shared document shell
+│   ├── layout.html                    # Shared full document shell
 │   ├── partials/
-│   │   ├── header.html
-│   │   ├── footer.html
-│   │   ├── restaurant-card.html
-│   │   └── info-dialog.html
-│   ├── pages/home.html            # Homepage sections, in reading order
-│   └── data/home-restaurants.json # Static content for the five cards
+│   │   ├── header.html                # One responsive header implementation
+│   │   ├── footer.html                # One responsive footer implementation
+│   │   ├── restaurant-card.html       # Homepage card component
+│   │   ├── listing-card.html          # Horizontal/stacked listing component
+│   │   ├── info-dialog.html           # Shared restaurant/map dialog
+│   │   └── listing-search.html
+│   ├── pages/
+│   │   ├── home.html                  # Content template, not a preview file
+│   │   └── restaurants.html           # Content template, not a preview file
+│   └── data/
+│       ├── home-restaurants.json
+│       └── listing-restaurants.json
 ├── assets/
 │   ├── css/
-│   │   ├── tokens.css            # Brand colors, font, spacing, radii, shadows
-│   │   ├── base.css              # Scoped reset and global text utilities
-│   │   ├── components.css        # Buttons, search, filters, cards, dialog
-│   │   ├── layout.css            # Responsive header and footer
-│   │   └── pages/home.css        # Homepage composition only
+│   │   ├── tokens.css                 # Shared colors, font, spacing, radii
+│   │   ├── base.css                   # Scoped reset and utilities
+│   │   ├── components.css             # Shared buttons, cards, search, dialogs
+│   │   ├── layout.css                 # Shared responsive header/footer
+│   │   └── pages/
+│   │       ├── home.css
+│   │       └── restaurants.css
 │   ├── js/
-│   │   ├── site.js               # Shared mobile navigation
-│   │   └── home.js               # Existing local homepage demo interactions
+│   │   ├── site.js                    # Shared menu and dialog behavior
+│   │   ├── home.js
+│   │   └── restaurants.js
 │   ├── fonts/
 │   ├── images/
 │   └── icons/
 └── tests/
-    ├── test_tools.py
-    └── responsive.cjs
 ```
 
-Edit the source partials/page/data, then regenerate the delivered HTML:
+Edit source templates/data, then run `python3 build.py` to regenerate **both complete pages**, including shared header/footer changes. Do not maintain another header/footer copy in generated HTML. Page metadata and brand artwork are registered in `build.py`.
 
-```bash
-python3 build.py
-```
+`python3 build.py --check` detects outdated generated files. `--page home` or `--page restaurants` limits a build/check to one page. Shared CSS is scoped under `.lsh-site`; page composition uses `.page-home` or `.page-restaurants`. Future pages belong here using the same shell, components, tokens, and assets.
 
-Do not maintain a separate copy of the header/footer inside `index.html`. The generated file is committed so normal previewing needs no build step. There are no runtime template fetches: the result also opens directly from disk. `python3 build.py --check` detects an outdated generated page.
+## Responsive behavior and static scope
 
-Future pages should use this shared shell, partials, assets, and components, with their own page template, stylesheet, and optional page script. Their build entries and routes can be added when each page is migrated. Styles are scoped under `.lsh-site`; page-only composition uses `.page-home`. Figma node IDs and export class names are absent from the refined source.
+The homepage preserves its supplied 390px mobile and 1920px desktop references, including mobile blue hero/nearby panels and desktop contact panel. Its card grid changes from one to two, three, and five columns as space permits.
 
-## Responsive decisions
+The listing preserves its 390 × 2949 mobile and 1920 × 2835 desktop references. Phones use stacked filters, sorting, and vertical cards; tablets use two card columns. From 1024px it uses a filter sidebar and horizontal result cards. Both pages share the same responsive header/footer implementation; page settings select their supplied SVG artwork. Navigation collapses below 1024px and remains visible without JavaScript.
 
-The 390px mobile and 1920px desktop references drive the layout. Content reflows between them; the page is never a scaled fixed-width canvas.
+Content is static. The listing preserves the reference's five cards named “Le Comptoir,” their cuisine/location labels, and the initial “27 spots trouvés.” label. Using a local filter, sort, or search recomputes the count from the actual five records. No extra restaurant records were invented.
 
-- Below 640px: stacked hero and one restaurant column.
-- 640–1023px: two restaurant columns.
-- 1024–1439px: three restaurant columns.
-- From 1440px: five restaurant columns.
-- From 768px: a two-column hero and three editorial cards, with fluid type and spacing.
-- Below 1024px: an accessible collapsible navigation menu. With JavaScript disabled, navigation stays visible.
-- Above 1920px: the composition is centered at its original maximum width.
-
-The mobile reference deliberately uses blue for the hero and nearby invitation, different brand SVGs/flags, and a stacked footer. `<picture>` supplies the matching original SVGs without duplicating page content. The desktop contact panel appears from 1024px; mobile retains the footer contact details supplied in its design.
-
-## Static scope
-
-Content is static. The existing browser-only restaurant search, category filters, map/restaurant dialogs, email links, and an accessible menu work locally. No database, authentication, submission service, tracking, storage, or new backend feature is included. Legal/social destinations and connections to the other restaurant pages remain for a later task. This is not a WordPress theme.
+Local search, cuisine filters, sorting, dialogs, email links, and homepage/listing navigation work in the browser. No database, authentication, submission API, tracking, storage, or WordPress theme was added. Other page connections and dynamic features remain for later tasks.
 
 ## Verification
 
-Run the build and downloader checks with Python alone:
+Python checks require only the standard library:
 
 ```bash
 python3 build.py --check
 python3 -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
-Optional browser checks use `playwright-core` and an existing Chromium installation. With the site server running at port 8000 and Playwright available to Node:
+Optional browser checks use `playwright-core` and an existing Chromium installation. With the site served at port 8000:
 
 ```bash
 SITE_URL=http://127.0.0.1:8000/ node tests/responsive.cjs
+SITE_URL=http://127.0.0.1:8000/ node tests/listing.cjs
 ```
 
-For an existing installation outside this folder, set `PLAYWRIGHT_MODULE` to its module path. `CHROMIUM_PATH` overrides `/usr/bin/chromium`. Screenshots and detailed results are written to ignored `tests/results/`.
+`PLAYWRIGHT_MODULE` may point to another existing Playwright installation; `CHROMIUM_PATH` overrides `/usr/bin/chromium`. Screenshots and reports go to ignored `tests/results/`.
 
-Checks cover 20 widths from 320px to 2560px, overflow, grid transitions, typography, keyboard menu behavior, focus return, navigation without JavaScript, and the local homepage interactions. Reference viewport heights are 6167px at 390px and approximately 6031px at 1920px. Original asset bytes are not available in the execution checkout, so loaded-image visual verification remains pending the local import/download. The Figma palette is preserved, including its existing low-contrast orange/white combinations. See `validation.json` for the recorded results and limitations.
+Both pages are checked at 20 widths from 320px to 2560px for overflow, type, responsive layouts, keyboard navigation, local controls, dialogs, and no-JavaScript navigation. Complete original-image verification still requires the user's local assets; no stock substitutions were made. The supplied palette and its existing contrast limitations are preserved. Reports are recorded in `validation.json` and `validation-restaurants.json`.

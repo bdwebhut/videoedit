@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Découvrez les restaurants halal à Genève et filtrez les spots par type de cuisine."
+    />
+    <title>Les bons spots halal à Genève — Le spot halal</title>
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/pages/restaurants.css" />
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/restaurants.js" defer></script>
+  </head>
+  <body class="lsh-site page-restaurants">
+    <div class="site-shell">
+      <a class="skip-link" href="#main-content">Aller au contenu</a>
+      <header class="site-header">
+        <button
+          class="site-header__menu"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <img src="assets/icons/7b8b8.svg" alt="" width="44" height="44" />
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav
+          class="site-header__nav"
+          aria-label="Navigation principale"
+          id="primary-navigation"
+          data-navigation=""
+        >
+          <a
+            class="site-header__link site-header__link--active"
+            aria-current="page"
+            href="restaurants.html"
+          >
+            À proximité
+          </a>
+          <button class="site-header__link" type="button" data-action="map">
+            Carte
+          </button>
+          <a class="site-header__link" href="index.html#about">À propos</a>
+        </nav>
+        <a
+          class="site-header__brand"
+          href="index.html"
+          aria-label="Le spot halal — Accueil"
+        >
+          <picture class="responsive-art">
+            <source
+              media="(max-width: 47.99rem)"
+              srcset="assets/icons/6d906.svg"
+            />
+            <img src="assets/icons/67d68.svg" alt="Le spot halal" />
+          </picture>
+        </a>
+        <div class="site-header__tools">
+          <a
+            href="index.html#search"
+            class="site-header__search"
+            aria-label="Rechercher un restaurant"
+          >
+            <picture class="responsive-art">
+              <source
+                media="(max-width: 47.99rem)"
+                srcset="assets/icons/01fd5.svg"
+              />
+              <img
+                src="assets/icons/2c857.svg"
+                alt=""
+                class="site-header__search-icon"
+                aria-hidden="true"
+              />
+            </picture>
+          </a>
+          <a
+            class="button button--add site-header__add"
+            href="mailto:hello@lespothalal.com?subject=Ajouter%20mon%20restaurant"
+          >
+            <img
+              src="assets/icons/2c600.svg"
+              alt=""
+              class="icon"
+              aria-hidden="true"
+            />
+            <span>Ajouter</span>
+          </a>
+        </div>
+        <img
+          src="assets/icons/959cd.svg"
+          alt=""
+          class="site-header__decoration site-header__decoration--first"
+          aria-hidden="true"
+        />
+        <img
+          src="assets/icons/42096.svg"
+          alt=""
+          class="site-header__decoration site-header__decoration--second"
+          aria-hidden="true"
+        />
+      </header>
+      <main class="listing" id="main-content" tabindex="-1">
+        <header class="listing__heading">
+          <h1>Les bons spots halal à&#32; Genève</h1>
+        </header>
+        <div class="listing__layout">
+          <aside class="listing-filters" aria-labelledby="cuisine-title">
+            <button class="listing-filters__reset" type="button" data-reset-listing>
+              Supprimer tous les filtres
+            </button>
+            <section class="listing-filters__cuisines">
+              <h2 id="cuisine-title">Type de cuisine</h2>
+              <div
+                class="listing-filters__options"
+                role="group"
+                aria-label="Type de cuisine"
+              >
+                <button
+                  class="category listing-filter listing-filter--reference"
+                  type="button"
+                  aria-pressed="false"
+                  data-cuisine="Burgers"
+                >
+                  Burgers
+                </button>
+                <button
+                  class="category listing-filter"
+                  type="button"
+                  aria-pressed="false"
+                  data-cuisine="Café"
+                >
+                  Café
+                </button>
+                <button
+                  class="category listing-filter"
+                  type="button"
+                  aria-pressed="false"
+                  data-cuisine="Marocain"
+                >
+                  Marocain
+                </button>
+                <button
+                  class="category listing-filter"
+                  type="button"
+                  aria-pressed="false"
+                  data-cuisine="Pizza"
+                >
+                  Pizza
+                </button>
+                <button
+                  class="category listing-filter"
+                  type="button"
+                  aria-pressed="false"
+                  data-cuisine="Healthy"
+                >
+                  Healthy
+                </button>
+                <button
+                  class="category listing-filter"
+                  type="button"
+                  aria-pressed="false"
+                  data-cuisine="Street food"
+                >
+                  Street food
+                </button>
+              </div>
+            </section>
+          </aside>
+          <section class="listing-results" aria-label="Restaurants à Genève">
+            <div class="listing-results__summary">
+              <p
+                class="listing-results__count"
+                id="result-count"
+                role="status"
+                aria-live="polite"
+              >
+                27 spots trouvés.
+              </p>
+              <div class="listing-sort">
+                <label for="listing-sort">Trier par :</label>
+                <select id="listing-sort" name="sort">
+                  <option value="relevance">Pertinence</option>
+                  <option value="category">Type de cuisine</option>
+                  <option value="rating">Note</option>
+                </select>
+                <img src="assets/icons/b202b.svg" alt="" aria-hidden="true" />
+              </div>
+            </div>
+            <div class="listing-results__cards" id="restaurant-list">
+              <article
+                class="restaurant-card listing-card "
+                data-listing-card
+                data-name="Le Comptoir"
+                data-category="Healthy"
+                data-order="0"
+                data-rating="4.9"
+                aria-labelledby="listing-card-0-title"
+              >
+                <div class="restaurant-card__media">
+                  <img
+                    class="restaurant-card__image"
+                    src="assets/images/0e26d.png"
+                    alt="Healthy — Le Comptoir"
+                    loading="lazy"
+                  />
+                  <span class="restaurant-card__badge">À tester</span>
+                </div>
+                <div class="restaurant-card__body">
+                  <h2 class="restaurant-card__title" id="listing-card-0-title">
+                    Le <br class="listing-card__break">Comptoir
+                  </h2>
+                  <span class="restaurant-card__rating" aria-label="Note : 4.9 sur 5">
+                    <span class="restaurant-card__mobile-star" aria-hidden="true">★</span>
+                    <img
+                      src="assets/icons/445a5.svg"
+                      alt=""
+                      class="icon"
+                      aria-hidden="true"
+                    />
+                    <span>4.9</span>
+                  </span>
+                  <div class="restaurant-card__tags">
+                    <span class="restaurant-tag restaurant-tag--green">Healthy</span>
+                    <span class="listing-card__location">· Annemasse</span>
+                  </div>
+                  <p class="restaurant-card__quote">&quot;Viande d&#x27;exception&quot;</p>
+                  <span class="listing-card__services">
+                    <span class="listing-card__service" role="img" aria-label="Instagram">
+                      <img
+                        class="icon"
+                        src="assets/icons/ad74a.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </span>
+                    <span class="listing-card__service" role="img" aria-label="Livraison">
+                      <img
+                        class="icon"
+                        src="assets/icons/4ec08.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </span>
+                  </span>
+                </div>
+              </article>
+
+              <article
+                class="restaurant-card listing-card listing-card--desktop-crop"
+                data-listing-card
+                data-name="Le Comptoir"
+                data-category="Burgers"
+                data-order="1"
+                data-rating="4.9"
+                aria-labelledby="listing-card-1-title"
+              >
+                <div class="restaurant-card__media">
+                  <img
+                    class="restaurant-card__image"
+                    src="assets/images/3a4b8.png"
+                    alt="Burgers — Le Comptoir"
+                    loading="lazy"
+                  />
+                  <span class="restaurant-card__badge">À tester</span>
+                </div>
+                <div class="restaurant-card__body">
+                  <h2 class="restaurant-card__title" id="listing-card-1-title">
+                    Le <br class="listing-card__break">Comptoir
+                  </h2>
+                  <span class="restaurant-card__rating" aria-label="Note : 4.9 sur 5">
+                    <span class="restaurant-card__mobile-star" aria-hidden="true">★</span>
+                    <img
+                      src="assets/icons/445a5.svg"
+                      alt=""
+                      class="icon"
+                      aria-hidden="true"
+                    />
+                    <span>4.9</span>
+                  </span>
+                  <div class="restaurant-card__tags">
+                    <span class="restaurant-tag restaurant-tag--orange">Burgers</span>
+                    <span class="listing-card__location">· Plainpalais</span>
+                  </div>
+                  <p class="restaurant-card__quote">&quot;Viande d&#x27;exception&quot;</p>
+                  <span class="listing-card__services">
+                    <span class="listing-card__service" role="img" aria-label="Instagram">
+                      <img
+                        class="icon"
+                        src="assets/icons/ad74a.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </span>
+                    <span class="listing-card__service" role="img" aria-label="Livraison">
+                      <img
+                        class="icon"
+                        src="assets/icons/4ec08.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </span>
+                  </span>
+                </div>
+              </article>
+
+              <article
+                class="restaurant-card listing-card listing-card--desktop-crop listing-card--mobile-crop"
+                data-listing-card
+                data-name="Le Comptoir"
+                data-category="Café"
+                data-order="2"
+                data-rating="4.9"
+                aria-labelledby="listing-card-2-title"
+              >
+                <div class="restaurant-card__media">
+                  <img
+                    class="restaurant-card__image"
+                    src="assets/images/35d8f.png"
+                    alt="Café — Le Comptoir"
+                    loading="lazy"
+                  />
+                  <span class="restaurant-card__badge">À tester</span>
+                </div>
+                <div class="restaurant-card__body">
+                  <h2 class="restaurant-card__title" id="listing-card-2-title">
+                    Le <br class="listing-card__break">Comptoir
+                  </h2>
+                  <span class="restaurant-card__rating" aria-label="Note : 4.9 sur 5">
+                    <span class="restaurant-card__mobile-star" aria-hidden="true">★</span>
+                    <img
+                      src="assets/icons/445a5.svg"
+                      alt=""
+                      class="icon"
+                      aria-hidden="true"
+                    />
+                    <span>4.9</span>
+                  </span>
+                  <div class="restaurant-card__tags">
+                    <span class="restaurant-tag restaurant-tag--paper">Café</span>
+                    <span class="listing-card__location">· Carouge</span>
+                  </div>
+                  <p class="restaurant-card__quote">&quot;Viande d&#x27;exception&quot;</p>
+                  <span class="listing-card__services">
+                    <span class="listing-card__service" role="img" aria-label="Instagram">
+                      <img
+                        class="icon"
+                        src="assets/icons/7b0fa.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </span>
+                    <span class="listing-card__service" role="img" aria-label="Livraison">
+                      <img
+                        class="icon"
+                        src="assets/icons/4ec08.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </span>
+                  </span>
+                </div>
+              </article>
+
+              <article
+                class="restaurant-card listing-card listing-card--desktop-crop"
+                data-listing-card
+                data-name="Le Comptoir"
+                data-category="Pizza"
+                data-order="3"
+                data-rating="4.9"
+                aria-labelledby="listing-card-3-title"
+              >
+                <div class="restaurant-card__media">
+                  <img
+                    class="restaurant-card__image"
+                    src="assets/images/c5c61.png"
+                    alt="Pizza — Le Comptoir"
+                    loading="lazy"
+                  />
+                  <span class="restaurant-card__badge">À tester</span>
+                </div>
+                <div class="restaurant-card__body">
+                  <h2 class="restaurant-card__title" id="listing-card-3-title">
+                    Le <br class="listing-card__break">Comptoir
+                  </h2>
+                  <span class="restaurant-card__rating" aria-label="Note : 4.9 sur 5">
+                    <span class="restaurant-card__mobile-star" aria-hidden="true">★</span>
+                    <img
+                      src="assets/icons/445a5.svg"
+                      alt=""
+                      class="icon"
+                      aria-hidden="true"
+                    />
+                    <span>4.9</span>
+                  </span>
+                  <div class="restaurant-card__tags">
+                    <span class="restaurant-tag restaurant-tag--yellow">Pizza</span>
+                    <span class="listing-card__location">· Charmilles</span>
+                  </div>
+                  <p class="restaurant-card__quote">&quot;Viande d&#x27;exception&quot;</p>
+                  <span class="listing-card__services">
+                    <span class="listing-card__service" role="img" aria-label="Instagram">
+                      <img
+                        class="icon"
+                        src="assets/icons/7b0fa.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </span>
+                    <span class="listing-card__service" role="img" aria-label="Livraison">
+                      <img
+                        class="icon"
+                        src="assets/icons/4ec08.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </span>
+                  </span>
+                </div>
+              </article>
+
+              <article
+                class="restaurant-card listing-card listing-card--desktop-crop"
+                data-listing-card
+                data-name="Le Comptoir"
+                data-category="Marocain"
+                data-order="4"
+                data-rating="4.9"
+                aria-labelledby="listing-card-4-title"
+              >
+                <div class="restaurant-card__media">
+                  <img
+                    class="restaurant-card__image"
+                    src="assets/images/624d4.png"
+                    alt="Marocain — Le Comptoir"
+                    loading="lazy"
+                  />
+                  <span class="restaurant-card__badge">À tester</span>
+                </div>
+                <div class="restaurant-card__body">
+                  <h2 class="restaurant-card__title" id="listing-card-4-title">
+                    Le <br class="listing-card__break">Comptoir
+                  </h2>
+                  <span class="restaurant-card__rating" aria-label="Note : 4.9 sur 5">
+                    <span class="restaurant-card__mobile-star" aria-hidden="true">★</span>
+                    <img
+                      src="assets/icons/445a5.svg"
+                      alt=""
+                      class="icon"
+                      aria-hidden="true"
+                    />
+                    <span>4.9</span>
+                  </span>
+                  <div class="restaurant-card__tags">
+                    <span class="restaurant-tag restaurant-tag--yellow">Marocain</span>
+                    <span class="listing-card__location">· Eaux-Vives</span>
+                  </div>
+                  <p class="restaurant-card__quote">&quot;Viande d&#x27;exception&quot;</p>
+                  <span class="listing-card__services">
+                    <span class="listing-card__service" role="img" aria-label="Instagram">
+                      <img
+                        class="icon"
+                        src="assets/icons/7b0fa.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </span>
+                    <span class="listing-card__service" role="img" aria-label="Livraison">
+                      <img
+                        class="icon"
+                        src="assets/icons/4ec08.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </span>
+                  </span>
+                </div>
+              </article>
+            </div>
+            <p class="listing-results__empty" id="empty-results" hidden>
+              Aucun spot ne correspond à ces filtres.
+            </p>
+          </section>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <picture class="responsive-art">
+          <source
+            media="(max-width: 47.99rem)"
+            srcset="assets/icons/f615a.svg"
+          />
+          <img
+            src="assets/icons/2233b.svg"
+            alt="Le spot halal"
+            class="site-footer__logo"
+          />
+        </picture>
+        <nav class="site-footer__navigation" aria-label="Navigation de pied de page">
+          <h2 class="site-footer__heading">Navigation</h2>
+          <ul>
+            <li><a href="restaurants.html">À proximité</a></li>
+            <li><button type="button" data-action="map">Carte</button></li>
+            <li><a href="index.html#about">À Propos</a></li>
+          </ul>
+        </nav>
+        <div class="site-footer__legal">
+          <h2 class="site-footer__heading">Légal</h2>
+          <ul>
+            <li>Mentions légales</li>
+            <li>Confidentialité</li>
+            <li>CGU</li>
+          </ul>
+        </div>
+        <div class="site-footer__address">
+          <h2 class="site-footer__heading">Adresse</h2>
+          <address>
+            Annemasse, 74100
+            <br />
+            France
+          </address>
+        </div>
+        <div class="site-footer__contact" id="contact">
+          <h2 class="site-footer__heading">Contactez-nous</h2>
+          <a href="mailto:hello@lespothalal.com">hello@lespothalal.com</a>
+        </div>
+        <p class="site-footer__credits">
+          © 2026 le spot halal
+          <br />
+          Made by Aleph
+        </p>
+        <a
+          class="button button--add site-footer__add"
+          href="mailto:hello@lespothalal.com?subject=Ajouter%20mon%20restaurant"
+        >
+          <img src="assets/icons/2c600.svg" alt="" class="icon" aria-hidden="true" />
+          <span>Ajouter mon restaurant</span>
+        </a>
+      </footer>
+    </div>
+    <dialog
+      class="info-dialog"
+      id="info-dialog"
+      aria-labelledby="dialog-title"
+      aria-describedby="dialog-copy"
+    >
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-copy"></p>
+      <a id="dialog-link" target="_blank" rel="noopener noreferrer">
+        En savoir plus
+      </a>
+      <form method="dialog"><button type="submit">Fermer</button></form>
+    </dialog>
+
+    <dialog
+      class="info-dialog listing-search"
+      id="listing-search"
+      aria-labelledby="listing-search-title"
+    >
+      <h2 id="listing-search-title">Rechercher un restaurant</h2>
+      <form data-listing-search>
+        <label for="listing-query">Restaurant, cuisine ou quartier</label>
+        <input id="listing-query" name="query" type="search" autocomplete="off" />
+        <button type="submit">Rechercher</button>
+      </form>
+      <form method="dialog"><button type="submit">Fermer</button></form>
+    </dialog>
+  </body>
+</html>

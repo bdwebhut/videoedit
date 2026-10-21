@@ -1,0 +1,57 @@
+<article
+  class="restaurant-card listing-card {{crop_classes}}"
+  data-listing-card
+  data-name="{{name}}"
+  data-category="{{category}}"
+  data-order="{{order}}"
+  data-rating="{{rating}}"
+  aria-labelledby="listing-card-{{order}}-title"
+>
+  <div class="restaurant-card__media">
+    <img
+      class="restaurant-card__image"
+      src="assets/images/{{photo}}"
+      alt="{{category}} — {{name}}"
+      loading="lazy"
+    />
+    <span class="restaurant-card__badge">{{badge}}</span>
+  </div>
+  <div class="restaurant-card__body">
+    <h2 class="restaurant-card__title" id="listing-card-{{order}}-title">
+      {{title}}
+    </h2>
+    <span class="restaurant-card__rating" aria-label="Note : {{rating}} sur 5">
+      <span class="restaurant-card__mobile-star" aria-hidden="true">★</span>
+      <img
+        src="assets/icons/445a5.svg"
+        alt=""
+        class="icon"
+        aria-hidden="true"
+      />
+      <span>{{rating}}</span>
+    </span>
+    <div class="restaurant-card__tags">
+      <span class="restaurant-tag restaurant-tag--{{color}}">{{category}}</span>
+      <span class="listing-card__location">· {{location}}</span>
+    </div>
+    <p class="restaurant-card__quote">{{quote}}</p>
+    <span class="listing-card__services">
+      <span class="listing-card__service" role="img" aria-label="Instagram">
+        <img
+          class="icon"
+          src="assets/icons/{{instagram}}"
+          alt=""
+          aria-hidden="true"
+        />
+      </span>
+      <span class="listing-card__service" role="img" aria-label="Livraison">
+        <img
+          class="icon"
+          src="assets/icons/4ec08.svg"
+          alt=""
+          aria-hidden="true"
+        />
+      </span>
+    </span>
+  </div>
+</article>

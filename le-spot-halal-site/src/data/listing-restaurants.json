@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Le Comptoir",
+    "photo": "0e26d.png",
+    "category": "Healthy",
+    "color": "green",
+    "location": "Annemasse",
+    "badge": "À tester",
+    "quote": "\"Viande d'exception\"",
+    "rating": "4.9",
+    "instagram": "ad74a.svg",
+    "desktopCrop": false,
+    "mobileCrop": false
+  },
+  {
+    "name": "Le Comptoir",
+    "photo": "3a4b8.png",
+    "category": "Burgers",
+    "color": "orange",
+    "location": "Plainpalais",
+    "badge": "À tester",
+    "quote": "\"Viande d'exception\"",
+    "rating": "4.9",
+    "instagram": "ad74a.svg",
+    "desktopCrop": true,
+    "mobileCrop": false
+  },
+  {
+    "name": "Le Comptoir",
+    "photo": "35d8f.png",
+    "category": "Café",
+    "color": "paper",
+    "location": "Carouge",
+    "badge": "À tester",
+    "quote": "\"Viande d'exception\"",
+    "rating": "4.9",
+    "instagram": "7b0fa.svg",
+    "desktopCrop": true,
+    "mobileCrop": true
+  },
+  {
+    "name": "Le Comptoir",
+    "photo": "c5c61.png",
+    "category": "Pizza",
+    "color": "yellow",
+    "location": "Charmilles",
+    "badge": "À tester",
+    "quote": "\"Viande d'exception\"",
+    "rating": "4.9",
+    "instagram": "7b0fa.svg",
+    "desktopCrop": true,
+    "mobileCrop": false
+  },
+  {
+    "name": "Le Comptoir",
+    "photo": "624d4.png",
+    "category": "Marocain",
+    "color": "yellow",
+    "location": "Eaux-Vives",
+    "badge": "À tester",
+    "quote": "\"Viande d'exception\"",
+    "rating": "4.9",
+    "instagram": "7b0fa.svg",
+    "desktopCrop": true,
+    "mobileCrop": false
+  }
+]

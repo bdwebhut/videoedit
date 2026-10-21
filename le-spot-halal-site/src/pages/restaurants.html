@@ -1,0 +1,96 @@
+<main class="listing" id="main-content" tabindex="-1">
+  <header class="listing__heading">
+    <h1>Les bons spots halal à&#32; Genève</h1>
+  </header>
+  <div class="listing__layout">
+    <aside class="listing-filters" aria-labelledby="cuisine-title">
+      <button class="listing-filters__reset" type="button" data-reset-listing>
+        Supprimer tous les filtres
+      </button>
+      <section class="listing-filters__cuisines">
+        <h2 id="cuisine-title">Type de cuisine</h2>
+        <div
+          class="listing-filters__options"
+          role="group"
+          aria-label="Type de cuisine"
+        >
+          <button
+            class="category listing-filter listing-filter--reference"
+            type="button"
+            aria-pressed="false"
+            data-cuisine="Burgers"
+          >
+            Burgers
+          </button>
+          <button
+            class="category listing-filter"
+            type="button"
+            aria-pressed="false"
+            data-cuisine="Café"
+          >
+            Café
+          </button>
+          <button
+            class="category listing-filter"
+            type="button"
+            aria-pressed="false"
+            data-cuisine="Marocain"
+          >
+            Marocain
+          </button>
+          <button
+            class="category listing-filter"
+            type="button"
+            aria-pressed="false"
+            data-cuisine="Pizza"
+          >
+            Pizza
+          </button>
+          <button
+            class="category listing-filter"
+            type="button"
+            aria-pressed="false"
+            data-cuisine="Healthy"
+          >
+            Healthy
+          </button>
+          <button
+            class="category listing-filter"
+            type="button"
+            aria-pressed="false"
+            data-cuisine="Street food"
+          >
+            Street food
+          </button>
+        </div>
+      </section>
+    </aside>
+    <section class="listing-results" aria-label="Restaurants à Genève">
+      <div class="listing-results__summary">
+        <p
+          class="listing-results__count"
+          id="result-count"
+          role="status"
+          aria-live="polite"
+        >
+          27 spots trouvés.
+        </p>
+        <div class="listing-sort">
+          <label for="listing-sort">Trier par :</label>
+          <select id="listing-sort" name="sort">
+            <option value="relevance">Pertinence</option>
+            <option value="category">Type de cuisine</option>
+            <option value="rating">Note</option>
+          </select>
+          <img src="assets/icons/b202b.svg" alt="" aria-hidden="true" />
+        </div>
+      </div>
+      <div class="listing-results__cards" id="restaurant-list">
+        {{listing_cards}}
+      </div>
+      <p class="listing-results__empty" id="empty-results" hidden>
+        Aucun spot ne correspond à ces filtres.
+      </p>
+    </section>
+  </div>
+</main>

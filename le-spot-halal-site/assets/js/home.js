@@ -9,11 +9,6 @@
   const queryInput = form.querySelector('[name="q"]');
   const cards = [...homepage.querySelectorAll("[data-restaurant]")];
   const status = homepage.querySelector("#results-status");
-  const dialog = homepage.querySelector("#info-dialog");
-  const dialogTitle = dialog.querySelector("#dialog-title");
-  const dialogCopy = dialog.querySelector("#dialog-copy");
-  const dialogLink = dialog.querySelector("#dialog-link");
-
   const normalize = (value) =>
     value
       .normalize("NFD")
@@ -23,22 +18,20 @@
     `https://www.google.com/maps/search/${encodeURIComponent(query)}`;
 
   function scrollToSection(id) {
-    homepage
-      .querySelector(id)
-      .scrollIntoView({
-        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
-          ? "instant"
-          : "smooth",
-        block: "start",
-      });
+    homepage.querySelector(id).scrollIntoView({
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "instant"
+        : "smooth",
+      block: "start",
+    });
   }
 
   function showInfo(title, copy, href, label) {
-    dialogTitle.textContent = title;
-    dialogCopy.textContent = copy;
-    dialogLink.href = href;
-    dialogLink.textContent = label;
-    dialog.showModal();
+    homepage.dispatchEvent(
+      new CustomEvent("lsh:show-info", {
+        detail: { title, copy, href, label },
+      }),
+    );
   }
 
   function filterRestaurants(query = queryInput.value) {
@@ -61,15 +54,6 @@
       ? `${visibleCount} restaurant${plural} trouvé${plural}`
       : "";
     scrollToSection("#restaurants");
-  }
-
-  function showMap(city = "Genève") {
-    showInfo(
-      "Les spots sur la carte",
-      "Retrouvez les restaurants halal autour de Genève et en France voisine.",
-      mapsUrl(`restaurants halal ${city}`),
-      "Ouvrir la carte",
-    );
   }
 
   form.addEventListener("submit", (event) => {
@@ -113,9 +97,6 @@
         queryInput.value = "";
         filterRestaurants("");
         break;
-      case "map":
-        showMap();
-        break;
       case "restaurant": {
         const card = control.closest("[data-restaurant]");
         showInfo(
@@ -127,9 +108,5 @@
         break;
       }
     }
-  });
-
-  dialog.addEventListener("click", (event) => {
-    if (event.target === dialog) dialog.close();
   });
 })();

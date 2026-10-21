@@ -46,7 +46,8 @@ class Markup(HTMLParser):
 
 class BuildTests(unittest.TestCase):
     def test_committed_page_matches_shared_templates(self):
-        self.assertEqual((ROOT / 'index.html').read_text(), build.build())
+        for page, settings in build.PAGES.items():
+            self.assertEqual((ROOT / settings['output']).read_text(), build.build(page))
 
     def test_page_has_one_heading_unique_ids_and_declared_asset_paths(self):
         markup = Markup()
@@ -58,6 +59,19 @@ class BuildTests(unittest.TestCase):
         for asset in markup.assets:
             self.assertTrue(asset.startswith('assets/'), asset)
             self.assertTrue((ROOT / asset).exists() or asset in declared, asset)
+
+    def test_listing_page_has_unique_ids_declared_assets_and_local_routes(self):
+        markup = Markup()
+        output = build.build('restaurants')
+        markup.feed(output)
+        self.assertEqual(markup.headings, 1)
+        self.assertEqual(len(markup.ids), len(set(markup.ids)))
+        declared = {'assets/' + asset['path'] for asset in json.loads((ROOT / 'asset-manifest.json').read_text())['assets']}
+        for asset in markup.assets:
+            self.assertTrue((ROOT / asset).exists() or asset in declared, asset)
+        self.assertNotIn('../le-spot-halal-', output)
+        self.assertNotIn('{{', output)
+        self.assertEqual(output.count('aria-current="page"'), 1)
 
     def test_missing_template_values_fail_clearly(self):
         with self.assertRaisesRegex(ValueError, 'Missing template value'):

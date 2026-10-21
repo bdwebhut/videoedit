@@ -16,32 +16,42 @@
     id="primary-navigation"
     data-navigation=""
   >
-    <a class="site-header__link site-header__link--active" href="#search">
+    <a
+      class="site-header__link site-header__link--active"
+      {{nearby_current}}
+      href="{{nearby_url}}"
+    >
       À proximité
     </a>
     <button class="site-header__link" type="button" data-action="map">
       Carte
     </button>
-    <a class="site-header__link" href="#about">À propos</a>
+    <a class="site-header__link" href="{{about_url}}">À propos</a>
   </nav>
   <a
     class="site-header__brand"
-    href="#main-content"
+    href="index.html"
     aria-label="Le spot halal — Accueil"
   >
     <picture class="responsive-art">
-      <source media="(max-width: 47.99rem)" srcset="assets/icons/a71cb.svg" />
+      <source
+        media="(max-width: 47.99rem)"
+        srcset="assets/icons/{{header_mobile_logo}}"
+      />
       <img src="assets/icons/67d68.svg" alt="Le spot halal" />
     </picture>
   </a>
   <div class="site-header__tools">
     <a
-      href="#search"
+      href="{{search_url}}"
       class="site-header__search"
       aria-label="Rechercher un restaurant"
     >
       <picture class="responsive-art">
-        <source media="(max-width: 47.99rem)" srcset="assets/icons/8b691.svg" />
+        <source
+          media="(max-width: 47.99rem)"
+          srcset="assets/icons/{{header_mobile_search}}"
+        />
         <img
           src="assets/icons/2c857.svg"
           alt=""

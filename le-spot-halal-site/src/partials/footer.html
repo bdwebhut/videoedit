@@ -1,8 +1,11 @@
 <footer class="site-footer">
   <picture class="responsive-art">
-    <source media="(max-width: 47.99rem)" srcset="assets/icons/91834.svg" />
+    <source
+      media="(max-width: 47.99rem)"
+      srcset="assets/icons/{{footer_mobile_logo}}"
+    />
     <img
-      src="assets/icons/65cda.svg"
+      src="assets/icons/{{footer_desktop_logo}}"
       alt="Le spot halal"
       class="site-footer__logo"
     />
@@ -10,9 +13,9 @@
   <nav class="site-footer__navigation" aria-label="Navigation de pied de page">
     <h2 class="site-footer__heading">Navigation</h2>
     <ul>
-      <li><a href="#search">À proximité</a></li>
+      <li><a href="{{nearby_url}}">À proximité</a></li>
       <li><button type="button" data-action="map">Carte</button></li>
-      <li><a href="#about">À Propos</a></li>
+      <li><a href="{{about_url}}">À Propos</a></li>
     </ul>
   </nav>
   <div class="site-footer__legal">

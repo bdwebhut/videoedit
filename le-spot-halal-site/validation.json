@@ -1,5 +1,5 @@
 {
-  "scope": "Responsive static homepage only; source export folders unchanged.",
+  "scope": "Shared static homepage and restaurant listing; original export folders unchanged.",
   "references": {
     "mobile": {
       "width": 390,
@@ -187,14 +187,14 @@
     "no-JavaScript navigation"
   ],
   "pythonTests": {
-    "passed": 16,
+    "passed": 17,
     "failed": 0
   },
   "assets": {
-    "uniqueManifestEntries": 58,
+    "uniqueManifestEntries": 67,
     "runtimePaths": "local shared assets only",
     "downloadBehavior": "Content-based image validation; scan all export caches; read both original manifest formats; curl download with original Figma fallback URLs.",
-    "officialUrlFallbacks": 114
+    "officialUrlFallbacks": 131
   },
   "errors": [],
   "limitations": [
@@ -212,5 +212,28 @@
     "chromiumDecodedTestFixtures": 3,
     "readOnlyAudit": true,
     "note": "Browser rendering verified with isolated test fixtures. The user’s original downloaded assets remain on their local machine."
+  },
+  "generatedPages": [
+    "index.html",
+    "restaurants.html"
+  ],
+  "homepageRegression": {
+    "passed": true,
+    "viewportCount": 20,
+    "checks": [
+      "responsive grid",
+      "no horizontal overflow",
+      "hero text containment",
+      "desktop/mobile colors",
+      "unique IDs",
+      "local font",
+      "keyboard menu",
+      "Escape and focus return",
+      "menu closes on navigation and resize",
+      "search, categories, accents, empty results, reset",
+      "restaurant and city dialogs",
+      "no-JavaScript navigation"
+    ],
+    "errors": []
   }
 }

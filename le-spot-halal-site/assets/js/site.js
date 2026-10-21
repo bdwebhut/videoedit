@@ -1,8 +1,35 @@
-/* Shared navigation only. No backend, account state, or page routing. */
+/* Shared navigation and information dialog. No backend or account state. */
 (() => {
   "use strict";
   const site = document.querySelector(".lsh-site");
   if (!site) return;
+  const dialog = site.querySelector("#info-dialog");
+  function showInfo({ title, copy, href, label }) {
+    if (!dialog) return;
+    dialog.querySelector("#dialog-title").textContent = title;
+    dialog.querySelector("#dialog-copy").textContent = copy;
+    const link = dialog.querySelector("#dialog-link");
+    link.href = href;
+    link.textContent = label;
+    dialog.showModal();
+  }
+  site.addEventListener("lsh:show-info", (event) => showInfo(event.detail));
+  site.addEventListener("click", (event) => {
+    if (event.target.closest('[data-action="map"]')) {
+      showInfo({
+        title: "Les spots sur la carte",
+        copy: "Retrouvez les restaurants halal autour de Genève et en France voisine.",
+        href: "https://www.google.com/maps/search/restaurants+halal+Gen%C3%A8ve/",
+        label: "Ouvrir la carte",
+      });
+    }
+  });
+  site.querySelectorAll("dialog").forEach((element) => {
+    element.addEventListener("click", (event) => {
+      if (event.target === element) element.close();
+    });
+  });
+
   const toggle = site.querySelector("[data-menu-toggle]");
   const navigation = site.querySelector("[data-navigation]");
   if (!toggle || !navigation) return;
@@ -35,7 +62,11 @@
     }
   });
   document.addEventListener("click", (event) => {
-    if (!event.target.closest(".site-header")) closeMenu();
+    if (
+      !event.target.closest(".site-header") ||
+      event.target.closest(".site-header__search")
+    )
+      closeMenu();
   });
   // Reset the collapsed menu after crossing the desktop breakpoint.
   window
