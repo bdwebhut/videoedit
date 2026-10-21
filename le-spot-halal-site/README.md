@@ -1,6 +1,6 @@
 # Le spot halal — shared static site
 
-**This is the complete working site folder.** It contains the ready-to-open pages, all shared assets, and editable sources. Only the homepage and restaurant listing have been refined so far; original export folders remain unchanged as references.
+**This is the complete working site folder.** It contains the ready-to-open pages, all shared assets, and editable sources. The homepage, restaurant listing, and restaurant details have been refined so far; original export folders remain unchanged as references.
 
 ## Open these complete pages
 
@@ -8,8 +8,9 @@
 | --- | --- | --- |
 | Homepage | `index.html` | http://localhost:8000/ |
 | Restaurant listing | `restaurants.html` | http://localhost:8000/restaurants.html |
+| Restaurant details | `details.html` | http://localhost:8000/details.html |
 
-**`src/pages/home.html` and `src/pages/restaurants.html` are editing templates, not standalone webpages.** They contain page content only. The builder adds the shared document, header, footer, styles, and scripts. Open the complete files above to see the full design.
+**Files in `src/pages/` are editing templates, not standalone webpages.** They contain page content only. The builder adds the shared document, header, footer, styles, and scripts. Open the complete files above to see the full design.
 
 ## Update, download, and preview on Linux
 
@@ -25,7 +26,7 @@ Open a preview URL from the table and hard-refresh with **Ctrl+Shift+R**. Stop t
 
 The importer checks every original `le-spot-halal-*/assets/` folder, including nested caches, and reads both original manifest formats for URL fallbacks. It reuses valid originals before downloading missing files with curl (or Python's standard library if curl is unavailable). JPEG/WebP photos exported with `.png` filenames are accepted. Existing valid files stay in place.
 
-Both pages share **67 unique image/SVG assets**, including nine additional listing icons/logos. The Parkinsans font and license are bundled once. All runtime asset paths are local. Temporary Figma URLs exist only in download tooling and can expire after seven days; refresh original or shared manifests through Figma MCP when needed.
+The three pages share **87 unique image/SVG assets**. Parkinsans and Inter fonts and their licenses are bundled locally. All runtime asset paths are local. Temporary Figma URLs exist only in download tooling and can expire after seven days; refresh original or shared manifests through Figma MCP when needed.
 
 Audit the shared files without changing or downloading anything:
 
@@ -39,7 +40,7 @@ Reuse files from another checkout or directory:
 python3 download-assets.py --assets-dir /path/to/original-downloads
 ```
 
-Subdirectories are searched. Repeat `--assets-dir` for multiple locations; add `--local-only` to avoid network requests. Success ends with `All 67 original assets are ready`; failed paths are listed explicitly.
+Subdirectories are searched. Repeat `--assets-dir` for multiple locations; add `--local-only` to avoid network requests. Success ends with `All 87 original assets are ready`; failed paths are listed explicitly.
 
 ## One folder, one zip
 
@@ -67,6 +68,7 @@ The archive contains one self-contained `le-spot-halal-site/` folder. Browsing i
 le-spot-halal-site/
 ├── index.html                         # Complete generated homepage
 ├── restaurants.html                   # Complete generated restaurant listing
+├── details.html                       # Complete generated restaurant details
 ├── build.py                           # Build all pages from shared sources
 ├── download-assets.py
 ├── asset-manifest.json
@@ -104,19 +106,23 @@ le-spot-halal-site/
 └── tests/
 ```
 
-Edit source templates/data, then run `python3 build.py` to regenerate **both complete pages**, including shared header/footer changes. Do not maintain another header/footer copy in generated HTML. Page metadata and brand artwork are registered in `build.py`.
+Edit source templates/data, then run `python3 build.py` to regenerate **all three complete pages**, including shared header/footer changes. Do not maintain another header/footer copy in generated HTML. Page metadata and brand artwork are registered in `build.py`.
 
-`python3 build.py --check` detects outdated generated files. `--page home` or `--page restaurants` limits a build/check to one page. Shared CSS is scoped under `.lsh-site`; page composition uses `.page-home` or `.page-restaurants`. Future pages belong here using the same shell, components, tokens, and assets.
+`python3 build.py --check` detects outdated generated files. `--page home`, `--page restaurants`, or `--page details` limits a build/check to one page. Shared CSS is scoped under `.lsh-site`; page composition uses `.page-home`, `.page-restaurants`, or `.page-details`. Future pages belong here using the same shell, components, tokens, and assets.
 
 ## Responsive behavior and static scope
 
 The homepage preserves its supplied 390px mobile and 1920px desktop references, including mobile blue hero/nearby panels and desktop contact panel. Its card grid changes from one to two, three, and five columns as space permits.
 
-The listing preserves its 390 × 2949 mobile and 1920 × 2835 desktop references. Phones use stacked filters, sorting, and vertical cards; tablets use two card columns. From 1024px it uses a filter sidebar and horizontal result cards. Both pages share the same responsive header/footer implementation; page settings select their supplied SVG artwork. Navigation collapses below 1024px and remains visible without JavaScript.
+The listing preserves its 390 × 2949 mobile and 1920 × 2835 desktop references. Phones use stacked filters, sorting, and vertical cards; tablets use two card columns. From 1024px it uses a filter sidebar and horizontal result cards. All pages share the same responsive header/footer implementation; page settings select their supplied SVG artwork. Navigation collapses below 1024px and remains visible without JavaScript.
+
+The details page preserves its 390 × 3961 mobile and 1920 × 3272 desktop layouts. Phones show practical information, map, about, menu, reservation, and reviews in sequence. Tablets use a two-column hero; laptops use independent content/sidebar columns. Large desktops reveal the additional photo panels. The supplied “Photo 2” and “Photo 3” panels are intentional placeholders: the original exports provide only one restaurant photo, reused in the thumbnails. Gallery, menu anchors, telephone/email links, and map links work. Delivery and reservation dialogs provide contact details; the displayed reservation times remain static samples. The matching Healthy listing card links to this page.
+
+Details content lives in `src/pages/details.html` and `src/data/restaurant-details.json`; repeated menu/review markup is in `src/partials/menu-item.html` and `review.html`. Its page styles/scripts are `assets/css/pages/details.css` and `assets/js/details.js`. Shared header/footer edits apply to every page.
 
 Content is static. The listing preserves the reference's five cards named “Le Comptoir,” their cuisine/location labels, and the initial “27 spots trouvés.” label. Using a local filter, sort, or search recomputes the count from the actual five records. No extra restaurant records were invented.
 
-Local search, cuisine filters, sorting, dialogs, email links, and homepage/listing navigation work in the browser. No database, authentication, submission API, tracking, storage, or WordPress theme was added. Other page connections and dynamic features remain for later tasks.
+Local search, cuisine filters, sorting, dialogs, email links, and homepage/listing/details navigation work in the browser. No database, authentication, submission API, tracking, storage, or WordPress theme was added. Other page connections and dynamic features remain for later tasks.
 
 ## Verification
 
@@ -132,8 +138,9 @@ Optional browser checks use `playwright-core` and an existing Chromium installat
 ```bash
 SITE_URL=http://127.0.0.1:8000/ node tests/responsive.cjs
 SITE_URL=http://127.0.0.1:8000/ node tests/listing.cjs
+SITE_URL=http://127.0.0.1:8000/ node tests/details.cjs
 ```
 
 `PLAYWRIGHT_MODULE` may point to another existing Playwright installation; `CHROMIUM_PATH` overrides `/usr/bin/chromium`. Screenshots and reports go to ignored `tests/results/`.
 
-Both pages are checked at 20 widths from 320px to 2560px for overflow, type, responsive layouts, keyboard navigation, local controls, dialogs, and no-JavaScript navigation. Complete original-image verification still requires the user's local assets; no stock substitutions were made. The supplied palette and its existing contrast limitations are preserved. Reports are recorded in `validation.json` and `validation-restaurants.json`.
+All three pages are checked at 20 widths from 320px to 2560px for overflow, type, responsive layouts, keyboard navigation, local controls, dialogs, and no-JavaScript navigation. Complete original-image verification still requires the user's local assets; no stock substitutions were made. The supplied palette and its existing contrast limitations are preserved. Reports are recorded in `validation.json`, `validation-restaurants.json`, and `validation-details.json`.

@@ -73,6 +73,31 @@ class BuildTests(unittest.TestCase):
         self.assertNotIn('{{', output)
         self.assertEqual(output.count('aria-current="page"'), 1)
 
+    def test_details_page_assets_content_and_routes(self):
+        output = build.build('details')
+        markup = Markup()
+        markup.feed(output)
+        declared = {'assets/' + asset['path'] for asset in json.loads((ROOT / 'asset-manifest.json').read_text())['assets']}
+        self.assertEqual(markup.headings, 1)
+        self.assertEqual(len(markup.ids), len(set(markup.ids)))
+        for asset in markup.assets:
+            self.assertTrue((ROOT / asset).exists() or asset in declared, asset)
+        self.assertNotIn('{{', output)
+        self.assertNotIn('../le-spot-halal-', output)
+        self.assertEqual(output.count('class="detail-menu__item"'), 5)
+        self.assertEqual(output.count('class="detail-review"'), 3)
+        self.assertIn('href="restaurants.html"', output)
+        self.assertIn('href="details.html"', build.build('restaurants'))
+        self.assertTrue((ROOT / 'assets/fonts/inter-latin.ttf').is_file())
+
+    def test_details_data_is_escaped(self):
+        real_read = build.read
+        data = {'about': ['<script>alert(1)</script>'], 'menu': [], 'reviews': []}
+        with patch.object(build, 'read', side_effect=lambda path: json.dumps(data) if path == 'data/restaurant-details.json' else real_read(path)):
+            output = build.details_content()['about_copy']
+        self.assertNotIn('<script>', output)
+        self.assertIn('&lt;script&gt;', output)
+
     def test_missing_template_values_fail_clearly(self):
         with self.assertRaisesRegex(ValueError, 'Missing template value'):
             build.render('{{missing}}', {})

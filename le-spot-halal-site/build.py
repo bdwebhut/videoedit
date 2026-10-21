@@ -88,6 +88,21 @@ PAGES = {
         'footer_mobile_logo': 'f615a.svg',
         'footer_desktop_logo': '2233b.svg',
     },
+    'details': {
+        'output': 'details.html',
+        'page_title': 'Le Comptoir — Le spot halal',
+        'page_description': 'Découvrez Le Comptoir à Annemasse : carte, avis, horaires et informations pratiques.',
+        'page_stylesheet': 'assets/css/pages/details.css',
+        'page_script': 'assets/js/details.js',
+        'page_class': 'page-details',
+        'about_url': 'index.html#about',
+        'search_url': 'restaurants.html',
+        'nearby_current': '',
+        'header_mobile_logo': '6d906.svg',
+        'header_mobile_search': '01fd5.svg',
+        'footer_mobile_logo': 'f615a.svg',
+        'footer_desktop_logo': 'c36fe.svg',
+    },
 }
 
 
@@ -99,6 +114,8 @@ def listing_cards():
         values = {key: escape(value, quote=True) for key, value in record.items() if isinstance(value, str)}
         name = record['name'].split(' ', 1)
         values['title'] = ' <br class="listing-card__break">'.join(escape(part) for part in name)
+        if record.get('detailsUrl'):
+            values['title'] = f'<a class="listing-card__link" href="{escape(record["detailsUrl"], quote=True)}">{values["title"]}</a>'
         values['order'] = str(index)
         values['crop_classes'] = ' '.join(
             css for key, css in [('desktopCrop', 'listing-card--desktop-crop'), ('mobileCrop', 'listing-card--mobile-crop')]
@@ -108,13 +125,25 @@ def listing_cards():
     return '\n'.join(cards)
 
 
+def details_content():
+    data = json.loads(read('data/restaurant-details.json'))
+    return {
+        'about_copy': '\n'.join(f'<p>{escape(copy)}</p>' for copy in data['about']),
+        'menu_items': '\n'.join(render(read('partials/menu-item.html'), {key: escape(value, quote=True) for key, value in item.items()}) for item in data['menu']),
+        'reviews': '\n'.join(render(read('partials/review.html'), {key: escape(value, quote=True) for key, value in review.items()}) for review in data['reviews']),
+    }
+
+
 def build(page='home'):
     settings = dict(PAGES[page], nearby_url='restaurants.html')
-    cards = {'restaurant_cards': restaurant_cards()} if page == 'home' else {'listing_cards': listing_cards()}
+    content_values = {'home': lambda: {'restaurant_cards': restaurant_cards()}, 'restaurants': lambda: {'listing_cards': listing_cards()}, 'details': details_content}
+    cards = content_values[page]()
     content = render(read(f'pages/{page}.html'), cards)
     dialogs = read('partials/info-dialog.html')
     if page == 'restaurants':
         dialogs += '\n' + read('partials/listing-search.html')
+    if page == 'details':
+        dialogs += '\n' + read('partials/detail-dialogs.html')
     output = render(read('layout.html'), dict(settings,
         header=render(read('partials/header.html'), settings),
         content=content,

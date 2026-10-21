@@ -1,5 +1,5 @@
 {
-  "scope": "Shared static homepage and restaurant listing; original export folders unchanged.",
+  "scope": "Shared static homepage, restaurant listing, and restaurant details; original export folders unchanged.",
   "references": {
     "mobile": {
       "width": 390,
@@ -187,14 +187,14 @@
     "no-JavaScript navigation"
   ],
   "pythonTests": {
-    "passed": 17,
+    "passed": 19,
     "failed": 0
   },
   "assets": {
-    "uniqueManifestEntries": 67,
+    "uniqueManifestEntries": 87,
     "runtimePaths": "local shared assets only",
     "downloadBehavior": "Content-based image validation; scan all export caches; read both original manifest formats; curl download with original Figma fallback URLs.",
-    "officialUrlFallbacks": 131
+    "officialUrlFallbacks": 154
   },
   "errors": [],
   "limitations": [
@@ -215,7 +215,8 @@
   },
   "generatedPages": [
     "index.html",
-    "restaurants.html"
+    "restaurants.html",
+    "details.html"
   ],
   "homepageRegression": {
     "passed": true,

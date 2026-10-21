@@ -25,3 +25,15 @@
   --page-gutter: clamp(16px, 1.615vw, 31px);
   --section-gap: clamp(32px, 2.708vw, 52px);
 }
+
+/* Shared prose font used by restaurant information and menu content. */
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/inter-latin.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+.lsh-site {
+  --font-prose: Inter, Arial, sans-serif;
+}

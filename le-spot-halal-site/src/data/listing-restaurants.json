@@ -10,7 +10,8 @@
     "rating": "4.9",
     "instagram": "ad74a.svg",
     "desktopCrop": false,
-    "mobileCrop": false
+    "mobileCrop": false,
+    "detailsUrl": "details.html"
   },
   {
     "name": "Le Comptoir",

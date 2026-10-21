@@ -1,0 +1,50 @@
+{
+  "about": [
+    "Le Comptoir est un spot healthy imaginé pour les repas du quotidien : bowls, salades, burgers, desserts maison et boissons fraîches. L'équipe mise sur des produits frais, une carte variée et un service rapide sans perdre l'ambiance conviviale.",
+    "On y retrouve aussi des plats plus gourmands, des options sans gluten et des desserts à partager. C'est le bon plan pour une pause rapide, un repas de travail ou un brunch en famille."
+  ],
+  "menu": [
+    {
+      "name": "Bowl halloumi",
+      "description": "Halloumi grillé, quinoa, légumes rôtis et tahini maison",
+      "price": "16€"
+    },
+    {
+      "name": "Burger healthy",
+      "description": "Boeuf halal, salade, avocat et sauce tzatziki sur pain complet",
+      "price": "14€"
+    },
+    {
+      "name": "Salade méditerranéenne",
+      "description": "Tomates, concombre, feta, olives et vinaigrette citronnée",
+      "price": "12€"
+    },
+    {
+      "name": "Brownie aux noix",
+      "description": "Dessert maison avec glace à la vanille et caramel salé",
+      "price": "8€"
+    },
+    {
+      "name": "Formule brunch",
+      "description": "Petit-déj, jus et café pour un brunch complet",
+      "price": "18€"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Amina",
+      "copy": "Super accueil, service rapide et plats frais. Le bowl halloumi est un must !",
+      "rating": "5/5"
+    },
+    {
+      "name": "Mehdi",
+      "copy": "Parfait pour un repas rapide en semaine. Le burger healthy est très bien équilibré.",
+      "rating": "5/5"
+    },
+    {
+      "name": "Sarah",
+      "copy": "Le brunch est très complet et les desserts maison sont délicieux. On reviendra !",
+      "rating": "5/5"
+    }
+  ]
+}
